@@ -68,3 +68,9 @@ configured companies and existing economic records are preserved. See
 [thb-defaults.md](thb-defaults.md) for clean-install, local upgrade and separate
 THB-company acceptance. The initial source checksum file remains provenance for
 the original snapshot, before these documented follow-up source changes.
+
+## Budget settings tab follow-up
+
+ERP Budget `20.0.2.27.2` consolidates its two duplicate Settings tabs into one,
+retaining both setting blocks and all company values. See
+[budget-settings.md](budget-settings.md) for scoped upgrade acceptance.

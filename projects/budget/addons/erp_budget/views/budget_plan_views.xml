@@ -26,5 +26,18 @@
  <record id="budget_opening_action" model="ir.actions.act_window"><field name="name">Opening Reconciliation</field><field name="res_model">erp.budget.opening.balance</field><field name="view_mode">list,form</field></record>
  <menuitem id="budget_opening_menu" name="Opening Reconciliation" parent="erp_budget.menu_budget_root" action="budget_opening_action" groups="erp_budget.group_budget_user"/>
  <record id="budget_planning_revision_form" model="ir.ui.view"><field name="name">erp.budget.planning.revision.form</field><field name="model">erp.budget.planning.revision</field><field name="arch" type="xml"><form><group><field name="release_id" readonly="1"/><field name="allocation_revision_id" domain="[('state', '=', 'draft')]"/></group><footer><button name="action_prepare" string="Prepare" type="object" class="btn-primary"/><button special="cancel" string="Cancel"/></footer></form></field></record>
- <record id="budget_planning_settings" model="ir.ui.view"><field name="name">res.config.settings.budget.planning</field><field name="model">res.config.settings</field><field name="inherit_id" ref="base.res_config_settings_view_form"/><field name="arch" type="xml"><xpath expr="//form" position="inside"><app string="Budget" name="erp_budget" groups="base.group_system"><block title="Planning revisions"><setting string="Past planning amounts"><field name="erp_budget_planning_lock"/></setting></block></app></xpath></field></record>
+ <record id="budget_planning_settings" model="ir.ui.view">
+  <field name="name">res.config.settings.budget.planning</field>
+  <field name="model">res.config.settings</field>
+  <field name="inherit_id" ref="erp_budget.budget_amount_settings"/>
+  <field name="arch" type="xml">
+   <xpath expr="//app[@name='erp_budget']" position="inside">
+    <block title="Planning revisions">
+     <setting string="Past planning amounts">
+      <field name="erp_budget_planning_lock"/>
+     </setting>
+    </block>
+   </xpath>
+  </field>
+ </record>
 </odoo>
