@@ -1,0 +1,1 @@
+{'name': 'Thai Warehouse Dashboard', 'version': '20.0.1.0.0', 'summary': 'Thai display labels for the standard warehouse dashboard', 'author': 'GovOpsDev', 'license': 'AGPL-3', 'depends': ['erp_core', 'spreadsheet_dashboard_stock_account'], 'data': [], 'installable': True, 'application': False}

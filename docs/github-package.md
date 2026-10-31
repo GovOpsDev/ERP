@@ -51,3 +51,11 @@ re-run those acceptance suites or include an already configured database.
 
 The root LICENSE was copied from the inspected upstream checkout and verified
 byte-for-byte. Existing licenses in addon manifests and file headers are preserved.
+
+## Thai warehouse dashboard follow-up
+
+`erp_dashboard_th` was added after the initial source snapshot, together with its
+read-only acceptance script and documentation. It localizes the standard warehouse
+dashboard response for Thai users and preserves the stored workbook and access
+controls. See [dashboard-th.md](dashboard-th.md) for scoped runtime evidence.
+The initial source checksums remain a historical provenance record.

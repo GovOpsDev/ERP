@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_stock_account.spreadsheet_dashboard_warehouse_metrics
+msgid "Warehouse Metrics"
+msgstr "ภาพรวมคลังสินค้า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Share reserved stock Qty"
+msgstr "สัดส่วนจำนวนสินค้าที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Share reserved stock Value"
+msgstr "สัดส่วนมูลค่าสินค้าที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Share of reserved stock qty"
+msgstr "สัดส่วนจำนวนสินค้าที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Share of reserved stock Value"
+msgstr "สัดส่วนมูลค่าสินค้าที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Lines with negative stock"
+msgstr "รายการคงคลังติดลบ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Products with negative stock"
+msgstr "สินค้าที่มียอดคงคลังติดลบ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Count of products with negative stock"
+msgstr "จำนวนสินค้าที่มียอดคงคลังติดลบ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Available & Reserved Stock Quantity"
+msgstr "ปริมาณสินค้าคงคลังและที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Available & Reserved Stock Value"
+msgstr "มูลค่าสินค้าคงคลังและที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Top Locations"
+msgstr "อันดับจุดจัดเก็บ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Top Products"
+msgstr "สินค้ายอดสูงสุด"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Top 50"
+msgstr "50 อันดับแรก"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Stock Quantity"
+msgstr "ปริมาณสินค้าคงคลัง"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Stock Value"
+msgstr "มูลค่าสินค้าคงคลัง"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Available Value"
+msgstr "มูลค่าสินค้าคงคลัง"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Reserved value"
+msgstr "มูลค่าสินค้าที่จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Reserved"
+msgstr "จองไว้"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Total"
+msgstr "รวม"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Total inventory value"
+msgstr "มูลค่าสินค้าคงคลังทั้งหมด"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Stock location Qty"
+msgstr "ปริมาณสินค้าตามตำแหน่งจัดเก็บ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Stock location Value"
+msgstr "มูลค่าสินค้าตามตำแหน่งจัดเก็บ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Ageing stock qty by product and creation date"
+msgstr "อายุสินค้าคงคลังตามจำนวน"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Ageing stock value by product and creation date"
+msgstr "อายุสินค้าคงคลังตามมูลค่า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Creation Date"
+msgstr "วันที่สร้าง"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Location"
+msgstr "ตำแหน่งจัดเก็บ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Warehouse"
+msgstr "คลังสินค้า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Products"
+msgstr "สินค้า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Product Category"
+msgstr "หมวดหมู่สินค้า"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "Chart"
+msgstr "กราฟ"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid "No data"
+msgstr "ไม่มีข้อมูล"
+
+#. module: erp_dashboard_th
+#. odoo-python
+#: code:addons/erp_dashboard_th/models/spreadsheet_dashboard.py:0
+msgid " out of "
+msgstr " จาก "
+
+#. module: erp_dashboard_th
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/components/spreadsheet_share_button/spreadsheet_share_button.xml:0
+msgid "Share"
+msgstr "แบ่งปัน"
+
+#. module: erp_dashboard_th
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard/static/src/bundle/dashboard_action/dashboard_action.xml:0
+msgid "Close sidebar"
+msgstr "ปิดแถบด้านข้าง"
+
+#. module: erp_dashboard_th
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard/static/src/bundle/dashboard_action/dashboard_action.xml:0
+msgid "Open sidebar"
+msgstr "เปิดแถบด้านข้าง"

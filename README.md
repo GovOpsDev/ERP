@@ -88,7 +88,7 @@ export ERP_SECRETS_DIR=/absolute/path/outside/repository/secrets
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d db
 
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- \
-  run --rm -T app -d "$ERP_DATABASE" -i erp_user_manual \
+  run --rm -T app -d "$ERP_DATABASE" -i erp_user_manual,erp_dashboard_th \
   --stop-after-init --workers=0 --no-http
 
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app proxy

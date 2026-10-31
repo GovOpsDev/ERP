@@ -16,6 +16,8 @@ CUSTOM = {
     path.parent.name: path.parent / 'i18n' / 'th.po'
     for path in list((ROOT / 'projects').glob('*/addons/erp_*/__manifest__.py'))
     + list((ROOT / 'shared/erp_core/addons').glob('erp_*/__manifest__.py'))
+    # Its menus are authored in Thai; the manual contains no source PO catalog.
+    if path.parent.name != 'erp_user_manual'
 }
 OCA = {
     name: ROOT / 'projects/asset/addons' / name / 'i18n_extra/th.po'
