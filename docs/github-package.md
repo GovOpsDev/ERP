@@ -59,3 +59,12 @@ read-only acceptance script and documentation. It localizes the standard warehou
 dashboard response for Thai users and preserves the stored workbook and access
 controls. See [dashboard-th.md](dashboard-th.md) for scoped runtime evidence.
 The initial source checksums remain a historical provenance record.
+
+## THB defaults follow-up
+
+ERP Core `20.0.1.1.0` adds new-company THB defaults and guarded Thailand/THB
+initialization of Odoo's pristine placeholder. Explicit and parent currencies,
+configured companies and existing economic records are preserved. See
+[thb-defaults.md](thb-defaults.md) for clean-install, local upgrade and separate
+THB-company acceptance. The initial source checksum file remains provenance for
+the original snapshot, before these documented follow-up source changes.
