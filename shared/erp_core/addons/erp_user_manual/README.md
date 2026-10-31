@@ -61,3 +61,18 @@ verifies new-tab actions, opens all 16 HTML pages, checks images and search,
 checks representative mobile/print layouts, and fails on browser runtime errors.
 It does not approve, edit or post business records. Login credentials are read
 from a protected file and are never included in retained traces or output.
+
+## Currency FAQ (20.0.1.1.0)
+
+All 15 application guides and the directory include a Thai currency FAQ with
+company setup steps, the accounting-history lock, a separate THB trial company,
+document-currency changes, multi-currency permissions and rates, dashboard
+context, and the distinction between currency conversion and display symbols.
+Each guide explains its own currency source, including applications with no
+independent currency field. The FAQ is static HTML, searchable in the existing
+page search and included when printing; it adds no business data or privileges.
+
+The procedures were checked against the installed native company, accounting,
+purchase and expense sources plus the ERP request, budget, contract, inventory
+and asset currency fields. Menu URLs carry a new content revision to refresh
+previously cached manual pages.

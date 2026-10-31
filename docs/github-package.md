@@ -74,3 +74,12 @@ the original snapshot, before these documented follow-up source changes.
 ERP Budget `20.0.2.27.2` consolidates its two duplicate Settings tabs into one,
 retaining both setting blocks and all company values. See
 [budget-settings.md](budget-settings.md) for scoped upgrade acceptance.
+
+## Currency FAQ follow-up
+
+ERP User Guides `20.0.1.1.0` adds a searchable and printable Thai currency FAQ
+to all 15 application guides and the directory. It distinguishes company and
+document currencies, covers accounting-history restrictions and a separate THB
+trial company, and explains each application's currency source. See
+[user-manuals.md](user-manuals.md) for scoped validation. Existing screenshots,
+business logic and access controls are preserved.

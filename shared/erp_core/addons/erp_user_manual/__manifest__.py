@@ -1,6 +1,6 @@
 {
     'name': 'NSTDA eGov — คู่มือการใช้งาน',
-    'version': '20.0.1.0.0',
+    'version': '20.0.1.1.0',
     'summary': 'Thai HTML guides for the integrated government ERP applications',
     'author': 'GovOpsDev',
     'license': 'AGPL-3',

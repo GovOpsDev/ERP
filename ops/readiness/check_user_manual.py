@@ -42,6 +42,7 @@ def check():
         assert not doc.errors, (path.name, doc.errors)
         documents[path.resolve()] = doc
     assert len(documents) == 16
+    assert all('currency-faq' in doc.ids and '#currency-faq' in doc.links for doc in documents.values()), 'Currency FAQ or navigation missing'
     references = 0
     for path, doc in documents.items():
         for link in doc.links:
@@ -73,7 +74,8 @@ def check():
     manifest = ast.literal_eval((ADDON / '__manifest__.py').read_text())
     assert manifest['data'] == ['views/manual_menus.xml'] and not manifest['application']
     return {'guides': len(guides), 'html_pages': len(documents), 'menus': len(menus),
-            'images': sum(d.images for d in documents.values()), 'checked_local_references': references}
+            'images': sum(d.images for d in documents.values()), 'checked_local_references': references,
+            'currency_faq_pages': sum('currency-faq' in d.ids for d in documents.values())}
 
 if __name__ == '__main__':
     print(json.dumps(check(), ensure_ascii=False))
