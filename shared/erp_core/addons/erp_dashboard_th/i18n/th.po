@@ -207,7 +207,7 @@ msgstr " จาก "
 
 #. module: erp_dashboard_th
 #. odoo-javascript
-#: code:addons/spreadsheet/static/src/components/spreadsheet_share_button/spreadsheet_share_button.xml:0
+#: code:addons/spreadsheet/static/src/components/share_button/share_button.xml:0
 msgid "Share"
 msgstr "แบ่งปัน"
 
