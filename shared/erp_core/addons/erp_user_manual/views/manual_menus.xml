@@ -1,0 +1,92 @@
+<odoo>
+  <record id="action_manual_organization" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — หน่วยงาน</field>
+    <field name="url">/erp_user_manual/static/manual/organization.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_organization" name="คู่มือการใช้งาน" parent="erp_organization.menu_organization_root" action="action_manual_organization" groups="base.group_user" sequence="990"/>
+  <record id="action_manual_budget" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ข้อมูลงบประมาณพื้นฐาน</field>
+    <field name="url">/erp_user_manual/static/manual/budget.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_budget" name="คู่มือการใช้งาน" parent="erp_budget.menu_budget_root" action="action_manual_budget" groups="erp_budget.group_budget_user" sequence="990"/>
+  <record id="action_manual_procurement" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ใบขอซื้อ</field>
+    <field name="url">/erp_user_manual/static/manual/procurement.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_procurement" name="คู่มือการใช้งาน" parent="erp_procurement.menu_procurement_root" action="action_manual_procurement" groups="erp_procurement.group_procurement_user" sequence="990"/>
+  <record id="action_manual_purchase" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — สั่งซื้อ</field>
+    <field name="url">/erp_user_manual/static/manual/purchase.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_purchase" name="คู่มือการใช้งาน" parent="purchase.menu_purchase_root" action="action_manual_purchase" groups="purchase.group_purchase_user" sequence="990"/>
+  <record id="action_manual_finance" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ออกใบแจ้งหนี้และการเงิน</field>
+    <field name="url">/erp_user_manual/static/manual/finance.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_finance" name="คู่มือการใช้งาน" parent="account.menu_finance" action="action_manual_finance" groups="account.group_account_invoice,account.group_account_readonly" sequence="990"/>
+  <record id="action_manual_agreements" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ข้อตกลงและสัญญา</field>
+    <field name="url">/erp_user_manual/static/manual/agreements.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_agreements" name="คู่มือการใช้งาน" parent="erp_contract.agreement_root" action="action_manual_agreements" groups="erp_contract.group_contract_user" sequence="990"/>
+  <record id="action_manual_guarantees" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — หลักประกันการจัดซื้อ</field>
+    <field name="url">/erp_user_manual/static/manual/guarantees.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_guarantees" name="คู่มือการใช้งาน" parent="erp_contract.guarantee_menu_root" action="action_manual_guarantees" groups="erp_contract.group_contract_user" sequence="990"/>
+  <record id="action_manual_acceptance" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ตรวจรับงาน</field>
+    <field name="url">/erp_user_manual/static/manual/acceptance.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_acceptance" name="คู่มือการใช้งาน" parent="erp_inventory.acceptance_root" action="action_manual_acceptance" groups="erp_inventory.group_acceptance_user" sequence="990"/>
+  <record id="action_manual_stock_requests" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — คำขอเบิกสินค้า</field>
+    <field name="url">/erp_user_manual/static/manual/stock_requests.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_stock_requests" name="คู่มือการใช้งาน" parent="erp_inventory.stock_request_root" action="action_manual_stock_requests" groups="erp_inventory.group_stock_request_user" sequence="990"/>
+  <record id="action_manual_warehouse" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — คลังสินค้า</field>
+    <field name="url">/erp_user_manual/static/manual/warehouse.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_warehouse" name="คู่มือการใช้งาน" parent="stock.menu_stock_root" action="action_manual_warehouse" groups="stock.group_stock_user" sequence="990"/>
+  <record id="action_manual_assets" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — ทรัพย์สิน</field>
+    <field name="url">/erp_user_manual/static/manual/assets.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_assets" name="คู่มือการใช้งาน" parent="erp_asset.asset_root" action="action_manual_assets" groups="erp_asset.group_asset_user" sequence="990"/>
+  <record id="action_manual_employees" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — พนักงาน</field>
+    <field name="url">/erp_user_manual/static/manual/employees.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_employees" name="คู่มือการใช้งาน" parent="hr.menu_hr_root" action="action_manual_employees" groups="base.group_user" sequence="990"/>
+  <record id="action_manual_expenses" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — รายจ่าย</field>
+    <field name="url">/erp_user_manual/static/manual/expenses.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_expenses" name="คู่มือการใช้งาน" parent="hr_expense.menu_hr_expense_root" action="action_manual_expenses" groups="base.group_user" sequence="990"/>
+  <record id="action_manual_chat" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — แชท</field>
+    <field name="url">/erp_user_manual/static/manual/chat.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_chat" name="คู่มือการใช้งาน" parent="mail.menu_root_discuss" action="action_manual_chat" groups="base.group_user_regular" sequence="990"/>
+  <record id="action_manual_dashboards" model="ir.actions.act_url">
+    <field name="name">คู่มือการใช้งาน — แดชบอร์ด</field>
+    <field name="url">/erp_user_manual/static/manual/dashboards.html?v=20261031</field>
+    <field name="target">new</field>
+  </record>
+  <menuitem id="menu_manual_dashboards" name="คู่มือการใช้งาน" parent="spreadsheet_dashboard.spreadsheet_dashboard_menu_root" action="action_manual_dashboards" groups="base.group_user_regular" sequence="990"/>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id,group_id/id,operation,domain
+hr_department_organization_restriction,Department organization boundary,hr.department,,crud,"[(1, '=', 1)] if user.has_group('erp_organization.group_organization_manager') else ['|', ('organization_unit_id', '=', False), '&', ('organization_unit_id.active', '=', True), ('organization_unit_id.assignment_ids.user_id', '=', user.id)]"

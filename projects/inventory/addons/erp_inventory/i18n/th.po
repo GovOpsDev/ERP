@@ -1,0 +1,1917 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A completed or cancelled transfer cannot change its work acceptance."
+msgstr "การโอนที่เสร็จสิ้นหรือยกเลิกแล้วไม่สามารถเปลี่ยนรายการตรวจรับงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "A confirmed purchase order is required."
+msgstr "ต้องมีใบสั่งซื้อที่ยืนยันแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "A draft acceptance with lines is required."
+msgstr "ต้องมีเอกสารตรวจรับสถานะร่างพร้อมรายการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid ""
+"A fine uses its original revenue account without purchase, contract, tax or Budget dimensions."
+msgstr "ค่าปรับใช้บัญชีรายได้เดิมโดยไม่ใช้มิติจัดซื้อ สัญญา ภาษี หรืองบประมาณ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A line cannot be added to an accepted completed receipt."
+msgstr "ไม่สามารถเพิ่มรายการในเอกสารรับสินค้าที่เสร็จสิ้นและตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A line on an accepted completed receipt cannot be deleted."
+msgstr "ไม่สามารถลบรายการจากเอกสารรับสินค้าที่เสร็จสิ้นและตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A move cannot be added to an accepted completed receipt."
+msgstr "ไม่สามารถเพิ่มการเคลื่อนไหวในเอกสารรับสินค้าที่เสร็จสิ้นและตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A move on an accepted completed receipt cannot be deleted."
+msgstr "ไม่สามารถลบการเคลื่อนไหวจากเอกสารรับสินค้าที่เสร็จสิ้นและตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "A plan with acceptance history cannot be deleted."
+msgstr "ไม่สามารถลบแผนที่มีประวัติการตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "A plan with acceptance history retains its dates and percentages."
+msgstr "แผนที่มีประวัติการตรวจรับต้องคงวันที่และร้อยละเดิม"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "A purchase order with accepted work cannot be cancelled or reset."
+msgstr "ไม่สามารถยกเลิกหรือคืนสถานะใบสั่งซื้อที่ตรวจรับงานแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A work acceptance cannot be reused within one bill batch."
+msgstr "ไม่สามารถใช้เอกสารตรวจรับเดียวกันซ้ำในชุดใบเรียกเก็บเงินเดียวกัน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "A work acceptance cannot be reused within one transfer batch."
+msgstr "ไม่สามารถใช้เอกสารตรวจรับเดียวกันซ้ำในชุดการโอนเดียวกัน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "Accept a planned work document before creating its installment bill."
+msgstr "ต้องตรวจรับเอกสารงานตามแผนก่อนสร้างใบเรียกเก็บเงินประจำงวด"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Accept the work with a positive fine before creating its charge."
+msgstr "ต้องตรวจรับงานที่มีค่าปรับมากกว่าศูนย์ก่อนสร้างรายการเรียกเก็บ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_contract_invoice_plan__acceptance_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_procurement_invoice_plan__acceptance_ids
+msgid "Acceptance"
+msgstr "การตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__acceptance_date
+msgid "Acceptance Date"
+msgstr "วันที่ตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__responsible_id
+msgid "Acceptance Representative"
+msgstr "ผู้แทนตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_res_company__erp_wa_fines_rate
+msgid "Acceptance fines per day"
+msgstr "ค่าปรับการตรวจรับต่อวัน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_res_company__erp_wa_fines_account_id
+msgid "Acceptance fines revenue account"
+msgstr "บัญชีรายได้ค่าปรับการตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Acceptance management is required to charge a fine."
+msgstr "ต้องมีสิทธิ์จัดการการตรวจรับงานเพื่อเรียกเก็บค่าปรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Acceptance management is required to select a manual accepted date."
+msgstr "ต้องมีสิทธิ์จัดการการตรวจรับงานเพื่อระบุวันที่ตรวจรับเอง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Acceptance management is required."
+msgstr "ต้องมีสิทธิ์จัดการการตรวจรับงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Acceptance manager capability is required."
+msgstr "ต้องมีสิทธิ์ผู้จัดการการตรวจรับงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Acceptance must start in draft."
+msgstr "การตรวจรับต้องเริ่มจากสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "Acceptance must use a regular installment on its purchase order."
+msgstr "การตรวจรับต้องใช้งวดปกติของใบสั่งซื้อนั้น"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_acceptance_name_company_unique
+msgid "Acceptance number must be unique per company."
+msgstr "เลขที่ตรวจรับต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Acceptance review history is immutable."
+msgstr "ไม่สามารถแก้ไขประวัติการตรวจทานการตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_review_wa_review_unique
+msgid "Acceptance review order must be unique per round."
+msgstr "ลำดับตรวจทานการตรวจรับต้องไม่ซ้ำกันในแต่ละรอบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Acceptance reviewers require active acceptance management capability."
+msgstr "ผู้ตรวจทานการตรวจรับต้องมีสิทธิ์จัดการการตรวจรับงานที่ใช้งานอยู่"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Acceptance workflow history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติขั้นตอนการตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Acceptance workflow history is generated by actions."
+msgstr "ประวัติขั้นตอนการตรวจรับสร้างจากการดำเนินการของระบบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_acceptance__state__accept
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_committee__status__accept
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_evaluation__state_required__accept
+msgid "Accepted"
+msgstr "ตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Accepted quantity cannot exceed the ordered quantity."
+msgstr "จำนวนที่ตรวจรับต้องไม่เกินจำนวนที่สั่งซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__active
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Add lines only to draft stock requests."
+msgstr "เพิ่มรายการได้เฉพาะคำขอเบิกสินค้าสถานะร่าง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_res_company__erp_stock_request_virtual_location
+msgid "Allow Customer Stock Request Destinations"
+msgstr "อนุญาตปลายทางคำขอเบิกสำหรับลูกค้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_product_category__erp_allow_negative_stock
+#: model:ir.model.fields,field_description:erp_inventory.field_product_product__erp_allow_negative_stock
+#: model:ir.model.fields,field_description:erp_inventory.field_product_template__erp_allow_negative_stock
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_location__erp_allow_negative_stock
+msgid "Allow Negative Stock"
+msgstr "อนุญาตสินค้าคงเหลือติดลบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "An accepted document in the incoming transfer company is required."
+msgstr "ต้องมีเอกสารที่ตรวจรับแล้วในบริษัทผู้รับโอน"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_evaluation_result_wa_case_unique
+msgid "An evaluation case occurs once per acceptance."
+msgstr "กรณีประเมินมีได้หนึ่งรายการต่อการตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__analytic_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__analytic_id
+msgid "Analytic"
+msgstr "บัญชีวิเคราะห์"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Approve / Fulfill"
+msgstr "อนุมัติ / ดำเนินการ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Approve Review"
+msgstr "อนุมัติผลตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__approve_role
+msgid "Approve Role"
+msgstr "อนุมัติบทบาท"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Archived cards cannot request stock."
+msgstr "บัตรที่เก็บถาวรแล้วไม่สามารถขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__barcode
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__barcode
+msgid "Barcode"
+msgstr "บาร์โค้ด"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking_type__erp_bypass_wa
+msgid "Bypass Work Acceptance"
+msgstr "ข้ามการตรวจรับงาน"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_scan_form
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Cancel a census before restarting."
+msgstr "ต้องยกเลิกการสำรวจก่อนเริ่มใหม่"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Cancel fine documents instead of deleting accounting provenance."
+msgstr "ให้ยกเลิกเอกสารค่าปรับแทนการลบที่มาทางบัญชี"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Cancel live fulfillment before resetting a stock request."
+msgstr "ต้องยกเลิกการจ่ายสินค้าที่กำลังดำเนินการก่อนคืนสถานะคำขอเบิก"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Cancel purchasing and retain completed stock movements before closing their request."
+msgstr "ต้องยกเลิกการจัดซื้อและเก็บการเคลื่อนไหวสินค้าที่เสร็จแล้วก่อนปิดคำขอ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Cancel related receipts, bills and fine charges before cancelling or resetting acceptance."
+msgstr ""
+"ต้องยกเลิกเอกสารรับสินค้า ใบเรียกเก็บเงิน "
+"และรายการค่าปรับที่เกี่ยวข้องก่อนยกเลิกหรือคืนสถานะการตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_acceptance__state__cancel
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_card_census__state__cancelled
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_request__state__cancel
+msgid "Cancelled"
+msgstr "ยกเลิกแล้ว"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__card_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__card_id
+msgid "Card"
+msgstr "บัตร"
+
+#. module: erp_inventory
+#: model:ir.ui.menu,name:erp_inventory.card_census_menu
+msgid "Card Inventories"
+msgstr "การตรวจนับบัตร"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Card census history is generated by workflow."
+msgstr "ประวัติการสำรวจบัตรสร้างจากขั้นตอนการทำงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Card company is immutable."
+msgstr "ไม่สามารถเปลี่ยนบริษัทของบัตร"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_card_card_name_unique
+msgid "Card names must be unique within company."
+msgstr "ชื่อบัตรต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Card provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของบัตร"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Card warehouse and organization must belong to its company."
+msgstr "คลังสินค้าและหน่วยงานของบัตรต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Cards require goods and a positive quantity in a compatible unit."
+msgstr "บัตรต้องระบุสินค้าและจำนวนมากกว่าศูนย์ในหน่วยที่ใช้ร่วมกันได้"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__case_id
+msgid "Case"
+msgstr "กรณี"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__census_id
+msgid "Census"
+msgstr "การสำรวจ"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_committee__approve_role__chairman
+msgid "Chairman"
+msgstr "ประธานกรรมการ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Check Completion"
+msgstr "ตรวจสอบความครบถ้วน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Choose a customer invoice or supplier credit note."
+msgstr "เลือกใบแจ้งหนี้ลูกค้าหรือใบลดหนี้ผู้ขาย"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Choose an internal, transit or configured customer destination in this company."
+msgstr "เลือกปลายทางภายใน ระหว่างทาง หรือปลายทางลูกค้าที่กำหนดไว้ในบริษัทนี้"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Close"
+msgstr "ปิด"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Close a finished census."
+msgstr "ปิดการสำรวจที่เสร็จแล้ว"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_card_census__state__closed
+msgid "Closed"
+msgstr "ปิดแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Closed census history remains final."
+msgstr "ประวัติการสำรวจที่ปิดแล้วเป็นข้อมูลสิ้นสุด"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__committee_ids
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_committee__approve_role__committee
+msgid "Committee"
+msgstr "คณะกรรมการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Committee identities are frozen during review."
+msgstr "ไม่สามารถเปลี่ยนตัวกรรมการระหว่างตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_committee_wa_name_unique
+msgid "Committee names must be unique within acceptance."
+msgstr "ชื่อกรรมการต้องไม่ซ้ำกันในการตรวจรับเดียวกัน"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Committees"
+msgstr "คณะกรรมการ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__company_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Complete the required supplier evaluations before accepting work."
+msgstr "ต้องประเมินผู้ขายตามที่กำหนดให้ครบก่อนตรวจรับงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_provenance.py:0
+msgid "Completed stock details retain their provenance."
+msgstr "รายละเอียดสินค้าที่เสร็จสิ้นแล้วต้องคงที่มาเดิม"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_provenance.py:0
+msgid "Completed stock movements retain their fund and analytic provenance."
+msgstr "การเคลื่อนไหวสินค้าที่เสร็จสิ้นแล้วต้องคงที่มาของแหล่งเงินและบัญชีวิเคราะห์"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__completeness
+msgid "Completeness"
+msgstr "ความครบถ้วน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Configure a sales or purchase journal for this fine."
+msgstr "โปรดกำหนดสมุดรายวันขายหรือซื้อสำหรับค่าปรับนี้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Configure a supported card barcode format."
+msgstr "โปรดกำหนดรูปแบบบาร์โค้ดบัตรที่รองรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Configure the acceptance fines revenue account."
+msgstr "โปรดกำหนดบัญชีรายได้ค่าปรับการตรวจรับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.purchase_plan_acceptance
+msgid "Create / Open Acceptance"
+msgstr "สร้าง / เปิดรายการตรวจรับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_fines_form
+msgid "Create Fine Invoice"
+msgstr "สร้างใบแจ้งหนี้ค่าปรับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_fines_form
+msgid "Create Fine Vendor Credit"
+msgstr "สร้างใบลดหนี้ค่าปรับจากผู้ขาย"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Create Installment Bill"
+msgstr "สร้างใบเรียกเก็บเงินตามงวด"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Create committee identities before review."
+msgstr "ต้องกำหนดตัวกรรมการก่อนตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__create_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__create_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__currency_id
+msgid "Currency"
+msgstr "สกุลเงิน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__date_due
+msgid "Date Due"
+msgstr "วันครบกำหนด"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__date_receive
+msgid "Date Receive"
+msgstr "วันที่รับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__date_verified
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__date_verified
+msgid "Date Verified"
+msgstr "วันที่ตรวจสอบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__decided_at
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__decided_at
+msgid "Decided At"
+msgstr "เวลาที่ตัดสินใจ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__decided_by_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__decided_by_id
+msgid "Decided By"
+msgstr "ผู้ตัดสินใจ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__delivered_qty
+msgid "Delivered Qty"
+msgstr "จำนวนที่ส่งมอบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__dimension_ids
+msgid "Dimension"
+msgstr "มิติ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_account_partial_reconcile__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_procurement_tier__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_product_category__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_product_template__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_location__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move_line__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking_type__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_quant__display_name
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_rule__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_request__state__done
+msgid "Done"
+msgstr "เสร็จสิ้น"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_acceptance__state__draft
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_card_census__state__draft
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_evaluation__state_required__draft
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_request__state__draft
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__employee_id
+msgid "Employee"
+msgstr "พนักงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Enable virtual customer destinations in the company configuration."
+msgstr "โปรดเปิดใช้ปลายทางลูกค้าเสมือนในการกำหนดค่าบริษัท"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_analytic_id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move_line__erp_analytic_id
+msgid "Erp Analytic"
+msgstr "บัญชีวิเคราะห์"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_analytic_distribution
+msgid "Erp Analytic Distribution"
+msgstr "การกระจายบัญชีวิเคราะห์"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_dimension_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move_line__erp_dimension_ids
+msgid "Erp Dimension"
+msgstr "มิติ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_distribution_key
+msgid "Erp Distribution Key"
+msgstr "รหัสการกระจาย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_account_bank_statement_line__erp_fine_account_id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_move__erp_fine_account_id
+msgid "Erp Fine Account"
+msgstr "บัญชีค่าปรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_fund_id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move_line__erp_fund_id
+msgid "Erp Fund"
+msgstr "แหล่งเงิน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_account_bank_statement_line__erp_late_acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_move__erp_late_acceptance_id
+msgid "Erp Late Acceptance"
+msgstr "การตรวจรับล่าช้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_purchase_order__erp_stock_request_line_id
+#: model:ir.model.fields,field_description:erp_inventory.field_purchase_order_line__erp_stock_request_line_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__erp_stock_request_line_id
+msgid "Erp Stock Request Line"
+msgstr "รายการคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Evaluate at the configured acceptance stage."
+msgstr "ให้ประเมินในขั้นตอนตรวจรับที่กำหนด"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__evaluation_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__evaluation_id
+msgid "Evaluation"
+msgstr "การประเมิน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Evaluation identity is immutable."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุการประเมิน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "Every bill product line must match a product and unit on the acceptance purchase order."
+msgstr "รายการสินค้าในใบเรียกเก็บเงินทุกรายการต้องตรงกับสินค้าและหน่วยในใบสั่งซื้อของเอกสารตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Every line requires a positive quantity and a product line from the purchase order."
+msgstr "ทุกรายการต้องมีจำนวนมากกว่าศูนย์และรายการสินค้าจากใบสั่งซื้อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "Every picked line must match the ordered product and unit."
+msgstr "รายการสินค้าที่หยิบทุกรายการต้องตรงกับสินค้าและหน่วยที่สั่ง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "Every transfer move must match a product and unit on the acceptance purchase order."
+msgstr "การเคลื่อนไหวการโอนทุกรายการต้องตรงกับสินค้าและหน่วยในใบสั่งซื้อของเอกสารตรวจรับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Expected Cards"
+msgstr "บัตรที่คาดไว้"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__expected_date
+msgid "Expected Date"
+msgstr "วันที่คาดหมาย"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Fine provenance is created through the acceptance action."
+msgstr "ระบบสร้างที่มาของค่าปรับผ่านคำสั่งตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Fine provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของค่าปรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Fine rates must be finite and nonnegative."
+msgstr "อัตราค่าปรับต้องเป็นจำนวนจำกัดและไม่ติดลบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Fine reversals cannot exceed their original charge."
+msgstr "การกลับรายการค่าปรับต้องไม่เกินยอดเรียกเก็บต้นฉบับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Fine terms with accounting history are immutable."
+msgstr "ไม่สามารถแก้ไขเงื่อนไขค่าปรับที่มีประวัติทางบัญชี"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__fines_invoice_ids
+msgid "Fines Invoice"
+msgstr "ใบแจ้งหนี้ค่าปรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__fines_rate
+msgid "Fines Rate"
+msgstr "อัตราค่าปรับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Finish"
+msgstr "เสร็จสิ้น"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Finish an in-progress census."
+msgstr "ให้ดำเนินการสำรวจที่กำลังทำอยู่ให้เสร็จ"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_card_census__state__finished
+msgid "Finished"
+msgstr "เสร็จสิ้นแล้ว"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_account_full_reconcile
+msgid "Full Reconcile"
+msgstr "การกระทบยอดเต็มจำนวน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__fund_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__fund_id
+msgid "Fund"
+msgstr "แหล่งเงิน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Generate stock request moves through native procurement."
+msgstr "ให้สร้างการเคลื่อนไหวคำขอเบิกสินค้าผ่านขั้นตอนจัดซื้อของระบบ"
+
+#. module: erp_inventory
+#: model:ir.module.module,shortdesc:base.module_erp_inventory
+msgid "Government ERP Work Acceptance"
+msgstr "การตรวจรับงานภาครัฐ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__history
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__history
+msgid "History"
+msgstr "ประวัติ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_account_full_reconcile__id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_move__id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_partial_reconcile__id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_payment__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__id
+#: model:ir.model.fields,field_description:erp_inventory.field_product_category__id
+#: model:ir.model.fields,field_description:erp_inventory.field_product_template__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_location__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_move_line__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking_type__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_quant__id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_rule__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Identity and state cannot be edited directly."
+msgstr "ไม่สามารถแก้ไขตัวระบุและสถานะโดยตรง"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_card_census__state__in_progress
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_request__state__open
+msgid "In progress"
+msgstr "กำลังดำเนินการ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__installment_id
+msgid "Installment"
+msgstr "งวด"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Invalid Kanban barcode checksum."
+msgstr "ผลตรวจสอบบาร์โค้ดคัมบังไม่ถูกต้อง"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_location
+msgid "Inventory Location"
+msgstr "สถานที่จัดเก็บสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_provenance.py:0
+msgid "Inventory management is required to allow negative stock."
+msgstr "ต้องมีสิทธิ์จัดการคลังสินค้าเพื่ออนุญาตสินค้าคงเหลือติดลบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Inventory management is required to configure acceptance bypass."
+msgstr "ต้องมีสิทธิ์จัดการคลังสินค้าเพื่อตั้งค่าข้ามการตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_provenance.py:0
+msgid "Inventory management is required to configure negative stock."
+msgstr "ต้องมีสิทธิ์จัดการคลังสินค้าเพื่อตั้งค่าสินค้าคงเหลือติดลบ"
+
+#. module: erp_inventory
+#: model:ir.actions.act_window,name:erp_inventory.card_census_action
+#: model:ir.model,name:erp_inventory.model_erp_inventory_card_census
+msgid "Kanban Card Inventory"
+msgstr "การตรวจนับบัตรคัมบัง"
+
+#. module: erp_inventory
+#: model:ir.actions.act_window,name:erp_inventory.card_action
+#: model:ir.ui.menu,name:erp_inventory.card_menu
+msgid "Kanban Cards"
+msgstr "บัตรคัมบัง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__write_uid
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_scan__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__write_date
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__late_days
+msgid "Late Days"
+msgstr "จำนวนวันล่าช้า"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_fines_form
+msgid "Late Delivery Fine"
+msgstr "ค่าปรับส่งมอบล่าช้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Late days, daily rate and fine must be finite and nonnegative."
+msgstr "จำนวนวันล่าช้า อัตราต่อวัน และค่าปรับต้องเป็นจำนวนจำกัดและไม่ติดลบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__fines_late
+msgid "Late delivery fine"
+msgstr "ค่าปรับส่งมอบล่าช้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Late delivery fine: %s"
+msgstr "ค่าปรับส่งมอบล่าช้า: %s"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__line_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__line_ids
+msgid "Line"
+msgstr "รายการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Link accepted work before completing this configured incoming receipt."
+msgstr "ต้องเชื่อมงานที่ตรวจรับแล้วก่อนดำเนินการรับสินค้าขาเข้านี้ให้เสร็จ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__location_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__location_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__location_id
+msgid "Location"
+msgstr "สถานที่"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__lock_version
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__lock_version
+msgid "Lock Version"
+msgstr "รุ่นการล็อก"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__requested_acceptance_date
+msgid "Manual Acceptance Date"
+msgstr "วันที่ตรวจรับที่ระบุเอง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__missing_ids
+msgid "Missing"
+msgstr "ขาด"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Missing Cards"
+msgstr "บัตรที่ขาด"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__move_ids
+msgid "Move"
+msgstr "รายการเคลื่อนไหว"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__name
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_provenance.py:0
+msgid "Negative stock is not allowed for %(product)s at %(location)s."
+msgstr "ไม่อนุญาตให้ %(product)s มียอดคงเหลือติดลบที่ %(location)s"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "No quantity remains for this acceptance."
+msgstr "ไม่มีจำนวนคงเหลือสำหรับการตรวจรับนี้"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_committee__status__not_accept
+msgid "Not accepted"
+msgstr "ยังไม่ตรวจรับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__note
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__note
+msgid "Note"
+msgstr "หมายเหตุ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__notes
+msgid "Notes"
+msgstr "หมายเหตุ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "One accepted work document is required per installment."
+msgstr "แต่ละงวดต้องมีเอกสารงานที่ตรวจรับแล้วหนึ่งฉบับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "Only a draft bill can change its work acceptance."
+msgstr "เปลี่ยนเอกสารตรวจรับได้เฉพาะใบเรียกเก็บเงินสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Only draft acceptance lines can be deleted."
+msgstr "ลบได้เฉพาะรายการตรวจรับสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Only draft acceptance lines can be edited."
+msgstr "แก้ไขได้เฉพาะรายการตรวจรับสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Only draft acceptances can be cancelled."
+msgstr "ยกเลิกได้เฉพาะการตรวจรับสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Only draft acceptances can be deleted."
+msgstr "ลบได้เฉพาะการตรวจรับสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Only draft acceptances can be edited."
+msgstr "แก้ไขได้เฉพาะการตรวจรับสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Only draft census filters can change."
+msgstr "เปลี่ยนตัวกรองได้เฉพาะการสำรวจสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Only draft committee results can change."
+msgstr "เปลี่ยนผลกรรมการได้เฉพาะสถานะร่าง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Only one live original fine charge is allowed."
+msgstr "มีรายการเรียกเก็บค่าปรับต้นฉบับที่ใช้งานได้เพียงหนึ่งรายการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Only stock request management may request on behalf of another user."
+msgstr "เฉพาะผู้จัดการคำขอเบิกสินค้าเท่านั้นที่ขอแทนผู้ใช้อื่นได้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Only the committee member or acceptance manager may record this result."
+msgstr "เฉพาะกรรมการหรือผู้จัดการการตรวจรับเท่านั้นที่บันทึกผลนี้ได้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Only the next acceptance reviewer may approve."
+msgstr "เฉพาะผู้ตรวจทานการตรวจรับลำดับถัดไปเท่านั้นที่อนุมัติได้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Only the next acceptance reviewer may reject."
+msgstr "เฉพาะผู้ตรวจทานการตรวจรับลำดับถัดไปเท่านั้นที่ปฏิเสธได้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Only the next reviewer may reject this submission."
+msgstr "เฉพาะผู้ตรวจทานลำดับถัดไปเท่านั้นที่ปฏิเสธรายการที่ส่งนี้ได้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Only the next stock request reviewer may approve."
+msgstr "เฉพาะผู้ตรวจทานคำขอเบิกสินค้าลำดับถัดไปเท่านั้นที่อนุมัติได้"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__organization_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_committee__status__other
+msgid "Other"
+msgstr "อื่น ๆ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__paperless
+msgid "Paperless"
+msgstr "ไร้กระดาษ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_purchase_order__erp_wa_paperless
+msgid "Paperless Work Acceptance"
+msgstr "การตรวจรับงานแบบไร้กระดาษ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_picking_type
+msgid "Picking Type"
+msgstr "ประเภทการเคลื่อนย้าย"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_product_template
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__product_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__product_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__product_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__product_id
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_product_category
+msgid "Product Category"
+msgstr "หมวดสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "รายการเคลื่อนไหวสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_procurement_invoice_plan
+msgid "Purchase Invoice Plan"
+msgstr "แผนวางบิลจัดซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__purchase_line_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__purchase_line_ids
+msgid "Purchase Line"
+msgstr "รายการจัดซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_purchase_order
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__purchase_order_id
+msgid "Purchase Order"
+msgstr "ใบสั่งซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_procurement_tier
+msgid "Purchase Request Approval Tier"
+msgstr "ลำดับอนุมัติใบขอซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_acceptance
+msgid "Purchase Work Acceptance"
+msgstr "การตรวจรับงานจัดซื้อ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_acceptance_line
+msgid "Purchase Work Acceptance Line"
+msgstr "รายการตรวจรับงานจัดซื้อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "Purchase order, organization and acceptance companies must match."
+msgstr "บริษัทของใบสั่งซื้อ หน่วยงาน และการตรวจรับต้องตรงกัน"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_quant
+msgid "Quant"
+msgstr "ยอดคงคลัง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__quantity
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__quantity
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__quantity
+msgid "Quantity"
+msgstr "จำนวน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__reference_id
+msgid "Reference"
+msgstr "เลขอ้างอิง"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Reject"
+msgstr "ปฏิเสธ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Reject Review"
+msgstr "ปฏิเสธผลตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__request_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__request_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__request_id
+msgid "Request"
+msgstr "คำขอ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Request Review"
+msgstr "ขอให้ตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__request_snapshot
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__request_snapshot
+msgid "Request Snapshot"
+msgstr "ข้อมูลคำขอ ณ เวลาบันทึก"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_form
+msgid "Request Stock"
+msgstr "ขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__requested_by
+msgid "Requested By"
+msgstr "ผู้ร้องขอ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Requested Goods"
+msgstr "สินค้าที่ขอ"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_evaluate_acceptance
+msgid "Require Supplier Evaluation on Work Acceptance"
+msgstr "กำหนดให้ประเมินผู้ขายเมื่อตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_require_acceptance_receipt
+msgid "Require Work Acceptance on Purchase Receipts"
+msgstr "กำหนดให้ตรวจรับงานก่อนรับสินค้าจัดซื้อ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Reset"
+msgstr "คืนค่า"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Reset / Restart Reviews"
+msgstr "คืนค่า / เริ่มการตรวจทานใหม่"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Reset an unused stock request before changing its terms."
+msgstr "ต้องคืนสถานะคำขอเบิกสินค้าที่ยังไม่ใช้ก่อนเปลี่ยนเงื่อนไข"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Reset reviews before changing accepted quantities."
+msgstr "ต้องคืนสถานะการตรวจทานก่อนเปลี่ยนจำนวนที่ตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Reset the acceptance reviews before changing reviewed terms."
+msgstr "ต้องคืนสถานะการตรวจทานการตรวจรับก่อนเปลี่ยนเงื่อนไขที่ตรวจทานแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "Reset the posted installment bill before linking acceptance."
+msgstr "ต้องคืนสถานะใบเรียกเก็บเงินประจำงวดที่ลงบัญชีแล้วก่อนเชื่อมการตรวจรับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Retain card census history."
+msgstr "ต้องเก็บประวัติการสำรวจบัตร"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Retain evaluated acceptance results."
+msgstr "ต้องเก็บผลการตรวจรับที่ประเมินแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Retain stock fulfillment history."
+msgstr "ต้องเก็บประวัติการจ่ายสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Reverse a posted original fine through native credit notes."
+msgstr "ให้กลับรายการค่าปรับต้นฉบับที่ลงบัญชีแล้วผ่านใบลดหนี้ของระบบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Reverse the fine credits before resetting their original charge."
+msgstr "ต้องกลับรายการเครดิตค่าปรับก่อนคืนสถานะรายการเรียกเก็บต้นฉบับ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__review_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__review_ids
+msgid "Review"
+msgstr "ตรวจทาน"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Review History"
+msgstr "ประวัติการตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__review_round
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__review_round
+msgid "Review Round"
+msgstr "รอบการตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__reviewer_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__reviewer_id
+msgid "Reviewer"
+msgstr "ผู้ตรวจทาน"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Reviews"
+msgstr "การตรวจทาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__round_number
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__round_number
+msgid "Round Number"
+msgstr "หมายเลขรอบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__route_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__route_id
+msgid "Route"
+msgstr "เส้นทาง"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_scan_form
+msgid "Scan"
+msgstr "สแกน"
+
+#. module: erp_inventory
+#: model:ir.ui.menu,name:erp_inventory.card_scan_menu
+msgid "Scan Card"
+msgstr "สแกนบัตร"
+
+#. module: erp_inventory
+#: model:ir.actions.act_window,name:erp_inventory.card_scan_action
+#: model:ir.model,name:erp_inventory.model_erp_inventory_card_scan
+msgid "Scan Kanban Card"
+msgstr "สแกนบัตรคัมบัง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Scan cards while the census is in progress."
+msgstr "ให้สแกนบัตรขณะกำลังสำรวจ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Scan one active card in your allowed company and organization."
+msgstr "สแกนบัตรที่ใช้งานหนึ่งใบในบริษัทและหน่วยงานที่ได้รับอนุญาต"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__scanned_ids
+msgid "Scanned"
+msgstr "สแกนแล้ว"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Scanned Cards"
+msgstr "บัตรที่สแกนแล้ว"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__score_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_result__score_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation_score__score
+msgid "Score"
+msgstr "คะแนน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "Select a regular installment on a confirmed purchase order."
+msgstr "เลือกงวดปกติในใบสั่งซื้อที่ยืนยันแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "Select a revenue account in this company."
+msgstr "เลือกบัญชีรายได้ในบริษัทนี้"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__separate_picking
+msgid "Separate Picking"
+msgstr "แยกใบเคลื่อนย้าย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__sequence
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__sequence
+msgid "Sequence"
+msgstr "ลำดับ"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.card_census_form
+msgid "Start"
+msgstr "เริ่ม"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "Start a draft census."
+msgstr "เริ่มการสำรวจสถานะร่าง"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__state
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__state
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__state
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__state
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__state
+msgid "State"
+msgstr "สถานะ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_evaluation__state_required
+msgid "State Required"
+msgstr "ต้องมีสถานะ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_committee__status
+msgid "Status"
+msgstr "สถานะ"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_move
+msgid "Stock Move"
+msgstr "การเคลื่อนไหวสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__stock_request_id
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_procurement_tier__kind__stock_request
+msgid "Stock Request"
+msgstr "คำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_card
+msgid "Stock Request Kanban Card"
+msgstr "บัตรคัมบังคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_request_line
+msgid "Stock Request Line"
+msgstr "รายการคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_stock_request_manager
+msgid "Stock Request Manager"
+msgstr "ผู้จัดการคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_request
+msgid "Stock Request Order"
+msgstr "คำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_request_review
+msgid "Stock Request Review"
+msgstr "การตรวจทานคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_stock_request_user
+msgid "Stock Request User"
+msgstr "ผู้ใช้คำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.actions.act_window,name:erp_inventory.stock_request_action
+#: model:ir.ui.menu,name:erp_inventory.stock_request_menu
+#: model:ir.ui.menu,name:erp_inventory.stock_request_root
+msgid "Stock Requests"
+msgstr "คำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_rule
+msgid "Stock Rule"
+msgstr "กฎคลังสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock fulfillment provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของการจ่ายสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request RFQ provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของคำขอใบเสนอราคาจากคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request RFQs are created by procurement rules."
+msgstr "ระบบสร้างคำขอใบเสนอราคาจากคำขอเบิกสินค้าตามกฎจัดซื้อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request fulfillment and review history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการจ่ายสินค้าและการตรวจทานคำขอเบิก"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request identity and history are generated by workflow."
+msgstr "ตัวระบุและประวัติคำขอเบิกสินค้าสร้างจากขั้นตอนการทำงาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request lines and fulfillment provenance are frozen after submission."
+msgstr "รายการคำขอเบิกสินค้าและที่มาการจ่ายสินค้าถูกตรึงหลังส่ง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request management is required."
+msgstr "ต้องมีสิทธิ์จัดการคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_request_name_company_unique
+msgid "Stock request number must be unique per company."
+msgstr "เลขที่คำขอเบิกสินค้าต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request purchase provenance comes from procurement rules."
+msgstr "ที่มาการจัดซื้อของคำขอเบิกสินค้ามาจากกฎจัดซื้อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock request purchase provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาการจัดซื้อของคำขอเบิกสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.constraint,message:erp_inventory.constraint_erp_inventory_request_review_stock_review_unique
+msgid "Stock request review order must be unique per round."
+msgstr "ลำดับตรวจทานคำขอเบิกสินค้าต้องไม่ซ้ำกันในแต่ละรอบ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock requests require goods, a compatible unit and a positive finite quantity."
+msgstr "คำขอเบิกสินค้าต้องมีสินค้า หน่วยที่ใช้ร่วมกันได้ และจำนวนจำกัดที่มากกว่าศูนย์"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Stock reviewers require active stock request management capability."
+msgstr "ผู้ตรวจทานสินค้าต้องมีสิทธิ์จัดการคำขอเบิกสินค้าที่ใช้งานอยู่"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.stock_request_form
+msgid "Submit"
+msgstr "ส่ง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Submit a draft acceptance with lines."
+msgstr "ให้ส่งเอกสารตรวจรับสถานะร่างที่มีรายการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Submit a draft stock request with lines."
+msgstr "ให้ส่งคำขอเบิกสินค้าสถานะร่างที่มีรายการ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "Submit the stock request before approval."
+msgstr "ต้องส่งคำขอเบิกสินค้าก่อนอนุมัติ"
+
+#. module: erp_inventory
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_inventory_request__state__submitted
+msgid "Submitted"
+msgstr "ส่งแล้ว"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.acceptance_workflow_form
+msgid "Supplier Evaluation"
+msgstr "การประเมินผู้ขาย"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_evaluation
+msgid "Supplier Evaluation Case"
+msgstr "กรณีประเมินผู้ขาย"
+
+#. module: erp_inventory
+#: model:ir.actions.act_window,name:erp_inventory.evaluation_action
+#: model:ir.ui.menu,name:erp_inventory.evaluation_menu
+msgid "Supplier Evaluation Cases"
+msgstr "กรณีประเมินผู้ขาย"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_evaluation_result
+msgid "Supplier Evaluation Result"
+msgstr "ผลประเมินผู้ขาย"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_evaluation_score
+msgid "Supplier Evaluation Score"
+msgstr "คะแนนประเมินผู้ขาย"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "The acceptance number is generated automatically."
+msgstr "ระบบสร้างเลขที่ตรวจรับโดยอัตโนมัติ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "The acceptance representative must belong to the document company."
+msgstr "ผู้แทนตรวจรับต้องอยู่ในบริษัทของเอกสาร"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "The accepted purchase order, company and vendor must match the bill."
+msgstr "ใบสั่งซื้อที่ตรวจรับแล้ว บริษัท และผู้ขายต้องตรงกับใบเรียกเก็บเงิน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "The active organization must match the purchase request organization."
+msgstr "หน่วยงานที่ใช้งานต้องตรงกับหน่วยงานในใบขอซื้อ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "The charge must retain its accepted work, company, vendor, currency and Budget exemption."
+msgstr "รายการเรียกเก็บต้องคงงานที่ตรวจรับ บริษัท ผู้ขาย สกุลเงิน และการยกเว้นงบประมาณ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/acceptance.py:0
+msgid "The company must be active."
+msgstr "บริษัทต้องอยู่ในสถานะใช้งาน"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "The document quantities must match the linked work acceptance."
+msgstr "จำนวนในเอกสารต้องตรงกับเอกสารตรวจรับที่เชื่อมโยง"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "The fine identity and Budget exemption cannot change."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุค่าปรับและการยกเว้นงบประมาณ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/invoice_plan.py:0
+msgid "The installment already has a different acceptance."
+msgstr "งวดนี้มีเอกสารตรวจรับอื่นเชื่อมอยู่แล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/fines.py:0
+msgid "The original charge must equal the accepted fine amount."
+msgstr "ยอดเรียกเก็บต้นฉบับต้องเท่ากับค่าปรับที่ตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "The score must belong to this evaluation case."
+msgstr "คะแนนต้องอยู่ในกรณีประเมินนี้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "The stock request must retain its card organization."
+msgstr "คำขอเบิกสินค้าต้องคงหน่วยงานของบัตร"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/stock_request.py:0
+msgid "The warehouse, requester and active organization must belong to this company."
+msgstr "คลังสินค้า ผู้ร้องขอ และหน่วยงานที่ใช้งานต้องอยู่ในบริษัทนี้"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "This acceptance has already been used by a completed transfer."
+msgstr "เอกสารตรวจรับนี้ถูกใช้ในการโอนที่เสร็จสิ้นแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "This acceptance has already been used by a posted bill."
+msgstr "เอกสารตรวจรับนี้ถูกใช้ในใบเรียกเก็บเงินที่ลงบัญชีแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/kanban.py:0
+msgid "This card is outside the selected census scope."
+msgstr "บัตรนี้อยู่นอกขอบเขตการสำรวจที่เลือก"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_stock_picking
+msgid "Transfer"
+msgstr "โอน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance_line__uom_id
+msgid "Unit"
+msgstr "หน่วย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__uom_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_line__uom_id
+msgid "Uom"
+msgstr "หน่วยนับ"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/integration.py:0
+msgid "Use a stock return instead of editing an accepted completed receipt."
+msgstr "ให้ใช้การคืนสินค้าแทนการแก้ไขเอกสารรับสินค้าที่เสร็จสิ้นและตรวจรับแล้ว"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Used evaluation cases retain their company and required stage."
+msgstr "กรณีประเมินที่ใช้แล้วต้องคงบริษัทและขั้นตอนที่กำหนด"
+
+#. module: erp_inventory
+#. odoo-python
+#: code:addons/erp_inventory/models/workflow.py:0
+msgid "Used evaluation scores are retained for audit."
+msgstr "เก็บคะแนนประเมินที่ใช้แล้วไว้สำหรับตรวจสอบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__partner_id
+msgid "Vendor"
+msgstr "ผู้ขาย"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request_review__verified_by_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_review__verified_by_id
+msgid "Verified By"
+msgstr "ผู้ตรวจสอบ"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card__warehouse_id
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_card_census__warehouse_ids
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_request__warehouse_id
+msgid "Warehouse"
+msgstr "คลังสินค้า"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_account_bank_statement_line__erp_acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_account_move__erp_acceptance_id
+#: model:ir.model.fields,field_description:erp_inventory.field_stock_picking__erp_acceptance_id
+#: model:ir.model.fields.selection,name:erp_inventory.selection__erp_procurement_tier__kind__acceptance
+msgid "Work Acceptance"
+msgstr "การตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_committee
+msgid "Work Acceptance Committee"
+msgstr "คณะกรรมการตรวจรับงาน"
+
+#. module: erp_inventory
+#: model_terms:ir.ui.view,arch_db:erp_inventory.company_fines_form
+msgid "Work Acceptance Fines"
+msgstr "ค่าปรับการตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_acceptance_manager
+msgid "Work Acceptance Manager"
+msgstr "ผู้จัดการการตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:ir.model,name:erp_inventory.model_erp_inventory_review
+msgid "Work Acceptance Review"
+msgstr "การตรวจทานการตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:res.groups,name:erp_inventory.group_acceptance_user
+msgid "Work Acceptance User"
+msgstr "ผู้ใช้การตรวจรับงาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,field_description:erp_inventory.field_erp_inventory_acceptance__workflow_history
+msgid "Workflow History"
+msgstr "ประวัติการดำเนินงาน"
+
+#. module: erp_inventory
+#: model:ir.model.fields,help:erp_inventory.field_erp_inventory_acceptance__partner_id
+msgid "You can find a vendor by its Name, TIN, Email or Internal Reference."
+msgstr "ค้นหาผู้ขายได้จากชื่อ เลขประจำตัวผู้เสียภาษี อีเมล หรือเลขอ้างอิงภายใน"

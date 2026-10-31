@@ -1,0 +1,1788 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "A cancelled purchase cannot create an invoice plan."
+msgstr "การจัดซื้อที่ยกเลิกแล้วไม่สามารถสร้างแผนวางบิล"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "A configured government purchase type requires an active allowed method."
+msgstr "ประเภทการจัดซื้อภาครัฐที่กำหนดไว้ต้องมีวิธีที่อนุญาตและใช้งานอยู่"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "A confirmed agreement, vendor and approved source requests are required."
+msgstr "ต้องมีข้อตกลงที่ยืนยันแล้ว ผู้ขาย และคำขอต้นทางที่อนุมัติแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "A draft request with lines is required."
+msgstr "ต้องมีคำขอสถานะร่างพร้อมรายการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "A linked purchase order line must have a positive subtotal."
+msgstr "รายการใบสั่งซื้อที่เชื่อมโยงต้องมียอดรวมย่อยมากกว่าศูนย์"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "A sourced agreement RFQ must retain its agreement line identities."
+msgstr "คำขอใบเสนอราคาจากข้อตกลงต้องคงตัวระบุรายการข้อตกลงเดิม"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "A sourced purchase agreement cannot change its company or organization."
+msgstr "ข้อตกลงจัดซื้อที่มีต้นทางไม่สามารถเปลี่ยนบริษัทหรือหน่วยงาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "A sourced requisition must preserve its request price currency."
+msgstr "คำขอจัดซื้อที่มีต้นทางต้องคงสกุลเงินราคาของคำขอเดิม"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__account_id
+msgid "Account"
+msgstr "บัญชี"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__active
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__active
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__active
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__activity_id
+msgid "Activity"
+msgstr "กิจกรรม"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__amount
+msgid "Amount"
+msgstr "จำนวนเงิน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "An active confirmed source using invoice plans is required."
+msgstr "ต้องมีต้นทางที่ใช้งานและยืนยันแล้วซึ่งใช้แผนวางบิล"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "An approved request with products is required."
+msgstr "ต้องมีคำขอที่อนุมัติแล้วและมีสินค้า"
+
+#. module: erp_procurement
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_committee_member_unique
+msgid "An employee occurs only once on a request committee."
+msgstr "พนักงานเป็นกรรมการในคำขอเดียวกันได้เพียงครั้งเดียว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "An installment start date is required."
+msgstr "ต้องระบุวันที่เริ่มต้นงวด"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "An invoice plan with accounting history cannot be deleted."
+msgstr "ไม่สามารถลบแผนวางบิลที่มีประวัติทางบัญชี"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "An invoiced plan cannot add installments."
+msgstr "ไม่สามารถเพิ่มงวดในแผนที่ออกใบแจ้งหนี้แล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "An invoiced plan remains linked to its purchase."
+msgstr "แผนที่ออกใบแจ้งหนี้แล้วต้องคงการเชื่อมโยงกับการจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "An organization is required."
+msgstr "ต้องระบุหน่วยงาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__analytic_id
+msgid "Analytic"
+msgstr "บัญชีวิเคราะห์"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_review_form
+msgid "Approval Reviews"
+msgstr "การตรวจทานเพื่ออนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.actions.act_window,name:erp_procurement.action_tiers
+#: model:ir.ui.menu,name:erp_procurement.menu_tiers
+msgid "Approval Tiers"
+msgstr "ลำดับการอนุมัติ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Approval reviews are created only by submission."
+msgstr "การตรวจทานเพื่ออนุมัติสร้างได้จากการส่งรายการเท่านั้น"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/tier.py:0
+msgid "Approval reviews are retained for audit."
+msgstr "เก็บการตรวจทานเพื่ออนุมัติไว้สำหรับตรวจสอบ"
+
+#. module: erp_procurement
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_tier_sequence_company_unique
+msgid "Approval tier sequence must be unique per company and document type."
+msgstr "ลำดับขั้นอนุมัติต้องไม่ซ้ำกันต่อบริษัทและประเภทเอกสาร"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.request_form
+msgid "Approve"
+msgstr "อนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__approve_role
+msgid "Approve Role"
+msgstr "อนุมัติบทบาท"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_review_form
+msgid "Approve Tier"
+msgstr "อนุมัติตามลำดับ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_request_review__state__approved
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_review__state__approved
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_purchase_review__state__approved
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_request__state__approved
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_review__state__approved
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_review_status__approved
+msgid "Approved"
+msgstr "อนุมัติแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__approved_by_id
+msgid "Approved By"
+msgstr "ผู้อนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__assigned_to
+msgid "Assigned To"
+msgstr "มอบหมายให้"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_order_form_request_budget
+msgid "Budget Amount (Company Currency)"
+msgstr "จำนวนเงินงบประมาณ (สกุลเงินบริษัท)"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_budget_manual_rate
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition__erp_budget_manual_rate
+msgid "Budget Manual Exchange Rate"
+msgstr "อัตราแลกเปลี่ยนงบประมาณที่ระบุเอง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Cancel confirmed purchase orders before resetting their reviews."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่ยืนยันแล้วก่อนคืนสถานะการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Cancel linked purchase orders before rejecting this request."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่เชื่อมโยงก่อนปฏิเสธคำขอนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Cancel linked purchase orders before resetting the request."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่เชื่อมโยงก่อนคืนสถานะคำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Cancel planned invoices to retain their installment history."
+msgstr "ให้ยกเลิกใบแจ้งหนี้ตามแผนเพื่อเก็บประวัติงวดไว้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Cancel sourced requisitions before resetting the request."
+msgstr "ต้องยกเลิกคำขอจัดซื้อที่มีต้นทางก่อนคืนสถานะคำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Cancel the linked purchase order before changing its budget dates or company."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่เชื่อมโยงก่อนเปลี่ยนวันที่งบประมาณหรือบริษัท"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Cancel the linked purchase order before changing its budget or amount."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่เชื่อมโยงก่อนเปลี่ยนงบประมาณหรือจำนวนเงิน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Cancel the linked purchase order before deleting its line."
+msgstr "ต้องยกเลิกใบสั่งซื้อที่เชื่อมโยงก่อนลบรายการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/budget_amount.py:0
+msgid "Cancel the purchase before changing its budget exchange rate."
+msgstr "ต้องยกเลิกการจัดซื้อก่อนเปลี่ยนอัตราแลกเปลี่ยนงบประมาณ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "Captured request rates are immutable."
+msgstr "ไม่สามารถเปลี่ยนอัตราของคำขอที่บันทึกไว้"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_committee__approve_role__chairman
+msgid "Chairman"
+msgstr "ประธานกรรมการ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__code
+msgid "Code"
+msgstr "รหัส"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__committee_ids
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_committee__approve_role__committee
+msgid "Committee"
+msgstr "คณะกรรมการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Committees can only change on draft requests."
+msgstr "เปลี่ยนคณะกรรมการได้เฉพาะคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__company_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__erp_budget_manual_rate
+msgid "Company Currency per Document Unit"
+msgstr "สกุลเงินบริษัทต่อหน่วยเอกสาร"
+
+#. module: erp_procurement
+#: model:ir.model.fields,help:erp_procurement.field_purchase_order__erp_budget_manual_rate
+msgid "Company currency per document currency unit; zero uses the native rate."
+msgstr "สกุลเงินบริษัทต่อหนึ่งหน่วยสกุลเงินเอกสาร ระบุศูนย์เพื่อใช้อัตราของระบบ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_budget_amount_mode__legacy
+msgid "Compatibility"
+msgstr "ความเข้ากันได้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Complete the configured purchase review tiers before approval."
+msgstr "ต้องตรวจทานการจัดซื้อตามลำดับที่กำหนดให้ครบก่อนอนุมัติ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Confirm the source purchase agreement before approving its RFQ."
+msgstr "ต้องยืนยันข้อตกลงจัดซื้อต้นทางก่อนอนุมัติคำขอใบเสนอราคา"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_budget_fx_rate
+msgid "Confirmed Budget Exchange Rate"
+msgstr "อัตราแลกเปลี่ยนงบประมาณที่ยืนยันแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/budget_amount.py:0
+msgid "Confirmed budget amount policies are captured by purchase approval."
+msgstr "ระบบบันทึกนโยบายจำนวนเงินงบประมาณที่ยืนยันแล้วเมื่ออนุมัติการจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/budget_amount.py:0
+msgid "Confirmed budget amount policies are immutable."
+msgstr "ไม่สามารถแก้ไขนโยบายจำนวนเงินงบประมาณที่ยืนยันแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/budget_amount.py:0
+msgid "Confirmed purchase budget amounts are immutable."
+msgstr "ไม่สามารถแก้ไขจำนวนเงินงบประมาณจัดซื้อที่ยืนยันแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Conversion locking is internal."
+msgstr "การล็อกการแปลงเป็นการทำงานภายในระบบ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.view_purchase_invoice_plan
+msgid "Create / Open Invoice"
+msgstr "สร้าง / เปิดใบแจ้งหนี้"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.request_requisition_form
+msgid "Create Purchase Agreement"
+msgstr "สร้างข้อตกลงจัดซื้อ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.requisition_organization_form
+msgid "Create RFQ"
+msgstr "สร้างคำขอใบเสนอราคา"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Create planned invoices through the installment action."
+msgstr "ให้สร้างใบแจ้งหนี้ตามแผนผ่านคำสั่งงวด"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Create prior installments before this plan."
+msgstr "ต้องสร้างงวดก่อนหน้าก่อนดำเนินการกับแผนนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Create the selected invoice plan before confirming the purchase."
+msgstr "ต้องสร้างแผนวางบิลที่เลือกก่อนยืนยันการจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__create_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__create_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__company_currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__company_currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__currency_id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_company_currency_id
+msgid "Currency"
+msgstr "สกุลเงิน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__date_approved
+msgid "Date Approved"
+msgstr "วันที่อนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__date_start
+msgid "Date Start"
+msgstr "วันที่เริ่มต้น"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__date_verified
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__date_verified
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__date_verified
+msgid "Date Verified"
+msgstr "วันที่ตรวจสอบ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_plan_interval_type__day
+msgid "Days"
+msgstr "วัน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__decided_at
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__decided_at
+msgid "Decided At"
+msgstr "เวลาที่ตัดสินใจ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__decided_by_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__decided_by_id
+msgid "Decided By"
+msgstr "ผู้ตัดสินใจ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__description
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__description
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__description
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__dimension_ids
+msgid "Dimension"
+msgstr "มิติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_budget_move__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition__display_name
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition_line__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_request__state__done
+#: model_terms:ir.ui.view,arch_db:erp_procurement.government_request_form
+msgid "Done"
+msgstr "เสร็จสิ้น"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_request__state__draft
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__employee_id
+msgid "Employee"
+msgstr "พนักงาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_account_id
+msgid "Erp Budget Account"
+msgstr "บัญชีงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_activity_id
+msgid "Erp Budget Activity"
+msgstr "กิจกรรมงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_budget_amount_captured
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_amount_captured
+msgid "Erp Budget Amount Captured"
+msgstr "จำนวนเงินงบประมาณที่บันทึกแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_budget_amount_mode
+msgid "Erp Budget Amount Mode"
+msgstr "รูปแบบจำนวนเงินงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_analytic_id
+msgid "Erp Budget Analytic"
+msgstr "บัญชีวิเคราะห์งบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_dimension_ids
+msgid "Erp Budget Dimension"
+msgstr "มิติงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_fund_id
+msgid "Erp Budget Fund"
+msgstr "แหล่งเงินงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__erp_budget_fx_rate
+msgid "Erp Budget Fx Rate"
+msgstr "อัตราแลกเปลี่ยนงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_budget_included_tax_ids
+msgid "Erp Budget Included Tax"
+msgstr "ภาษีที่รวมในงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_period_id
+msgid "Erp Budget Period"
+msgstr "งวดงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__erp_budget_rate_captured
+msgid "Erp Budget Rate Captured"
+msgstr "บันทึกอัตรางบประมาณแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_tax_snapshot
+msgid "Erp Budget Tax Snapshot"
+msgstr "ข้อมูลภาษีงบประมาณ ณ เวลาบันทึก"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_total_company
+msgid "Erp Budget Total Company"
+msgstr "ยอดงบประมาณรวมในสกุลเงินบริษัท"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_budget_unit_company
+msgid "Erp Budget Unit Company"
+msgstr "งบประมาณต่อหน่วยในสกุลเงินบริษัท"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__erp_conversion_lock_version
+msgid "Erp Conversion Lock Version"
+msgstr "รุ่นการล็อกการแปลง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_invoice_plan_ids
+msgid "Erp Invoice Plan"
+msgstr "แผนวางบิล"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_invoice_plan_lock_version
+msgid "Erp Invoice Plan Lock Version"
+msgstr "รุ่นการล็อกแผนวางบิล"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition__erp_organization_id
+msgid "Erp Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_plan_installments
+msgid "Erp Plan Installments"
+msgstr "จำนวนงวดตามแผน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_plan_interval
+msgid "Erp Plan Interval"
+msgstr "ช่วงเวลาตามแผน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_plan_interval_type
+msgid "Erp Plan Interval Type"
+msgstr "ประเภทช่วงเวลาตามแผน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_plan_start
+msgid "Erp Plan Start"
+msgstr "วันเริ่มต้นแผน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_account_bank_statement_line__erp_purchase_invoice_plan_id
+#: model:ir.model.fields,field_description:erp_procurement.field_account_move__erp_purchase_invoice_plan_id
+msgid "Erp Purchase Invoice Plan"
+msgstr "แผนวางบิลจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_request_line_id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition_line__erp_request_line_id
+msgid "Erp Request Line"
+msgstr "รายการคำขอ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__organization_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__organization_id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_request_organization_id
+msgid "Erp Request Organization"
+msgstr "หน่วยงานผู้ขอ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__erp_requisition_line_id
+msgid "Erp Requisition Line"
+msgstr "รายการขอจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_review_ids
+msgid "Erp Review"
+msgstr "การตรวจทาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_review_round
+msgid "Erp Review Round"
+msgstr "รอบการตรวจทาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_review_status
+msgid "Erp Review Status"
+msgstr "สถานะการตรวจทาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_scope_version
+msgid "Erp Scope Version"
+msgstr "รุ่นขอบเขต"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order__erp_use_invoice_plan
+msgid "Erp Use Invoice Plan"
+msgstr "ใช้แผนวางบิล"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__estimated_cost
+msgid "Estimated Cost"
+msgstr "ต้นทุนประมาณการ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__estimated_cost_company_currency
+msgid "Estimated Cost Company Currency"
+msgstr "ต้นทุนประมาณการในสกุลเงินบริษัท"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Every reviewer must have active procurement capability."
+msgstr "ผู้ตรวจทานทุกคนต้องมีสิทธิ์จัดซื้อที่ใช้งานอยู่"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Every source request must still be approved."
+msgstr "คำขอต้นทางทุกรายการต้องยังอยู่ในสถานะอนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_budget_amount_mode__net
+msgid "Exclude taxes"
+msgstr "ไม่รวมภาษี"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_purchase_type__to_create__expense
+msgid "Expense"
+msgstr "ค่าใช้จ่าย"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__expense_reason
+msgid "Expense Reason"
+msgstr "เหตุผลค่าใช้จ่าย"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Forwarded purchase budget keys are immutable."
+msgstr "ไม่สามารถเปลี่ยนรหัสงบประมาณจัดซื้อที่ยกไปแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__fund_id
+msgid "Fund"
+msgstr "แหล่งเงิน"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.view_purchase_invoice_plan
+msgid "Generate Installments"
+msgstr "สร้างงวด"
+
+#. module: erp_procurement
+#: model:ir.module.module,shortdesc:base.module_erp_procurement
+msgid "Government ERP Procurement"
+msgstr "การจัดซื้อจัดจ้างภาครัฐ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition__erp_po_type
+msgid "Government PO Type"
+msgstr "ประเภทใบสั่งซื้อภาครัฐ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.government_request_form
+msgid "Government Procurement"
+msgstr "การจัดซื้อจัดจ้างภาครัฐ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_type
+msgid "Government Procurement Category"
+msgstr "หมวดจัดซื้อจัดจ้างภาครัฐ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_method
+msgid "Government Procurement Method"
+msgstr "วิธีจัดซื้อจัดจ้างภาครัฐ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_purchase_type
+msgid "Government Purchase Type"
+msgstr "ประเภทจัดซื้อภาครัฐ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition__id
+#: model:ir.model.fields,field_description:erp_procurement.field_purchase_requisition_line__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_budget_amount_mode__all
+msgid "Include all taxes"
+msgstr "รวมภาษีทั้งหมด"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_budget_amount_mode__specific
+msgid "Include selected taxes"
+msgstr "รวมภาษีที่เลือก"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__installment
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_contract_invoice_plan__invoice_type__installment
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_invoice_plan__invoice_type__installment
+msgid "Installment"
+msgstr "งวด"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Installment number and percentage must be positive."
+msgstr "เลขงวดและร้อยละต้องมากกว่าศูนย์"
+
+#. module: erp_procurement
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_contract_invoice_plan_purchase_installment_unique
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_invoice_plan_purchase_installment_unique
+msgid "Installment number must be unique in its purchase."
+msgstr "เลขงวดต้องไม่ซ้ำกันในการจัดซื้อเดียวกัน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__invoice_ids
+msgid "Invoice"
+msgstr "ใบแจ้งหนี้"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.view_purchase_invoice_plan
+msgid "Invoice Plan"
+msgstr "แผนวางบิล"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__invoice_type
+msgid "Invoice Type"
+msgstr "ประเภทใบแจ้งหนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Invoice plan percentages cannot exceed 100."
+msgstr "ร้อยละของแผนวางบิลรวมต้องไม่เกิน 100"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Invoice plan provenance cannot change."
+msgstr "ไม่สามารถเปลี่ยนที่มาของแผนวางบิล"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Invoice-plan history is generated by its invoice action."
+msgstr "ประวัติแผนวางบิลสร้างจากคำสั่งออกใบแจ้งหนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Invoice-plan locking is internal."
+msgstr "การล็อกแผนวางบิลเป็นการทำงานภายในระบบ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__is_default
+msgid "Is Default"
+msgstr "เป็นค่าเริ่มต้น"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_account_move
+msgid "Journal Entry"
+msgstr "รายการสมุดรายวัน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__kind
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__kind
+msgid "Kind"
+msgstr "ชนิด"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__write_uid
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__write_date
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_requisition__erp_po_type__agreement
+msgid "Legal agreement required"
+msgstr "ต้องมีข้อตกลงทางกฎหมาย"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__line_ids
+msgid "Line"
+msgstr "รายการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Lines may be created only on draft requests."
+msgstr "สร้างรายการได้เฉพาะในคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Linked lines cannot be added to a confirmed purchase order."
+msgstr "ไม่สามารถเพิ่มรายการที่เชื่อมโยงในใบสั่งซื้อที่ยืนยันแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Linked purchase request lines on an order must belong to one organization."
+msgstr "รายการใบขอซื้อที่เชื่อมในคำสั่งซื้อต้องอยู่ในหน่วยงานเดียวกัน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__method_ids
+msgid "Method"
+msgstr "วิธีการ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__minimum_amount
+msgid "Minimum Amount"
+msgstr "จำนวนเงินขั้นต่ำ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_plan_interval_type__month
+msgid "Months"
+msgstr "เดือน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__name
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "No approval tier is configured for this request."
+msgstr "ยังไม่ได้กำหนดลำดับอนุมัติสำหรับคำขอนี้"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_requisition__erp_po_type__no_agreement
+msgid "No legal agreement"
+msgstr "ไม่มีข้อตกลงทางกฎหมาย"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "No quantity remains for this installment."
+msgstr "ไม่มีจำนวนคงเหลือสำหรับงวดนี้"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_review_status__none
+msgid "Not requested"
+msgstr "ยังไม่ได้ร้องขอ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__note
+msgid "Note"
+msgstr "หมายเหตุ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Only a draft RFQ with lines can request tier review."
+msgstr "ขอให้ตรวจทานตามลำดับได้เฉพาะคำขอใบเสนอราคาสถานะร่างที่มีรายการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Only approved purchase requests can source an agreement."
+msgstr "ใช้เป็นต้นทางข้อตกลงได้เฉพาะใบขอซื้อที่อนุมัติแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only approved purchase requests may be marked done."
+msgstr "ทำเครื่องหมายเสร็จสิ้นได้เฉพาะใบขอซื้อที่อนุมัติแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only draft request lines can be deleted."
+msgstr "ลบได้เฉพาะรายการคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only draft request lines can be edited."
+msgstr "แก้ไขได้เฉพาะรายการคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "Only draft request rates can be refreshed."
+msgstr "ปรับปรุงอัตราได้เฉพาะคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only draft requests can be edited."
+msgstr "แก้ไขได้เฉพาะคำขอสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only draft requests without review history can be deleted."
+msgstr "ลบได้เฉพาะคำขอสถานะร่างที่ไม่มีประวัติการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "Only draft requisitions may change their budget rate."
+msgstr "เปลี่ยนอัตรางบประมาณได้เฉพาะคำขอจัดซื้อสถานะร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only submitted or approved requests can be rejected."
+msgstr "ปฏิเสธได้เฉพาะคำขอที่ส่งหรืออนุมัติแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only submitted requests can be approved."
+msgstr "อนุมัติได้เฉพาะคำขอที่ส่งแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Only submitted requests can be verified."
+msgstr "ตรวจสอบได้เฉพาะคำขอที่ส่งแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only the current user may be the requester."
+msgstr "ผู้ร้องขอต้องเป็นผู้ใช้ปัจจุบันเท่านั้น"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only the next assigned reviewer may approve."
+msgstr "เฉพาะผู้ตรวจทานลำดับถัดไปที่ได้รับมอบหมายเท่านั้นที่อนุมัติได้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Only the next assigned reviewer may reject."
+msgstr "เฉพาะผู้ตรวจทานลำดับถัดไปที่ได้รับมอบหมายเท่านั้นที่ปฏิเสธได้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Only the next purchase reviewer may approve."
+msgstr "เฉพาะผู้ตรวจทานจัดซื้อลำดับถัดไปเท่านั้นที่อนุมัติได้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Only the next purchase reviewer may reject."
+msgstr "เฉพาะผู้ตรวจทานจัดซื้อลำดับถัดไปเท่านั้นที่ปฏิเสธได้"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__order_id
+msgid "Order"
+msgstr "คำสั่งซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__organization_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__organization_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__organization_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_procurement
+#: model:ir.module.module,summary:base.module_erp_procurement
+msgid "Organization-scoped purchase requests and budget integration"
+msgstr "ใบขอซื้อตามขอบเขตหน่วยงานและการเชื่อมงบประมาณ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_request_review__state__pending
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_review__state__pending
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_purchase_review__state__pending
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_review__state__pending
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_review_status__pending
+msgid "Pending"
+msgstr "รอดำเนินการ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__percent
+msgid "Percent"
+msgstr "ร้อยละ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__period_id
+msgid "Period"
+msgstr "งวด"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__plan_date
+msgid "Plan Date"
+msgstr "วันที่แผน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Plan identity and invoice provenance are immutable."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุแผนและที่มาของใบแจ้งหนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/account_move.py:0
+msgid ""
+"Posting a bill linked to a budget-controlled request requires the Finance budget integration, "
+"which is not available yet."
+msgstr ""
+"การลงบัญชีใบเรียกเก็บเงินที่เชื่อมคำขอควบคุมงบประมาณต้องใช้ส่วนเชื่อมงบประมาณการเงิน "
+"ซึ่งยังไม่พร้อมใช้งาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_committee__kind__procurement
+msgid "Procurement"
+msgstr "การจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#: model:ir.actions.act_window,name:erp_procurement.procurement_type_action
+#: model:ir.ui.menu,name:erp_procurement.menu_procurement_types
+msgid "Procurement Categories"
+msgstr "หมวดการจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__procurement_method_id
+msgid "Procurement Method"
+msgstr "วิธีจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#: model:ir.actions.act_window,name:erp_procurement.procurement_method_action
+#: model:ir.ui.menu,name:erp_procurement.menu_procurement_methods
+msgid "Procurement Methods"
+msgstr "วิธีจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#: model:res.groups,name:erp_procurement.group_procurement_manager
+msgid "Procurement Request Approver"
+msgstr "ผู้อนุมัติคำขอจัดซื้อ"
+
+#. module: erp_procurement
+#: model:res.groups,name:erp_procurement.group_procurement_user
+msgid "Procurement Request User"
+msgstr "ผู้ใช้คำขอจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__procurement_type_id
+msgid "Procurement Type"
+msgstr "ประเภทการจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Procurement categories cannot change company."
+msgstr "ไม่สามารถเปลี่ยนบริษัทของหมวดจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Procurement management capability is required."
+msgstr "ต้องมีสิทธิ์จัดการจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Procurement management is required to reset reviews."
+msgstr "ต้องมีสิทธิ์จัดการจัดซื้อจัดจ้างเพื่อคืนสถานะการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Procurement management is required to select the legal agreement route."
+msgstr "ต้องมีสิทธิ์จัดการจัดซื้อจัดจ้างเพื่อเลือกเส้นทางข้อตกลงทางกฎหมาย"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Procurement methods cannot change company."
+msgstr "ไม่สามารถเปลี่ยนบริษัทของวิธีจัดซื้อจัดจ้าง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__product_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__product_id
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__product_qty
+msgid "Product Qty"
+msgstr "จำนวนสินค้า"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_invoice_plan__purchase_id
+msgid "Purchase"
+msgstr "จัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_purchase_type__to_create__purchase_agreement
+msgid "Purchase Agreement"
+msgstr "ข้อตกลงจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__purchase_line_ids
+msgid "Purchase Line"
+msgstr "รายการจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_tier__kind__purchase
+msgid "Purchase Order"
+msgstr "ใบสั่งซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_purchase_review
+msgid "Purchase Order Approval Review"
+msgstr "การตรวจทานอนุมัติใบสั่งซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "รายการใบสั่งซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_tier__kind__request
+msgid "Purchase Request"
+msgstr "ใบขอซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_review
+msgid "Purchase Request Approval Review"
+msgstr "การตรวจทานอนุมัติใบขอซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_erp_procurement_committee
+msgid "Purchase Request Committee Member"
+msgstr "กรรมการใบขอซื้อ"
+
+#. module: erp_procurement
+#: model:ir.actions.act_window,name:erp_procurement.action_requests
+#: model:ir.ui.menu,name:erp_procurement.menu_procurement_root
+msgid "Purchase Requests"
+msgstr "ใบขอซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_purchase_requisition
+msgid "Purchase Requisition"
+msgstr "คำขอจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model,name:erp_procurement.model_purchase_requisition_line
+msgid "Purchase Requisition Line"
+msgstr "รายการคำขอจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__purchase_type_id
+msgid "Purchase Type"
+msgstr "ประเภทการจัดซื้อ"
+
+#. module: erp_procurement
+#: model:ir.actions.act_window,name:erp_procurement.purchase_type_action
+#: model:ir.ui.menu,name:erp_procurement.menu_purchase_types
+msgid "Purchase Types"
+msgstr "ประเภทการจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Purchase agreement source identity cannot be reassigned."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุต้นทางของข้อตกลงจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/budget_amount.py:0
+msgid "Purchase budget amounts are captured by approval."
+msgstr "ระบบบันทึกจำนวนเงินงบประมาณจัดซื้อเมื่ออนุมัติ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Purchase capability is required to review an order."
+msgstr "ต้องมีสิทธิ์จัดซื้อเพื่อตรวจทานคำสั่งซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Purchase order and request companies must match."
+msgstr "บริษัทของใบสั่งซื้อและคำขอต้องตรงกัน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Purchase order budget dimensions are required."
+msgstr "ต้องระบุมิติงบประมาณของใบสั่งซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Purchase order date must fall in its company budget period."
+msgstr "วันที่ใบสั่งซื้อต้องอยู่ในงวดงบประมาณของบริษัท"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Purchase order scope is derived from its request lines."
+msgstr "ขอบเขตใบสั่งซื้ออ้างอิงจากรายการคำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Purchase review history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการตรวจทานจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Purchase review history is managed by workflow actions."
+msgstr "ประวัติการตรวจทานจัดซื้อจัดการผ่านขั้นตอนการทำงาน"
+
+#. module: erp_procurement
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_purchase_review_order_review_unique
+msgid "Purchase review order must be unique per submission."
+msgstr "ลำดับตรวจทานจัดซื้อต้องไม่ซ้ำกันในการส่งแต่ละครั้ง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Purchase reviewers require active purchase capability."
+msgstr "ผู้ตรวจทานจัดซื้อต้องมีสิทธิ์จัดซื้อที่ใช้งานอยู่"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Purchase reviews are created by submission."
+msgstr "ระบบสร้างการตรวจทานจัดซื้อเมื่อส่งรายการ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Purchase types cannot change company."
+msgstr "ไม่สามารถเปลี่ยนบริษัทของประเภทการจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Quantity and estimated cost must be positive."
+msgstr "จำนวนและต้นทุนประมาณการต้องมากกว่าศูนย์"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "RFQ and purchase agreement companies must match."
+msgstr "บริษัทของคำขอใบเสนอราคาและข้อตกลงจัดซื้อต้องตรงกัน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "RFQ line and agreement must retain the same request source."
+msgstr "รายการคำขอใบเสนอราคาและข้อตกลงต้องคงคำขอต้นทางเดียวกัน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Receive the planned quantity before generating this installment invoice."
+msgstr "ต้องรับสินค้าตามจำนวนที่วางแผนก่อนสร้างใบแจ้งหนี้งวดนี้"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.request_form
+msgid "Reject"
+msgstr "ปฏิเสธ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_review_form
+msgid "Reject Tier"
+msgstr "ปฏิเสธตามลำดับ"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_request_review__state__rejected
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_inventory_review__state__rejected
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_purchase_review__state__rejected
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_request__state__rejected
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_review__state__rejected
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_review_status__rejected
+msgid "Rejected"
+msgstr "ปฏิเสธแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_committee__request_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__request_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request_line__request_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__request_id
+msgid "Request"
+msgstr "คำขอ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__request_snapshot
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__request_snapshot
+msgid "Request Snapshot"
+msgstr "ข้อมูลคำขอ ณ เวลาบันทึก"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_review_form
+msgid "Request Tier Review"
+msgstr "ขอให้ตรวจทานตามลำดับ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Request and purchase agreement company/organization must match."
+msgstr "บริษัทและหน่วยงานของคำขอและข้อตกลงจัดซื้อต้องตรงกัน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Request for Quotation"
+msgstr "ใบขอเสนอราคา"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Request identity cannot be changed after creation."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุคำขอหลังสร้างแล้ว"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__requested_by
+msgid "Requested By"
+msgstr "ผู้ร้องขอ"
+
+#. module: erp_procurement
+#: model:ir.ui.menu,name:erp_procurement.menu_requests
+msgid "Requests"
+msgstr "คำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Requests must begin in draft without forged reviews."
+msgstr "คำขอต้องเริ่มจากสถานะร่างโดยไม่มีการตรวจทานที่สร้างขึ้นเอง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Requests must start in draft."
+msgstr "คำขอต้องเริ่มจากสถานะร่าง"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.purchase_review_form
+msgid "Reset Reviews"
+msgstr "คืนค่าการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Reset purchase reviews before adding order lines."
+msgstr "ต้องคืนสถานะการตรวจทานจัดซื้อก่อนเพิ่มรายการคำสั่งซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Reset purchase reviews before changing order economics."
+msgstr "ต้องคืนสถานะการตรวจทานจัดซื้อก่อนเปลี่ยนข้อมูลทางการเงินของคำสั่งซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Reset purchase reviews before changing their terms."
+msgstr "ต้องคืนสถานะการตรวจทานจัดซื้อก่อนเปลี่ยนเงื่อนไข"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Reset purchase reviews before deleting order lines."
+msgstr "ต้องคืนสถานะการตรวจทานจัดซื้อก่อนลบรายการคำสั่งซื้อ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.government_request_form
+msgid "Reset to Draft"
+msgstr "คืนเป็นฉบับร่าง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Retain the used plan and its original percentages/dates."
+msgstr "ต้องคงแผนที่ใช้แล้ว รวมถึงร้อยละและวันที่เดิม"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__review_ids
+msgid "Review"
+msgstr "ตรวจทาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__review_round
+msgid "Review Round"
+msgstr "รอบการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/tier.py:0
+msgid "Review evidence is recorded by workflow actions."
+msgstr "หลักฐานการตรวจทานบันทึกผ่านขั้นตอนการทำงาน"
+
+#. module: erp_procurement
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_inventory_request_review_request_sequence_unique
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_inventory_review_request_sequence_unique
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_purchase_review_request_sequence_unique
+#: model:ir.model.constraint,message:erp_procurement.constraint_erp_procurement_review_request_sequence_unique
+msgid "Review sequence must be unique per request submission."
+msgstr "ลำดับตรวจทานต้องไม่ซ้ำกันในการส่งคำขอแต่ละครั้ง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__reviewer_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__reviewer_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__reviewer_id
+msgid "Reviewer"
+msgstr "ผู้ตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/tier.py:0
+msgid "Reviews are created by submission."
+msgstr "ระบบสร้างการตรวจทานเมื่อส่งรายการ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__round_number
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__round_number
+msgid "Round Number"
+msgstr "หมายเลขรอบ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Select the agreement requirement before confirming or creating RFQs."
+msgstr "เลือกข้อกำหนดข้อตกลงก่อนยืนยันหรือสร้างคำขอใบเสนอราคา"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_method__sequence
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__sequence
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__sequence
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__sequence
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_tier__sequence
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_type__sequence
+msgid "Sequence"
+msgstr "ลำดับ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "Sourced purchase agreement quantity and price must be positive."
+msgstr "จำนวนและราคาของข้อตกลงจัดซื้อที่มีต้นทางต้องมากกว่าศูนย์"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__state
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__state
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__state
+msgid "State"
+msgstr "สถานะ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.request_form
+msgid "Submit"
+msgstr "ส่ง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Submitted committee identities are immutable."
+msgstr "ไม่สามารถเปลี่ยนตัวกรรมการที่ส่งแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Submitted committees cannot be removed."
+msgstr "ไม่สามารถนำคณะกรรมการที่ส่งแล้วออก"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Submitted requests retain their purchase type routing and allowed methods."
+msgstr "คำขอที่ส่งแล้วต้องคงเส้นทางประเภทการจัดซื้อและวิธีที่อนุญาต"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "The PO analytic distribution must match the request at 100 percent."
+msgstr "การกระจายบัญชีวิเคราะห์ของใบสั่งซื้อต้องตรงกับคำขอครบ 100 เปอร์เซ็นต์"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "The RFQ changed after review; reset its reviews."
+msgstr "คำขอใบเสนอราคาเปลี่ยนหลังตรวจทาน โปรดคืนสถานะการตรวจทาน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "The linked purchase request must be approved."
+msgstr "ใบขอซื้อที่เชื่อมโยงต้องได้รับอนุมัติ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "The organization must be active."
+msgstr "หน่วยงานต้องใช้งานอยู่"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "The procurement method must be allowed by the purchase type."
+msgstr "วิธีจัดซื้อจัดจ้างต้องเป็นวิธีที่ประเภทการจัดซื้ออนุญาต"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "The purchase agreement organization must be active and belong to its company."
+msgstr "หน่วยงานของข้อตกลงจัดซื้อต้องใช้งานอยู่และอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/requisition.py:0
+msgid "The purchase agreement product must match its source request line."
+msgstr "สินค้าในข้อตกลงจัดซื้อต้องตรงกับรายการคำขอต้นทาง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "The purchase budget account must match its activity."
+msgstr "บัญชีงบประมาณจัดซื้อต้องตรงกับกิจกรรม"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "The purchase order account must match the product expense account."
+msgstr "บัญชีใบสั่งซื้อต้องตรงกับบัญชีค่าใช้จ่ายของสินค้า"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "The purchase representative must be internal and belong to this company."
+msgstr "ผู้แทนจัดซื้อต้องเป็นผู้ใช้ภายในและอยู่ในบริษัทนี้"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "The request account must match the product expense account."
+msgstr "บัญชีในคำขอต้องตรงกับบัญชีค่าใช้จ่ายของสินค้า"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "The request budget account must match its activity."
+msgstr "บัญชีงบประมาณคำขอต้องตรงกับกิจกรรม"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "The request company must be active."
+msgstr "บริษัทของคำขอต้องใช้งานอยู่"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "The request workflow captures exchange rates."
+msgstr "ระบบบันทึกอัตราแลกเปลี่ยนผ่านขั้นตอนคำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/tier.py:0
+msgid ""
+"The reviewer must be internal and allowed in the tier company; the threshold must be nonnegative."
+msgstr "ผู้ตรวจทานต้องเป็นผู้ใช้ภายในที่ได้รับอนุญาตในบริษัทของลำดับ และวงเงินเกณฑ์ต้องไม่ติดลบ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/request_currency.py:0
+msgid "The same-currency conversion rate must be one."
+msgstr "อัตราแปลงระหว่างสกุลเงินเดียวกันต้องเท่ากับหนึ่ง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "This purchase type routes to employee expense, not a requisition."
+msgstr "ประเภทจัดซื้อนี้ส่งต่อไปยังค่าใช้จ่ายพนักงาน ไม่ใช่คำขอจัดซื้อ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/tier.py:0
+msgid "Tier company must be active."
+msgstr "บริษัทของลำดับอนุมัติต้องใช้งานอยู่"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_request__state__to_approve
+msgid "To Approve"
+msgstr "รออนุมัติ"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_type__to_create
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__conversion_route
+msgid "To Create"
+msgstr "รอสร้าง"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__total_company_currency
+msgid "Total Company Currency"
+msgstr "ยอดรวมสกุลเงินบริษัท"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/invoice_plan.py:0
+msgid "Use a positive installment count and interval."
+msgstr "จำนวนงวดและช่วงเวลาต้องมากกว่าศูนย์"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_review.py:0
+msgid "Use native confirmation after the configured purchase reviews."
+msgstr "ให้ใช้การยืนยันของระบบหลังตรวจทานจัดซื้อตามที่กำหนด"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Use the deposit adapter to link a down payment to an approved purchase line."
+msgstr "ให้ใช้ตัวเชื่อมเงินมัดจำเพื่อเชื่อมเงินจ่ายล่วงหน้ากับรายการจัดซื้อที่อนุมัติแล้ว"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_order.py:0
+msgid "Use the native purchase order workflow actions."
+msgstr "ให้ใช้คำสั่งขั้นตอนใบสั่งซื้อของระบบ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/purchase_request.py:0
+msgid "Use the request workflow actions."
+msgstr "ให้ใช้คำสั่งขั้นตอนคำขอ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Verification and approval evidence cannot be forged."
+msgstr "ไม่สามารถสร้างหลักฐานการตรวจสอบและอนุมัติขึ้นเอง"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Verification and approval evidence comes from workflow actions."
+msgstr "หลักฐานการตรวจสอบและอนุมัติมาจากขั้นตอนการทำงาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_purchase_review__verified_by_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_request__verified_by_id
+#: model:ir.model.fields,field_description:erp_procurement.field_erp_procurement_review__verified_by_id
+msgid "Verified By"
+msgstr "ผู้ตรวจสอบ"
+
+#. module: erp_procurement
+#: model_terms:ir.ui.view,arch_db:erp_procurement.government_request_form
+msgid "Verify"
+msgstr "ตรวจสอบ"
+
+#. module: erp_procurement
+#. odoo-python
+#: code:addons/erp_procurement/models/government.py:0
+msgid "Verify the government request before final approval."
+msgstr "ต้องตรวจสอบคำขอภาครัฐก่อนอนุมัติขั้นสุดท้าย"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__erp_procurement_committee__kind__work_acceptance
+msgid "Work Acceptance"
+msgstr "การตรวจรับงาน"
+
+#. module: erp_procurement
+#: model:ir.model.fields.selection,name:erp_procurement.selection__purchase_order__erp_plan_interval_type__year
+msgid "Years"
+msgstr "ปี"
+
+#. module: erp_procurement
+#: model:ir.model.fields,help:erp_procurement.field_erp_procurement_request__erp_budget_manual_rate
+msgid ""
+"Zero uses the native rate on the request date. Positive values require Budget/accounting "
+"management."
+msgstr ""
+"ระบุศูนย์เพื่อใช้อัตราของระบบ ณ วันที่ขอ ค่าที่มากกว่าศูนย์ต้องใช้สิทธิ์จัดการงบประมาณหรือบัญชี"

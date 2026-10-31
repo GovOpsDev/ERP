@@ -1,0 +1,22 @@
+id,name,model_id,group_id/id,operation,domain
+access_account_asset_profile_invoice,account.asset.profile,account.asset.profile,account_asset_management.group_asset_engine_user,r,
+access_account_asset_profile_user,account.asset.profile,account.asset.profile,account_asset_management.group_asset_engine_user,r,
+access_account_asset_profile_manager,account.asset.profile,account.asset.profile,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_invoice,account.asset,account.asset,account_asset_management.group_asset_engine_user,r,
+access_account_asset_user,account.asset,account.asset,account_asset_management.group_asset_engine_user,r,
+access_account_asset_manager,account.asset,account.asset,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_line_invoice,account.asset.line,account.asset.line,account_asset_management.group_asset_engine_user,r,
+access_account_asset_line_user,account.asset.line,account.asset.line,account_asset_management.group_asset_engine_user,r,
+access_account_asset_line_manager,account.asset.line,account.asset.line,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_recompute_trigger_user,account.asset.recompute.trigger,account.asset.recompute.trigger,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_recompute_trigger_manager,account.asset.recompute.trigger,account.asset.recompute.trigger,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_group_invoice,account.asset.group,account.asset.group,account_asset_management.group_asset_engine_user,r,
+access_account_asset_group_user,account.asset.group,account.asset.group,account_asset_management.group_asset_engine_user,r,
+access_account_asset_group_manager,account.asset.group,account.asset.group,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_remove_user,account.asset.remove,account.asset.remove,account_asset_management.group_asset_engine_manager,crud,
+access_account_asset_compute_user,account.asset.compute,account.asset.compute,account_asset_management.group_asset_engine_manager,crud,
+access_wiz_account_asset_report,wiz.account.asset.report,wiz.account.asset.report,account_asset_management.group_asset_engine_manager,cru,
+access_wiz_asset_move_reverse_user,wiz.asset.move.reverse,wiz.asset.move.reverse,account_asset_management.group_asset_engine_manager,crud,
+company_account_asset_profile,Company restriction,account.asset.profile,,crud,"[('company_id', 'in', company_ids)]"
+company_account_asset,Company restriction,account.asset,,crud,"[('company_id', 'in', company_ids)]"
+company_account_asset_group,Company restriction,account.asset.group,,crud,"[('company_id', 'in', company_ids)]"

@@ -1,0 +1,296 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_organization_hr_employee
+#: model:ir.module.module,description:base.module_erp_organization_hr_employee
+msgid ""
+"# erp_organization_hr_employee\n"
+"\n"
+"Optional Odoo 20 Community bridge restricting employee, public employee and employee-version records by primary and effective additional organizations. Employees never scoped to an organization retain native visibility; employees with scope history remain restricted even when no organization is effective. Other HR-related models are not fully audited. See project `docs/employee-multi-organization-design.md` and `docs/employee-operating-unit.md` before rollout.\n"
+msgstr ""
+"# erp_organization_hr_employee\n"
+"\n"
+"ส่วนเชื่อมเสริมของ Odoo 20 Community สำหรับจำกัดข้อมูลพนักงาน ข้อมูลพนักงานสาธารณะ และฉบับข้อมูลพนักงานตามหน่วยงานหลักและหน่วยงานเพิ่มเติมที่มีผล พนักงานที่ไม่เคยกำหนดขอบเขตหน่วยงานยังใช้สิทธิ์การมองเห็นของระบบ ส่วนผู้ที่มีประวัติขอบเขตยังคงถูกจำกัดแม้ไม่มีหน่วยงานที่มีผล โมเดลบุคคลอื่นยังไม่ได้ตรวจครบ โปรดดู `docs/employee-multi-organization-design.md` และ `docs/employee-operating-unit.md` ก่อนใช้งาน\n"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_ir_access
+msgid "Access"
+msgstr "สิทธิ์เข้าถึง"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields.selection,name:erp_organization_hr_employee.selection__erp_employee_organization_assignment__assignment_type__additional
+msgid "Additional"
+msgstr "เพิ่มเติม"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_erp_employee_organization_assignment
+msgid "Additional Employee Organization"
+msgstr "หน่วยงานเพิ่มเติมของพนักงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__organization_assignment_ids
+#: model_terms:ir.ui.view,arch_db:erp_organization_hr_employee.view_employee_form_additional_organizations
+msgid "Additional Organizations"
+msgstr "หน่วยงานเพิ่มเติม"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/employee_organization_assignment.py:0
+msgid "An archived organization cannot be assigned."
+msgstr "ไม่สามารถมอบหมายหน่วยงานที่เก็บถาวรแล้ว"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/hr_employee.py:0
+msgid "An archived organization unit cannot be linked."
+msgstr "ไม่สามารถเชื่อมหน่วยงานที่เก็บถาวรแล้ว"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/hr_employee.py:0
+msgid "An employee and organization unit must belong to the same company."
+msgstr "พนักงานและหน่วยงานต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__assignment_type
+msgid "Assignment Type"
+msgstr "ประเภทการมอบหมาย"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_res_partner_bank
+msgid "Bank Account"
+msgstr "บัญชีธนาคาร"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_res_partner
+msgid "Contact"
+msgstr "ผู้ติดต่อ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__date_from
+msgid "Date From"
+msgstr "ตั้งแต่วันที่"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__date_to
+msgid "Date To"
+msgstr "ถึงวันที่"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__child_count
+msgid "Direct Subordinates Count"
+msgstr "จำนวนผู้ใต้บังคับบัญชาโดยตรง"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,help:erp_organization_hr_employee.field_hr_employee__subordinate_ids
+msgid "Direct and indirect subordinates"
+msgstr "ผู้ใต้บังคับบัญชาทั้งทางตรงและทางอ้อม"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_organization_unit__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_departure__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_location__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_public__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_version__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_ir_access__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_partner_bank__display_name
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_resource_resource__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__effective
+msgid "Effective"
+msgstr "มีผล"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__employee_id
+msgid "Employee"
+msgstr "พนักงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_hr_employee_departure
+msgid "Employee Departure"
+msgstr "การสิ้นสุดการทำงานของพนักงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_hr_employee_location
+msgid "Employee Location"
+msgstr "สถานที่ทำงานของพนักงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_hr_version
+msgid "Employee Record"
+msgstr "ข้อมูลพนักงาน"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/employee_organization_assignment.py:0
+msgid "Employee and organization must belong to the same company."
+msgstr "พนักงานและหน่วยงานต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/hr_employee.py:0
+msgid "Employee organization assignments must belong to the employee company."
+msgstr "การมอบหมายหน่วยงานต้องอยู่ในบริษัทของพนักงาน"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/employee_organization_assignment.py:0
+msgid "Employee organization history cannot be deleted. Archive the assignment instead."
+msgstr "ไม่สามารถลบประวัติหน่วยงานพนักงาน ให้เก็บการมอบหมายถาวรแทน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_account_setup_bank_manual_config__erp_security_employee_ids
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_partner__erp_security_employee_ids
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_partner_bank__erp_security_employee_ids
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_users__erp_security_employee_ids
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_resource_resource__erp_security_employee_ids
+msgid "Erp Security Employee"
+msgstr "พนักงานสำหรับกำหนดสิทธิ์"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__erp_security_organization_assignment_ids
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_public__erp_security_organization_assignment_ids
+msgid "Erp Security Organization Assignment"
+msgstr "การมอบหมายหน่วยงานสำหรับกำหนดสิทธิ์"
+
+#. module: erp_organization_hr_employee
+#: model:ir.module.module,shortdesc:base.module_erp_organization_hr_employee
+msgid "Government Organization Employee Access"
+msgstr "สิทธิ์พนักงานตามหน่วยงานภาครัฐ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_erp_organization_unit
+msgid "Government Organization Unit"
+msgstr "หน่วยงานภาครัฐ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_departure__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_location__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_public__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_version__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_ir_access__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_partner_bank__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_res_users__id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_resource_resource__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__child_all_count
+msgid "Indirect Subordinates Count"
+msgstr "จำนวนผู้ใต้บังคับบัญชาทางอ้อม"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_erp_employee_organization_assignment__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__organization_scope_history
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_public__organization_scope_history
+msgid "Organization Scope History"
+msgstr "ประวัติขอบเขตหน่วยงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__organization_unit_id
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee_public__organization_unit_id
+msgid "Organization Unit"
+msgstr "หน่วยงาน"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/hr_employee.py:0
+msgid "Organization scope history is managed automatically."
+msgstr "ระบบจัดการประวัติขอบเขตหน่วยงานโดยอัตโนมัติ"
+
+#. module: erp_organization_hr_employee
+#: model_terms:ir.ui.view,arch_db:erp_organization_hr_employee.view_employee_form_organization
+msgid "Primary Organization"
+msgstr "หน่วยงานหลัก"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_hr_employee_public
+msgid "Public Employee"
+msgstr "ข้อมูลพนักงานสาธารณะ"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_resource_resource
+msgid "Resource"
+msgstr "ทรัพยากร"
+
+#. module: erp_organization_hr_employee
+#: model:ir.module.module,summary:base.module_erp_organization_hr_employee
+msgid "Scope employee records by organization unit"
+msgstr "จำกัดขอบเขตข้อมูลพนักงานตามหน่วยงาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,help:erp_organization_hr_employee.field_hr_employee__organization_scope_history
+msgid "Set permanently when an employee is assigned to any organization."
+msgstr "กำหนดไว้อย่างถาวรเมื่อพนักงานได้รับมอบหมายหน่วยงานใด ๆ"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/employee_organization_assignment.py:0
+msgid "Start date must precede or equal end date."
+msgstr "วันที่เริ่มต้นต้องไม่หลังวันที่สิ้นสุด"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model.fields,field_description:erp_organization_hr_employee.field_hr_employee__subordinate_ids
+msgid "Subordinates"
+msgstr "ผู้ใต้บังคับบัญชา"
+
+#. module: erp_organization_hr_employee
+#. odoo-python
+#: code:addons/erp_organization_hr_employee/models/employee_organization_assignment.py:0
+#: code:addons/erp_organization_hr_employee/models/hr_employee.py:0
+msgid "The destination company must be active."
+msgstr "บริษัทปลายทางต้องอยู่ในสถานะใช้งาน"
+
+#. module: erp_organization_hr_employee
+#: model:ir.model,name:erp_organization_hr_employee.model_erp_organization_assignment
+msgid "User Organization Assignment"
+msgstr "การมอบหมายหน่วยงานผู้ใช้"

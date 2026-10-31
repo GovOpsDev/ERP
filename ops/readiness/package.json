@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "th-gov-erp-readiness",
+  "version": "1.0.0-rc1",
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

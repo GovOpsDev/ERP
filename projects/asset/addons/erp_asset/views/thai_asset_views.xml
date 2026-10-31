@@ -1,0 +1,21 @@
+<odoo>
+ <record id="asset_parent_sequence" model="ir.sequence"><field name="name">Parent Asset</field><field name="code">account.asset.parent</field><field name="prefix">AP/</field><field name="padding">6</field></record>
+ <record id="thai_asset_form" model="ir.ui.view">
+  <field name="name">account.asset.thai.form</field><field name="model">account.asset</field>
+  <field name="inherit_id" ref="account_asset_management.account_asset_view_form"/>
+  <field name="arch" type="xml"><xpath expr="//sheet" position="inside"><group string="Government Asset"><field name="image" widget="image"/><field name="parent_id"/><field name="asset_sub_state_id"/><field name="depreciation_rate"/><field name="low_value"/><field name="erp_asset_fund_id"/><field name="remove_reason"/></group></xpath></field>
+ </record>
+ <record id="thai_asset_remove_form" model="ir.ui.view">
+  <field name="name">account.asset.remove.thai.form</field><field name="model">account.asset.remove</field>
+  <field name="inherit_id" ref="account_asset_management.account_asset_remove_view_form"/>
+  <field name="arch" type="xml"><field name="note" position="before"><field name="remove_reason"/></field></field>
+ </record>
+ <record id="low_value_remove_form" model="ir.ui.view"><field name="name">account.asset.remove.low.value.form</field><field name="model">account.asset.remove</field><field name="arch" type="xml"><form><group><field name="company_id"/><field name="date_remove"/><field name="remove_reason"/></group><footer><button name="remove" type="object" string="Remove" class="btn-primary"/><button special="cancel" string="Cancel"/></footer></form></field></record>
+ <record id="batch_remove_assets" model="ir.actions.server"><field name="name">Remove Assets</field><field name="model_id" ref="account_asset_management.model_account_asset"/><field name="binding_model_id" ref="account_asset_management.model_account_asset"/><field name="state">code</field><field name="code">action = records.action_remove_multi_assets()</field></record>
+ <record id="asset_parent_action" model="ir.actions.act_window"><field name="name">Parent Assets</field><field name="res_model">account.asset.parent</field><field name="view_mode">list,form</field></record>
+ <record id="asset_substate_action" model="ir.actions.act_window"><field name="name">Asset Substatuses</field><field name="res_model">account.asset.sub.state</field><field name="view_mode">list,form</field></record>
+ <menuitem id="asset_parent_menu" name="Parent Assets" parent="asset_root" action="asset_parent_action"/>
+ <menuitem id="asset_substate_menu" name="Asset Substatuses" parent="asset_root" action="asset_substate_action" groups="erp_asset.group_asset_manager"/>
+ <record id="expense_asset_form" model="ir.ui.view"><field name="name">hr.expense.asset.form</field><field name="model">hr.expense</field><field name="inherit_id" ref="hr_expense.hr_expense_view_form"/><field name="arch" type="xml"><field name="account_id" position="after"><field name="erp_asset_profile_id" readonly="approval_state == 'approved'"/><field name="erp_asset_organization_id" readonly="approval_state == 'approved'"/></field></field></record>
+ <record id="asset_refund_source_form" model="ir.ui.view"><field name="name">account.move.asset.credit.source</field><field name="model">account.move</field><field name="inherit_id" ref="account.view_move_form"/><field name="arch" type="xml"><xpath expr="//field[@name='invoice_line_ids']/list/field[@name='account_id']" position="after"><field name="erp_asset_refund_source_id" optional="hide" domain="[('move_id', '=', parent.reversed_entry_id)]"/></xpath></field></record>
+</odoo>

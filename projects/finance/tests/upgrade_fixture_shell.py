@@ -1,0 +1,33 @@
+# Run only on a fresh isolated test database with Organization, Budget and Procurement installed.
+# Creates and commits synthetic data; never run on production.
+company = env['res.company'].create({'name': 'Finance upgrade company'})
+unit = env['erp.organization.unit'].create({'name': 'Finance upgrade unit', 'code': 'FINUP', 'company_id': company.id})
+user = env['res.users'].create({'name': 'Finance upgrade user', 'login': 'finance_upgrade_user', 'company_id': company.id, 'company_ids': [(6, 0, [company.id])], 'group_ids': [(6, 0, [env.ref('erp_procurement.group_procurement_manager').id])]})
+env['erp.organization.assignment'].create({'user_id': user.id, 'unit_id': unit.id})
+env['erp.procurement.tier'].create({'name': 'Finance upgrade review', 'company_id': company.id, 'reviewer_id': user.id})
+group = env['erp.budget.fund.group'].create({'name': 'Finance upgrade group', 'company_id': company.id})
+fund = env['erp.budget.fund'].create({'name': 'Finance upgrade fund', 'company_id': company.id, 'group_id': group.id})
+period = env['erp.budget.period'].create({'name': 'Finance upgrade period', 'company_id': company.id, 'date_from': '2026-01-01', 'date_to': '2026-12-31'})
+plan = env['account.analytic.plan'].create({'name': 'Finance upgrade plan'})
+analytic = env['account.analytic.account'].create({'name': 'Finance upgrade analytic', 'company_id': company.id, 'plan_id': plan.id})
+account = env['account.account'].create({'name': 'Finance upgrade expense', 'code': 'FINUP', 'account_type': 'expense', 'company_ids': [(6, 0, [company.id])]})
+product = env['product.product'].create({'name': 'Finance upgrade product', 'type': 'service', 'purchase_ok': True})
+product.with_company(company).product_tmpl_id.property_account_expense_id = account
+vendor = env['res.partner'].create({'name': 'Finance upgrade vendor', 'supplier_rank': 1})
+vals = {'company_id': company.id, 'period_id': period.id, 'organization_id': unit.id, 'analytic_id': analytic.id, 'amount': 100}
+a = env['erp.budget.control'].create(dict(vals, name='Finance upgrade analytic', level='analytic'))
+f = env['erp.budget.control'].create(dict(vals, name='Finance upgrade fund', level='fund', fund_id=fund.id))
+(a | f).action_open()
+e = env(user=user, context={'allowed_company_ids': [company.id]})
+request = e['erp.procurement.request'].create({'company_id': company.id, 'organization_id': unit.id, 'date_start': '2026-06-01'})
+e['erp.procurement.request.line'].create({'request_id': request.id, 'name': 'Upgrade request', 'product_id': product.id, 'product_qty': 1, 'estimated_cost': 30, 'period_id': period.id, 'fund_id': fund.id, 'analytic_id': analytic.id, 'account_id': account.id})
+request.action_submit()
+request.action_approve()
+po = e['purchase.order'].create({'company_id': company.id, 'partner_id': vendor.id, 'date_order': '2026-06-01 12:00:00', 'order_line': [(0, 0, {'name': 'Upgrade PO', 'product_id': product.id, 'product_qty': 1, 'price_unit': 50, 'date_planned': '2026-06-05 12:00:00', 'tax_ids': [(5, 0, 0)], 'erp_request_line_id': request.line_ids.id, 'erp_budget_fund_id': fund.id, 'erp_budget_analytic_id': analytic.id, 'erp_budget_account_id': account.id, 'analytic_distribution': {str(analytic.id): 100}})]})
+po.button_confirm()
+payable = env['account.account'].create({'name': 'Finance upgrade payable', 'code': 'FINUPAY', 'account_type': 'liability_payable', 'reconcile': True, 'company_ids': [(6, 0, [company.id])]})
+vendor.with_company(company).property_account_payable_id = payable
+journal = env['account.journal'].create({'name': 'Finance upgrade journal', 'code': 'FUP', 'type': 'purchase', 'company_id': company.id})
+bill = env['account.move'].with_company(company).create({'move_type': 'in_invoice', 'company_id': company.id, 'partner_id': vendor.id, 'journal_id': journal.id, 'invoice_date': '2026-06-10', 'invoice_line_ids': [(0, 0, {'name': 'Upgrade draft bill', 'product_id': product.id, 'account_id': account.id, 'quantity': 1, 'price_unit': 50, 'purchase_line_id': po.order_line.id, 'analytic_distribution': {str(analytic.id): 100}})]})
+env.cr.commit()
+print('SEEDED', request.id, po.id, bill.id, bill.state)

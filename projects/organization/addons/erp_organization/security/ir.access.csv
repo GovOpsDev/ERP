@@ -1,0 +1,7 @@
+id,name,model_id,group_id/id,operation,domain
+access_organization_unit_user,organization unit user,erp.organization.unit,base.group_user,r,"[('assignment_ids.user_id', '=', user.id)]"
+access_organization_unit_manager,organization unit manager,erp.organization.unit,erp_organization.group_organization_manager,crud,
+organization_unit_company_rule,organization unit active companies,erp.organization.unit,,crud,"[('company_id', 'in', company_ids)]"
+access_organization_assignment_user,own organization assignments,erp.organization.assignment,base.group_user,r,"[('user_id', '=', user.id)]"
+access_organization_assignment_manager,organization assignment manager,erp.organization.assignment,erp_organization.group_organization_manager,crud,
+organization_assignment_company_rule,organization assignment active companies,erp.organization.assignment,,crud,"[('company_id', 'in', company_ids)]"

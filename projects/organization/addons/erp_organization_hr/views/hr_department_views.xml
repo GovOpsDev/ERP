@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_department_form_organization" model="ir.ui.view">
+        <field name="name">hr.department.form.organization</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_form"/>
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="organization_unit_id" options="{'no_create': True}"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_department_list_organization" model="ir.ui.view">
+        <field name="name">hr.department.list.organization</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_tree"/>
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="organization_unit_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+</odoo>

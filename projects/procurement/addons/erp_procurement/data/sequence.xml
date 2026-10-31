@@ -1,0 +1,1 @@
+<odoo noupdate="1"><record id="sequence_procurement_request" model="ir.sequence"><field name="name">Purchase Request</field><field name="code">erp.procurement.request</field><field name="prefix">PR/</field><field name="padding">5</field><field name="company_id" eval="False"/></record></odoo>

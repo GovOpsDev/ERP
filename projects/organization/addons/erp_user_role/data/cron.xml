@@ -1,0 +1,10 @@
+<odoo noupdate="1">
+  <record id="cron_role_reconcile" model="ir.cron">
+    <field name="name">Reconcile organization user roles</field>
+    <field name="model_id" ref="model_erp_user_role_assignment"/>
+    <field name="state">code</field>
+    <field name="code">model._cron_reconcile()</field>
+    <field name="interval_number">1</field>
+    <field name="interval_type">hours</field>
+  </record>
+</odoo>

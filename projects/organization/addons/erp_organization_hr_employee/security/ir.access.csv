@@ -1,0 +1,13 @@
+id,name,model_id,group_id/id,operation,domain
+employee_organization_restriction,Employee organization boundary,hr.employee,,crud,user._employee_org_domain()
+public_employee_company_restriction,Public employee active company boundary,hr.employee.public,,r,"[('company_id', 'in', company_ids)]"
+public_employee_organization_restriction,Public employee organization boundary,hr.employee.public,,r,user._employee_org_domain()
+version_employee_organization_restriction,Employee version organization boundary,hr.version,,crud,user._employee_org_domain('version')
+location_employee_organization_restriction,Employee location organization boundary,hr.employee.location,,crud,"user._employee_org_domain('related', company_ids)"
+departure_employee_organization_restriction,Employee departure organization boundary,hr.employee.departure,,crud,"user._employee_org_domain('related', company_ids)"
+resource_employee_organization_restriction,Employee resource organization boundary,resource.resource,,crud,"user._employee_org_domain('resource', company_ids)"
+bank_employee_organization_restriction,Employee bank organization boundary,res.partner.bank,,crud,"user._employee_org_domain('bank', company_ids)"
+partner_employee_organization_restriction,Employee work contact organization boundary,res.partner,,crud,"user._employee_org_domain('partner', company_ids)"
+employee_organization_assignment_hr,Employee organization assignments HR,erp.employee.organization.assignment,hr.group_hr_user,crud,
+employee_organization_assignment_company,Employee organization assignment company,erp.employee.organization.assignment,,crud,"[('company_id', 'in', company_ids)]"
+employee_organization_assignment_scope,Employee organization assignment employee boundary,erp.employee.organization.assignment,,crud,"[('employee_id', 'access', 'read')]"

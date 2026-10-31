@@ -1,0 +1,29 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_core
+#: model:ir.module.module,description:base.module_erp_core
+msgid ""
+"# erp_core\n"
+"\n"
+"Community-only shared scaffold depending on `base`. No shared models, groups or records are currently implemented.\n"
+msgstr ""
+"# erp_core\n"
+"\n"
+"โครงสร้างพื้นฐานร่วมสำหรับ Community ซึ่งพึ่งพา `base` ปัจจุบันยังไม่มีโมเดล กลุ่ม หรือรายการข้อมูลร่วม\n"
+
+#. module: erp_core
+#: model:ir.module.module,summary:base.module_erp_core
+msgid "Shared foundation for government ERP extensions"
+msgstr "ระบบพื้นฐานร่วมสำหรับส่วนขยาย ERP ภาครัฐ"
+
+#. module: erp_core
+#: model:ir.module.module,shortdesc:base.module_erp_core
+msgid "Thai Government ERP Foundation"
+msgstr "ระบบพื้นฐาน ERP ภาครัฐไทย"

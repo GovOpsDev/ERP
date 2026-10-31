@@ -1,0 +1,26 @@
+id,name,model_id,group_id/id,operation,domain
+asset_user,Asset user,erp.asset.asset,erp_asset.group_asset_user,r,
+asset_company,Asset company,erp.asset.asset,,crud,"[('company_id', 'in', company_ids)]"
+asset_organization,Asset organization,erp.asset.asset,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+profile_user,Asset profile user,erp.asset.profile,erp_asset.group_asset_user,r,
+profile_manager,Asset profile manager,erp.asset.profile,erp_asset.group_asset_manager,crud,
+profile_company,Asset profile company,erp.asset.profile,,crud,"[('company_id', 'in', company_ids)]"
+engine_profile_account_reader,Accounting asset profile reader,account.asset.profile,account.group_account_invoice,r,
+engine_asset_account_reader,Accounting asset reader,account.asset,account.group_account_invoice,r,
+engine_line_account_reader,Accounting asset line reader,account.asset.line,account.group_account_invoice,r,
+engine_recompute_company,Asset recompute company,account.asset.recompute.trigger,,crud,"[('company_id', 'in', company_ids)]"
+engine_asset_ou,Engine asset organization,account.asset,,crud,"['|', '&', ('erp_acquisition_id.organization_id.active', '=', True), ('erp_acquisition_id.organization_id.assignment_ids.user_id', '=', user.id), '&', ('erp_transfer_organization_id.active', '=', True), ('erp_transfer_organization_id.assignment_ids.user_id', '=', user.id)]"
+engine_line_company,Engine line company,account.asset.line,,crud,"[('asset_id.company_id', 'in', company_ids)]"
+engine_line_ou,Engine line organization,account.asset.line,,crud,"['|', '&', ('asset_id.erp_acquisition_id.organization_id.active', '=', True), ('asset_id.erp_acquisition_id.organization_id.assignment_ids.user_id', '=', user.id), '&', ('asset_id.erp_transfer_organization_id.active', '=', True), ('asset_id.erp_transfer_organization_id.assignment_ids.user_id', '=', user.id)]"
+transfer_history_user,Transfer history,erp.asset.transfer.history,erp_asset.group_asset_user,r,
+transfer_history_company,Transfer history company,erp.asset.transfer.history,,crud,"[('company_id', 'in', company_ids)]"
+transfer_history_ou,Transfer history organization,erp.asset.transfer.history,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+parent_user,parent user,account.asset.parent,erp_asset.group_asset_user,r,
+parent_manager,parent manager,account.asset.parent,erp_asset.group_asset_manager,crud,
+parent_company,parent company,account.asset.parent,,crud,"['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]"
+substate_user,substate user,account.asset.sub.state,erp_asset.group_asset_user,r,
+substate_manager,substate manager,account.asset.sub.state,erp_asset.group_asset_manager,crud,
+substate_company,substate company,account.asset.sub.state,,crud,"['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]"
+valuation_user,Asset valuation history,erp.asset.valuation,erp_asset.group_asset_user,r,
+valuation_company,Valuation company,erp.asset.valuation,,crud,"[('company_id', 'in', company_ids)]"
+valuation_organization,Valuation organization,erp.asset.valuation,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"

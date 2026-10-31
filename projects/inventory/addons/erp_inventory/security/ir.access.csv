@@ -1,0 +1,47 @@
+id,name,model_id,group_id/id,operation,domain
+acceptance_user,Acceptance user,erp.inventory.acceptance,erp_inventory.group_acceptance_user,crud,
+acceptance_account_reader,Accounting acceptance reader,erp.inventory.acceptance,account.group_account_invoice,r,
+acceptance_company,Acceptance company,erp.inventory.acceptance,,crud,"[('company_id', 'in', company_ids)]"
+acceptance_organization,Acceptance organization,erp.inventory.acceptance,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+line_user,Acceptance line user,erp.inventory.acceptance.line,erp_inventory.group_acceptance_user,crud,
+acceptance_line_account_reader,Accounting acceptance line reader,erp.inventory.acceptance.line,account.group_account_invoice,r,
+line_company,Acceptance line company,erp.inventory.acceptance.line,,crud,"[('company_id', 'in', company_ids)]"
+line_organization,Acceptance line organization,erp.inventory.acceptance.line,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+wa_review_user,acceptance review user,erp.inventory.review,erp_inventory.group_acceptance_user,r,
+wa_review_company,acceptance review company,erp.inventory.review,,crud,"[('company_id', 'in', company_ids)]"
+wa_review_unit,acceptance review unit,erp.inventory.review,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+wa_committee_user,acceptance committee user,erp.inventory.committee,erp_inventory.group_acceptance_user,crud,
+wa_committee_company,acceptance committee company,erp.inventory.committee,,crud,"[('company_id', 'in', company_ids)]"
+wa_committee_unit,acceptance committee unit,erp.inventory.committee,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+wa_evaluation_result_user,acceptance evaluation_result user,erp.inventory.evaluation.result,erp_inventory.group_acceptance_user,crud,
+wa_evaluation_result_company,acceptance evaluation_result company,erp.inventory.evaluation.result,,crud,"[('company_id', 'in', company_ids)]"
+wa_evaluation_result_unit,acceptance evaluation_result unit,erp.inventory.evaluation.result,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+wa_evaluation_user,acceptance evaluation user,erp.inventory.evaluation,erp_inventory.group_acceptance_user,r,
+wa_evaluation_manager,acceptance evaluation manager,erp.inventory.evaluation,erp_inventory.group_acceptance_manager,crud,
+wa_evaluation_company,acceptance evaluation company,erp.inventory.evaluation,,crud,"[('company_id', 'in', company_ids)]"
+wa_evaluation_score_user,acceptance evaluation_score user,erp.inventory.evaluation.score,erp_inventory.group_acceptance_user,r,
+wa_evaluation_score_manager,acceptance evaluation_score manager,erp.inventory.evaluation.score,erp_inventory.group_acceptance_manager,crud,
+wa_evaluation_score_company,acceptance evaluation_score company,erp.inventory.evaluation.score,,crud,"[('company_id', 'in', company_ids)]"
+wa_tier_reader,acceptance tier reader,erp.procurement.tier,erp_inventory.group_acceptance_manager,r,
+wa_purchase_reader,acceptance purchase reader,purchase.order,erp_inventory.group_acceptance_user,r,
+wa_purchase_line_reader,acceptance purchase line reader,purchase.order.line,erp_inventory.group_acceptance_user,r,
+wa_request_reader,acceptance source request reader,erp.procurement.request,erp_inventory.group_acceptance_user,r,
+wa_request_line_reader,acceptance source request line reader,erp.procurement.request.line,erp_inventory.group_acceptance_user,r,
+wa_request_committee_reader,acceptance source committee reader,erp.procurement.committee,erp_inventory.group_acceptance_user,r,
+stock_request_user,stock request user,erp.inventory.request,erp_inventory.group_stock_request_user,crud,
+stock_request_company,stock request company,erp.inventory.request,,crud,"[('company_id', 'in', company_ids)]"
+stock_request_unit,stock request unit,erp.inventory.request,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+stock_request_line_user,stock request_line user,erp.inventory.request.line,erp_inventory.group_stock_request_user,crud,
+stock_request_line_company,stock request_line company,erp.inventory.request.line,,crud,"[('company_id', 'in', company_ids)]"
+stock_request_line_unit,stock request_line unit,erp.inventory.request.line,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+stock_request_review_user,stock request_review user,erp.inventory.request.review,erp_inventory.group_stock_request_user,r,
+stock_request_review_company,stock request_review company,erp.inventory.request.review,,crud,"[('company_id', 'in', company_ids)]"
+stock_request_review_unit,stock request_review unit,erp.inventory.request.review,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+stock_tier_reader,stock tier reader,erp.procurement.tier,erp_inventory.group_stock_request_user,r,
+stock_card_user,stock card user,erp.inventory.card,erp_inventory.group_stock_request_user,crud,
+stock_card_company,stock card company,erp.inventory.card,,crud,"[('company_id', 'in', company_ids)]"
+stock_card_unit,stock card unit,erp.inventory.card,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+stock_card_census_user,stock card_census user,erp.inventory.card.census,erp_inventory.group_stock_request_user,crud,
+stock_card_census_company,stock card_census company,erp.inventory.card.census,,crud,"[('company_id', 'in', company_ids)]"
+stock_card_census_unit,stock card_census unit,erp.inventory.card.census,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+stock_card_scan_user,stock card scanner,erp.inventory.card.scan,erp_inventory.group_stock_request_user,crud,

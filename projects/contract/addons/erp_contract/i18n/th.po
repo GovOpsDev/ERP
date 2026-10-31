@@ -1,0 +1,2735 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "A bill line cannot consume both contract and purchase budget sources."
+msgstr "รายการใบเรียกเก็บเงินไม่สามารถใช้งบประมาณจากสัญญาและการจัดซื้อพร้อมกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "A clause section must belong to the same agreement."
+msgstr "หมวดของข้อสัญญาต้องอยู่ในข้อตกลงเดียวกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "A contract bill must match the vendor, company and company currency."
+msgstr "ใบเรียกเก็บเงินตามสัญญาต้องตรงกับผู้ขาย บริษัท และสกุลเงินบริษัท"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "A contract line cannot be added to a posted bill."
+msgstr "ไม่สามารถเพิ่มรายการสัญญาในใบเรียกเก็บเงินที่ลงบัญชีแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "A contract line cannot be attached to a posted bill."
+msgstr "ไม่สามารถเชื่อมรายการสัญญากับใบเรียกเก็บเงินที่ลงบัญชีแล้ว"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_line_successor_unique
+msgid "A contract line has only one historical successor."
+msgstr "รายการสัญญามีรายการสืบทอดในประวัติได้เพียงหนึ่งรายการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "A contract organization is required."
+msgstr "ต้องระบุหน่วยงานของสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "A contract plan cannot also link a purchase order."
+msgstr "แผนสัญญาไม่สามารถเชื่อมใบสั่งซื้อพร้อมกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "A contract refund must reference a posted bill."
+msgstr "การคืนเงินตามสัญญาต้องอ้างอิงใบเรียกเก็บเงินที่ลงบัญชีแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A contract with one-time financial history cannot become recurring."
+msgstr "สัญญาที่มีประวัติการเงินแบบครั้งเดียวไม่สามารถเปลี่ยนเป็นแบบประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "A guarantee method with financial history cannot change account or company."
+msgstr "วิธีค้ำประกันที่มีประวัติการเงินแล้วไม่สามารถเปลี่ยนบัญชีหรือบริษัท"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "A guarantee with accounting history cannot be deleted."
+msgstr "ไม่สามารถลบหลักประกันที่มีประวัติทางบัญชี"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "A positive quantity and matching product are required."
+msgstr "ต้องระบุจำนวนมากกว่าศูนย์และสินค้าที่ตรงกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A recurring credit must reference its posted period bill."
+msgstr "ใบลดหนี้ประจำต้องอ้างอิงใบเรียกเก็บเงินประจำงวดที่ลงบัญชีแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A recurring credit must retain its original bill taxes."
+msgstr "ใบลดหนี้ประจำต้องคงภาษีตามใบเรียกเก็บเงินต้นฉบับ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A recurring line and end date are required."
+msgstr "ต้องระบุรายการที่เกิดซ้ำและวันที่สิ้นสุด"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_cycle_period_unique
+msgid "A recurring period may only be generated once."
+msgstr "งวดประจำสร้างได้เพียงครั้งเดียว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "A section referenced by clauses must remain a section."
+msgstr "รายการที่ข้อสัญญาอ้างอิงเป็นหมวดต้องคงสถานะเป็นหมวด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "A signed, current draft agreement and a non-cancelled purchase order are required."
+msgstr "ต้องมีข้อตกลงฉบับร่างปัจจุบันที่ลงนามแล้วและใบสั่งซื้อที่ยังไม่ยกเลิก"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A stop cannot shorten an already generated invoice period."
+msgstr "การหยุดไม่สามารถลดช่วงเวลาวางบิลที่สร้างแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A successor must start later in the same contract."
+msgstr "รายการสืบทอดต้องเริ่มภายหลังภายในสัญญาเดียวกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A successor requires a valid later period on an active recurring contract."
+msgstr "รายการสืบทอดต้องมีงวดภายหลังที่ถูกต้องในสัญญาประจำที่ใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A terminated contract cannot receive new lines."
+msgstr "ไม่สามารถเพิ่มรายการในสัญญาที่สิ้นสุดแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "A unique company fiscal period must cover the recurring invoice date."
+msgstr "ต้องมีงวดงบประมาณของบริษัทเพียงงวดเดียวที่ครอบคลุมวันที่ออกใบแจ้งหนี้ประจำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__account_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__account_id
+msgid "Account"
+msgstr "บัญชี"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_needaction
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_needaction
+msgid "Action Needed"
+msgstr "ต้องดำเนินการ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_form
+msgid "Activate"
+msgstr "เปิดใช้งาน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__active
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__active
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement__state__active
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_ids
+msgid "Activities"
+msgstr "กิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__activity_id
+msgid "Activity"
+msgstr "กิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_exception_decoration
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "สัญลักษณ์ข้อผิดพลาดของกิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_plans_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_plans_ids
+msgid "Activity Plans"
+msgstr "แผนกิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_state
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_state
+msgid "Activity State"
+msgstr "สถานะกิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_type_icon
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "ไอคอนประเภทกิจกรรม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__agreement_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__agreement_id
+msgid "Agreement"
+msgstr "ข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement_item
+msgid "Agreement Legal Content"
+msgstr "เนื้อหาทางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement_stage
+msgid "Agreement Legal Stage"
+msgstr "ขั้นตอนทางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.agreement_legal_stage_action
+msgid "Agreement Legal Stages"
+msgstr "ขั้นตอนทางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement_subtype
+msgid "Agreement Legal Subtype"
+msgstr "ประเภทย่อยทางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.agreement_legal_subtype_action
+msgid "Agreement Legal Subtypes"
+msgstr "ประเภทย่อยทางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement_type
+msgid "Agreement Legal Type"
+msgstr "ประเภททางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.agreement_legal_type_action
+msgid "Agreement Legal Types"
+msgstr "ประเภททางกฎหมายของข้อตกลง"
+
+#. module: erp_contract
+#: model:res.groups,name:erp_contract.group_contract_manager
+msgid "Agreement Manager"
+msgstr "ผู้จัดการข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_purchase_order__erp_agreement_required
+msgid "Agreement Required"
+msgstr "ต้องมีข้อตกลง"
+
+#. module: erp_contract
+#: model:res.groups,name:erp_contract.group_contract_user
+msgid "Agreement User"
+msgstr "ผู้ใช้ข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement_revision
+msgid "Agreement Version Snapshot"
+msgstr "ข้อมูลฉบับข้อตกลง ณ เวลาบันทึก"
+
+#. module: erp_contract
+#: model:ir.actions.server,name:erp_contract.cron_agreement_reviews_ir_actions_server
+msgid "Agreement expiry review activities"
+msgstr "กิจกรรมตรวจทานข้อตกลงก่อนหมดอายุ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Agreement internal contacts must belong to its company."
+msgstr "ผู้ติดต่อภายในของข้อตกลงต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Agreement management capability is required."
+msgstr "ต้องมีสิทธิ์จัดการข้อตกลง"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_agreement_code_company_unique
+msgid "Agreement reference must be unique in a company."
+msgstr "เลขอ้างอิงข้อตกลงต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Agreement requirements can be changed only on an RFQ."
+msgstr "เปลี่ยนข้อกำหนดข้อตกลงได้เฉพาะในคำขอใบเสนอราคา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Agreement subtype must belong to its selected legal type."
+msgstr "ประเภทย่อยของข้อตกลงต้องอยู่ในประเภททางกฎหมายที่เลือก"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_agreement_revision_version_unique
+msgid "Agreement version already exists."
+msgstr "มีฉบับข้อตกลงนี้อยู่แล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Agreement version snapshots are immutable."
+msgstr "ไม่สามารถแก้ไขข้อมูลฉบับข้อตกลงที่บันทึกไว้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Agreement, organization and purchase order companies must match."
+msgstr "บริษัทของข้อตกลง หน่วยงาน และใบสั่งซื้อต้องตรงกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_purchase_order__erp_agreement_ids
+#: model:ir.ui.menu,name:erp_contract.agreement_menu
+#: model:ir.ui.menu,name:erp_contract.agreement_root
+msgid "Agreements"
+msgstr "ข้อตกลง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Agreements must begin in draft without history."
+msgstr "ข้อตกลงต้องเริ่มจากสถานะร่างและไม่มีประวัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_plan_manual_selection
+msgid "Allow Manual Installment Selection"
+msgstr "อนุญาตให้เลือกงวดด้วยตนเอง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Amend recurring terms with a successor; existing terms are historical."
+msgstr "ให้แก้ไขเงื่อนไขประจำผ่านรายการสืบทอด เนื่องจากเงื่อนไขเดิมเป็นประวัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_recurrence_change__operation__amend
+msgid "Amend with successor"
+msgstr "แก้ไขโดยสร้างรายการสืบทอด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__amount
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__amount
+msgid "Amount"
+msgstr "จำนวนเงิน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__amount_received
+msgid "Amount Received"
+msgstr "จำนวนเงินที่รับ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__amount_returned
+msgid "Amount Returned"
+msgstr "จำนวนเงินที่คืน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__amount_untaxed
+msgid "Amount Untaxed"
+msgstr "จำนวนเงินก่อนภาษี"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "An active contract with uncommitted lines is required."
+msgstr "ต้องมีสัญญาที่ใช้งานอยู่และมีรายการที่ยังไม่ผูกพัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "An active organization and purchase journal must belong to the contract company."
+msgstr "หน่วยงานที่ใช้งานและสมุดรายวันจัดซื้อต้องอยู่ในบริษัทของสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "An agreement is required before confirming this purchase order."
+msgstr "ต้องมีข้อตกลงก่อนยืนยันใบสั่งซื้อนี้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "An agreement must be linked to a draft or sent RFQ."
+msgstr "ข้อตกลงต้องเชื่อมกับคำขอใบเสนอราคาสถานะร่างหรือส่งแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "An invoiced contract plan retains its original billing mode."
+msgstr "แผนสัญญาที่ออกใบแจ้งหนี้แล้วต้องคงรูปแบบการวางบิลเดิม"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "An invoiced installment retains its original selected quantities."
+msgstr "งวดที่ออกใบแจ้งหนี้แล้วต้องคงจำนวนที่เลือกไว้เดิม"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "An invoiced or succeeded line must be stopped, not canceled."
+msgstr "รายการที่ออกใบแจ้งหนี้แล้วหรือมีรายการสืบทอดต้องใช้การหยุดรายการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "An organization is required."
+msgstr "ต้องระบุหน่วยงาน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "An unterminated recurring contract, end date and reason are required."
+msgstr "ต้องมีสัญญาประจำที่ยังไม่สิ้นสุด วันที่สิ้นสุด และเหตุผล"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__analytic_id
+msgid "Analytic"
+msgstr "บัญชีวิเคราะห์"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "การกระจายบัญชีวิเคราะห์"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement_item__kind__appendix
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Appendix"
+msgstr "ภาคผนวก"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurrence_change_form
+msgid "Apply Schedule Change"
+msgstr "ใช้การเปลี่ยนแปลงกำหนดการ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__approved_date
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Approved Date"
+msgstr "วันที่อนุมัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__approved_user_id
+msgid "Approved User"
+msgstr "ผู้ใช้งานที่อนุมัติ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_form
+msgid "Archive"
+msgstr "เก็บถาวร"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__assigned_user_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Assigned User"
+msgstr "ผู้รับมอบหมาย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_attachment_count
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_attachment_count
+msgid "Attachment Count"
+msgstr "จำนวนไฟล์แนบ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__auto_renew
+msgid "Auto Renew"
+msgstr "ต่ออายุอัตโนมัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__auto_renew_interval
+msgid "Auto Renew Interval"
+msgstr "ช่วงเวลาต่ออายุอัตโนมัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__auto_renew_rule_type
+msgid "Auto Renew Rule Type"
+msgstr "ประเภทกฎต่ออายุอัตโนมัติ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Bill and contract units must have the same reference unit."
+msgstr "หน่วยของใบเรียกเก็บเงินและสัญญาต้องมีหน่วยอ้างอิงเดียวกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_budget_manual_rate
+msgid "Budget Manual Exchange Rate"
+msgstr "อัตราแลกเปลี่ยนงบประมาณที่ระบุเอง"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_form
+msgid "Budget Unit Cost (Company Currency)"
+msgstr "ต้นทุนต่องบประมาณ (สกุลเงินบริษัท)"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurrence_change_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_recurrence_form
+msgid "Cancel Termination"
+msgstr "ยกเลิกการสิ้นสุด"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurring_line_form
+msgid "Cancel Unused Schedule"
+msgstr "ยกเลิกกำหนดการที่ยังไม่ใช้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Cancel guarantee documents to preserve their financial history."
+msgstr "ให้ยกเลิกเอกสารหลักประกันเพื่อเก็บประวัติการเงินไว้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Cancel recurring bills to retain their period history."
+msgstr "ให้ยกเลิกใบเรียกเก็บเงินประจำเพื่อเก็บประวัติงวดไว้"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.recurrence_change_action
+#: model:ir.model,name:erp_contract.model_erp_contract_recurrence_change
+msgid "Change Contract Schedule"
+msgstr "เปลี่ยนกำหนดการสัญญา"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_recurrence_form
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurring_line_form
+msgid "Change Schedule"
+msgstr "เปลี่ยนกำหนดการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Choose a guarantee account in the method company, separate from receivable/payable."
+msgstr "เลือกบัญชีหลักประกันในบริษัทของวิธีการ โดยแยกจากบัญชีลูกหนี้และเจ้าหนี้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Choose exactly one RFQ/PO or purchase agreement."
+msgstr "เลือกคำขอใบเสนอราคา/ใบสั่งซื้อ หรือข้อตกลงจัดซื้อเพียงหนึ่งรายการ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement_item__kind__clause
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Clause"
+msgstr "ข้อสัญญา"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_form
+msgid "Close Budget"
+msgstr "ปิดงบประมาณ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Close the budget commitment before archiving the contract."
+msgstr "ต้องปิดภาระผูกพันงบประมาณก่อนเก็บสัญญาถาวร"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__code
+msgid "Code"
+msgstr "รหัส"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__commit_budget
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_form
+msgid "Commit Budget"
+msgstr "ผูกพันงบประมาณ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/budget_amount.py:0
+msgid "Committed contract amount policies are immutable."
+msgstr "ไม่สามารถแก้ไขนโยบายจำนวนเงินของสัญญาที่ผูกพันแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Committed contract history is immutable; create a new contract for amendments."
+msgstr "ไม่สามารถแก้ไขประวัติสัญญาที่ผูกพันแล้ว ให้สร้างสัญญาใหม่สำหรับการแก้ไข"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Committed or invoiced contract lines cannot be deleted."
+msgstr "ไม่สามารถลบรายการสัญญาที่ผูกพันหรือออกใบแจ้งหนี้แล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Committed or invoiced contracts cannot be deleted."
+msgstr "ไม่สามารถลบสัญญาที่ผูกพันหรือออกใบแจ้งหนี้แล้ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__company_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__company_contact_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Company Contact"
+msgstr "ผู้ติดต่อของบริษัท"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__company_signed_date
+msgid "Company Signed Date"
+msgstr "วันที่บริษัทลงนาม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__company_signed_user_id
+msgid "Company Signed User"
+msgstr "ผู้ลงนามของบริษัท"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__erp_budget_amount_mode__legacy
+msgid "Compatibility"
+msgstr "ความเข้ากันได้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Configure the company sales/purchase journal for guarantee settlement."
+msgstr "โปรดกำหนดสมุดรายวันขายหรือซื้อของบริษัทสำหรับชำระหลักประกัน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__content
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Content"
+msgstr "เนื้อหา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__contract_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__contract_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__contract_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__contract_id
+msgid "Contract"
+msgstr "สัญญา"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_invoice_plan_selection
+msgid "Contract Installment Quantity Selection"
+msgstr "การเลือกจำนวนงวดสัญญา"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_invoice_plan
+msgid "Contract Invoice Plan"
+msgstr "แผนวางบิลตามสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__contract_line_id
+msgid "Contract Line"
+msgstr "รายการสัญญา"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_cycle
+msgid "Contract Recurring Period"
+msgstr "งวดสัญญาที่เกิดซ้ำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/budget_amount.py:0
+msgid "Contract amount capture is internal."
+msgstr "การบันทึกจำนวนเงินสัญญาเป็นการทำงานภายในระบบ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/budget_amount.py:0
+msgid "Contract amount policies are captured by commitment."
+msgstr "ระบบบันทึกนโยบายจำนวนเงินสัญญาเมื่อผูกพัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract bills must use the contract key and cannot also link a purchase line."
+msgstr "ใบเรียกเก็บเงินตามสัญญาต้องใช้รหัสสัญญาและเชื่อมรายการจัดซื้อพร้อมกันไม่ได้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Contract bills must use the native posting workflow."
+msgstr "ใบเรียกเก็บเงินตามสัญญาต้องใช้ขั้นตอนลงบัญชีของระบบ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/budget_amount.py:0
+msgid "Contract budget currency is captured by commitment."
+msgstr "ระบบบันทึกสกุลเงินงบประมาณสัญญาเมื่อผูกพัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract invoiced quantity must remain within the contract quantity."
+msgstr "จำนวนที่ออกใบแจ้งหนี้ตามสัญญาต้องไม่เกินจำนวนในสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract line quantity, price and dates must be valid."
+msgstr "จำนวน ราคา และวันที่ของรายการสัญญาต้องถูกต้อง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract lines cannot be changed while committed, archived or invoiced."
+msgstr "ไม่สามารถแก้ไขรายการสัญญาที่ผูกพัน เก็บถาวร หรือออกใบแจ้งหนี้แล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract management capability is required."
+msgstr "ต้องมีสิทธิ์จัดการสัญญา"
+
+#. module: erp_contract
+#: model:ir.actions.server,name:erp_contract.cron_recurring_bills_ir_actions_server
+msgid "Contract recurring draft bills"
+msgstr "ใบเรียกเก็บเงินร่างประจำตามสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contract refunds cannot exceed the original bill."
+msgstr "การคืนเงินตามสัญญาต้องไม่เกินใบเรียกเก็บเงินต้นฉบับ"
+
+#. module: erp_contract
+#: model:ir.actions.server,name:erp_contract.cron_contract_renewal_ir_actions_server
+msgid "Contract renewal successors"
+msgstr "รายการสืบทอดการต่ออายุสัญญา"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.contract_menu
+msgid "Contracts"
+msgstr "สัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Contracts must begin active without a budget commitment."
+msgstr "สัญญาต้องเริ่มในสถานะใช้งานโดยยังไม่มีภาระผูกพันงบประมาณ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.view_contract_invoice_plan
+#: model_terms:ir.ui.view,arch_db:erp_contract.view_contract_plans
+msgid "Create / Open Invoice"
+msgstr "สร้าง / เปิดใบแจ้งหนี้"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.guarantee_form
+msgid "Create Receipt Invoice"
+msgstr "สร้างใบแจ้งหนี้การรับ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.guarantee_form
+msgid "Create Return Bill"
+msgstr "สร้างใบเรียกเก็บเงินคืน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Create guarantee documents through the guarantee actions."
+msgstr "ให้สร้างเอกสารหลักประกันผ่านคำสั่งหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__create_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__create_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__currency_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__erp_budget_company_currency_id
+msgid "Currency"
+msgstr "สกุลเงิน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__cycle_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__cycle_ids
+msgid "Cycle"
+msgstr "รอบ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__date_due_guarantee
+msgid "Date Due Guarantee"
+msgstr "วันครบกำหนดหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__date_end
+msgid "Date End"
+msgstr "วันที่สิ้นสุด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__date_from
+msgid "Date From"
+msgstr "ตั้งแต่วันที่"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__date_guarantee_receive
+msgid "Date Guarantee Receive"
+msgstr "วันที่รับหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__date_return
+msgid "Date Return"
+msgstr "วันที่คืน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__date_start
+msgid "Date Start"
+msgstr "วันที่เริ่มต้น"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__date_to
+msgid "Date To"
+msgstr "ถึงวันที่"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_contract__erp_plan_interval_type__day
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__daily
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__daily
+msgid "Days"
+msgstr "วัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__default_for
+msgid "Default For"
+msgstr "ค่าเริ่มต้นสำหรับ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__deposit_origin_id
+msgid "Deposit Origin"
+msgstr "ต้นทางเงินมัดจำ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__description
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__dimension_ids
+msgid "Dimension"
+msgstr "มิติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_full_reconcile__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_budget_activity__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__display_name
+#: model:ir.model.fields,field_description:erp_contract.field_purchase_order__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__document_return_date
+msgid "Document Instrument Return Date"
+msgstr "วันที่คืนเอกสารหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__document_ref
+msgid "Document Ref"
+msgstr "เลขอ้างอิงเอกสาร"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement__state__draft
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__dynamic_content
+msgid "Dynamic Content"
+msgstr "เนื้อหาแบบไดนามิก"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Each recurring period bills exactly one source service line."
+msgstr "แต่ละงวดประจำวางบิลจากรายการบริการต้นทางหนึ่งรายการเท่านั้น"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__end_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__end_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__end_date
+msgid "End Date"
+msgstr "วันที่สิ้นสุด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__erp_budget_amount_captured
+msgid "Erp Budget Amount Captured"
+msgstr "จำนวนเงินงบประมาณที่บันทึกแล้ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__erp_budget_amount_mode
+msgid "Erp Budget Amount Mode"
+msgstr "รูปแบบจำนวนเงินงบประมาณ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_budget_currency_id
+msgid "Erp Budget Currency"
+msgstr "สกุลเงินงบประมาณ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__erp_budget_fx_rate
+msgid "Erp Budget Fx Rate"
+msgstr "อัตราแลกเปลี่ยนงบประมาณ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__erp_budget_unit_company
+msgid "Erp Budget Unit Company"
+msgstr "งบประมาณต่อหน่วยในสกุลเงินบริษัท"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_bank_statement_line__erp_contract_cycle_id
+#: model:ir.model.fields,field_description:erp_contract.field_account_move__erp_contract_cycle_id
+msgid "Erp Contract Cycle"
+msgstr "รอบสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_bank_statement_line__erp_contract_invoice_plan_id
+#: model:ir.model.fields,field_description:erp_contract.field_account_move__erp_contract_invoice_plan_id
+msgid "Erp Contract Invoice Plan"
+msgstr "แผนวางบิลตามสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_move_line__erp_contract_line_id
+msgid "Erp Contract Line"
+msgstr "รายการสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_bank_statement_line__erp_guarantee_id
+#: model:ir.model.fields,field_description:erp_contract.field_account_move__erp_guarantee_id
+msgid "Erp Guarantee"
+msgstr "หลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_bank_statement_line__erp_guarantee_direction
+#: model:ir.model.fields,field_description:erp_contract.field_account_move__erp_guarantee_direction
+msgid "Erp Guarantee Direction"
+msgstr "ทิศทางหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_invoice_plan_ids
+msgid "Erp Invoice Plan"
+msgstr "แผนวางบิล"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_invoice_plan_lock_version
+msgid "Erp Invoice Plan Lock Version"
+msgstr "รุ่นการล็อกแผนวางบิล"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_plan_installments
+msgid "Erp Plan Installments"
+msgstr "จำนวนงวดตามแผน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_plan_interval
+msgid "Erp Plan Interval"
+msgstr "ช่วงเวลาตามแผน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_plan_interval_type
+msgid "Erp Plan Interval Type"
+msgstr "ประเภทช่วงเวลาตามแผน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_plan_start
+msgid "Erp Plan Start"
+msgstr "วันเริ่มต้นแผน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__erp_use_invoice_plan
+msgid "Erp Use Invoice Plan"
+msgstr "ใช้แผนวางบิล"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__erp_budget_amount_mode__net
+msgid "Exclude taxes"
+msgstr "ไม่รวมภาษี"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Financial guarantee history freezes its source, account, dimensions and face value."
+msgstr "ประวัติหลักประกันทางการเงินกำหนดให้คงต้นทาง บัญชี มิติ และมูลค่าหน้าตั๋ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__fold
+msgid "Fold"
+msgstr "พับ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_follower_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_follower_ids
+msgid "Followers"
+msgstr "ผู้ติดตาม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_partner_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "ผู้ติดตาม (ผู้ติดต่อ)"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_move_line__erp_guarantee_fund_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__fund_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__fund_id
+msgid "Fund"
+msgstr "แหล่งเงิน"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.view_contract_plans
+msgid "Generate Installments"
+msgstr "สร้างงวด"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_recurrence_form
+msgid "Generate Next Recurring Bills"
+msgstr "สร้างใบเรียกเก็บเงินงวดถัดไป"
+
+#. module: erp_contract
+#: model:ir.module.module,shortdesc:base.module_erp_contract
+msgid "Government ERP Purchase Agreements"
+msgstr "ข้อตกลงจัดซื้อภาครัฐ"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.guarantee_type_action
+msgid "Guarantee Instruments"
+msgstr "ตราสารหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.guarantee_method_action
+msgid "Guarantee Methods"
+msgstr "วิธีการค้ำประกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee amount must be positive."
+msgstr "จำนวนเงินหลักประกันต้องมากกว่าศูนย์"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee and source must share an active organization and company."
+msgstr "หลักประกันและต้นทางต้องอยู่ในหน่วยงานที่ใช้งานและบริษัทเดียวกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee document company, currency and supplier must match its source."
+msgstr "บริษัท สกุลเงิน และผู้ขายในเอกสารหลักประกันต้องตรงกับต้นทาง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee identity and settlement history are internal."
+msgstr "ตัวระบุหลักประกันและประวัติการชำระเป็นข้อมูลภายในระบบ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee journal line values and dimensions are protected."
+msgstr "มูลค่าและมิติของรายการบัญชีหลักประกันได้รับการป้องกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee journal lines are generated by the settlement action."
+msgstr "ระบบสร้างรายการบัญชีหลักประกันผ่านคำสั่งชำระ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee journal lines are retained with their settlement document."
+msgstr "เก็บรายการบัญชีหลักประกันพร้อมเอกสารชำระ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee method must belong to the same company."
+msgstr "วิธีค้ำประกันต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_guarantee_name_company_unique
+msgid "Guarantee number must be unique within its company."
+msgstr "เลขที่หลักประกันต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee receipt documents cannot exceed its face value."
+msgstr "เอกสารรับหลักประกันต้องไม่เกินมูลค่าหน้าตั๋ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee reconciliation amounts must be finite and nonnegative."
+msgstr "จำนวนเงินกระทบยอดหลักประกันต้องเป็นจำนวนจำกัดและไม่ติดลบ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee reconciliation cannot overpay or reverse the sign of a settlement."
+msgstr "การกระทบยอดหลักประกันต้องไม่ชำระเกินหรือเปลี่ยนเครื่องหมายยอดชำระ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee reconciliation exceeds the available journal balance."
+msgstr "ยอดกระทบหลักประกันเกินยอดคงเหลือในสมุดรายวันที่ใช้ได้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee reconciliation requires posted lines on the same company account."
+msgstr "การกระทบยอดหลักประกันต้องใช้รายการที่ลงบัญชีแล้วในบัญชีบริษัทเดียวกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee returns cannot exceed the amount actually received."
+msgstr "ยอดคืนหลักประกันต้องไม่เกินจำนวนเงินที่ได้รับจริง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee settlement defaults are internal."
+msgstr "ค่าเริ่มต้นการชำระหลักประกันเป็นข้อมูลภายในระบบ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee settlement history is created through accounting actions."
+msgstr "ประวัติการชำระหลักประกันสร้างผ่านคำสั่งทางบัญชี"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee settlement must not consume a purchase/contract/expense budget again."
+msgstr "การชำระหลักประกันต้องไม่ใช้งบประมาณจัดซื้อ สัญญา หรือค่าใช้จ่ายซ้ำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee settlement requires positive untaxed lines on its configured account."
+msgstr "การชำระหลักประกันต้องใช้รายการก่อนภาษีที่มีจำนวนบวกในบัญชีที่กำหนด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Guarantee supplier must match the RFQ/PO."
+msgstr "ผู้ขายในหลักประกันต้องตรงกับคำขอใบเสนอราคาหรือใบสั่งซื้อ"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.guarantee_menu
+msgid "Guarantees"
+msgstr "หลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__has_message
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__has_message
+msgid "Has Message"
+msgstr "มีข้อความ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_account_move_line__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_exception_icon
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_exception_icon
+msgid "Icon"
+msgstr "ไอคอน"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__activity_exception_icon
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "ไอคอนแสดงกิจกรรมที่มีข้อผิดพลาด"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__message_needaction
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "หากเลือกไว้ ข้อความใหม่ต้องได้รับการตรวจสอบ"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__message_has_error
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__message_has_sms_error
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__message_has_error
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "หากเลือกไว้ มีข้อความบางรายการส่งไม่สำเร็จ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement__state__inactive
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Inactive"
+msgstr "ไม่ใช้งาน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Inactive agreements cannot record a new review."
+msgstr "ข้อตกลงที่ไม่ใช้งานไม่สามารถบันทึกการตรวจทานใหม่"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__erp_budget_amount_mode__all
+msgid "Include all taxes"
+msgstr "รวมภาษีทั้งหมด"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__erp_budget_amount_mode__specific
+msgid "Include selected taxes"
+msgstr "รวมภาษีที่เลือก"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__installment
+msgid "Installment"
+msgstr "งวด"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_invoice_plan_contract_installment_unique
+msgid "Installment number must be unique in the contract."
+msgstr "เลขงวดต้องไม่ซ้ำกันในสัญญา"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.guarantee_type_menu
+msgid "Instruments"
+msgstr "ตราสาร"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__invoice_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__invoice_ids
+msgid "Invoice"
+msgstr "ใบแจ้งหนี้"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__invoice_date
+msgid "Invoice Date"
+msgstr "วันที่ใบแจ้งหนี้"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__invoice_line_ids
+msgid "Invoice Line"
+msgstr "รายการใบแจ้งหนี้"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.view_contract_plans
+msgid "Invoice Plans"
+msgstr "แผนวางบิล"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__invoice_type
+msgid "Invoice Type"
+msgstr "ประเภทใบแจ้งหนี้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "Invoice-plan locking is internal."
+msgstr "การล็อกแผนวางบิลเป็นการทำงานภายในระบบ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__is_expired
+msgid "Is Expired"
+msgstr "หมดอายุแล้ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_is_follower
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_is_follower
+msgid "Is Follower"
+msgstr "เป็นผู้ติดตาม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__journal_id
+msgid "Journal"
+msgstr "สมุดรายวัน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__kind
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Kind"
+msgstr "ชนิด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__write_uid
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__write_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Legal Administration"
+msgstr "การจัดการด้านกฎหมาย"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Legal Content"
+msgstr "เนื้อหาทางกฎหมาย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__legal_item_ids
+msgid "Legal Item"
+msgstr "รายการทางกฎหมาย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__legal_snapshot
+msgid "Legal Snapshot"
+msgstr "ข้อมูลทางกฎหมาย ณ เวลาบันทึก"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.menu_legal_stages
+msgid "Legal Stages"
+msgstr "ขั้นตอนทางกฎหมาย"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.menu_legal_subtypes
+msgid "Legal Subtypes"
+msgstr "ประเภทย่อยทางกฎหมาย"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.menu_legal_types
+msgid "Legal Types"
+msgstr "ประเภททางกฎหมาย"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Legal content can only change in an editable draft version."
+msgstr "แก้ไขเนื้อหาทางกฎหมายได้เฉพาะฉบับร่างที่แก้ไขได้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Legal content cannot change its agreement."
+msgstr "ไม่สามารถเปลี่ยนข้อตกลงของเนื้อหาทางกฎหมาย"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Legal content requires an editable draft agreement."
+msgstr "เนื้อหาทางกฎหมายต้องอยู่ในข้อตกลงฉบับร่างที่แก้ไขได้"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__line_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__line_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__line_id
+msgid "Line"
+msgstr "รายการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Lines require an active contract with budget commitment disabled."
+msgstr "รายการต้องใช้สัญญาที่ใช้งานอยู่และไม่ได้เปิดการผูกพันงบประมาณ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__lock_version
+msgid "Lock Version"
+msgstr "รุ่นการล็อก"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__activity_type_icon
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__activity_type_icon
+msgid "Material Symbols icon e.g. checklist"
+msgstr "ไอคอน Material Symbols เช่น checklist"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_has_error
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_has_error
+msgid "Message Delivery error"
+msgstr "ข้อผิดพลาดในการส่งข้อความ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_ids
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_ids
+msgid "Messages"
+msgstr "ข้อความ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__method_id
+msgid "Method"
+msgstr "วิธีการ"
+
+#. module: erp_contract
+#: model:ir.ui.menu,name:erp_contract.guarantee_method_menu
+msgid "Methods"
+msgstr "วิธีการ"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_contract__erp_plan_interval_type__month
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__monthly
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__monthly
+msgid "Months"
+msgstr "เดือน"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__monthlylastday
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__monthlylastday
+msgid "Months, last day"
+msgstr "เดือน วันสุดท้าย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__move_ids
+msgid "Move"
+msgstr "รายการเคลื่อนไหว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Move the agreement out of its read-only legal stage before editing."
+msgstr "ต้องย้ายข้อตกลงออกจากขั้นตอนทางกฎหมายที่อ่านอย่างเดียวก่อนแก้ไข"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__my_activity_date_deadline
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "กำหนดเวลากิจกรรมของฉัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_method__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__name
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_form
+msgid "New Version"
+msgstr "ฉบับใหม่"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_date_deadline
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "กำหนดเวลากิจกรรมถัดไป"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_summary
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_summary
+msgid "Next Activity Summary"
+msgstr "สรุปกิจกรรมถัดไป"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_type_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_type_id
+msgid "Next Activity Type"
+msgstr "ประเภทกิจกรรมถัดไป"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__next_period_end
+msgid "Next Period End"
+msgstr "วันสิ้นสุดงวดถัดไป"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__next_period_start
+msgid "Next Period Start"
+msgstr "วันเริ่มต้นงวดถัดไป"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "No contract quantity remains for this installment."
+msgstr "ไม่มีจำนวนตามสัญญาคงเหลือสำหรับงวดนี้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "No unclaimed amount remains for this guarantee settlement."
+msgstr "ไม่มียอดที่ยังไม่เรียกใช้สำหรับการชำระหลักประกันนี้"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__note
+msgid "Note"
+msgstr "หมายเหตุ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__notification_address_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Notification Address"
+msgstr "ที่อยู่สำหรับการแจ้งเตือน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_needaction_counter
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_needaction_counter
+msgid "Number of Actions"
+msgstr "จำนวนการดำเนินการ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_has_error_counter
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_has_error_counter
+msgid "Number of errors"
+msgstr "จำนวนข้อผิดพลาด"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__message_needaction_counter
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "จำนวนข้อความที่ต้องดำเนินการ"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__message_has_error_counter
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "จำนวนข้อความที่ส่งไม่สำเร็จ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Only active accounting-backed guarantees create settlement documents."
+msgstr "สร้างเอกสารชำระได้เฉพาะหลักประกันที่ใช้งานและมีบัญชีรองรับ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Only active agreements can start a new version."
+msgstr "เริ่มฉบับใหม่ได้เฉพาะข้อตกลงที่ใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Only active agreements may be terminated."
+msgstr "สิ้นสุดได้เฉพาะข้อตกลงที่ใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Only agreement managers can set the agreement requirement."
+msgstr "เฉพาะผู้จัดการข้อตกลงเท่านั้นที่กำหนดให้ต้องมีข้อตกลงได้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Only an unused canceled schedule can reset."
+msgstr "คืนสถานะได้เฉพาะกำหนดการที่ยกเลิกแล้วและยังไม่ใช้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Only draft agreements can be edited."
+msgstr "แก้ไขได้เฉพาะข้อตกลงสถานะร่าง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Only draft agreements without history can be deleted."
+msgstr "ลบได้เฉพาะข้อตกลงสถานะร่างที่ไม่มีประวัติ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Only one live bill of the configured quantity is allowed per period."
+msgstr "แต่ละงวดมีใบเรียกเก็บเงินที่ใช้งานตามจำนวนที่กำหนดได้เพียงหนึ่งใบ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_recurrence_form
+msgid "Open / Regenerate Bill"
+msgstr "เปิด / สร้างใบเรียกเก็บเงินใหม่"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__operation
+msgid "Operation"
+msgstr "การดำเนินการ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_cycle__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__organization_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_contract
+#: model:ir.module.module,summary:base.module_erp_contract
+msgid "Organization-scoped agreements linked to purchase orders"
+msgstr "ข้อตกลงตามขอบเขตหน่วยงานที่เชื่อมกับใบสั่งซื้อ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__amount_untaxed
+msgid "PO Untaxed Amount"
+msgstr "จำนวนเงินใบสั่งซื้อก่อนภาษี"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_account_partial_reconcile
+msgid "Partial Reconcile"
+msgstr "การกระทบยอดบางส่วน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__parties
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Parties"
+msgstr "คู่สัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__partner_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__partner_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__partner_id
+msgid "Partner"
+msgstr "คู่ค้า"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__partner_contact_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Partner Contact"
+msgstr "ผู้ติดต่อคู่ค้า"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__partner_signed_date
+msgid "Partner Signed Date"
+msgstr "วันที่คู่ค้าลงนาม"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__partner_signed_user_id
+msgid "Partner Signed User"
+msgstr "ผู้ลงนามของคู่ค้า"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__percent
+msgid "Percent"
+msgstr "ร้อยละ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__period_id
+msgid "Period"
+msgstr "งวด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__plan_id
+msgid "Plan"
+msgstr "แผน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__plan_date
+msgid "Plan Date"
+msgstr "วันที่แผน"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_invoicing_type__post-paid
+msgid "Post-paid"
+msgstr "ชำระภายหลัง"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_invoicing_type__pre-paid
+msgid "Pre-paid"
+msgstr "ชำระล่วงหน้า"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__predecessor_id
+msgid "Predecessor"
+msgstr "รายการก่อนหน้า"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__price_unit
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__price_unit
+msgid "Price Unit"
+msgstr "ราคาต่อหน่วย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__product_id
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__purchase_id
+msgid "Purchase"
+msgstr "จัดซื้อ"
+
+#. module: erp_contract
+#. odoo-python
+#: model:ir.model,name:erp_contract.model_erp_contract_agreement
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_guarantee_method__default_for__requisition
+msgid "Purchase Agreement"
+msgstr "ข้อตกลงจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.agreement_action
+msgid "Purchase Agreements"
+msgstr "ข้อตกลงจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_contract
+msgid "Purchase Contract"
+msgstr "สัญญาจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_line
+msgid "Purchase Contract Line"
+msgstr "รายการสัญญาจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.contract_action
+msgid "Purchase Contracts"
+msgstr "สัญญาจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_guarantee
+msgid "Purchase Guarantee"
+msgstr "หลักประกันการจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_guarantee_type
+msgid "Purchase Guarantee Instrument Type"
+msgstr "ประเภทตราสารหลักประกันการจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model,name:erp_contract.model_erp_contract_guarantee_method
+msgid "Purchase Guarantee Method"
+msgstr "วิธีค้ำประกันการจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.actions.act_window,name:erp_contract.guarantee_action
+#: model:ir.ui.menu,name:erp_contract.guarantee_menu_root
+msgid "Purchase Guarantees"
+msgstr "หลักประกันการจัดซื้อ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__purchase_order_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__purchase_order_id
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_guarantee_method__default_for__po
+msgid "Purchase Order"
+msgstr "ใบสั่งซื้อ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan_selection__quantity
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__quantity
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__quantity
+msgid "Quantity"
+msgstr "จำนวน"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__quarterly
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__quarterly
+msgid "Quarters"
+msgstr "ไตรมาส"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_guarantee_method__default_for__rfq
+msgid "RFQ"
+msgstr "คำขอใบเสนอราคา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__readonly
+msgid "Readonly"
+msgstr "อ่านอย่างเดียว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__reason
+msgid "Reason"
+msgstr "เหตุผล"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__account_move__erp_guarantee_direction__receive
+msgid "Receive Guarantee"
+msgstr "รับหลักประกัน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement_item__kind__recital
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Recital"
+msgstr "ข้อความนำ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+msgid "Record Legal Approval"
+msgstr "บันทึกการอนุมัติทางกฎหมาย"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+msgid "Record Review"
+msgstr "บันทึกการตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurrence_canceled
+msgid "Recurrence Canceled"
+msgstr "ยกเลิกการเกิดซ้ำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__recurrence_enabled
+msgid "Recurrence Enabled"
+msgstr "เปิดใช้การเกิดซ้ำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurrence_stop_date
+msgid "Recurrence Stop Date"
+msgstr "วันที่หยุดการเกิดซ้ำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurrence intervals must be positive and notice days nonnegative."
+msgstr "ช่วงเวลาการเกิดซ้ำต้องมากกว่าศูนย์และจำนวนวันแจ้งล่วงหน้าต้องไม่ติดลบ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurring_line_form
+msgid "Recurring Billing"
+msgstr "การวางบิลประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring Bills"
+msgstr "ใบเรียกเก็บเงินประจำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurring_interval
+msgid "Recurring Interval"
+msgstr "ช่วงเวลาการเกิดซ้ำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurring_invoicing_type
+msgid "Recurring Invoicing Type"
+msgstr "ประเภทการออกใบแจ้งหนี้ประจำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurring_next_date
+msgid "Recurring Next Date"
+msgstr "วันที่เกิดซ้ำถัดไป"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.contract_recurrence_form
+msgid "Recurring Period History"
+msgstr "ประวัติงวดการเกิดซ้ำ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__recurring_rule_type
+msgid "Recurring Rule Type"
+msgstr "ประเภทกฎการเกิดซ้ำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring bills retain their contract company, vendor, currency and type."
+msgstr "ใบเรียกเก็บเงินประจำต้องคงบริษัท ผู้ขาย สกุลเงิน และประเภทตามสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring contract history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติสัญญาประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring contracts consume Budget when each native bill posts."
+msgstr "สัญญาประจำใช้งบประมาณเมื่อแต่ละใบเรียกเก็บเงินลงบัญชี"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring contracts use per-period actuals, not a one-time commitment or installment plan."
+msgstr "สัญญาประจำใช้ค่าใช้จ่ายจริงรายงวด แทนภาระผูกพันครั้งเดียวหรือแผนแบ่งงวด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring credits cannot exceed their original period bill."
+msgstr "เครดิตประจำต้องไม่เกินใบเรียกเก็บเงินประจำงวดต้นฉบับ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring history retains its contract configuration."
+msgstr "ประวัติรายการประจำต้องคงการกำหนดค่าสัญญาเดิม"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring invoice lines cannot move to another document."
+msgstr "รายการใบแจ้งหนี้ประจำไม่สามารถย้ายไปเอกสารอื่น"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring invoice provenance is assigned by the contract."
+msgstr "ที่มาของใบแจ้งหนี้ประจำกำหนดโดยสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring invoice provenance is immutable."
+msgstr "ไม่สามารถแก้ไขที่มาของใบแจ้งหนี้ประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring period history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติงวดประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring periods are created by contract generation."
+msgstr "ระบบสร้างงวดประจำจากการสร้างรายการตามสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring periods are immutable."
+msgstr "ไม่สามารถแก้ไขงวดประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring quantities must be positive."
+msgstr "จำนวนรายการประจำต้องมากกว่าศูนย์"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring schedule history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติกำหนดการประจำ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Recurring source lines must be retained; cancel the bill."
+msgstr "ต้องเก็บรายการต้นทางประจำไว้ ให้ยกเลิกใบเรียกเก็บเงิน"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_recurrence_change__operation__renew
+msgid "Renew with successor"
+msgstr "ต่ออายุโดยสร้างรายการสืบทอด"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurring_line_form
+msgid "Renewal"
+msgstr "การต่ออายุ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Request links cannot change while agreements are linked."
+msgstr "ไม่สามารถเปลี่ยนการเชื่อมคำขอขณะที่มีข้อตกลงเชื่อมอยู่"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__requisition_id
+msgid "Requisition"
+msgstr "คำขอจัดซื้อ"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.recurring_line_form
+msgid "Reset Schedule"
+msgstr "คืนค่ากำหนดการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Reset the contract bill before changing its identity or date."
+msgstr "ต้องคืนสถานะใบเรียกเก็บเงินตามสัญญาก่อนเปลี่ยนตัวระบุหรือวันที่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Reset the contract bill to draft before changing its source or amount."
+msgstr "ต้องคืนใบเรียกเก็บเงินตามสัญญาเป็นฉบับร่างก่อนเปลี่ยนต้นทางหรือจำนวนเงิน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Reset the contract bill to draft before deleting its source."
+msgstr "ต้องคืนใบเรียกเก็บเงินตามสัญญาเป็นฉบับร่างก่อนลบต้นทาง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Reset the posted recurring credit before its bill."
+msgstr "ต้องคืนสถานะเครดิตประจำที่ลงบัญชีแล้วก่อนคืนสถานะใบเรียกเก็บเงิน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid ""
+"Reset/cancel the guarantee settlement document so its received and return claims stay reconciled."
+msgstr "ให้คืนสถานะหรือยกเลิกเอกสารชำระหลักประกันเพื่อให้ยอดรับและยอดคืนยังคงกระทบยอดกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__activity_user_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__activity_user_id
+msgid "Responsible User"
+msgstr "ผู้รับผิดชอบ"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__account_move__erp_guarantee_direction__return
+msgid "Return Guarantee"
+msgstr "คืนหลักประกัน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__review_days
+msgid "Review Days"
+msgstr "จำนวนวันตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__review_scheduled_date
+msgid "Review Scheduled Date"
+msgstr "วันที่กำหนดตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__review_scheduled_version
+msgid "Review Scheduled Version"
+msgstr "ฉบับที่กำหนดตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_type__review_user_id
+msgid "Review User"
+msgstr "ผู้ตรวจทาน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Review actor/date and scheduling evidence cannot be forged."
+msgstr "ไม่สามารถสร้างข้อมูลผู้ตรวจทาน วันที่ หรือหลักฐานกำหนดการขึ้นเอง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Review agreement before expiry"
+msgstr "ตรวจทานข้อตกลงก่อนหมดอายุ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Review evidence is recorded by agreement actions."
+msgstr "หลักฐานการตรวจทานบันทึกผ่านคำสั่งข้อตกลง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement_legal.py:0
+msgid "Review notice days cannot be negative."
+msgstr "จำนวนวันแจ้งตรวจทานล่วงหน้าต้องไม่ติดลบ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__reviewed_date
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Reviewed Date"
+msgstr "วันที่ตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__reviewed_user_id
+msgid "Reviewed User"
+msgstr "ผู้ตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__revision_ids
+msgid "Revision"
+msgstr "การปรับปรุง"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__message_has_sms_error
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "ข้อผิดพลาดในการส่ง SMS"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__section_id
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_agreement_item__kind__section
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Section"
+msgstr "ส่วน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Select a line of this contract."
+msgstr "เลือกรายการของสัญญานี้"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "Select a positive quantity from this plan contract."
+msgstr "เลือกจำนวนมากกว่าศูนย์จากสัญญาของแผนนี้"
+
+#. module: erp_contract
+#: model:ir.model.constraint,message:erp_contract.constraint_erp_contract_invoice_plan_selection_selection_unique
+msgid "Select each contract line only once."
+msgstr "เลือกรายการสัญญาแต่ละรายการได้เพียงครั้งเดียว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "Selected contract quantities must match this installment amount."
+msgstr "จำนวนตามสัญญาที่เลือกต้องตรงกับจำนวนเงินของงวดนี้"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_invoice_plan__selection_ids
+msgid "Selection"
+msgstr "การเลือก"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__semesterly
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__semesterly
+msgid "Semesters"
+msgstr "ภาคการศึกษา"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__sequence
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_stage__sequence
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Sequence"
+msgstr "ลำดับ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Settle the outstanding guarantee before archiving it."
+msgstr "ต้องชำระยอดหลักประกันคงค้างก่อนเก็บถาวร"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__signature_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__signature_date
+msgid "Signature Date"
+msgstr "วันที่ลงนาม"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Signatures and Review"
+msgstr "การลงนามและการตรวจทาน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__signed_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__signed_contract
+msgid "Signed Contract"
+msgstr "สัญญาที่ลงนามแล้ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__signed_contract_filename
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__signed_contract_filename
+msgid "Signed Contract Filename"
+msgstr "ชื่อไฟล์สัญญาที่ลงนามแล้ว"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__special_terms
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Special Terms"
+msgstr "เงื่อนไขพิเศษ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__stage_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Stage"
+msgstr "ขั้นตอน"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__start_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__start_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_recurrence_change__start_date
+msgid "Start Date"
+msgstr "วันที่เริ่มต้น"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Start a new agreement version before changing purchase order amounts."
+msgstr "ต้องเริ่มข้อตกลงฉบับใหม่ก่อนเปลี่ยนจำนวนเงินใบสั่งซื้อ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Start a new agreement version before changing purchase order lines."
+msgstr "ต้องเริ่มข้อตกลงฉบับใหม่ก่อนเปลี่ยนรายการใบสั่งซื้อ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "Start a new agreement version before removing purchase order lines."
+msgstr "ต้องเริ่มข้อตกลงฉบับใหม่ก่อนนำรายการใบสั่งซื้อออก"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__state
+msgid "State"
+msgstr "สถานะ"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__activity_state
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"สถานะตามกิจกรรม\n"
+"เกินกำหนด: เลยวันครบกำหนดแล้ว\n"
+"วันนี้: กิจกรรมถึงกำหนดวันนี้\n"
+"วางแผน: กิจกรรมในอนาคต"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_recurrence_change__operation__stop
+msgid "Stop line"
+msgstr "หยุดรายการ"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__subtype_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Subtype"
+msgstr "ประเภทย่อย"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__successor_ids
+msgid "Successor"
+msgstr "รายการสืบทอด"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_form
+msgid "Terminate"
+msgstr "สิ้นสุด"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_recurrence_change__operation__terminate
+msgid "Terminate contract"
+msgstr "สิ้นสุดสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__termination_date
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__termination_date
+msgid "Termination Date"
+msgstr "วันที่สิ้นสุดสัญญา"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__termination_notice_days
+msgid "Termination Notice Days"
+msgstr "จำนวนวันแจ้งล่วงหน้าก่อนสิ้นสุด"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_contract__termination_reason
+msgid "Termination Reason"
+msgstr "เหตุผลการสิ้นสุด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "The accounting meaning of a used guarantee instrument cannot change."
+msgstr "ไม่สามารถเปลี่ยนความหมายทางบัญชีของตราสารหลักประกันที่ใช้แล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "The agreement company must be active."
+msgstr "บริษัทของข้อตกลงต้องใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "The agreement has changed."
+msgstr "ข้อตกลงมีการเปลี่ยนแปลงแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "The agreement must match the active request organization of the purchase order."
+msgstr "ข้อตกลงต้องตรงกับหน่วยงานคำขอที่ใช้งานของใบสั่งซื้อ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "The agreement partner must match the purchase order vendor."
+msgstr "คู่ค้าในข้อตกลงต้องตรงกับผู้ขายในใบสั่งซื้อ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/budget_amount.py:0
+msgid "The committed contract currency is immutable."
+msgstr "ไม่สามารถเปลี่ยนสกุลเงินของสัญญาที่ผูกพันแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "The contract account must match the product expense account."
+msgstr "บัญชีสัญญาต้องตรงกับบัญชีค่าใช้จ่ายของสินค้า"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "The contract budget account must match its activity."
+msgstr "บัญชีงบประมาณสัญญาต้องตรงกับกิจกรรม"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "The contract company must be active."
+msgstr "บริษัทของสัญญาต้องใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "The contract has no active budget commitment."
+msgstr "สัญญาไม่มีภาระผูกพันงบประมาณที่ใช้งานอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "The contract must be active with budget commitment enabled."
+msgstr "สัญญาต้องใช้งานอยู่และเปิดการผูกพันงบประมาณ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "The guarantee requires an eligible RFQ/PO or confirmed purchase agreement."
+msgstr "หลักประกันต้องมีคำขอใบเสนอราคา/ใบสั่งซื้อที่เข้าเงื่อนไขหรือข้อตกลงจัดซื้อที่ยืนยันแล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "The planned quantity exceeds the unbilled contract quantity."
+msgstr "จำนวนตามแผนเกินจำนวนตามสัญญาที่ยังไม่ได้วางบิล"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "The recurring accounting date must remain in its fiscal period."
+msgstr "วันที่บัญชีประจำต้องอยู่ภายในงวดงบประมาณของรายการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "The recurring bill must retain its source economics and Budget dimensions."
+msgstr "ใบเรียกเก็บเงินประจำต้องคงข้อมูลการเงินและมิติงบประมาณจากต้นทาง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "The start date must be on or before the end date."
+msgstr "วันที่เริ่มต้นต้องไม่หลังวันที่สิ้นสุด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/purchase.py:0
+msgid "The vendor and company cannot change while agreements are linked."
+msgstr "ไม่สามารถเปลี่ยนผู้ขายและบริษัทขณะที่มีข้อตกลงเชื่อมอยู่"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "This line already has a successor."
+msgstr "รายการนี้มีรายการสืบทอดแล้ว"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_item__title
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Title"
+msgstr "ชื่อเรื่อง"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__to_review_date
+msgid "To Review Date"
+msgstr "วันที่ต้องตรวจทาน"
+
+#. module: erp_contract
+#. odoo-javascript
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__type_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_subtype__type_id
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee__type_id
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Type"
+msgstr "ประเภท"
+
+#. module: erp_contract
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_agreement__activity_exception_decoration
+#: model:ir.model.fields,help:erp_contract.field_erp_contract_guarantee__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "ประเภทกิจกรรมที่มีข้อผิดพลาดในรายการ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Unreconcile and reconcile guarantee payments instead of rewriting their history."
+msgstr "ให้ยกเลิกการกระทบยอดและกระทบยอดการชำระหลักประกันใหม่แทนการแก้ประวัติ"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_line__uom_id
+msgid "Uom"
+msgstr "หน่วยนับ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/agreement.py:0
+msgid "Use agreement actions; identity and history cannot be edited."
+msgstr "ให้ใช้คำสั่งของข้อตกลง ไม่สามารถแก้ไขตัวระบุและประวัติ"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/contract.py:0
+msgid "Use contract actions; source identity cannot be changed."
+msgstr "ให้ใช้คำสั่งของสัญญา ไม่สามารถเปลี่ยนตัวระบุต้นทาง"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Use contract schedule actions to create successors."
+msgstr "ให้ใช้คำสั่งกำหนดการสัญญาเพื่อสร้างรายการสืบทอด"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Use contract schedule actions."
+msgstr "ให้ใช้คำสั่งกำหนดการสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/guarantee.py:0
+msgid "Use guarantee accounting actions; its financial source and lines are protected."
+msgstr "ให้ใช้คำสั่งบัญชีหลักประกัน เนื่องจากต้นทางการเงินและรายการได้รับการป้องกัน"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Use native accounting actions for contract bills."
+msgstr "ให้ใช้คำสั่งบัญชีของระบบสำหรับใบเรียกเก็บเงินตามสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/recurrence.py:0
+msgid "Use the contract termination action."
+msgstr "ให้ใช้คำสั่งสิ้นสุดสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/account_move.py:0
+msgid "Use the native accounting posting workflow for contract bills."
+msgstr "ให้ใช้ขั้นตอนลงบัญชีของระบบสำหรับใบเรียกเก็บเงินตามสัญญา"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "Used quantity selections cannot be deleted."
+msgstr "ไม่สามารถลบการเลือกจำนวนที่ใช้แล้ว"
+
+#. module: erp_contract
+#. odoo-python
+#: code:addons/erp_contract/models/invoice_plan.py:0
+msgid "Used quantity selections cannot change."
+msgstr "ไม่สามารถเปลี่ยนการเลือกจำนวนที่ใช้แล้ว"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_guarantee_type__is_create_invoice
+msgid "Uses accounting settlement"
+msgstr "ใช้การชำระบัญชี"
+
+#. module: erp_contract
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement__version
+#: model:ir.model.fields,field_description:erp_contract.field_erp_contract_agreement_revision__version
+msgid "Version"
+msgstr "ฉบับ"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__weekly
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__weekly
+msgid "Weeks"
+msgstr "สัปดาห์"
+
+#. module: erp_contract
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_contract__erp_plan_interval_type__year
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__auto_renew_rule_type__yearly
+#: model:ir.model.fields.selection,name:erp_contract.selection__erp_contract_line__recurring_rule_type__yearly
+msgid "Years"
+msgstr "ปี"
+
+#. module: erp_contract
+#: code:addons/erp_contract/models/agreement_legal.py:0
+#. odoo-python
+msgid "Review recorded."
+msgstr "บันทึกการตรวจสอบแล้ว"
+
+#. module: erp_contract
+#: code:addons/erp_contract/models/agreement_legal.py:0
+#. odoo-python
+msgid "Legal approval recorded."
+msgstr "บันทึกการอนุมัติทางกฎหมายแล้ว"
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_form
+msgid "Review and Legal Approval"
+msgstr "การตรวจสอบและอนุมัติทางกฎหมาย"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Not specified"
+msgstr "ไม่ระบุ"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Company Signatory"
+msgstr "ผู้ลงนามฝ่ายบริษัท"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Company Signature Date"
+msgstr "วันที่ลงนามฝ่ายบริษัท"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Partner Signatory"
+msgstr "ผู้ลงนามฝ่ายคู่ค้า"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Partner Signature Date"
+msgstr "วันที่ลงนามฝ่ายคู่ค้า"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Review Date"
+msgstr "วันที่กำหนดตรวจทาน"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Reviewed By"
+msgstr "ผู้ตรวจทาน"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/js/agreement_revision_snapshot.js:0
+msgid "Approved By"
+msgstr "ผู้อนุมัติ"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Legal Items"
+msgstr "รายการเนื้อหาทางกฎหมาย"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "No legal items were recorded."
+msgstr "ไม่มีรายการเนื้อหาทางกฎหมาย"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "Status"
+msgstr "สถานะ"
+
+
+#. module: erp_contract
+#. odoo-javascript
+#: code:addons/erp_contract/static/src/xml/agreement_revision_snapshot.xml:0
+msgid "No legal details were recorded for this version."
+msgstr "ไม่มีรายละเอียดทางกฎหมายที่บันทึกไว้ในฉบับนี้"
+
+
+#. module: erp_contract
+#: model_terms:ir.ui.view,arch_db:erp_contract.agreement_legal_revision_form
+msgid "No signed agreement file was recorded."
+msgstr "ไม่มีไฟล์ข้อตกลงที่ลงนามบันทึกไว้"

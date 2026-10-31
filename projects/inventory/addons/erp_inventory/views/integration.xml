@@ -1,0 +1,4 @@
+<odoo>
+ <record id="picking_form" model="ir.ui.view"><field name="name">stock.picking.acceptance.form</field><field name="model">stock.picking</field><field name="inherit_id" ref="stock.view_picking_form"/><field name="arch" type="xml"><xpath expr="//field[@name='partner_id']" position="after"><field name="erp_acceptance_id" string="เอกสารตรวจรับ" groups="erp_inventory.group_acceptance_user"/></xpath></field></record>
+ <record id="bill_form" model="ir.ui.view"><field name="name">account.move.acceptance.form</field><field name="model">account.move</field><field name="inherit_id" ref="account.view_move_form"/><field name="arch" type="xml"><xpath expr="//field[@name='invoice_date']" position="after"><field name="erp_acceptance_id" string="เอกสารตรวจรับ" groups="erp_inventory.group_acceptance_user,account.group_account_invoice" invisible="move_type != 'in_invoice'"/></xpath></field></record>
+</odoo>

@@ -1,0 +1,44 @@
+id,name,model_id,group_id/id,operation,domain
+agreement_user,agreement user,erp.contract.agreement,erp_contract.group_contract_user,crud,
+agreement_company,agreement company,erp.contract.agreement,,crud,"[('company_id', 'in', company_ids)]"
+agreement_organization,agreement organization,erp.contract.agreement,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+revision_user,agreement revision user,erp.contract.agreement.revision,erp_contract.group_contract_user,r,
+revision_company,agreement revision company,erp.contract.agreement.revision,,crud,"[('company_id', 'in', company_ids)]"
+revision_organization,agreement revision organization,erp.contract.agreement.revision,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+contract_user,contract user,erp.contract.contract,erp_contract.group_contract_user,crud,
+contract_company,contract company,erp.contract.contract,,crud,"[('company_id', 'in', company_ids)]"
+contract_organization,contract organization,erp.contract.contract,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+contract_line_user,contract line user,erp.contract.line,erp_contract.group_contract_user,crud,
+contract_line_company,contract line company,erp.contract.line,,crud,"[('company_id', 'in', company_ids)]"
+contract_line_organization,contract line organization,erp.contract.line,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+guarantee_user,Guarantee user,erp.contract.guarantee,erp_contract.group_contract_user,crud,
+guarantee_company,Guarantee company,erp.contract.guarantee,,crud,"[('company_id', 'in', company_ids)]"
+guarantee_organization,Guarantee organization,erp.contract.guarantee,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+guarantee_method_user,guarantee_method user,erp.contract.guarantee.method,erp_contract.group_contract_user,r,
+guarantee_method_manager,guarantee_method manager,erp.contract.guarantee.method,erp_contract.group_contract_manager,crud,
+guarantee_type_user,guarantee_type user,erp.contract.guarantee.type,erp_contract.group_contract_user,r,
+guarantee_type_manager,guarantee_type manager,erp.contract.guarantee.type,erp_contract.group_contract_manager,crud,
+guarantee_method_company,Guarantee method company,erp.contract.guarantee.method,,crud,"[('company_id', 'in', company_ids)]"
+contract_plan_user,contract plan user,erp.contract.invoice.plan,erp_contract.group_contract_user,crud,
+contract_plan_company,contract plan company,erp.contract.invoice.plan,,crud,"[('company_id', 'in', company_ids)]"
+contract_plan_unit,contract plan unit,erp.contract.invoice.plan,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+contract_plan_selection_user,contract plan selection user,erp.contract.invoice.plan.selection,erp_contract.group_contract_user,crud,
+contract_plan_selection_company,contract plan selection company,erp.contract.invoice.plan.selection,,crud,"[('company_id', 'in', company_ids)]"
+contract_plan_selection_unit,contract plan selection unit,erp.contract.invoice.plan.selection,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+legal_stage_reader,legal stage reader,erp.contract.agreement.stage,erp_contract.group_contract_user,r,
+legal_stage_manager,legal stage manager,erp.contract.agreement.stage,erp_contract.group_contract_manager,crud,
+legal_type_reader,legal type reader,erp.contract.agreement.type,erp_contract.group_contract_user,r,
+legal_type_manager,legal type manager,erp.contract.agreement.type,erp_contract.group_contract_manager,crud,
+legal_subtype_reader,legal subtype reader,erp.contract.agreement.subtype,erp_contract.group_contract_user,r,
+legal_subtype_manager,legal subtype manager,erp.contract.agreement.subtype,erp_contract.group_contract_manager,crud,
+legal_item_user,legal item user,erp.contract.agreement.item,erp_contract.group_contract_user,crud,
+legal_item_company,legal item company,erp.contract.agreement.item,,crud,"[('company_id', 'in', company_ids)]"
+legal_item_unit,legal item unit,erp.contract.agreement.item,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+cycle_user,cycle user,erp.contract.cycle,erp_contract.group_contract_user,crud,
+cycle_company,cycle company,erp.contract.cycle,,crud,"[('company_id', 'in', company_ids)]"
+cycle_unit,cycle unit,erp.contract.cycle,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+recurrence_change_manager,recurrence change manager,erp.contract.recurrence.change,erp_contract.group_contract_manager,crud,
+contract_finance_reader,contract finance reader,erp.contract.contract,account.group_account_invoice,r,
+contract_line_finance_reader,contract line finance reader,erp.contract.line,account.group_account_invoice,r,
+contract_plan_finance_reader,contract plan finance reader,erp.contract.invoice.plan,account.group_account_invoice,r,
+contract_cycle_finance_reader,contract cycle finance reader,erp.contract.cycle,account.group_account_invoice,r,

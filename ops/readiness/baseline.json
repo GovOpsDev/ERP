@@ -1,0 +1,78 @@
+{
+  "release_candidate": "th-gov-erp-odoo20-v1.0.0-rc1",
+  "baseline_repositories": [
+    {
+      "name": "workspace",
+      "path": ".",
+      "branch": "master",
+      "sha": "3cac504e1992b43746f3241427e4823c31a0b54e",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "organization",
+      "path": "projects/organization",
+      "branch": "master",
+      "sha": "2de3b25e5e867f2120315c285646a68826790640",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "budget",
+      "path": "projects/budget",
+      "branch": "master",
+      "sha": "ba8a93681f3a417b3cf8e69f8cd4034b7e5b9c44",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "procurement",
+      "path": "projects/procurement",
+      "branch": "master",
+      "sha": "92113d3070e99b549e96bf289c292ecda890ae7a",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "finance",
+      "path": "projects/finance",
+      "branch": "master",
+      "sha": "92acf0687e0ffe39a681547d529f6039e924fdaa",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "contract",
+      "path": "projects/contract",
+      "branch": "master",
+      "sha": "fc4ec635d9342a94e819a0abf826e9fa7cab9a5b",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "inventory",
+      "path": "projects/inventory",
+      "branch": "master",
+      "sha": "01249f1ac8264ee0ee9b25d8dd8834c1906b1982",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "asset",
+      "path": "projects/asset",
+      "branch": "master",
+      "sha": "4993357c2efc81169d1a87f7b86b393253b194ac",
+      "tag": "migration-odoo20-v1"
+    },
+    {
+      "name": "core",
+      "path": "shared/erp_core",
+      "branch": "master",
+      "sha": "c9e82538ec3dae13ff7329a689bfe91f6e8c7d58",
+      "tag": "migration-odoo20-v1"
+    }
+  ],
+  "odoo_image": "odoo@sha256:dc76c42d292af9c513de826620e5a5dbe8152383ce8767eb6ed1390a806eb32f",
+  "postgres_image": "postgres@sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685",
+  "migration_tests": {
+    "clean": 373,
+    "upgrade": 371,
+    "reviewer_manual_date": 21,
+    "failures": 0,
+    "errors": 0,
+    "skips_reported": 0
+  }
+}

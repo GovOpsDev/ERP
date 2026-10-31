@@ -1,0 +1,12 @@
+<odoo>
+  <record id="user_update_restrictions" model="ir.ui.view">
+    <field name="name">res.users.organization.update.restrictions</field><field name="model">res.users</field>
+    <field name="inherit_id" ref="base.view_users_form"/>
+    <field name="arch" type="xml"><xpath expr="//sheet" position="inside"><group string="Update Restrictions" groups="base.group_system"><field name="is_readonly_user"/><field name="unrestrict_model_update"/></group></xpath></field>
+  </record>
+  <record id="model_update_restrictions" model="ir.ui.view">
+    <field name="name">ir.model.organization.update.restrictions</field><field name="model">ir.model</field>
+    <field name="inherit_id" ref="base.view_model_form"/>
+    <field name="arch" type="xml"><xpath expr="//sheet" position="inside"><group string="Update Restrictions" groups="base.group_system"><field name="restrict_update"/><field name="erp_readonly_exempt"/></group></xpath></field>
+  </record>
+</odoo>

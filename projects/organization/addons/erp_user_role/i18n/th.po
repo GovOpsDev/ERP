@@ -1,0 +1,419 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_user_role
+#: model:ir.module.module,description:base.module_erp_user_role
+msgid ""
+"# Organization User Roles\n"
+"\n"
+"Experimental Odoo 20 Community role engine. See `docs/user-role-design.md` for security boundaries, provenance and acceptance status. No business roles or assignments are installed by this addon.\n"
+msgstr ""
+"# บทบาทผู้ใช้หน่วยงาน\n"
+"\n"
+"ระบบบทบาททดลองสำหรับ Odoo 20 Community โปรดดู `docs/user-role-design.md` สำหรับขอบเขตความปลอดภัย ที่มา และสถานะการยอมรับ โมดูลนี้ไม่ได้ติดตั้งบทบาทธุรกิจหรือการมอบหมายไว้ล่วงหน้า\n"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "A role with assignments cannot change company."
+msgstr "บทบาทที่มีการมอบหมายแล้วไม่สามารถเปลี่ยนบริษัท"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/restriction.py:0
+msgid "A settings administrator cannot be a read-only user."
+msgstr "ผู้ดูแลการตั้งค่าไม่สามารถเป็นผู้ใช้อ่านอย่างเดียว"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_res_groups
+msgid "Access Groups"
+msgstr "กลุ่มสิทธิ์เข้าถึง"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__active
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__unrestrict_model_update
+#: model:ir.model.fields,field_description:erp_user_role.field_res_users__unrestrict_model_update
+msgid "Allow Restricted Model Updates"
+msgstr "อนุญาตแก้ไขข้อมูลที่จำกัด"
+
+#. module: erp_user_role
+#: model:ir.model.fields,help:erp_user_role.field_ir_model__erp_readonly_exempt
+msgid ""
+"Allows read-only users to use normal write permissions on this technical model. It never grants an"
+" ACL or bypasses record rules."
+msgstr ""
+"อนุญาตให้ผู้ใช้อ่านอย่างเดียวใช้สิทธิ์เขียนตามปกติกับโมเดลทางเทคนิคนี้ "
+"โดยไม่เพิ่มสิทธิ์เข้าถึงหรือข้ามกฎระเบียน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__assignment_ids
+msgid "Assignment"
+msgstr "การมอบหมาย"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_base
+msgid "Base"
+msgstr "ข้อมูลพื้นฐาน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__code
+msgid "Code"
+msgstr "รหัส"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__company_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__company_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__company_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__create_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__create_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__create_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__create_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__create_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__create_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__create_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__create_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__date_from
+msgid "Date From"
+msgstr "ตั้งแต่วันที่"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__date_to
+msgid "Date To"
+msgstr "ถึงวันที่"
+
+#. module: erp_user_role
+#: model:ir.model.constraint,message:erp_user_role.constraint_erp_user_role_mapping_delegation_unique
+msgid "Definition delegation already exists."
+msgstr "มีการมอบอำนาจกำหนดบทบาทนี้แล้ว"
+
+#. module: erp_user_role
+#: model:ir.model.constraint,message:erp_user_role.constraint_erp_user_role_delegation_unique
+msgid "Delegation already exists."
+msgstr "มีการมอบอำนาจนี้แล้ว"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Delegation must match the role company and the manager’s allowed companies."
+msgstr "การมอบอำนาจต้องตรงกับบริษัทของบทบาทและบริษัทที่ผู้จัดการได้รับอนุญาต"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__description
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#. module: erp_user_role
+#: model:ir.model.fields,help:erp_user_role.field_erp_user_role_group_state__manual
+msgid "Direct grant independently retained or explicitly requested."
+msgstr "สิทธิ์ที่ให้โดยตรงซึ่งคงไว้เป็นอิสระหรือมีการร้องขออย่างชัดแจ้ง"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_ir_model__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_res_groups__display_name
+#: model:ir.model.fields,field_description:erp_user_role.field_res_users__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__effective
+msgid "Effective"
+msgstr "มีผล"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_res_users__erp_role_assignment_ids
+msgid "Erp Role Assignment"
+msgstr "การมอบหมายบทบาท"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_res_users__erp_role_update_policy
+msgid "Erp Role Update Policy"
+msgstr "นโยบายปรับปรุงบทบาท"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__group_id
+msgid "Group"
+msgstr "กลุ่ม"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__group_ids
+msgid "Groups"
+msgstr "กลุ่ม"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_organization_unit__id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__id
+#: model:ir.model.fields,field_description:erp_user_role.field_ir_model__id
+#: model:ir.model.fields,field_description:erp_user_role.field_res_groups__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__write_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__write_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__write_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__write_uid
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__write_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__write_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__write_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__write_date
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__manager_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__manager_id
+msgid "Manager"
+msgstr "ผู้จัดการ"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__manual
+msgid "Manual"
+msgstr "กำหนดเอง"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_ir_model
+msgid "Model"
+msgstr "โมเดล"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "No definition delegation for this role and active company."
+msgstr "ไม่พบการมอบอำนาจกำหนดบทบาทนี้ในบริษัทที่ใช้งาน"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "No delegation for this role and organization, or self-assignment is forbidden."
+msgstr "ไม่พบการมอบอำนาจสำหรับบทบาทและหน่วยงานนี้ หรือไม่อนุญาตให้มอบหมายตนเอง"
+
+#. module: erp_user_role
+#: model:ir.model.constraint,message:erp_user_role.constraint_erp_user_role_group_state_unique
+msgid "One provenance record per user and group."
+msgstr "มีข้อมูลที่มาหนึ่งรายการต่อผู้ใช้และกลุ่ม"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Only an administrator may change groups of a role with assignments."
+msgstr "เฉพาะผู้ดูแลระบบเท่านั้นที่เปลี่ยนกลุ่มของบทบาทที่มีการมอบหมายแล้ว"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Only direct group links can be changed."
+msgstr "เปลี่ยนได้เฉพาะการเชื่อมกลุ่มโดยตรง"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Only role metadata and delegated group mappings may be changed."
+msgstr "เปลี่ยนได้เฉพาะข้อมูลบทบาทและการจับคู่กลุ่มที่ได้รับมอบอำนาจ"
+
+#. module: erp_user_role
+#: model:res.groups,name:erp_user_role.group_role_manager
+msgid "Organization Role Assignment Manager"
+msgstr "ผู้จัดการการมอบหมายบทบาทหน่วยงาน"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_erp_user_role
+msgid "Organization User Role"
+msgstr "บทบาทผู้ใช้หน่วยงาน"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_erp_user_role_assignment
+msgid "Organization User Role Assignment"
+msgstr "การมอบหมายบทบาทผู้ใช้หน่วยงาน"
+
+#. module: erp_user_role
+#: model:ir.module.module,shortdesc:base.module_erp_user_role
+msgid "Organization User Roles"
+msgstr "บทบาทผู้ใช้หน่วยงาน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__group_ids
+msgid "Permitted Groups"
+msgstr "กลุ่มที่ได้รับอนุญาต"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role__is_readonly_user
+msgid "Read-only Role"
+msgstr "บทบาทอ่านอย่างเดียว"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_res_users__is_readonly_user
+msgid "Read-only User"
+msgstr "ผู้ใช้อ่านอย่างเดียว"
+
+#. module: erp_user_role
+#: model:ir.actions.server,name:erp_user_role.cron_role_reconcile_ir_actions_server
+msgid "Reconcile organization user roles"
+msgstr "กระทบยอดบทบาทผู้ใช้หน่วยงาน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_ir_model__restrict_update
+msgid "Restrict Updates"
+msgstr "จำกัดการแก้ไข"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__role_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__role_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_mapping_delegation__role_id
+msgid "Role"
+msgstr "บทบาท"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_erp_user_role_delegation
+msgid "Role Assignment Delegation"
+msgstr "การมอบอำนาจมอบหมายบทบาท"
+
+#. module: erp_user_role
+#: model:ir.actions.act_window,name:erp_user_role.action_assignment
+#: model:ir.ui.menu,name:erp_user_role.menu_role_assignments
+msgid "Role Assignments"
+msgstr "การมอบหมายบทบาท"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_erp_user_role_mapping_delegation
+msgid "Role Definition Delegation"
+msgstr "การมอบอำนาจกำหนดบทบาท"
+
+#. module: erp_user_role
+#: model:ir.actions.act_window,name:erp_user_role.action_mapping_delegation
+#: model:ir.ui.menu,name:erp_user_role.menu_role_mapping_delegation
+msgid "Role Definition Delegations"
+msgstr "การมอบอำนาจกำหนดบทบาท"
+
+#. module: erp_user_role
+#: model:ir.actions.act_window,name:erp_user_role.action_delegation
+#: model:ir.ui.menu,name:erp_user_role.menu_role_delegation
+msgid "Role Delegations"
+msgstr "การมอบอำนาจบทบาท"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_erp_user_role_group_state
+msgid "Role Group Membership Provenance"
+msgstr "ที่มาของสมาชิกกลุ่มจากบทบาท"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Role assignments require an internal user."
+msgstr "การมอบหมายบทบาทต้องใช้ผู้ใช้ภายใน"
+
+#. module: erp_user_role
+#: model:ir.model.constraint,message:erp_user_role.constraint_erp_user_role_unique_code
+msgid "Role code must be unique in a company."
+msgstr "รหัสบทบาทต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Role name and code cannot be blank."
+msgstr "ชื่อและรหัสบทบาทต้องไม่ว่าง"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Role, user and assignment companies must match."
+msgstr "บริษัทของบทบาท ผู้ใช้ และการมอบหมายต้องตรงกัน"
+
+#. module: erp_user_role
+#: model:ir.actions.act_window,name:erp_user_role.action_role
+#: model:ir.ui.menu,name:erp_user_role.menu_roles
+msgid "Roles"
+msgstr "บทบาท"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "Start date must precede or equal end date."
+msgstr "วันที่เริ่มต้นต้องไม่หลังวันที่สิ้นสุด"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_ir_model__erp_readonly_exempt
+msgid "Technical Read-only Exception"
+msgstr "ข้อยกเว้นทางเทคนิคสำหรับอ่านอย่างเดียว"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "The manager must be allowed in the role company."
+msgstr "ผู้จัดการต้องได้รับอนุญาตในบริษัทของบทบาท"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "The resulting groups must all be explicitly delegated."
+msgstr "ทุกกลุ่มที่ได้ต้องได้รับมอบอำนาจอย่างชัดเจน"
+
+#. module: erp_user_role
+#. odoo-python
+#: code:addons/erp_user_role/models/role.py:0
+msgid "The user must be assigned to the active unit in the same company."
+msgstr "ผู้ใช้ต้องได้รับมอบหมายในหน่วยงานที่ใช้งานและอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_user_role
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__unit_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_delegation__unit_id
+msgid "Unit"
+msgstr "หน่วย"
+
+#. module: erp_user_role
+#: model_terms:ir.ui.view,arch_db:erp_user_role.model_update_restrictions
+#: model_terms:ir.ui.view,arch_db:erp_user_role.user_update_restrictions
+msgid "Update Restrictions"
+msgstr "ข้อจำกัดการแก้ไข"
+
+#. module: erp_user_role
+#: model:ir.model,name:erp_user_role.model_res_users
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_assignment__user_id
+#: model:ir.model.fields,field_description:erp_user_role.field_erp_user_role_group_state__user_id
+msgid "User"
+msgstr "ผู้ใช้"

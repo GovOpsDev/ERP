@@ -1,0 +1,34 @@
+id,name,model_id,group_id/id,operation,domain
+request_user,procurement request user,erp.procurement.request,erp_procurement.group_procurement_user,crud,
+request_company,procurement request company,erp.procurement.request,,crud,"[('company_id', 'in', company_ids)]"
+request_organization,procurement request organization,erp.procurement.request,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+line_user,procurement request line user,erp.procurement.request.line,erp_procurement.group_procurement_user,crud,
+line_company,procurement request line company,erp.procurement.request.line,,crud,"[('company_id', 'in', company_ids)]"
+line_organization,procurement request line organization,erp.procurement.request.line,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+po_request_organization,purchase order request organization,purchase.order,,crud,"['|', ('erp_request_organization_id', '=', False), '&', ('erp_request_organization_id.active', '=', True), ('erp_request_organization_id.assignment_ids.user_id', '=', user.id)]"
+po_line_request_organization,purchase order line request organization,purchase.order.line,,crud,"['|', ('order_id.erp_request_organization_id', '=', False), '&', ('order_id.erp_request_organization_id.active', '=', True), ('order_id.erp_request_organization_id.assignment_ids.user_id', '=', user.id)]"
+tier_user,procurement tier reader,erp.procurement.tier,erp_procurement.group_procurement_user,r,
+tier_manager,procurement tier manager,erp.procurement.tier,erp_procurement.group_procurement_manager,crud,
+tier_company,procurement tier company,erp.procurement.tier,,crud,"[('company_id', 'in', company_ids)]"
+review_user,procurement review reader,erp.procurement.review,erp_procurement.group_procurement_user,r,
+review_company,procurement review company,erp.procurement.review,,crud,"[('company_id', 'in', company_ids)]"
+review_organization,procurement review organization,erp.procurement.review,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+purchase_plan_user,purchase invoice plan user,erp.procurement.invoice.plan,erp_procurement.group_procurement_user,crud,
+purchase_plan_company,purchase invoice plan company,erp.procurement.invoice.plan,,crud,"[('company_id', 'in', company_ids)]"
+purchase_plan_unit,purchase invoice plan unit,erp.procurement.invoice.plan,,crud,"['|', ('organization_id', '=', False), '&', ('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+method_reader,method reader,erp.procurement.method,erp_procurement.group_procurement_user,r,
+method_manager,method manager,erp.procurement.method,erp_procurement.group_procurement_manager,crud,
+method_company,method company,erp.procurement.method,,crud,"[('company_id', 'in', company_ids)]"
+type_reader,type reader,erp.procurement.type,erp_procurement.group_procurement_user,r,
+type_manager,type manager,erp.procurement.type,erp_procurement.group_procurement_manager,crud,
+type_company,type company,erp.procurement.type,,crud,"[('company_id', 'in', company_ids)]"
+purchase_type_reader,purchase type reader,erp.procurement.purchase.type,erp_procurement.group_procurement_user,r,
+purchase_type_manager,purchase type manager,erp.procurement.purchase.type,erp_procurement.group_procurement_manager,crud,
+purchase_type_company,purchase type company,erp.procurement.purchase.type,,crud,"[('company_id', 'in', company_ids)]"
+committee_user,committee user,erp.procurement.committee,erp_procurement.group_procurement_user,crud,
+committee_company,committee company,erp.procurement.committee,,crud,"[('company_id', 'in', company_ids)]"
+committee_unit,committee unit,erp.procurement.committee,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+purchase_tier_reader,purchase tier reader,erp.procurement.tier,purchase.group_purchase_user,r,
+purchase_review_reader,purchase review reader,erp.procurement.purchase.review,purchase.group_purchase_user,r,
+purchase_review_company,purchase review company,erp.procurement.purchase.review,,crud,"[('company_id', 'in', company_ids)]"
+purchase_review_unit,purchase review unit,erp.procurement.purchase.review,,crud,"['|', ('organization_id', '=', False), '&', ('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"

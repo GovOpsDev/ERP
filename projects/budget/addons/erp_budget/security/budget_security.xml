@@ -1,0 +1,15 @@
+<odoo>
+    <record id="group_budget_user" model="res.groups">
+        <field name="name">Budget Foundation User</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+    <record id="group_budget_manager" model="res.groups">
+        <field name="name">Budget Foundation Manager</field>
+        <field name="implied_ids" eval="[(4, ref('group_budget_user'))]"/>
+    </record>
+    <record id="group_budget_all_ou" model="res.groups">
+        <field name="name">Budget Access Across Organizations</field>
+        <field name="implied_ids" eval="[(4, ref('group_budget_user'))]"/>
+        <field name="comment">Explicit budget authority across active organizations within allowed companies. Other domain permissions are unchanged.</field>
+    </record>
+</odoo>

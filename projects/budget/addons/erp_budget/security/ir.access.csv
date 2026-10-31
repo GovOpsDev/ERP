@@ -1,0 +1,124 @@
+id,name,model_id,group_id/id,operation,domain
+period_user,budget period reader,erp.budget.period,erp_budget.group_budget_user,r,
+period_manager,budget period manager,erp.budget.period,erp_budget.group_budget_manager,crud,
+period_company,budget period company,erp.budget.period,,crud,"[('company_id', 'in', company_ids)]"
+fund_group_user,fund group reader,erp.budget.fund.group,erp_budget.group_budget_user,r,
+fund_group_manager,fund group manager,erp.budget.fund.group,erp_budget.group_budget_manager,crud,
+fund_group_company,fund group company,erp.budget.fund.group,,crud,"[('company_id', 'in', company_ids)]"
+fund_user,fund reader,erp.budget.fund,erp_budget.group_budget_user,r,
+fund_manager,fund manager,erp.budget.fund,erp_budget.group_budget_manager,crud,
+fund_company,fund company,erp.budget.fund,,crud,"[('company_id', 'in', company_ids)]"
+kpi_user,budget KPI reader,erp.budget.kpi,erp_budget.group_budget_user,r,
+kpi_manager,budget KPI manager,erp.budget.kpi,erp_budget.group_budget_manager,crud,
+kpi_company,budget KPI company,erp.budget.kpi,,crud,"[('company_id', 'in', company_ids)]"
+template_user,budget template reader,erp.budget.template,erp_budget.group_budget_user,r,
+template_manager,budget template manager,erp.budget.template,erp_budget.group_budget_manager,crud,
+template_company,budget template company,erp.budget.template,,crud,"[('company_id', 'in', company_ids)]"
+template_line_user,budget template line reader,erp.budget.template.line,erp_budget.group_budget_user,r,
+template_line_manager,budget template line manager,erp.budget.template.line,erp_budget.group_budget_manager,crud,
+template_line_company,budget template line company,erp.budget.template.line,,crud,"[('company_id', 'in', company_ids)]"
+control_user,budget control reader,erp.budget.control,erp_budget.group_budget_user,r,
+control_manager,budget control manager,erp.budget.control,erp_budget.group_budget_manager,crud,
+control_company,budget control company,erp.budget.control,,crud,"[('company_id', 'in', company_ids)]"
+control_organization,budget control organization,erp.budget.control,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+move_user,budget move reader,erp.budget.move,erp_budget.group_budget_user,r,
+move_company,budget move company,erp.budget.move,,crud,"[('company_id', 'in', company_ids)]"
+move_organization,budget move organization,erp.budget.move,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+plan_user,Plan reader,erp.budget.plan,erp_budget.group_budget_user,r,
+plan_manager,Plan manager,erp.budget.plan,erp_budget.group_budget_manager,crud,
+plan_company,Plan company,erp.budget.plan,,crud,"[('company_id', 'in', company_ids)]"
+plan_line_user,Plan line reader,erp.budget.plan.line,erp_budget.group_budget_user,r,
+plan_line_manager,Plan line manager,erp.budget.plan.line,erp_budget.group_budget_manager,crud,
+plan_line_company,Plan line company,erp.budget.plan.line,,crud,"[('company_id', 'in', company_ids)]"
+plan_line_ou,Plan line OU,erp.budget.plan.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+plan_event_user,Plan event reader,erp.budget.plan.event,erp_budget.group_budget_user,r,
+plan_event_company,Plan event company,erp.budget.plan.event,,crud,"[('company_id', 'in', company_ids)]"
+plan_event_ou,Plan event OU,erp.budget.plan.event,,crud,"['&', '|', ('source_id', '=', False), ('source_id.organization_id.active', '=', True), '|', ('destination_id', '=', False), ('destination_id.organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else ['&', '|', ('source_id', '=', False), '&', ('source_id.organization_id.active', '=', True), ('source_id.organization_id.assignment_ids.user_id', '=', user.id), '|', ('destination_id', '=', False), '&', ('destination_id.organization_id.active', '=', True), ('destination_id.organization_id.assignment_ids.user_id', '=', user.id)]"
+plan_adjustment_manager,Plan adjustment manager,erp.budget.plan.adjustment,erp_budget.group_budget_manager,crud,
+plan_version_user,Plan version reader,erp.budget.plan.version,erp_budget.group_budget_user,r,
+plan_version_manager,Plan version manager,erp.budget.plan.version,erp_budget.group_budget_manager,crud,
+plan_version_company,Plan version company,erp.budget.plan.version,,crud,"[('company_id', 'in', company_ids)]"
+plan_version_line_user,Plan version line reader,erp.budget.plan.version.line,erp_budget.group_budget_user,r,
+plan_version_line_manager,Plan version line manager,erp.budget.plan.version.line,erp_budget.group_budget_manager,crud,
+plan_version_line_company,Plan version line company,erp.budget.plan.version.line,,crud,"[('company_id', 'in', company_ids)]"
+plan_version_line_ou,Plan version line OU,erp.budget.plan.version.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+kpi_release_user,KPI release reader,erp.budget.kpi.release,erp_budget.group_budget_user,r,
+kpi_release_manager,KPI release manager,erp.budget.kpi.release,erp_budget.group_budget_manager,crud,
+kpi_release_company,KPI release company,erp.budget.kpi.release,,crud,"[('company_id', 'in', company_ids)]"
+kpi_release_ou,KPI release organization,erp.budget.kpi.release,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+kpi_release_line_user,KPI release line reader,erp.budget.kpi.release.line,erp_budget.group_budget_user,r,
+kpi_release_line_manager,KPI release line manager,erp.budget.kpi.release.line,erp_budget.group_budget_manager,crud,
+kpi_release_line_company,KPI release line company,erp.budget.kpi.release.line,,crud,"[('company_id', 'in', company_ids)]"
+kpi_release_line_ou,KPI release line organization,erp.budget.kpi.release.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+kpi_tier_user,KPI tier reader,erp.budget.kpi.tier,erp_budget.group_budget_user,r,
+kpi_tier_admin,KPI tier settings administrator,erp.budget.kpi.tier,base.group_system,crud,
+kpi_tier_company,KPI tier company,erp.budget.kpi.tier,,crud,"[('company_id', 'in', company_ids)]"
+kpi_tier_ou,KPI tier organization,erp.budget.kpi.tier,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+kpi_review_user,KPI review reader,erp.budget.kpi.review,erp_budget.group_budget_user,r,
+kpi_review_company,KPI review company,erp.budget.kpi.review,,crud,"[('company_id', 'in', company_ids)]"
+kpi_review_ou,KPI review organization,erp.budget.kpi.review,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+allocation_user,Allocation reader,erp.budget.allocation,erp_budget.group_budget_user,r,
+allocation_manager,Allocation manager,erp.budget.allocation,erp_budget.group_budget_manager,crud,
+allocation_company,Allocation company,erp.budget.allocation,,crud,"[('company_id', 'in', company_ids)]"
+allocation_line_user,Allocation line reader,erp.budget.allocation.line,erp_budget.group_budget_user,r,
+allocation_line_manager,Allocation line manager,erp.budget.allocation.line,erp_budget.group_budget_manager,crud,
+allocation_line_company,Allocation line company,erp.budget.allocation.line,,crud,"[('company_id', 'in', company_ids)]"
+allocation_line_ou,Allocation line OU,erp.budget.allocation.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+allocation_revision_user,Allocation revision reader,erp.budget.allocation.revision,erp_budget.group_budget_user,r,
+allocation_revision_manager,Allocation revision manager,erp.budget.allocation.revision,erp_budget.group_budget_manager,crud,
+allocation_revision_company,Allocation revision company,erp.budget.allocation.revision,,crud,"[('company_id', 'in', company_ids)]"
+allocation_revision_line_user,Allocation revision line reader,erp.budget.allocation.revision.line,erp_budget.group_budget_user,r,
+allocation_revision_line_manager,Allocation revision line manager,erp.budget.allocation.revision.line,erp_budget.group_budget_manager,crud,
+allocation_revision_line_company,Allocation revision line company,erp.budget.allocation.revision.line,,crud,"[('company_id', 'in', company_ids)]"
+allocation_revision_line_ou,Allocation revision line OU,erp.budget.allocation.revision.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+allocation_dimension_manager,Allocation dimension manager,erp.budget.allocation.dimension,erp_budget.group_budget_manager,crud,
+opening_user,Opening balance reader,erp.budget.opening.balance,erp_budget.group_budget_user,r,
+opening_manager,Opening balance manager,erp.budget.opening.balance,erp_budget.group_budget_manager,crud,
+opening_company,Opening balance company,erp.budget.opening.balance,,crud,"[('company_id', 'in', company_ids)]"
+opening_ou,Opening balance OU,erp.budget.opening.balance,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+planning_user,Planning line reader,erp.budget.planning.line,erp_budget.group_budget_user,r,
+planning_manager,Planning line manager,erp.budget.planning.line,erp_budget.group_budget_manager,crud,
+planning_company,Planning line company,erp.budget.planning.line,,crud,"[('company_id', 'in', company_ids)]"
+planning_ou,Planning line OU,erp.budget.planning.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+planning_revision_wizard_manager,Planning revision wizard manager,erp.budget.planning.revision,erp_budget.group_budget_manager,crud,
+activity_user,Activity reader,erp.budget.activity,erp_budget.group_budget_user,r,
+activity_manager,Activity manager,erp.budget.activity,erp_budget.group_budget_manager,crud,
+activity_company,Activity company,erp.budget.activity,,crud,"[('company_id', 'in', company_ids)]"
+template_activity_user,Template activity reader,erp.budget.template.activity,erp_budget.group_budget_user,r,
+template_activity_manager,Template activity manager,erp.budget.template.activity,erp_budget.group_budget_manager,crud,
+template_activity_company,Template activity company,erp.budget.template.activity,,crud,"[('company_id', 'in', company_ids)]"
+transfer_user,transfer reader,erp.budget.transfer,erp_budget.group_budget_user,r,
+transfer_manager,transfer manager,erp.budget.transfer,erp_budget.group_budget_manager,crud,
+transfer_company,transfer company,erp.budget.transfer,,crud,"[('company_id', 'in', company_ids)]"
+transfer_line_user,transfer_line reader,erp.budget.transfer.line,erp_budget.group_budget_user,r,
+transfer_line_manager,transfer_line manager,erp.budget.transfer.line,erp_budget.group_budget_manager,crud,
+transfer_line_company,transfer_line company,erp.budget.transfer.line,,crud,"[('company_id', 'in', company_ids)]"
+transfer_ou,Transfer organization,erp.budget.transfer,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+transfer_line_ou,Transfer item organization,erp.budget.transfer.line,,crud,"[('transfer_id.organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('transfer_id.organization_id.active', '=', True), ('transfer_id.organization_id.assignment_ids.user_id', '=', user.id)]"
+budget_all_ou_unit_reader,Budget all OU organization names,erp.organization.unit,erp_budget.group_budget_all_ou,r,"[('active', '=', True)]"
+balance_forward_user,balance_forward reader,erp.budget.balance.forward,erp_budget.group_budget_user,r,
+balance_forward_manager,balance_forward manager,erp.budget.balance.forward,erp_budget.group_budget_manager,crud,
+balance_forward_company,balance_forward company,erp.budget.balance.forward,,crud,"[('company_id', 'in', company_ids)]"
+balance_forward_line_user,balance_forward_line reader,erp.budget.balance.forward.line,erp_budget.group_budget_user,r,
+balance_forward_line_manager,balance_forward_line manager,erp.budget.balance.forward.line,erp_budget.group_budget_manager,crud,
+balance_forward_line_company,balance_forward_line company,erp.budget.balance.forward.line,,crud,"[('company_id', 'in', company_ids)]"
+balance_forward_line_ou,Balance origin organization,erp.budget.balance.forward.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+commit_forward_user,commit_forward reader,erp.budget.commit.forward,erp_budget.group_budget_user,r,
+commit_forward_manager,commit_forward manager,erp.budget.commit.forward,erp_budget.group_budget_manager,crud,
+commit_forward_company,commit_forward company,erp.budget.commit.forward,,crud,"[('company_id', 'in', company_ids)]"
+commit_forward_line_user,commit_forward_line reader,erp.budget.commit.forward.line,erp_budget.group_budget_user,r,
+commit_forward_line_manager,commit_forward_line manager,erp.budget.commit.forward.line,erp_budget.group_budget_manager,crud,
+commit_forward_line_company,commit_forward_line company,erp.budget.commit.forward.line,,crud,"[('company_id', 'in', company_ids)]"
+commit_forward_line_ou,Commit origin organization,erp.budget.commit.forward.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+balance_return_user,Balance return reader,erp.budget.balance.return.line,erp_budget.group_budget_user,r,
+balance_return_manager,Balance return manager,erp.budget.balance.return.line,erp_budget.group_budget_manager,crud,
+balance_return_company,Balance return company,erp.budget.balance.return.line,,crud,"[('company_id', 'in', company_ids)]"
+balance_return_ou,Balance return organization,erp.budget.balance.return.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+adjustment_user,adjustment reader,erp.budget.adjustment,erp_budget.group_budget_user,r,
+adjustment_manager,adjustment manager,erp.budget.adjustment,erp_budget.group_budget_manager,crud,
+adjustment_company,adjustment company,erp.budget.adjustment,,crud,"[('company_id', 'in', company_ids)]"
+adjustment_ou,adjustment organization,erp.budget.adjustment,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+adjustment_line_user,adjustment_line reader,erp.budget.adjustment.line,erp_budget.group_budget_user,r,
+adjustment_line_manager,adjustment_line manager,erp.budget.adjustment.line,erp_budget.group_budget_manager,crud,
+adjustment_line_company,adjustment_line company,erp.budget.adjustment.line,,crud,"[('company_id', 'in', company_ids)]"
+adjustment_line_ou,adjustment_line organization,erp.budget.adjustment.line,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"

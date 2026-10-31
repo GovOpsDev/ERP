@@ -1,0 +1,67 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_organization_hr
+#: model:ir.module.module,description:base.module_erp_organization_hr
+msgid ""
+"# erp_organization_hr\n"
+"\n"
+"Odoo 20 Community bridge linking native HR departments to organization units. Depends on `erp_organization` and `hr`. Existing unlinked departments remain governed by native HR permissions. Department restrictions do not restrict employee or other business records. See `docs/hr-department-integration.md` for source mapping, rollout risks and limitations.\n"
+msgstr ""
+"# erp_organization_hr\n"
+"\n"
+"ส่วนเชื่อม Odoo 20 Community ระหว่างแผนกบุคคลของระบบกับหน่วยงาน โดยพึ่งพา `erp_organization` และ `hr` แผนกเดิมที่ยังไม่เชื่อมยังใช้สิทธิ์บุคคลของระบบ การจำกัดแผนกไม่ได้จำกัดข้อมูลพนักงานหรือข้อมูลธุรกิจอื่น โปรดดู `docs/hr-department-integration.md` สำหรับการจับคู่ต้นทาง ความเสี่ยง และข้อจำกัด\n"
+
+#. module: erp_organization_hr
+#. odoo-python
+#: code:addons/erp_organization_hr/models/hr_department.py:0
+msgid "A department and its organization unit must belong to the same company."
+msgstr "แผนกและหน่วยงานที่เชื่อมโยงต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_organization_hr
+#. odoo-python
+#: code:addons/erp_organization_hr/models/hr_department.py:0
+msgid "An archived organization unit cannot be linked."
+msgstr "ไม่สามารถเชื่อมหน่วยงานที่เก็บถาวรแล้ว"
+
+#. module: erp_organization_hr
+#: model:ir.module.module,summary:base.module_erp_organization_hr
+msgid "Connect HR departments to company-scoped organization units"
+msgstr "เชื่อมแผนกบุคคลกับหน่วยงานตามขอบเขตบริษัท"
+
+#. module: erp_organization_hr
+#: model:ir.model,name:erp_organization_hr.model_hr_department
+msgid "Department"
+msgstr "แผนก"
+
+#. module: erp_organization_hr
+#: model:ir.model.fields,field_description:erp_organization_hr.field_hr_department__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_organization_hr
+#: model:ir.module.module,shortdesc:base.module_erp_organization_hr
+msgid "Government Organization HR Departments"
+msgstr "แผนกบุคคลตามหน่วยงานภาครัฐ"
+
+#. module: erp_organization_hr
+#: model:ir.model.fields,field_description:erp_organization_hr.field_hr_department__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_organization_hr
+#: model:ir.model.fields,field_description:erp_organization_hr.field_hr_department__organization_unit_id
+msgid "Organization Unit"
+msgstr "หน่วยงาน"
+
+#. module: erp_organization_hr
+#. odoo-python
+#: code:addons/erp_organization_hr/models/hr_department.py:0
+msgid "The destination company must be active."
+msgstr "บริษัทปลายทางต้องอยู่ในสถานะใช้งาน"

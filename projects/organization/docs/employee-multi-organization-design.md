@@ -1,0 +1,26 @@
+# Multiple employee organizations and fail-closed visibility
+
+## Organization Domain Contract v1
+
+- **Employee primary organization:** `hr.employee.organization_unit_id` is the single home affiliation and remains the reporting/default value. Changing or clearing it does not automatically create an additional assignment for the old primary.
+- **Employee effective organizations:** the active primary organization plus active, date-effective additional assignment organizations that themselves are active. Additional records store employee, organization, employee company, active status, and inclusive start/end dates. A primary is represented by the field, not by an additional row; there can be only one primary.
+- **Employee has organization history:** an internal persistent marker becomes true the first time a primary or any additional assignment is set. It never resets through normal ORM operations. This is needed because a primary can be cleared and the original single primary field otherwise cannot prove prior scope. Normal deletion of an additional record is prohibited; deactivate it to preserve history. Employee deletion and module uninstall retain their normal lifecycle and are not covered by the deletion guarantee.
+- **User effective organizations:** current `erp.organization.assignment` records for active organizations in active companies. Employee assignments never create or revoke user OU assignments.
+- **Role capabilities:** `erp.user.role.assignment` continues to depend on user OU assignments, not employee memberships. Employee membership changes do not add/remove role assignments or group grants. Odoo groups are global capabilities, not company/OU isolation.
+- **Company ownership:** primary and additional organizations must be in the employee's company. Assignment changes require HR write access to the employee, company scope and a readable active target unit. Organization Manager alone does not confer HR access or bypass employee OU scope.
+
+## Visibility and history
+
+**Compatibility rule:** only employees that have never been organization-scoped fall back to standard Odoo visibility. The rule also checks there is no current primary and no additional record, including inactive records, as a safeguard against inconsistent marker state. Native employee/public and company permissions still apply.
+
+**Fail-closed rule:** employees previously or currently organization-scoped remain scoped even when no OU is currently effective. They are visible only when an effective employee OU overlaps a current user OU, subject to native rights and active companies. A primary on an archived OU is ineffective. An archived, inactive, future or expired additional assignment is ineffective. If another effective OU overlaps, visibility remains; otherwise it ends. In particular, expiry, archive, clearing the primary and assignment revocation cannot cause an unscoped fallback.
+
+Assignments are not deleted when expired or archived. `unlink` is rejected in normal operation; the UI includes archived assignments. Explicit writes to the marker are rejected, including writes under `sudo`; internal code marks and flushes it after authorized changes before a public employee SQL-view query can use it. A role cannot be granted merely by changing employee organization data.
+
+Date endpoints are inclusive and use `fields.Date.today()`, the server-local date shared by all users. Visibility domains evaluate dates when access is checked; no cron or persisted effective-visibility state is used. The Odoo access context includes the date, and relevant employee membership, organization, user OU and primary changes invalidate access and hierarchy-count caches. `Domain` with internal bypass-search relations includes hidden history records in security checks. The same overlap policy applies to employee, public employee, version and the selected related surfaces; see `hr-access-surface-audit.md` for limitations.
+
+## Upgrade and operational boundaries
+
+Upgrade to `20.0.2.0.0` marks existing employees as scoped if their current primary is set or any additional-assignment row exists, including inactive rows. It creates no employee assignment, user OU assignment, role assignment or group membership and does not replace the primary. Historical primary mappings or additional records already deleted before this upgrade cannot be reconstructed from the remaining data: inventory and explicitly classify those employees before production migration. Existing never-assigned employees remain on compatibility behavior; this policy is not a substitute for reviewing unclassified records.
+
+The query uses SQL membership subqueries rather than broad Python filtering. A synthetic PostgreSQL `EXPLAIN` of the final domain showed hashed subplans and use of the additional-organization index; the planner used a sequential scan for the small history table. Multiple memberships did not duplicate employee search results. Large-scale query cost and indexes require reassessment on representative data. Concurrent transactions, real-time browser behavior, complete HR surfaces, uninstall, production migration and downstream business isolation remain unverified. The frozen conceptual contract is recorded in `organization-contract-v1.md`; overall Organization migration remains **PARTIAL**.

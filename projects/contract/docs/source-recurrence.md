@@ -1,0 +1,20 @@
+# Recurring contracts and amendments
+
+Exact source: OCA contract `944dcbeaa513c242c7df31452c54801b764ebf54`, contract.py, contract_line.py and contract_recurrency.py. Budget source `budgeting/budget_control_contract/models/contract.py` at `08842c565308` explicitly limits commit_budget to non-recurring invoices: the commitment is made once regardless of recurrence.
+
+REDESIGNED: erp.contract.contract enables recurring billing separately from one-time commitment/installment plans. Each immutable period generates a native draft vendor bill with direct canonical Budget dimensions. Posting consumes actuals through the existing Finance/Budget service; generation does not commit or reserve another bucket. A unique company fiscal period must cover the invoice date. No period or capacity is invented. Foreign-currency balances and tax policies use native accounting and the existing company Budget policy.
+
+MIGRATED: daily/weekly/monthly/month-last-day/quarterly/semesterly/yearly intervals, prepaid/postpaid, default offset zero for prepaid/month-last-day and one for other postpaid periods, bounded final periods, full source quantity per period, START/END description markers, manual next-period generation and daily cron. The cron generates one due period per line per call, matching source catch-up behavior. An already generated canceled period has an explicit idempotent regeneration action; its prior canceled documents remain visible.
+
+MIGRATED / REDESIGNED: unused cancellation/reset, stop dates, amendments via successor lines, automatic/manual renewals and termination/cancel-termination. Successors preserve the predecessor's immutable terms, actuals and date boundaries. Renewal always creates a successor (the safe source option) instead of editing historical dates in place. Termination cannot shorten an invoiced period; canceling termination retains stop boundaries and extension proceeds by successor. Arbitrary edits of historical next-invoice dates are replaced by explicit schedule boundaries. One-time Budget contracts retain their existing close-and-create-new-contract amendment policy; old economic events remain immutable.
+
+Company/OU rules cover periods and native invoices; only managers change schedules or generate manually. Private cron methods run with configured cron authority; superuser maintenance follows normal Odoo superuser semantics. RPC cannot forge periods, source links, captured state or move source lines. Posting validates source dimensions/quantity/price and every credit's original bill; credits cannot exceed the original period. A posted credit must reset before its bill. Draft cancellation preserves history and supports replacement.
+
+Runtime evidence in `th-gov-erp/test-evidence/closure-20261031/`:
+- `contract-55.log`: all 38 Contract tests, 0 failures, 0 errors, no skips reported; legal, guarantee, one-time Budget, plans and six recurring tests.
+- Recurring cases cover real posted bills/credits, replacement, exact dates, all seven rules, full short-tail quantity, stop/amend/renew/termination, cron idempotency, configuration/RPC/company/OU guards, native FX and atomic insufficient-Budget rejection.
+- `recurrence-race-01.log`: two independent PostgreSQL cursors compete to regenerate one canceled period. One commits, one gets SerializationFailure; fresh retry returns the existing bill. Exactly one live bill, one canceled predecessor, actual10 and no contract commitment. Synthetic history is retained in `closure_20261031_recurrence_race_01`; script is `tests/recurrence_race_shell.py`.
+
+Production scheduler operations, mail delivery, source historical mapping and browser/load/filestore checks are separate readiness work. Full closure regression across all domains follows government Procurement/Inventory integration.
+
+Cross-domain correction: ordinary non-Contract accounting resets must not require Contract ACLs. The reset lock now runs only when recurring periods exist. `financial-contract-59.log` reruns all Procurement/Finance/Contract suites: 147 tests, failures0/errors0, no skips reported, including ordinary expenses/advances/deposits/retention/refunds and all Contract cases.

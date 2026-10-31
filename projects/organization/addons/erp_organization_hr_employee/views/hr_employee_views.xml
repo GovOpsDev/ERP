@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_employee_form_organization" model="ir.ui.view">
+        <field name="name">hr.employee.form.organization</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml"><field name="department_id" position="before"><field name="organization_unit_id" string="Primary Organization" options="{'no_create': True}"/></field></field>
+    </record>
+    <record id="view_employee_form_additional_organizations" model="ir.ui.view">
+        <field name="name">hr.employee.form.additional.organizations</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Additional Organizations" groups="hr.group_hr_user">
+                    <field name="organization_assignment_ids" context="{'default_employee_id': id, 'active_test': False}">
+                        <list editable="bottom"><field name="organization_id" domain="[('company_id', '=', parent.company_id)]"/><field name="assignment_type"/><field name="date_from"/><field name="date_to"/><field name="active"/><field name="effective"/></list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_employee_list_organization" model="ir.ui.view">
+        <field name="name">hr.employee.list.organization</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml"><field name="department_id" position="before"><field name="organization_unit_id" optional="hide"/></field></field>
+    </record>
+</odoo>

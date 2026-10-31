@@ -1,0 +1,4 @@
+<odoo>
+ <record id="group_asset_user" model="res.groups"><field name="name">Asset User</field><field name="implied_ids" eval="[(4, ref('base.group_user')), (4, ref('account_asset_management.group_asset_engine_user'))]"/></record>
+ <record id="group_asset_manager" model="res.groups"><field name="name">Asset Manager</field><field name="implied_ids" eval="[(4, ref('group_asset_user')), (4, ref('account_asset_management.group_asset_engine_manager'))]"/></record>
+</odoo>

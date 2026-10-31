@@ -1,0 +1,4 @@
+<odoo>
+    <record id="group_procurement_user" model="res.groups"><field name="name">Procurement Request User</field><field name="implied_ids" eval="[(4, ref('base.group_user')), (4, ref('erp_budget.group_budget_user'))]"/></record>
+    <record id="group_procurement_manager" model="res.groups"><field name="name">Procurement Request Approver</field><field name="implied_ids" eval="[(4, ref('group_procurement_user')), (4, ref('purchase.group_purchase_user'))]"/></record>
+</odoo>

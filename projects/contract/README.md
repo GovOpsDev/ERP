@@ -1,0 +1,5 @@
+# ERP Agreement & Contract — MIGRATED
+
+`addons/erp_contract` provides a narrow Odoo 20 Community purchase agreement and independent purchase contract Budget/Finance integration. Agreements reference native POs without creating a duplicate Budget commitment. Contract lines have their own source-derived commitments and may link to native bill lines; one bill line cannot also use a PO source. It depends on the existing Procurement, Budget, Finance and Organization modules.
+
+See `docs/contract-lifecycle-v1.md`, `docs/source-mapping.md` and `docs/test-report.md` for tested behavior and important limitations. Legal versions, signatures, scoped review scheduling, recurring native bills and successor amendments/renewals are now migrated. See docs/source-legal-agreement.md and docs/source-recurrence.md. Government purchase types now activate the requisition agreement gate. Required source migration is closed; the workspace closure report records final runtime acceptance. Production readiness is **NO**: signed-document/data conversion, operational scheduling, browser, filestore, load and deployment remain separate.

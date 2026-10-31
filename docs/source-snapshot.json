@@ -1,0 +1,136 @@
+{
+  "package": "nstda_egov_odoo20",
+  "product": "GovOpsDev ERP",
+  "source_worktree": "org",
+  "date": "2026-10-31",
+  "source_repositories": [
+    {
+      "path": ".",
+      "commit": "8a46d5a2948b407abbe7adb69f84c9ad1b0924d5",
+      "branch": "master",
+      "tracked_files": 51,
+      "included_untracked_files": 6,
+      "working_tree_status": [
+        " M README.md",
+        "?? docs/thai-localization.md",
+        "?? docs/user-manuals.md",
+        "?? ops/readiness/check_thai_catalogs.py",
+        "?? ops/readiness/check_user_manual.py",
+        "?? ops/readiness/manual_browser.cjs",
+        "?? ops/readiness/refresh_thai_package_descriptions.py"
+      ]
+    },
+    {
+      "path": "shared/erp_core",
+      "commit": "c9e82538ec3dae13ff7329a689bfe91f6e8c7d58",
+      "branch": "master",
+      "tracked_files": 13,
+      "included_untracked_files": 36,
+      "working_tree_status": [
+        "?? addons/erp_core/i18n/",
+        "?? addons/erp_core/i18n_extra/",
+        "?? addons/erp_user_manual/"
+      ]
+    },
+    {
+      "path": "projects/organization",
+      "commit": "2de3b25e5e867f2120315c285646a68826790640",
+      "branch": "master",
+      "tracked_files": 80,
+      "included_untracked_files": 4,
+      "working_tree_status": [
+        "?? addons/erp_organization/i18n/",
+        "?? addons/erp_organization_hr/i18n/",
+        "?? addons/erp_organization_hr_employee/i18n/",
+        "?? addons/erp_user_role/i18n/"
+      ]
+    },
+    {
+      "path": "projects/budget",
+      "commit": "ba8a93681f3a417b3cf8e69f8cd4034b7e5b9c44",
+      "branch": "master",
+      "tracked_files": 74,
+      "included_untracked_files": 1,
+      "working_tree_status": [
+        "?? addons/erp_budget/i18n/"
+      ]
+    },
+    {
+      "path": "projects/procurement",
+      "commit": "92113d3070e99b549e96bf289c292ecda890ae7a",
+      "branch": "master",
+      "tracked_files": 40,
+      "included_untracked_files": 1,
+      "working_tree_status": [
+        "?? addons/erp_procurement/i18n/"
+      ]
+    },
+    {
+      "path": "projects/finance",
+      "commit": "962330f4917872443e20645b27aa3b920f5debb7",
+      "branch": "master",
+      "tracked_files": 55,
+      "included_untracked_files": 1,
+      "working_tree_status": [
+        "?? addons/erp_finance/i18n/"
+      ]
+    },
+    {
+      "path": "projects/contract",
+      "commit": "35c1d308b8df6d7e09a58e72186544ff1379df3d",
+      "branch": "master",
+      "tracked_files": 46,
+      "included_untracked_files": 4,
+      "working_tree_status": [
+        " M addons/erp_contract/__manifest__.py",
+        " M addons/erp_contract/models/agreement_legal.py",
+        " M addons/erp_contract/tests/test_agreement_legal.py",
+        " M addons/erp_contract/views/agreement_legal_views.xml",
+        " M addons/erp_contract/views/agreement_views.xml",
+        "?? addons/erp_contract/i18n/",
+        "?? addons/erp_contract/static/"
+      ]
+    },
+    {
+      "path": "projects/inventory",
+      "commit": "b20a35bf9609c05693b3abc74ec06ae4f5fcbb4f",
+      "branch": "master",
+      "tracked_files": 41,
+      "included_untracked_files": 1,
+      "working_tree_status": [
+        "?? addons/erp_inventory/i18n/"
+      ]
+    },
+    {
+      "path": "projects/asset",
+      "commit": "5a0e8993af19de7a75dd99a5493db178af2b68d3",
+      "branch": "master",
+      "tracked_files": 245,
+      "included_untracked_files": 3,
+      "working_tree_status": [
+        "?? addons/account_asset_management/i18n_extra/",
+        "?? addons/account_asset_transfer/i18n_extra/",
+        "?? addons/erp_asset/i18n/"
+      ]
+    }
+  ],
+  "included_source_files": 702,
+  "source_bytes": 10265907,
+  "upstream": {
+    "url": "https://github.com/NSTDA/ERP-Government",
+    "reference_commit": "5a1722c4c6f6cfdf3ed59362a56e85777c58a383"
+  },
+  "packaging_adjustments": [
+    ".gitignore",
+    "README.md",
+    "docs/workspace-layout.md",
+    "docs/production-readiness-runbook.md"
+  ],
+  "added_publication_files": [
+    "LICENSE",
+    "NOTICE.md",
+    "docs/github-package.md",
+    "docs/source-snapshot.json",
+    "docs/source-checksums.sha256"
+  ]
+}

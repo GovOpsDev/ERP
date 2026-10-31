@@ -1,0 +1,11 @@
+id,name,model_id,group_id/id,operation,domain
+direct_line_organization,direct accounting line organization,account.move.line,,crud,"['|', ('erp_budget_organization_id', '=', False), '&', ('erp_budget_organization_id.active', '=', True), ('erp_budget_organization_id.assignment_ids.user_id', '=', user.id)]"
+expense_review_user,expense review reader,erp.finance.expense.review,erp_budget.group_budget_user,r,
+expense_review_company,expense review company,erp.finance.expense.review,,crud,"[('company_id', 'in', company_ids)]"
+expense_review_organization,expense review organization,erp.finance.expense.review,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+advance_return_accountant,advance return accountant,erp.finance.advance.return,account.group_account_invoice,crud,
+advance_return_company,advance return company,erp.finance.advance.return,,crud,"[('company_id', 'in', company_ids)]"
+advance_return_organization,advance return organization,erp.finance.advance.return,,crud,"[('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+retention_accountant,retention accountant,erp.finance.retention,account.group_account_invoice,crud,
+retention_company,retention company,erp.finance.retention,,crud,"[('company_id', 'in', company_ids)]"
+retention_organization,retention organization,erp.finance.retention,,crud,"['|', ('organization_id', '=', False), '&', ('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"

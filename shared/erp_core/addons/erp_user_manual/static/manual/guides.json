@@ -1,0 +1,92 @@
+[
+  {
+    "key": "organization",
+    "title": "หน่วยงาน",
+    "parent": "erp_organization.menu_organization_root",
+    "summary": "จัดโครงสร้างองค์กร มอบหมายหน่วยงานให้ผู้ใช้ และประสานสิทธิ์ตามบริษัท"
+  },
+  {
+    "key": "budget",
+    "title": "ข้อมูลงบประมาณพื้นฐาน",
+    "parent": "erp_budget.menu_budget_root",
+    "summary": "เตรียมแผนและวงเงิน ติดตามภาระผูกพัน และดำเนินการปรับปรุงโดยรักษาประวัติ"
+  },
+  {
+    "key": "procurement",
+    "title": "ใบขอซื้อ",
+    "parent": "erp_procurement.menu_procurement_root",
+    "summary": "สร้างคำขอ ระบุแหล่งงบ ส่งตรวจ และติดตามการนำไปจัดซื้อหรือเบิกค่าใช้จ่าย"
+  },
+  {
+    "key": "purchase",
+    "title": "สั่งซื้อ",
+    "parent": "purchase.menu_purchase_root",
+    "summary": "จัดทำใบเสนอราคาและใบสั่งซื้อ เชื่อมใบขอซื้อ ตรวจอนุมัติ และติดตามการรับของหรือบริการ"
+  },
+  {
+    "key": "finance",
+    "title": "ออกใบแจ้งหนี้และการเงิน",
+    "parent": "account.menu_finance",
+    "summary": "ตรวจใบเรียกเก็บเงิน ลงบัญชี และติดตามการใช้จริงจากคำขอซื้อ ใบสั่งซื้อ หรือสัญญา"
+  },
+  {
+    "key": "agreements",
+    "title": "ข้อตกลงและสัญญา",
+    "parent": "erp_contract.agreement_root",
+    "summary": "จัดการข้อตกลงตามใบสั่งซื้อ ลงนาม ตรวจทาน อนุมัติทางกฎหมาย และอ่านประวัติฉบับ"
+  },
+  {
+    "key": "guarantees",
+    "title": "หลักประกันการจัดซื้อ",
+    "parent": "erp_contract.guarantee_menu_root",
+    "summary": "บันทึกหลักประกัน ติดตามครบกำหนด และดำเนินการรับหรือคืนผ่านเอกสารบัญชีที่เชื่อมโยง"
+  },
+  {
+    "key": "acceptance",
+    "title": "ตรวจรับงาน",
+    "parent": "erp_inventory.acceptance_root",
+    "summary": "ตรวจรับสินค้าและบริการ บันทึกคณะกรรมการ ผลประเมินผู้ขาย และส่งต่อการเรียกเก็บเงิน"
+  },
+  {
+    "key": "stock_requests",
+    "title": "คำขอเบิกสินค้า",
+    "parent": "erp_inventory.stock_request_root",
+    "summary": "ขอสินค้า อนุมัติและจัดหา ติดตามการส่งมอบ รวมถึงบัตร Kanban และการสำรวจบัตร"
+  },
+  {
+    "key": "warehouse",
+    "title": "คลังสินค้า",
+    "parent": "stock.menu_stock_root",
+    "summary": "รับสินค้า จ่ายและโอนสินค้า จัดการส่วนค้าง คืนสินค้า และตรวจปริมาณคงเหลือ"
+  },
+  {
+    "key": "assets",
+    "title": "ทรัพย์สิน",
+    "parent": "erp_asset.asset_root",
+    "summary": "อ่านทะเบียนที่รับรู้จากต้นทาง เชื่อมรายการค่าเสื่อม และติดตามการโอนหรือจำหน่าย"
+  },
+  {
+    "key": "employees",
+    "title": "พนักงาน",
+    "parent": "hr.menu_hr_root",
+    "summary": "จัดการข้อมูลพนักงาน แผนก หน่วยงานหลัก และการสังกัดเพิ่มเติมตามช่วงเวลา"
+  },
+  {
+    "key": "expenses",
+    "title": "รายจ่าย",
+    "parent": "hr_expense.menu_hr_expense_root",
+    "summary": "บันทึกรายจ่ายจากหลักฐาน ส่งอนุมัติ และจัดการเงินยืม การเคลียร์ และคืนเงินยืม"
+  },
+  {
+    "key": "chat",
+    "title": "แชท",
+    "parent": "mail.menu_root_discuss",
+    "summary": "สนทนาภายใน ติดตามกิจกรรม และกลับไปเปิดเอกสารที่เกี่ยวข้อง"
+  },
+  {
+    "key": "dashboards",
+    "title": "แดชบอร์ด",
+    "parent": "spreadsheet_dashboard.spreadsheet_dashboard_menu_root",
+    "summary": "อ่านภาพรวม เลือกขอบเขตและช่วงเวลา และตรวจกลับไปยังเอกสารต้นทาง"
+  }
+]

@@ -1,0 +1,1883 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "A clearing receipt must have one employee payable account."
+msgstr "เอกสารล้างเงินต้องมีบัญชีเจ้าหนี้พนักงานหนึ่งบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "A controlled deposit line cannot change its source or amount."
+msgstr "รายการเงินมัดจำที่ควบคุมงบประมาณไม่สามารถเปลี่ยนแหล่งที่มาหรือจำนวนเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "A controlled expense must begin in draft."
+msgstr "ค่าใช้จ่ายที่ควบคุมงบประมาณต้องเริ่มจากสถานะร่าง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "A controlled expense must have a positive company-currency amount."
+msgstr "ค่าใช้จ่ายที่ควบคุมงบประมาณต้องมีจำนวนเงินสกุลบริษัทมากกว่าศูนย์"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "A controlled expense requires period, organization, fund, analytic and account."
+msgstr "ค่าใช้จ่ายที่ควบคุมงบประมาณต้องระบุงวด หน่วยงาน แหล่งเงิน บัญชีวิเคราะห์ และบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "A controlled refund must reverse a vendor bill."
+msgstr "การคืนเงินที่ควบคุมงบประมาณต้องกลับรายการใบเรียกเก็บเงินผู้ขาย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "A deposit has one original bill; create another deposit for an additional payment."
+msgstr "เงินมัดจำหนึ่งรายการมีใบเรียกเก็บเงินต้นฉบับได้หนึ่งใบ หากชำระเพิ่มให้สร้างเงินมัดจำใหม่"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/invoice_plan.py:0
+msgid ""
+"A deposit installment uses number zero or a negative number and an approved line from its "
+"purchase."
+msgstr "งวดเงินมัดจำต้องใช้เลขศูนย์หรือเลขติดลบ และรายการจัดซื้อที่อนุมัติแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "A deposit refund must reverse its posted deposit or deduction bill."
+msgstr "การคืนเงินมัดจำต้องกลับรายการใบมัดจำหรือใบหักเงินที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "A direct budget line requires period, organization, fund, analytic and account."
+msgstr "รายการงบประมาณโดยตรงต้องระบุงวด หน่วยงาน แหล่งเงิน บัญชีวิเคราะห์ และบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "A new draft return for a posted advance is required."
+msgstr "ต้องมีรายการคืนใหม่สถานะร่างสำหรับเงินทดรองที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "A positive bill quantity, matching product and compatible unit are required."
+msgstr "ต้องระบุจำนวนในใบเรียกเก็บเงินมากกว่าศูนย์ สินค้าที่ตรงกัน และหน่วยที่ใช้ร่วมกันได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "A posted advance with remaining funds is required."
+msgstr "ต้องมีเงินทดรองที่ลงบัญชีแล้วและมียอดคงเหลือ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "A posted employee advance is required."
+msgstr "ต้องมีเงินทดรองพนักงานที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_exemption.py:0
+msgid ""
+"A purchase or contract commitment must be reconciled; use a separate direct entry for an exempt "
+"accounting adjustment."
+msgstr ""
+"ต้องกระทบยอดภาระผูกพันจากการจัดซื้อหรือสัญญา "
+"หากเป็นการปรับปรุงบัญชีที่ได้รับยกเว้นให้ใช้รายการตรงแยกต่างหาก"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "A refund must reference a posted bill for the same purchase line."
+msgstr "การคืนเงินต้องอ้างอิงใบเรียกเก็บเงินที่ลงบัญชีแล้วของรายการจัดซื้อเดียวกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "A request line can be taken over by only one approved expense or advance."
+msgstr "รายการคำขอหนึ่งรายการเชื่อมกับค่าใช้จ่ายหรือเงินทดรองที่อนุมัติได้เพียงรายการเดียว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "A return requires a positive amount and a configured bank or cash journal."
+msgstr "การคืนเงินต้องมีจำนวนเงินมากกว่าศูนย์และสมุดรายวันธนาคารหรือเงินสดที่กำหนดไว้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "A submitted or historical expense must retain its request source."
+msgstr "ค่าใช้จ่ายที่ส่งแล้วหรือเป็นประวัติต้องคงคำขอต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "A taxed budget actual requires a native accounting tax base."
+msgstr "ค่าใช้จ่ายจริงที่รวมภาษีต้องมีฐานภาษีจากระบบบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Accounting lines with budget history cannot be deleted."
+msgstr "ไม่สามารถลบรายการบัญชีที่มีประวัติงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__advance_id
+msgid "Advance"
+msgstr "เงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_res_company__erp_employee_advance_journal_id
+#: model:ir.model.fields,field_description:erp_finance.field_res_config_settings__erp_employee_advance_journal_id
+#: model_terms:ir.ui.view,arch_db:erp_finance.advance_settings
+msgid "Advance Settlement Journal"
+msgstr "สมุดรายวันล้างเงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_advance_settlement_ids
+msgid "Advance Settlements"
+msgstr "การล้างเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance accounting is managed by its source workflow."
+msgstr "การบัญชีเงินทดรองจัดการโดยขั้นตอนของเอกสารต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance accounting lines are created by source workflows."
+msgstr "รายการบัญชีเงินทดรองสร้างจากขั้นตอนของเอกสารต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance accounting lines are retained for audit."
+msgstr "เก็บรายการบัญชีเงินทดรองไว้เพื่อตรวจสอบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance accounting origins are created only by the source workflow."
+msgstr "ที่มาทางบัญชีของเงินทดรองสร้างได้โดยขั้นตอนต้นทางเท่านั้น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance accounting origins are immutable."
+msgstr "ไม่สามารถแก้ไขที่มาทางบัญชีของเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance and clearing source identities with approval history cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุต้นทางของเงินทดรองและการล้างเงินที่มีประวัติอนุมัติ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Advance clearing uses its advance origin, not another purchase request."
+msgstr "การล้างเงินทดรองต้องใช้เงินทดรองต้นทาง ไม่ใช่คำขอซื้ออื่น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance returns begin in draft with derived scope."
+msgstr "รายการคืนเงินทดรองต้องเริ่มจากสถานะร่างโดยใช้ขอบเขตจากต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance settlement amounts and origins are immutable."
+msgstr "ไม่สามารถแก้ไขจำนวนเงินและต้นทางของการล้างเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance settlement and return accounting history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติทางบัญชีของการล้างและคืนเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance settlement history cannot be supplied by clients."
+msgstr "ผู้ใช้ไม่สามารถระบุประวัติการล้างเงินทดรองเอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advance settlements are created only by native posting."
+msgstr "รายการล้างเงินทดรองสร้างได้จากการลงบัญชีของระบบเท่านั้น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Advances are employee-paid, tax-free and cannot clear other advances."
+msgstr "เงินทดรองจ่ายให้พนักงาน ไม่รวมภาษี และใช้ล้างเงินทดรองอื่นไม่ได้"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_request_amount_override
+msgid "Allow Expense Above Request"
+msgstr "อนุญาตค่าใช้จ่ายเกินคำขอ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__amount
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__amount
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_payment_retention__amount
+#: model:ir.model.fields.selection,name:erp_finance.selection__purchase_order__erp_payment_retention__amount
+msgid "Amount"
+msgstr "จำนวนเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__amount_remaining
+msgid "Amount Remaining"
+msgstr "จำนวนเงินคงเหลือ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "An accounting line with budget history cannot move to another document."
+msgstr "รายการบัญชีที่มีประวัติงบประมาณไม่สามารถย้ายไปเอกสารอื่น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "An advance requires the configured reconcilable current-asset employee advance account."
+msgstr "เงินทดรองต้องใช้บัญชีสินทรัพย์หมุนเวียนเงินทดรองพนักงานที่ตั้งค่าให้กระทบยอดได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "An approved request configured for expense conversion is required."
+msgstr "ต้องมีคำขอที่อนุมัติแล้วและกำหนดให้แปลงเป็นค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "An expense accounting source with budget history cannot be reassigned."
+msgstr "ไม่สามารถเปลี่ยนแหล่งบัญชีค่าใช้จ่ายที่มีประวัติงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Applied advance return history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการคืนเงินทดรองที่ดำเนินการแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Applied return history is immutable."
+msgstr "ไม่สามารถแก้ไขประวัติรายการคืนที่ดำเนินการแล้ว"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_register__erp_apply_retention
+msgid "Apply Retention"
+msgstr "หักเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Apply the suggested retention or explicitly disable its enforcement."
+msgstr "ให้ใช้เงินประกันผลงานที่แนะนำหรือปิดการบังคับใช้อย่างชัดเจน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Approve and post the original expense before withholding."
+msgstr "ต้องอนุมัติและลงบัญชีค่าใช้จ่ายต้นฉบับก่อนหักเงิน ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Bill and purchase units must have the same reference unit."
+msgstr "หน่วยของใบเรียกเก็บเงินและการจัดซื้อต้องมีหน่วยอ้างอิงเดียวกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Bill taxes, account or analytic distribution do not match the supported purchase budget key."
+msgstr ""
+"ภาษี บัญชี หรือการกระจายบัญชีวิเคราะห์ในใบเรียกเก็บเงินไม่ตรงกับรหัสงบประมาณจัดซื้อที่รองรับ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_bill_to_po_wizard
+msgid "Bill to Purchase Order"
+msgstr "เชื่อมใบเรียกเก็บเงินกับใบสั่งซื้อ"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_budget_form
+msgid "Budget"
+msgstr "งบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_budget_activity
+msgid "Budget Activity"
+msgstr "กิจกรรมงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_budget_kpi_tier
+msgid "Budget Release Reviewer Configuration"
+msgstr "การกำหนดผู้ตรวจทานการปล่อยงบ"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_budget_form
+msgid "Budget Reviews"
+msgstr "การตรวจทานงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_exemption.py:0
+msgid "Budget or accounting management authority is required to override the journal budget policy."
+msgstr "ต้องมีอำนาจจัดการงบประมาณหรือบัญชีเพื่อเปลี่ยนนโยบายงบประมาณของสมุดรายวัน"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.advance_return_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Cancel accounting documents while retaining the retention history."
+msgstr "ให้ยกเลิกเอกสารบัญชีโดยคงประวัติเงินประกันผลงานไว้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Cancel advance clearings and returns before resetting or reversing the advance."
+msgstr "ต้องยกเลิกรายการล้างและคืนเงินทดรองก่อนคืนสถานะหรือกลับรายการเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Cancel retention releases before removing their source payment or reconciliation."
+msgstr "ต้องยกเลิกการคืนเงินประกันผลงานก่อนนำรายการชำระเงินหรือการกระทบยอดต้นทางออก"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Cancel the original clearing or return document."
+msgstr "ให้ยกเลิกเอกสารล้างเงินหรือคืนเงินต้นฉบับ"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_finance_advance_return__state__cancel
+msgid "Cancelled"
+msgstr "ยกเลิกแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Choose the purchase, contract or expense source, or direct budget dimensions for a line."
+msgstr "เลือกแหล่งจัดซื้อ สัญญา ค่าใช้จ่าย หรือมิติงบประมาณโดยตรงสำหรับรายการ"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_advance_form
+msgid "Clear Advance"
+msgstr "ล้างเงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_advance_ids
+msgid "Clear Advances"
+msgstr "ล้างเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Clear Employee Advance"
+msgstr "ล้างเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid ""
+"Clearing requires employee-paid expenses and advances for the same company, employee and "
+"organization."
+msgstr "การล้างเงินต้องใช้ค่าใช้จ่ายที่พนักงานจ่ายและเงินทดรองของบริษัท พนักงาน และหน่วยงานเดียวกัน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__company_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__company_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Company-paid withholding requires the original draft payment entry."
+msgstr "การหักเงินที่บริษัทเป็นผู้จ่ายต้องมีรายการชำระเงินต้นฉบับสถานะร่าง"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_budget_amount_mode__legacy
+msgid "Compatibility"
+msgstr "ความเข้ากันได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Complete the assigned expense review tiers before approval."
+msgstr "ต้องตรวจทานค่าใช้จ่ายตามลำดับที่มอบหมายให้ครบก่อนอนุมัติ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_res_config_settings
+msgid "Config Settings"
+msgstr "การกำหนดค่า"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Configure a general journal for employee advance settlement."
+msgstr "โปรดกำหนดสมุดรายวันทั่วไปสำหรับล้างเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Configure a general journal for expense withholding."
+msgstr "โปรดกำหนดสมุดรายวันทั่วไปสำหรับหักค่าใช้จ่าย ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Configure a general journal for native withholding-only settlement."
+msgstr "โปรดกำหนดสมุดรายวันทั่วไปสำหรับชำระเฉพาะยอดหัก ณ ที่จ่ายของระบบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Configure a retention account and a positive retention within the remaining payment."
+msgstr "โปรดกำหนดบัญชีเงินประกันผลงานและจำนวนเงินมากกว่าศูนย์แต่ไม่เกินยอดชำระคงเหลือ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Controlled expense accounting requires approved expenses and cannot be exempted."
+msgstr "บัญชีค่าใช้จ่ายที่ควบคุมงบประมาณต้องใช้ค่าใช้จ่ายที่อนุมัติแล้วและยกเว้นไม่ได้"
+
+#. module: erp_finance
+#: model:ir.module.module,summary:base.module_erp_finance
+msgid "Controlled vendor bill and purchase budget reconciliation"
+msgstr "กระทบยอดงบประมาณใบเรียกเก็บเงินผู้ขายและการจัดซื้อที่ควบคุม"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.request_expense_conversion_form
+msgid "Create Expense"
+msgstr "สร้างค่าใช้จ่าย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__create_uid
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__create_uid
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__create_date
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__create_date
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__currency_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__currency_id
+msgid "Currency"
+msgstr "สกุลเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__date
+msgid "Date"
+msgstr "วันที่"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_clearing_activity_id
+msgid "Default Clearing Activity"
+msgstr "กิจกรรมล้างบัญชีเริ่มต้น"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_clearing_product_id
+msgid "Default Clearing Product"
+msgstr "สินค้าล้างบัญชีเริ่มต้น"
+
+#. module: erp_finance
+#: model:ir.model.fields,help:erp_finance.field_account_journal__erp_budget_exempt
+msgid ""
+"Default for new direct accounting documents. Controlled purchase and contract bills still require "
+"Budget reconciliation."
+msgstr ""
+"ค่าเริ่มต้นสำหรับเอกสารบัญชีโดยตรงที่สร้างใหม่ "
+"ใบเรียกเก็บเงินจัดซื้อและสัญญาที่ควบคุมยังต้องกระทบยอดงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_contract_invoice_plan__invoice_type__advance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_procurement_invoice_plan__invoice_type__advance
+msgid "Deposit"
+msgstr "เงินมัดจำ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_bill_to_po_wizard__erp_deposit_origin_id
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order_line__erp_deposit_origin_id
+msgid "Deposit Budget Source"
+msgstr "แหล่งงบประมาณเงินมัดจำ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_procurement_invoice_plan__deposit_origin_id
+msgid "Deposit Origin"
+msgstr "ต้นทางเงินมัดจำ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Deposit company, supplier and analytic dimensions must match its approved purchase source."
+msgstr "บริษัท ผู้ขาย และมิติบัญชีวิเคราะห์ของเงินมัดจำต้องตรงกับต้นทางจัดซื้อที่อนุมัติแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Deposit deductions must preserve the original account and currency."
+msgstr "การหักเงินมัดจำต้องคงบัญชีและสกุลเงินต้นฉบับ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Deposit deductions or refunds cannot exceed the posted deposit."
+msgstr "ยอดหักหรือคืนเงินมัดจำต้องไม่เกินเงินมัดจำที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Deposit lines require a finite positive unit price."
+msgstr "รายการเงินมัดจำต้องมีราคาต่อหน่วยเป็นจำนวนจำกัดและมากกว่าศูนย์"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Deposit provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของเงินมัดจำ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Direct budget actuals require native accounting posting."
+msgstr "ค่าใช้จ่ายจริงงบประมาณโดยตรงต้องลงบัญชีผ่านระบบบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Direct budget dimensions cannot be added to a posted entry."
+msgstr "ไม่สามารถเพิ่มมิติงบประมาณโดยตรงในรายการที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Direct budget dimensions must match the native analytic distribution at 100 percent."
+msgstr "มิติงบประมาณโดยตรงต้องตรงกับการกระจายบัญชีวิเคราะห์ของระบบครบ 100 เปอร์เซ็นต์"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Discounted controlled purchase orders are not supported by Finance budget integration."
+msgstr "การเชื่อมงบประมาณการเงินยังไม่รองรับใบสั่งซื้อที่ควบคุมงบประมาณและมีส่วนลด"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_journal__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_withholding_line__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_bill_to_po_wizard__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_erp_budget_kpi_tier__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_erp_procurement_request__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_l10n_th_tax_invoice__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:erp_finance.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_finance_advance_return__state__draft
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_is_advance
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_advance_form
+msgid "Employee Advance"
+msgstr "เงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_res_company__erp_employee_advance_account_id
+#: model:ir.model.fields,field_description:erp_finance.field_res_config_settings__erp_employee_advance_account_id
+#: model_terms:ir.ui.view,arch_db:erp_finance.advance_settings
+msgid "Employee Advance Account"
+msgstr "บัญชีเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_finance_advance_return
+msgid "Employee Advance Return"
+msgstr "การคืนเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model:ir.actions.act_window,name:erp_finance.advance_return_action
+#: model:ir.ui.menu,name:erp_finance.advance_return_menu
+msgid "Employee Advance Returns"
+msgstr "การคืนเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.advance_settings
+msgid "Employee Advances"
+msgstr "เงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_budget_kpi_tier__kind__advance
+msgid "Employee advance approval"
+msgstr "การอนุมัติเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_register__erp_enforce_retention
+msgid "Enforce Suggested Retention"
+msgstr "บังคับใช้เงินประกันผลงานที่แนะนำ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_advance_clearing_expense_id
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_advance_clearing_expense_id
+msgid "Erp Advance Clearing Expense"
+msgstr "ค่าใช้จ่ายล้างเงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_advance_origin_id
+msgid "Erp Advance Origin"
+msgstr "รายการเงินทดรองต้นทาง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_advance_remaining
+msgid "Erp Advance Remaining"
+msgstr "เงินทดรองคงเหลือ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_advance_return_id
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_advance_return_id
+msgid "Erp Advance Return"
+msgstr "รายการคืนเงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_activity_id
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_activity_id
+msgid "Erp Budget Activity"
+msgstr "กิจกรรมงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_actual_company
+msgid "Erp Budget Actual Company"
+msgstr "ยอดค่าใช้จ่ายจริงงบประมาณในสกุลเงินบริษัท"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_amount
+msgid "Erp Budget Amount"
+msgstr "จำนวนเงินงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_budget_amount_captured
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_budget_amount_captured
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_amount_captured
+msgid "Erp Budget Amount Captured"
+msgstr "จำนวนเงินงบประมาณที่บันทึกแล้ว"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_budget_amount_mode
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_budget_amount_mode
+msgid "Erp Budget Amount Mode"
+msgstr "รูปแบบจำนวนเงินงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_amount_snapshot
+msgid "Erp Budget Amount Snapshot"
+msgstr "จำนวนเงินงบประมาณ ณ เวลาบันทึก"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_analytic_id
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_analytic_id
+msgid "Erp Budget Analytic"
+msgstr "บัญชีวิเคราะห์งบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_captured
+msgid "Erp Budget Captured"
+msgstr "บันทึกงบประมาณแล้ว"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_dimension_ids
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_dimension_ids
+msgid "Erp Budget Dimension"
+msgstr "มิติงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_direct_activity_id
+msgid "Erp Budget Direct Activity"
+msgstr "กิจกรรมงบประมาณโดยตรง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_fund_id
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_fund_id
+msgid "Erp Budget Fund"
+msgstr "แหล่งเงินงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_budget_included_tax_ids
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_budget_included_tax_ids
+msgid "Erp Budget Included Tax"
+msgstr "ภาษีที่รวมในงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_lock_version
+msgid "Erp Budget Lock Version"
+msgstr "รุ่นการล็อกงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_organization_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__organization_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__organization_id
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_organization_id
+msgid "Erp Budget Organization"
+msgstr "หน่วยงานงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_move_line__erp_budget_period_id
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_period_id
+msgid "Erp Budget Period"
+msgstr "งวดงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_budget_snapshot
+msgid "Erp Budget Snapshot"
+msgstr "ข้อมูลงบประมาณ ณ เวลาบันทึก"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order_line__erp_deposit_bill_line_id
+msgid "Erp Deposit Bill Line"
+msgstr "รายการใบเรียกเก็บเงินมัดจำ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_payment_retention
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_payment_retention
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order__erp_payment_retention
+msgid "Erp Payment Retention"
+msgstr "เงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_ids
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_ids
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment__erp_retention_ids
+msgid "Erp Retention"
+msgstr "เงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_amount
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_amount
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_register__erp_retention_amount
+msgid "Erp Retention Amount"
+msgstr "จำนวนเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_lock_version
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_lock_version
+msgid "Erp Retention Lock Version"
+msgstr "รุ่นการล็อกเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_method
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_method
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order__erp_retention_method
+msgid "Erp Retention Method"
+msgstr "วิธีหักเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_res_company__erp_retention_payable_account_id
+msgid "Erp Retention Payable Account"
+msgstr "บัญชีเงินประกันผลงานค้างจ่าย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_res_company__erp_retention_receivable_account_id
+msgid "Erp Retention Receivable Account"
+msgstr "บัญชีเงินประกันผลงานค้างรับ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_release_id
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_release_id
+msgid "Erp Retention Release"
+msgstr "การคืนเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_retention_value
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_retention_value
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order__erp_retention_value
+msgid "Erp Retention Value"
+msgstr "มูลค่าเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_review_ids
+msgid "Erp Review"
+msgstr "การตรวจทาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_review_round
+msgid "Erp Review Round"
+msgstr "รอบการตรวจทาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment__erp_withholding_expense_id
+msgid "Erp Withholding Expense"
+msgstr "ค่าใช้จ่ายภาษีหัก ณ ที่จ่าย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_journal__erp_budget_exempt
+msgid "Exclude Direct Entries from Budget"
+msgstr "ไม่รวมรายการตรงในงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_bank_statement_line__erp_budget_exempt
+#: model:ir.model.fields,field_description:erp_finance.field_account_move__erp_budget_exempt
+msgid "Exclude from Budget"
+msgstr "ไม่รวมในงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_budget_amount_mode__net
+msgid "Exclude taxes"
+msgstr "ไม่รวมภาษี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/__init__.py:0
+msgid ""
+"Existing posted bills linked to controlled purchase requests require explicit migration before "
+"installing Finance integration."
+msgstr ""
+"ใบเรียกเก็บเงินที่ลงบัญชีแล้วและเชื่อมคำขอซื้อที่ควบคุมงบประมาณต้องย้ายข้อมูลอย่างชัดเจนก่อนติดตั้งส่วนเชื่อมการเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__expense_id
+msgid "Expense"
+msgstr "ค่าใช้จ่าย"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_finance_expense_review
+msgid "Expense Approval Review"
+msgstr "การตรวจทานอนุมัติค่าใช้จ่าย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_l10n_th_tax_invoice__erp_expense_vendor_id
+msgid "Expense Supplier"
+msgstr "ผู้ขายค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense accounting must retain its budget analytic dimensions."
+msgstr "บัญชีค่าใช้จ่ายต้องคงมิติบัญชีวิเคราะห์งบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense accounting must retain its company and source account."
+msgstr "บัญชีค่าใช้จ่ายต้องคงบริษัทและบัญชีต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense and budget period must belong to the same company."
+msgstr "ค่าใช้จ่ายและงวดงบประมาณต้องอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_budget_kpi_tier__kind__expense
+msgid "Expense approval"
+msgstr "การอนุมัติค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense budget amounts are captured by the approval workflow."
+msgstr "จำนวนเงินงบประมาณของค่าใช้จ่ายบันทึกโดยขั้นตอนอนุมัติ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense budget dimensions must match its native analytic distribution at 100 percent."
+msgstr "มิติงบประมาณค่าใช้จ่ายต้องตรงกับการกระจายบัญชีวิเคราะห์ของระบบครบ 100 เปอร์เซ็นต์"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expense company and employee identity with budget history cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนบริษัทและตัวระบุพนักงานของค่าใช้จ่ายที่มีประวัติงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Expense conversion requires an expense product without a confirmed purchase."
+msgstr "การแปลงเป็นค่าใช้จ่ายต้องใช้สินค้าค่าใช้จ่ายที่ยังไม่มีการจัดซื้อยืนยันแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Expense dimensions must match the request fiscal destination."
+msgstr "มิติของค่าใช้จ่ายต้องตรงกับปลายทางงบประมาณของคำขอ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid ""
+"Expense exceeds the approved request amount; HR management must explicitly authorize the variance."
+msgstr "ค่าใช้จ่ายเกินจำนวนเงินคำขอที่อนุมัติ ผู้จัดการบุคคลต้องอนุญาตส่วนต่างอย่างชัดเจน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Expense reimbursement requires an approved request without confirmed purchase orders."
+msgstr "การเบิกคืนค่าใช้จ่ายต้องมีคำขอที่อนุมัติแล้วและไม่มีใบสั่งซื้อที่ยืนยันแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Expense reviewers require budget capability and cannot approve their own expense."
+msgstr "ผู้ตรวจทานค่าใช้จ่ายต้องมีสิทธิ์งบประมาณและอนุมัติค่าใช้จ่ายของตนเองไม่ได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Expense reviews are created only by submission."
+msgstr "การตรวจทานค่าใช้จ่ายสร้างได้จากการส่งรายการเท่านั้น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Expense reviews are managed by workflow actions."
+msgstr "การตรวจทานค่าใช้จ่ายจัดการผ่านขั้นตอนการทำงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding accounting history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติทางบัญชีของการหักค่าใช้จ่าย ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding accounting is controlled by its source."
+msgstr "บัญชีการหักค่าใช้จ่าย ณ ที่จ่ายควบคุมโดยรายการต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding accounting lines are immutable."
+msgstr "ไม่สามารถแก้ไขรายการบัญชีหักค่าใช้จ่าย ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding entries are retained for audit."
+msgstr "เก็บรายการหักค่าใช้จ่าย ณ ที่จ่ายไว้สำหรับตรวจสอบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการหักค่าใช้จ่าย ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding is generated by native expense posting."
+msgstr "ระบบสร้างการหักค่าใช้จ่าย ณ ที่จ่ายเมื่อลงบัญชีค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Expense withholding lines are immutable."
+msgstr "ไม่สามารถแก้ไขรายการหักค่าใช้จ่าย ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Expenses with budget history cannot be deleted."
+msgstr "ไม่สามารถลบค่าใช้จ่ายที่มีประวัติงบประมาณ"
+
+#. module: erp_finance
+#: model:ir.module.module,shortdesc:base.module_erp_finance
+msgid "Government ERP Finance Budget Integration"
+msgstr "การเชื่อมโยงการเงินและงบประมาณภาครัฐ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_account_journal__id
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_register__id
+#: model:ir.model.fields,field_description:erp_finance.field_account_payment_withholding_line__id
+#: model:ir.model.fields,field_description:erp_finance.field_bill_to_po_wizard__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_budget_activity__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_budget_move__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_procurement_invoice_plan__id
+#: model:ir.model.fields,field_description:erp_finance.field_l10n_th_tax_invoice__id
+#: model:ir.model.fields,field_description:erp_finance.field_purchase_order__id
+#: model:ir.model.fields,field_description:erp_finance.field_res_company__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_budget_amount_mode__all
+msgid "Include all taxes"
+msgstr "รวมภาษีทั้งหมด"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_budget_amount_mode__specific
+msgid "Include selected taxes"
+msgstr "รวมภาษีที่เลือก"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "Invoice budget amount policies are captured by native posting."
+msgstr "ระบบบันทึกนโยบายจำนวนเงินงบประมาณของใบแจ้งหนี้เมื่อลงบัญชี"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_account_journal
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__journal_id
+msgid "Journal"
+msgstr "สมุดรายวัน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_account_move_line
+msgid "Journal Item"
+msgstr "รายการบัญชี"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__write_uid
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__write_uid
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__write_date
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__write_date
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__lock_version
+msgid "Lock Version"
+msgstr "รุ่นการล็อก"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__move_id
+msgid "Move"
+msgstr "รายการเคลื่อนไหว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "Native accounting amounts must be finite."
+msgstr "จำนวนเงินทางบัญชีของระบบต้องเป็นจำนวนจำกัด"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "Native posting captures actual budget amounts."
+msgstr "ระบบบันทึกจำนวนเงินค่าใช้จ่ายจริงเมื่อลงบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "No advance remains after approved clearings and returns."
+msgstr "ไม่มียอดเงินทดรองคงเหลือหลังรายการล้างและคืนที่อนุมัติแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "No posted retained balance is available to release."
+msgstr "ไม่มียอดเงินประกันผลงานที่ลงบัญชีแล้วสำหรับคืน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Only HR expense managers may authorize a request amount variance."
+msgstr "เฉพาะผู้จัดการค่าใช้จ่ายฝ่ายบุคคลเท่านั้นที่อนุญาตส่วนต่างจำนวนเงินคำขอได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Only the current expense accounting document or its native reversal may post."
+msgstr "ลงบัญชีได้เฉพาะเอกสารบัญชีค่าใช้จ่ายปัจจุบันหรือรายการกลับของระบบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Only the next assigned expense reviewer may approve."
+msgstr "เฉพาะผู้ตรวจทานค่าใช้จ่ายลำดับถัดไปที่ได้รับมอบหมายเท่านั้นที่อนุมัติได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Only the next assigned expense reviewer may reject."
+msgstr "เฉพาะผู้ตรวจทานค่าใช้จ่ายลำดับถัดไปที่ได้รับมอบหมายเท่านั้นที่ปฏิเสธได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Only vendor bills and refunds are supported for controlled purchases."
+msgstr "การจัดซื้อที่ควบคุมงบประมาณรองรับเฉพาะใบเรียกเก็บเงินผู้ขายและการคืนเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_account_payment_register
+msgid "Pay"
+msgstr "ชำระเงิน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_account_payment
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__payment_id
+msgid "Payment"
+msgstr "การชำระเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__payment_line_id
+msgid "Payment Line"
+msgstr "รายการชำระเงิน"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.view_company_retention
+#: model_terms:ir.ui.view,arch_db:erp_finance.view_move_retention
+msgid "Payment Retention"
+msgstr "เงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_finance_retention
+msgid "Payment Retention History"
+msgstr "ประวัติเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.actions.act_window,name:erp_finance.action_retention
+#: model:ir.ui.menu,name:erp_finance.menu_retention
+msgid "Payment Retentions"
+msgstr "เงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Payment retention"
+msgstr "เงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_account_payment_withholding_line
+msgid "Payment withholding line"
+msgstr "รายการหักเงิน ณ ที่จ่าย"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_payment_retention__percent
+#: model:ir.model.fields.selection,name:erp_finance.selection__purchase_order__erp_payment_retention__percent
+msgid "Percent"
+msgstr "ร้อยละ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/invoice_plan.py:0
+msgid "Planned deposit: %s"
+msgstr "เงินมัดจำตามแผน: %s"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Post an advance settlement or return through its source workflow."
+msgstr "ให้ลงบัญชีการล้างหรือคืนเงินทดรองผ่านขั้นตอนของรายการต้นทาง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Post the approved advance before submitting its clearing."
+msgstr "ต้องลงบัญชีเงินทดรองที่อนุมัติแล้วก่อนส่งรายการล้างเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/invoice_plan.py:0
+msgid "Post the planned deposit before billing its deductions."
+msgstr "ต้องลงบัญชีเงินมัดจำตามแผนก่อนออกใบเรียกเก็บเงินหักมัดจำ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Post withholding through the original expense."
+msgstr "ให้ลงบัญชีหัก ณ ที่จ่ายผ่านค่าใช้จ่ายต้นฉบับ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Posted bill and refund quantities must stay within the purchase quantity."
+msgstr "จำนวนในใบเรียกเก็บเงินและรายการคืนที่ลงบัญชีแล้วต้องไม่เกินจำนวนจัดซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "Posted budget amounts are immutable."
+msgstr "ไม่สามารถแก้ไขจำนวนเงินงบประมาณที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_amount.py:0
+msgid "Posted invoice budget amount policies are immutable."
+msgstr "ไม่สามารถแก้ไขนโยบายจำนวนเงินงบประมาณของใบแจ้งหนี้ที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_procurement_request
+msgid "Purchase Request"
+msgstr "ใบขอซื้อ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_erp_procurement_request_line
+msgid "Purchase Request Line"
+msgstr "รายการใบขอซื้อ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_request_line_id
+msgid "Purchase Request Source"
+msgstr "แหล่งที่มาของใบขอซื้อ"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__name
+msgid "Reference"
+msgstr "เลขอ้างอิง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Refunds may not exceed the referenced posted bill line."
+msgstr "ยอดคืนเงินต้องไม่เกินรายการใบเรียกเก็บเงินอ้างอิงที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Refuse linked expenses before rejecting the purchase request."
+msgstr "ต้องปฏิเสธค่าใช้จ่ายที่เชื่อมโยงก่อนปฏิเสธใบขอซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Refuse linked expenses before resetting the purchase request."
+msgstr "ต้องปฏิเสธค่าใช้จ่ายที่เชื่อมโยงก่อนคืนสถานะใบขอซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Register retained invoices separately."
+msgstr "ให้บันทึกใบแจ้งหนี้ที่มีเงินประกันผลงานแยกกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Register retention separately for each organization."
+msgstr "ให้บันทึกเงินประกันผลงานแยกตามหน่วยงาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__release_id
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__release_ids
+msgid "Release"
+msgstr "ปล่อยงบ"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.view_retention_form
+msgid "Release Retention"
+msgstr "คืนเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid ""
+"Reset and cancel the original advance clearing or return to reverse its accounting and budget "
+"together."
+msgstr ""
+"ให้คืนสถานะและยกเลิกเอกสารล้างหรือคืนเงินทดรองต้นฉบับเพื่อกลับรายการบัญชีและงบประมาณพร้อมกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Reset or reverse controlled posted bills before cancelling the purchase order."
+msgstr ""
+"ต้องคืนสถานะหรือกลับรายการใบเรียกเก็บเงินที่ควบคุมงบประมาณและลงบัญชีแล้วก่อนยกเลิกใบสั่งซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/budget_exemption.py:0
+msgid "Reset the accounting document before changing its budget policy."
+msgstr "ต้องคืนสถานะเอกสารบัญชีก่อนเปลี่ยนนโยบายงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Reset the budget accounting document before changing its identity."
+msgstr "ต้องคืนสถานะเอกสารบัญชีงบประมาณก่อนเปลี่ยนตัวระบุ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Reset the controlled bill to draft before changing its budget source or amount."
+msgstr "ต้องคืนใบเรียกเก็บเงินที่ควบคุมงบประมาณเป็นฉบับร่างก่อนเปลี่ยนแหล่งงบประมาณหรือจำนวนเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Reset the controlled bill to draft before changing its budget source or date."
+msgstr "ต้องคืนใบเรียกเก็บเงินที่ควบคุมงบประมาณเป็นฉบับร่างก่อนเปลี่ยนแหล่งงบประมาณหรือวันที่"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Reset the controlled bill to draft before deleting its budget source."
+msgstr "ต้องคืนใบเรียกเก็บเงินที่ควบคุมงบประมาณเป็นฉบับร่างก่อนลบแหล่งงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Reset the expense before changing a submitted review."
+msgstr "ต้องคืนสถานะค่าใช้จ่ายก่อนเปลี่ยนการตรวจทานที่ส่งแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Reset the expense before changing its budget source or amount."
+msgstr "ต้องคืนสถานะค่าใช้จ่ายก่อนเปลี่ยนแหล่งงบประมาณหรือจำนวนเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "Reset the expense before changing its request variance authorization."
+msgstr "ต้องคืนสถานะค่าใช้จ่ายก่อนเปลี่ยนการอนุญาตส่วนต่างคำขอ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_review.py:0
+msgid "Reset the expense before submitting another review round."
+msgstr "ต้องคืนสถานะค่าใช้จ่ายก่อนส่งการตรวจทานรอบใหม่"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Reset the expense to remove its withholding reconciliation."
+msgstr "ให้คืนสถานะค่าใช้จ่ายเพื่อนำการกระทบยอดหัก ณ ที่จ่ายออก"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Reset the expense to reverse its withholding and accounting together."
+msgstr "ให้คืนสถานะค่าใช้จ่ายเพื่อกลับรายการหัก ณ ที่จ่ายและบัญชีพร้อมกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Reset the journal or bill before changing direct budget dimensions."
+msgstr "ต้องคืนสถานะรายการสมุดรายวันหรือใบเรียกเก็บเงินก่อนเปลี่ยนมิติงบประมาณโดยตรง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Reset the original clearing or return document."
+msgstr "ให้คืนสถานะเอกสารล้างเงินหรือคืนเงินต้นฉบับ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Reset the posted deposit documents before cancelling the purchase order."
+msgstr "ต้องคืนสถานะเอกสารเงินมัดจำที่ลงบัญชีแล้วก่อนยกเลิกใบสั่งซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Reset the source expense to cancel its withholding."
+msgstr "ให้คืนสถานะค่าใช้จ่ายต้นทางเพื่อยกเลิกการหัก ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Reset/cancel the retention documents first so their source balances remain auditable."
+msgstr "ต้องคืนสถานะหรือยกเลิกเอกสารเงินประกันผลงานก่อน เพื่อให้ตรวจสอบยอดต้นทางย้อนหลังได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Retain deposit provenance and reverse the accounting document instead."
+msgstr "ให้เก็บที่มาของเงินมัดจำและกลับรายการเอกสารบัญชีแทน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/invoice_plan.py:0
+msgid "Retain the payment retention terms of an invoiced purchase plan."
+msgstr "ต้องคงเงื่อนไขเงินประกันผลงานของแผนจัดซื้อที่ออกใบแจ้งหนี้แล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention accounting history must be retained."
+msgstr "ต้องเก็บประวัติทางบัญชีของเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention financial history is immutable."
+msgstr "ไม่สามารถแก้ไขประวัติการเงินของเงินประกันผลงาน"
+
+#. module: erp_finance
+#: model:ir.model.constraint,message:erp_finance.constraint_erp_finance_retention_payment_line_unique
+msgid "Retention history already exists for this payment line."
+msgstr "มีประวัติเงินประกันผลงานของรายการชำระเงินนี้แล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention history is generated from the payment register."
+msgstr "ประวัติเงินประกันผลงานสร้างจากการบันทึกชำระเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention must be between zero and the untaxed original invoice amount."
+msgstr "เงินประกันผลงานต้องอยู่ระหว่างศูนย์ถึงจำนวนเงินก่อนภาษีของใบแจ้งหนี้ต้นฉบับ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention provenance is assigned by its accounting actions."
+msgstr "ที่มาของเงินประกันผลงานกำหนดโดยคำสั่งทางบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention provenance is immutable."
+msgstr "ไม่สามารถเปลี่ยนที่มาของเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention reconciliation amounts must be finite and nonnegative."
+msgstr "จำนวนเงินกระทบยอดเงินประกันผลงานต้องเป็นจำนวนจำกัดและไม่ติดลบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention reconciliation exceeds the available currency balance."
+msgstr "ยอดกระทบเงินประกันผลงานเกินยอดสกุลเงินคงเหลือที่ใช้ได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention reconciliation exceeds the available journal balance."
+msgstr "ยอดกระทบเงินประกันผลงานเกินยอดสมุดรายวันคงเหลือที่ใช้ได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention reconciliation requires posted lines on the same company account."
+msgstr "การกระทบยอดเงินประกันผลงานต้องใช้รายการที่ลงบัญชีแล้วในบัญชีบริษัทเดียวกัน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention release amounts and sources are immutable."
+msgstr "ไม่สามารถแก้ไขจำนวนเงินและต้นทางการคืนเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention release lines are generated by the release action."
+msgstr "ระบบสร้างรายการคืนเงินประกันผลงานจากคำสั่งคืน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention release lines are retained with the document."
+msgstr "เก็บรายการคืนเงินประกันผลงานพร้อมเอกสาร"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention release: %s"
+msgstr "คืนเงินประกันผลงาน: %s"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention releases cannot exceed the retained payment."
+msgstr "ยอดคืนเงินประกันผลงานต้องไม่เกินยอดชำระที่หักประกันไว้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention requires a separate reconcilable account in the company."
+msgstr "เงินประกันผลงานต้องใช้บัญชีแยกในบริษัทที่กระทบยอดได้"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Retention terms are fixed after posting/payment."
+msgstr "เงื่อนไขเงินประกันผลงานคงที่หลังลงบัญชีหรือชำระเงิน"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.advance_return_form
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_advance_form
+msgid "Return Advance"
+msgstr "คืนเงินทดรอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Return Employee Advance"
+msgstr "คืนเงินทดรองพนักงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Return amounts must use currency precision and a positive company amount."
+msgstr "จำนวนเงินคืนต้องตรงตามความละเอียดสกุลเงินและมีจำนวนเงินสกุลบริษัทมากกว่าศูนย์"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Return currency must match the bank journal currency."
+msgstr "สกุลเงินคืนต้องตรงกับสกุลเงินสมุดรายวันธนาคาร"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__erp_finance_advance_return__state__done
+msgid "Returned"
+msgstr "คืนแล้ว"
+
+#. module: erp_finance
+#: model:ir.model.constraint,message:erp_finance.constraint_erp_finance_expense_review_expense_review_unique
+msgid "Review order must be unique within an expense submission."
+msgstr "ลำดับตรวจทานต้องไม่ซ้ำกันในการส่งค่าใช้จ่ายแต่ละครั้ง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__reviewer_id
+msgid "Reviewer"
+msgstr "ผู้ตรวจทาน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__round_number
+msgid "Round Number"
+msgstr "หมายเลขรอบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid ""
+"Select an approved purchase line as the deposit budget source. Split deposits into separate bill "
+"lines for different sources."
+msgstr ""
+"เลือกรายการจัดซื้อที่อนุมัติแล้วเป็นแหล่งงบประมาณเงินมัดจำ "
+"หากมีหลายต้นทางให้แยกเป็นรายการใบเรียกเก็บเงิน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Select deposit bill lines."
+msgstr "เลือกรายการใบเรียกเก็บเงินมัดจำ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Select the full Budget key for an employee advance or clearing."
+msgstr "เลือกรหัสงบประมาณให้ครบสำหรับเงินทดรองพนักงานหรือการล้างเงิน"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__sequence
+msgid "Sequence"
+msgstr "ลำดับ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Set budget dimensions on the existing bill, not its reimbursement payment."
+msgstr "กำหนดมิติงบประมาณในใบเรียกเก็บเงินเดิม ไม่ใช่รายการชำระคืน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Set the deposit analytic distribution to its approved purchase source before matching."
+msgstr "กำหนดการกระจายบัญชีวิเคราะห์เงินมัดจำให้ตรงกับต้นทางจัดซื้อที่อนุมัติแล้วก่อนจับคู่"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_retention__source_move_id
+msgid "Source Move"
+msgstr "การเคลื่อนไหวต้นทาง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_advance_return__state
+#: model:ir.model.fields,field_description:erp_finance.field_erp_finance_expense_review__state
+msgid "State"
+msgstr "สถานะ"
+
+#. module: erp_finance
+#: model_terms:ir.ui.view,arch_db:erp_finance.expense_budget_form
+msgid "Supplier Tax Evidence"
+msgstr "หลักฐานภาษีผู้ขาย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_tax_invoice_date
+msgid "Supplier Tax Invoice Date"
+msgstr "วันที่ใบกำกับภาษีผู้ขาย"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_tax_invoice_reference
+msgid "Supplier Tax Invoice Reference"
+msgstr "เลขอ้างอิงใบกำกับภาษีผู้ขาย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Supplier tax evidence is controlled by expense posting."
+msgstr "หลักฐานภาษีผู้ขายควบคุมโดยการลงบัญชีค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Supplier tax evidence is created by expense posting."
+msgstr "ระบบสร้างหลักฐานภาษีผู้ขายเมื่อลงบัญชีค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Supplier tax evidence is retained for audit."
+msgstr "เก็บหลักฐานภาษีผู้ขายไว้สำหรับตรวจสอบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Supplier tax identity with approval history cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนตัวระบุภาษีผู้ขายที่มีประวัติอนุมัติ"
+
+#. module: erp_finance
+#: model:ir.model,name:erp_finance.model_l10n_th_tax_invoice
+msgid "Tax Invoice Information"
+msgstr "ข้อมูลใบกำกับภาษี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "The advance is already fully cleared or returned."
+msgstr "เงินทดรองนี้ล้างหรือคืนครบแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "The advances have no amount remaining after approved clearings and returns."
+msgstr "เงินทดรองไม่มียอดคงเหลือหลังรายการล้างและคืนที่อนุมัติแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "The bill must match the purchase company and supplier."
+msgstr "ใบเรียกเก็บเงินต้องตรงกับบริษัทและผู้ขายในการจัดซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "The direct budget period must match the accounting company."
+msgstr "งวดงบประมาณโดยตรงต้องตรงกับบริษัทบัญชี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid ""
+"The employee advance account cannot change while advance documents retain that source identity."
+msgstr "ไม่สามารถเปลี่ยนบัญชีเงินทดรองพนักงานขณะที่เอกสารเงินทดรองยังอ้างอิงต้นทางนั้น"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "The linked purchase order and request must be approved."
+msgstr "ใบสั่งซื้อและคำขอที่เชื่อมโยงต้องได้รับอนุมัติ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "The native payment must post one retained balance."
+msgstr "รายการชำระเงินของระบบต้องลงบัญชียอดเงินประกันผลงานหนึ่งรายการ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "The original deposit bill must retain its purchase provenance."
+msgstr "ใบเรียกเก็บเงินมัดจำต้นฉบับต้องคงที่มาการจัดซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "The request is assigned to an expense; refuse that expense before purchasing."
+msgstr "คำขอนี้เชื่อมกับค่าใช้จ่ายแล้ว ต้องปฏิเสธค่าใช้จ่ายนั้นก่อนจัดซื้อ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "The request must belong to the expense employee, organization and company."
+msgstr "คำขอต้องเป็นของพนักงาน หน่วยงาน และบริษัทเดียวกับค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "The requester needs one visible employee in the request company."
+msgstr "ผู้ร้องขอต้องมีข้อมูลพนักงานที่มองเห็นได้หนึ่งรายการในบริษัทของคำขอ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "The return exceeds the remaining advance after approved clearings."
+msgstr "ยอดคืนเกินเงินทดรองคงเหลือหลังหักรายการล้างเงินที่อนุมัติแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_request.py:0
+msgid "This government purchase type must use the purchase agreement route."
+msgstr "ประเภทจัดซื้อภาครัฐนี้ต้องใช้เส้นทางข้อตกลงจัดซื้อ"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_retention_method__total
+#: model:ir.model.fields.selection,name:erp_finance.selection__purchase_order__erp_retention_method__total
+msgid "Total"
+msgstr "รวม"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Unreconcile retention payments instead of rewriting history."
+msgstr "ให้ยกเลิกการกระทบยอดการชำระเงินประกันผลงานแทนการแก้ประวัติ"
+
+#. module: erp_finance
+#: model:ir.model.fields.selection,name:erp_finance.selection__account_move__erp_retention_method__untax
+#: model:ir.model.fields.selection,name:erp_finance.selection__purchase_order__erp_retention_method__untax
+msgid "Untaxed amount"
+msgstr "จำนวนเงินก่อนภาษี"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid ""
+"Use an unassigned positive deposit bill line for the same company and supplier, with quantity one."
+msgstr ""
+"ใช้รายการใบเรียกเก็บเงินมัดจำที่ยังไม่กำหนด มีจำนวนเงินบวก อยู่ในบริษัทและผู้ขายเดียวกัน "
+"และมีจำนวนหนึ่ง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/direct_actual.py:0
+msgid "Use native accounting actions to reset budget actuals."
+msgstr "ให้ใช้คำสั่งบัญชีของระบบเพื่อคืนสถานะค่าใช้จ่ายจริงงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Use native accounting reset before changing expense actuals."
+msgstr "ต้องคืนสถานะบัญชีของระบบก่อนเปลี่ยนค่าใช้จ่ายจริง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Use native bill matching to add a controlled deposit."
+msgstr "ให้ใช้การจับคู่ใบเรียกเก็บเงินของระบบเพื่อเพิ่มเงินมัดจำที่ควบคุมงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense.py:0
+msgid "Use native expense approval and accounting actions."
+msgstr "ให้ใช้คำสั่งอนุมัติค่าใช้จ่ายและบัญชีของระบบ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Use native posting to reconcile the controlled deposit."
+msgstr "ให้ลงบัญชีผ่านระบบเพื่อกระทบยอดเงินมัดจำที่ควบคุมงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/retention.py:0
+msgid "Use native posting/reset actions for retention release documents."
+msgstr "ให้ใช้คำสั่งลงบัญชีหรือคืนสถานะของระบบสำหรับเอกสารคืนเงินประกันผลงาน"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/advance.py:0
+msgid "Use the advance-reservation KPI only for employee advances; clearing uses its expense KPI."
+msgstr "ใช้ตัวชี้วัดกันเงินทดรองเฉพาะเงินทดรองพนักงาน ส่วนการล้างเงินใช้ตัวชี้วัดค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/finance.py:0
+msgid "Use the native accounting actions to reset or cancel a controlled bill."
+msgstr "ให้ใช้คำสั่งบัญชีของระบบเพื่อคืนสถานะหรือยกเลิกใบเรียกเก็บเงินที่ควบคุมงบประมาณ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Use the native bill matching wizard to assign deposit provenance."
+msgstr "ให้ใช้ตัวช่วยจับคู่ใบเรียกเก็บเงินของระบบเพื่อกำหนดที่มาเงินมัดจำ"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/purchase_deposit.py:0
+msgid "Use the native matching wizard to attach a posted deposit."
+msgstr "ให้ใช้ตัวช่วยจับคู่ของระบบเพื่อเชื่อมเงินมัดจำที่ลงบัญชีแล้ว"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Withhold on the clearing expense, not on the advance."
+msgstr "ให้หัก ณ ที่จ่ายจากค่าใช้จ่ายล้างเงิน ไม่ใช่จากเงินทดรอง"
+
+#. module: erp_finance
+#: model:ir.model.fields,field_description:erp_finance.field_hr_expense__erp_withholding_payment_ids
+msgid "Withholding Payments"
+msgstr "การหักเงิน ณ ที่จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Withholding history cannot be supplied by clients."
+msgstr "ผู้ใช้ไม่สามารถระบุประวัติหัก ณ ที่จ่ายเอง"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Withholding history is generated by expense posting."
+msgstr "ระบบสร้างประวัติหัก ณ ที่จ่ายเมื่อลงบัญชีค่าใช้จ่าย"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Withholding requires a supplier belonging to this company or shared across companies."
+msgstr "การหัก ณ ที่จ่ายต้องใช้ผู้ขายของบริษัทนี้หรือผู้ขายที่ใช้ร่วมกันหลายบริษัท"
+
+#. module: erp_finance
+#. odoo-python
+#: code:addons/erp_finance/models/expense_withholding.py:0
+msgid "Withholding requires one employee payable account and partner."
+msgstr "การหัก ณ ที่จ่ายต้องมีบัญชีเจ้าหนี้พนักงานและคู่ค้าหนึ่งรายการ"

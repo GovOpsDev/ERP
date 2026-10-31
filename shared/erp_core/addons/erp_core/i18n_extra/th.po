@@ -1,0 +1,86 @@
+# Thai interface additions for installed Odoo Community menus.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:mail.discuss_call_history_menu
+msgid "Call History"
+msgstr "ประวัติการโทร"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:account.menu_action_account_cashflow_analysis
+msgid "Cashflow Analysis"
+msgstr "วิเคราะห์กระแสเงินสด"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:mail.menu_discuss_category
+msgid "Categories"
+msgstr "หมวดหมู่"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:hr_expense.menu_hr_product
+msgid "Expense Products"
+msgstr "สินค้าและบริการสำหรับค่าใช้จ่าย"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:spreadsheet_dashboard.spreadsheet_dashboard_group_menu_configuration_sections
+msgid "Sections"
+msgstr "ส่วน"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:spreadsheet_dashboard.spreadsheet_dashboard_share_menu_configuration_share_links
+msgid "Share links"
+msgstr "ลิงก์สำหรับแบ่งปัน"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:hr_skills.hr_employee_skill_inventory_report_menu
+msgid "Skills Inventory"
+msgstr "ทะเบียนทักษะ"
+
+#. module: erp_core
+#: model:ir.ui.menu,name:hr_skills.menu_learnings_training_attendances
+msgid "Training Attendances"
+msgstr "การเข้าร่วมการฝึกอบรม"
+
+#. module: erp_core
+#: model:ir.model.fields.selection,name:account.selection__account_move__document_tax_mode__tax_excluded
+msgid "Tax Excl."
+msgstr "ไม่รวมภาษี"
+
+#. module: erp_core
+#: model:ir.model.fields.selection,name:account.selection__account_move__document_tax_mode__tax_included
+msgid "Tax Incl."
+msgstr "รวมภาษี"
+
+#. module: erp_core
+#: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__email
+msgid "By Emails"
+msgstr "ทางอีเมล"
+
+#. module: erp_core
+#: model_terms:ir.ui.view,arch_db:base.view_users_form_simple_modif
+msgid "Update Preferences"
+msgstr "บันทึกการตั้งค่า"
+
+#. module: erp_core
+#. odoo-javascript
+#: code:addons/mail/static/src/chatter/web/chatter.xml:0
+msgid "Planned Activities"
+msgstr "กิจกรรมที่วางแผน"
+
+#. module: erp_core
+#. odoo-javascript
+#: code:addons/mysubscription/static/src/user_menu.js:0
+msgid "My Subscription"
+msgstr "การสมัครใช้งานของฉัน"
+
+#. module: erp_core
+#. odoo-javascript
+#: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
+msgid "Shortcuts"
+msgstr "ปุ่มลัด"

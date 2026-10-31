@@ -1,0 +1,1090 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "A cancelled or fully credited acquisition cannot be reopened."
+msgstr "ไม่สามารถเปิดรายการได้มาซึ่งทรัพย์สินที่ยกเลิกหรือได้รับเครดิตเต็มจำนวนแล้ว"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_asset_engine_unique
+msgid "A depreciation asset can only have one acquisition."
+msgstr "ทรัพย์สินสำหรับคิดค่าเสื่อมมีรายการได้มาได้เพียงหนึ่งรายการ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "A depreciation entry has already been posted for this line."
+msgstr "รายการนี้ได้ลงบัญชีค่าเสื่อมราคาแล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "A depreciation profile linked to an acquisition cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนรูปแบบค่าเสื่อมราคาที่เชื่อมกับรายการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "A matching depreciation profile and item mode that keep assets in draft are required."
+msgstr "ต้องมีรูปแบบค่าเสื่อมราคาและรูปแบบรายการที่ตรงกันและคงทรัพย์สินในสถานะร่าง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "A parent asset cannot move away from its linked assets company."
+msgstr "ทรัพย์สินหลักไม่สามารถย้ายออกจากบริษัทของทรัพย์สินที่เชื่อมโยง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "A transferred source asset cannot be reopened or its removal date changed."
+msgstr "ไม่สามารถเปิดทรัพย์สินต้นทางที่โอนแล้วหรือเปลี่ยนวันที่นำออก"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_valuation_reversal_unique
+msgid "A valuation event can only be reversed once."
+msgstr "เหตุการณ์ประเมินมูลค่ากลับรายการได้เพียงครั้งเดียว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "AUC transfer does not support assets with posted depreciation."
+msgstr "การโอนสินทรัพย์ระหว่างก่อสร้างไม่รองรับทรัพย์สินที่ลงบัญชีค่าเสื่อมราคาแล้ว"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__acceptance_id
+msgid "Acceptance"
+msgstr "การตรวจรับ"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_account
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__account_id
+msgid "Account"
+msgstr "บัญชี"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Acquired asset fund and analytic provenance cannot be rewritten."
+msgstr "ไม่สามารถเปลี่ยนที่มาของแหล่งเงินและบัญชีวิเคราะห์ของทรัพย์สินที่ได้มา"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__acquisition_id
+msgid "Acquisition"
+msgstr "การได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_valuation__kind__reset
+msgid "Acquisition Reset"
+msgstr "คืนสถานะการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__active
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__active
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_asset__state__draft
+msgid "Active Acquisition"
+msgstr "รายการได้มาซึ่งทรัพย์สินที่ใช้งาน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__after_value
+msgid "After Value"
+msgstr "ค่าหลังเปลี่ยนแปลง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "All source assets must have an ERP organization scope."
+msgstr "ทรัพย์สินต้นทางทั้งหมดต้องมีขอบเขตหน่วยงานในระบบ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__amount
+msgid "Amount"
+msgstr "จำนวนเงิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "An acquisition participating in an asset transfer cannot be reset or credited."
+msgstr "รายการได้มาซึ่งทรัพย์สินที่เกี่ยวข้องกับการโอนไม่สามารถคืนสถานะหรือออกเครดิต"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "An asset credit cannot exceed its remaining acquisition value."
+msgstr "เครดิตทรัพย์สินต้องไม่เกินมูลค่าการได้มาที่คงเหลือ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "An asset credit must identify its original acquisition bill."
+msgstr "เครดิตทรัพย์สินต้องระบุใบเรียกเก็บเงินการได้มาต้นฉบับ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "An asset-profile bill requires a linked accepted purchase order."
+msgstr "ใบเรียกเก็บเงินที่ใช้รูปแบบทรัพย์สินต้องเชื่อมกับใบสั่งซื้อที่ตรวจรับแล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "An employee advance is not an asset acquisition; capitalize its clearing expense."
+msgstr "เงินทดรองพนักงานไม่ใช่การได้มาซึ่งทรัพย์สิน ให้บันทึกค่าใช้จ่ายล้างเงินเป็นสินทรัพย์"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "การกระจายบัญชีวิเคราะห์"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__asset_ids
+msgid "Asset"
+msgstr "ทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_erp_asset_asset
+msgid "Asset Acquisition"
+msgstr "การได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_erp_asset_profile
+msgid "Asset Acquisition Profile"
+msgstr "รูปแบบการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_erp_asset_valuation
+msgid "Asset Acquisition Valuation History"
+msgstr "ประวัติประเมินมูลค่าการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:res.groups,name:erp_asset.group_asset_manager
+msgid "Asset Manager"
+msgstr "ผู้จัดการทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__asset_sub_state_id
+msgid "Asset Sub State"
+msgstr "สถานะย่อยของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_sub_state
+msgid "Asset Substatus"
+msgstr "สถานะย่อยของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.actions.act_window,name:erp_asset.asset_substate_action
+#: model:ir.ui.menu,name:erp_asset.asset_substate_menu
+msgid "Asset Substatuses"
+msgstr "สถานะย่อยของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:res.groups,name:erp_asset.group_asset_user
+msgid "Asset User"
+msgstr "ผู้ใช้ทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset account lock version is internal."
+msgstr "รุ่นการล็อกบัญชีทรัพย์สินเป็นข้อมูลภายในระบบ"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_erp_asset_transfer_history
+msgid "Asset accounting transfer history"
+msgstr "ประวัติการโอนทรัพย์สินทางบัญชี"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset acquisition records are immutable."
+msgstr "ไม่สามารถแก้ไขรายการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset acquisition records cannot be deleted."
+msgstr "ไม่สามารถลบรายการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset acquisition requires positive quantity and accounting value."
+msgstr "การได้มาซึ่งทรัพย์สินต้องมีจำนวนและมูลค่าทางบัญชีมากกว่าศูนย์"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_res_company__asset_move_line_analytic
+msgid "Asset analytics on all journal items"
+msgstr "บัญชีวิเคราะห์ทรัพย์สินในทุกรายการสมุดรายวัน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Asset and budget organizations must match."
+msgstr "หน่วยงานของทรัพย์สินและงบประมาณต้องตรงกัน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_line
+msgid "Asset depreciation table line"
+msgstr "รายการตารางค่าเสื่อมทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Asset expenses require an active organization in their company."
+msgstr "ค่าใช้จ่ายทรัพย์สินต้องมีหน่วยงานที่ใช้งานอยู่ในบริษัทเดียวกัน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Asset fund provenance comes from the acquisition."
+msgstr "ที่มาของแหล่งเงินทรัพย์สินอ้างอิงจากรายการได้มา"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Asset journal fund provenance cannot be rewritten."
+msgstr "ไม่สามารถเปลี่ยนที่มาของแหล่งเงินในรายการบัญชีทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Asset journal fund provenance is derived from the asset."
+msgstr "ที่มาของแหล่งเงินในรายการบัญชีอ้างอิงจากทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0 code:addons/erp_asset/models/transfer.py:0
+msgid "Asset manager capability is required."
+msgstr "ต้องมีสิทธิ์ผู้จัดการทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_asset_number_company_unique
+msgid "Asset number must be unique in a company."
+msgstr "เลขที่ทรัพย์สินต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset numbering is not configured."
+msgstr "ยังไม่ได้ตั้งค่าเลขที่ทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_profile
+msgid "Asset profile"
+msgstr "รูปแบบทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Asset scope defaults are internal."
+msgstr "ค่าเริ่มต้นของขอบเขตทรัพย์สินเป็นข้อมูลภายในระบบ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Asset transfer entries cannot be reset or deleted."
+msgstr "ไม่สามารถคืนสถานะหรือลบรายการโอนทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Asset valuation history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการประเมินมูลค่าทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Asset valuation history is immutable."
+msgstr "ไม่สามารถแก้ไขประวัติการประเมินมูลค่าทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Assets are created only by posting eligible bills."
+msgstr "ทรัพย์สินสร้างได้จากการลงบัญชีใบเรียกเก็บเงินที่เข้าเงื่อนไขเท่านั้น"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Assets in a transfer history cannot be deleted."
+msgstr "ไม่สามารถลบทรัพย์สินที่มีประวัติการโอน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__before_value
+msgid "Before Value"
+msgstr "ค่าก่อนเปลี่ยนแปลง"
+
+#. module: erp_asset
+#: model_terms:ir.ui.view,arch_db:erp_asset.low_value_remove_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_asset__state__cancel
+msgid "Cancelled Acquisition"
+msgstr "การได้มาซึ่งทรัพย์สินที่ยกเลิก"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Cancelled or fully credited acquisitions cannot be activated."
+msgstr "ไม่สามารถเปิดใช้รายการได้มาที่ถูกยกเลิกหรือได้รับเครดิตเต็มจำนวนแล้ว"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__close
+msgid "Close"
+msgstr "ปิด"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__code
+msgid "Code"
+msgstr "รหัส"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_res_company
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__company_id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__company_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__company_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__company_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__company_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__create_uid
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__create_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__create_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__create_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__create_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__create_date
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__create_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__create_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__create_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__create_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_valuation__kind__credit
+msgid "Credit Adjustment"
+msgstr "การปรับปรุงเครดิต"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_valuation__kind__restore
+msgid "Credit Reset"
+msgstr "คืนสถานะเครดิต"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Credit must be positive and cannot exceed the uncredited asset value."
+msgstr "เครดิตต้องมากกว่าศูนย์และไม่เกินมูลค่าทรัพย์สินที่ยังไม่ได้รับเครดิต"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__currency_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__currency_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__currency_id
+msgid "Currency"
+msgstr "สกุลเงิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__current_value
+msgid "Current Value"
+msgstr "มูลค่าปัจจุบัน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__date
+msgid "Date"
+msgstr "วันที่"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__date_start
+msgid "Date Start"
+msgstr "วันที่เริ่มต้น"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__oca_profile_id
+msgid "Depreciation Profile"
+msgstr "รูปแบบค่าเสื่อมราคา"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__depreciation_rate
+msgid "Depreciation Rate"
+msgstr "อัตราค่าเสื่อมราคา"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__destination_ids
+msgid "Destination"
+msgstr "ปลายทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Destination assets must conserve the source value."
+msgstr "มูลค่าทรัพย์สินปลายทางรวมต้องเท่ากับมูลค่าต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Destination profiles must use the same company and create draft assets."
+msgstr "รูปแบบปลายทางต้องใช้บริษัทเดียวกันและสร้างทรัพย์สินสถานะร่าง"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_account__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_line__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_profile__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_remove__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_transfer__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_account_move__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__display_name
+#: model:ir.model.fields,field_description:erp_asset.field_hr_expense__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__draft
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Each asset must have a positive acquisition value."
+msgstr "ทรัพย์สินแต่ละรายการต้องมีมูลค่าการได้มามากกว่าศูนย์"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Each destination value must be positive at company currency precision."
+msgstr "มูลค่าปลายทางแต่ละรายการต้องมากกว่าศูนย์ตามความละเอียดของสกุลเงินบริษัท"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Each source asset must have positive value."
+msgstr "ทรัพย์สินต้นทางแต่ละรายการต้องมีมูลค่ามากกว่าศูนย์"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__engine_asset_id
+msgid "Engine Asset"
+msgstr "ทรัพย์สินในระบบค่าเสื่อม"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__erp_acquisition_id
+msgid "Erp Acquisition"
+msgstr "รายการได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__erp_asset_fund_id
+#: model:ir.model.fields,field_description:erp_asset.field_account_move_line__erp_asset_fund_id
+msgid "Erp Asset Fund"
+msgstr "แหล่งเงินของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_account__erp_asset_lock_version
+msgid "Erp Asset Lock Version"
+msgstr "รุ่นการล็อกทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_hr_expense__erp_asset_organization_id
+msgid "Erp Asset Organization"
+msgstr "หน่วยงานของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_hr_expense__erp_asset_profile_id
+msgid "Erp Asset Profile"
+msgstr "รูปแบบทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__erp_legacy_auc
+msgid "Erp Legacy Auc"
+msgstr "สินทรัพย์ระหว่างก่อสร้างเดิม"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_profile__erp_lock_version
+msgid "Erp Lock Version"
+msgstr "รุ่นการล็อก"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__erp_transfer_lock_version
+msgid "Erp Transfer Lock Version"
+msgstr "รุ่นการล็อกการโอน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__erp_transfer_organization_id
+msgid "Erp Transfer Organization"
+msgstr "หน่วยงานที่รับโอน"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_hr_expense
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__expense_id
+msgid "Expense"
+msgstr "ค่าใช้จ่าย"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__fund_id
+msgid "Fund"
+msgstr "แหล่งเงิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__generation
+msgid "Generation"
+msgstr "รุ่น"
+
+#. module: erp_asset
+#: model_terms:ir.ui.view,arch_db:erp_asset.thai_asset_form
+msgid "Government Asset"
+msgstr "ทรัพย์สินภาครัฐ"
+
+#. module: erp_asset
+#: model:ir.module.module,shortdesc:base.module_erp_asset
+msgid "Government ERP Asset Acquisition"
+msgstr "การได้มาซึ่งทรัพย์สินภาครัฐ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_account__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_line__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_profile__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_remove__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__id
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_transfer__id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__id
+#: model:ir.model.fields,field_description:erp_asset.field_hr_expense__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__image
+msgid "Image"
+msgstr "รูปภาพ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__item_index
+msgid "Item Index"
+msgstr "ลำดับรายการ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__item_mode
+msgid "Item Mode"
+msgstr "รูปแบบรายการ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__bill_id
+msgid "Journal Entry"
+msgstr "รายการสมุดรายวัน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__kind
+msgid "Kind"
+msgstr "ชนิด"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__write_uid
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__write_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__write_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__write_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__write_uid
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__write_date
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__write_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__write_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__write_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__write_date
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Legacy asset classification is immutable."
+msgstr "ไม่สามารถแก้ไขการจัดประเภททรัพย์สินเดิม"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Legacy asset classification is reserved for migration."
+msgstr "การจัดประเภททรัพย์สินเดิมสงวนไว้สำหรับการย้ายข้อมูล"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Linked asset acquisition provenance cannot be edited."
+msgstr "ไม่สามารถแก้ไขที่มาของรายการได้มาซึ่งทรัพย์สินที่เชื่อมโยง"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__lock_version
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__lock_version
+msgid "Lock Version"
+msgstr "รุ่นการล็อก"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__low_value
+msgid "Low Value"
+msgstr "มูลค่าต่ำ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__move_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__move_id
+msgid "Move"
+msgstr "รายการเคลื่อนไหว"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__name
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__name
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_profile__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_parent__note
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__note
+msgid "Note"
+msgstr "หมายเหตุ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__number
+msgid "Number"
+msgstr "หมายเลข"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_profile__item_mode__aggregate
+msgid "One asset per bill line"
+msgstr "ทรัพย์สินหนึ่งรายการต่อรายการใบเรียกเก็บเงิน"
+
+#. module: erp_asset
+#: model:ir.model.fields.selection,name:erp_asset.selection__erp_asset_profile__item_mode__item
+msgid "One asset per item"
+msgstr "ทรัพย์สินหนึ่งรายการต่อหนึ่งชิ้น"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Only an active acquisition with remaining value can create a depreciation asset."
+msgstr "สร้างทรัพย์สินสำหรับคิดค่าเสื่อมได้เฉพาะรายการได้มาที่ใช้งานและมีมูลค่าคงเหลือ"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_profile_company_account_unique
+msgid "Only one asset profile per account and company is supported."
+msgstr "รองรับรูปแบบทรัพย์สินเพียงหนึ่งรูปแบบต่อบัญชีและบริษัท"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Only running or fully depreciated assets can be removed."
+msgstr "นำออกได้เฉพาะทรัพย์สินที่กำลังใช้งานหรือคิดค่าเสื่อมครบแล้ว"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__open
+msgid "Open"
+msgstr "เปิด"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__organization_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__organization_id
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__organization_id
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_move_line__erp_asset_refund_source_id
+msgid "Original Asset Bill Line"
+msgstr "รายการใบเรียกเก็บเงินทรัพย์สินต้นทาง"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__parent_id
+msgid "Parent"
+msgstr "รายการหลัก"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_parent
+msgid "Parent Asset"
+msgstr "ทรัพย์สินหลัก"
+
+#. module: erp_asset
+#: model:ir.actions.act_window,name:erp_asset.asset_parent_action
+#: model:ir.ui.menu,name:erp_asset.asset_parent_menu
+msgid "Parent Assets"
+msgstr "ทรัพย์สินหลัก"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__partner_id
+msgid "Partner"
+msgstr "คู่ค้า"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Per-item assets require a whole-number bill quantity."
+msgstr "ทรัพย์สินแยกตามชิ้นต้องใช้จำนวนเต็มในใบเรียกเก็บเงิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,help:erp_asset.field_account_asset__erp_legacy_auc
+msgid ""
+"Preserved pre-migration zero-year asset semantics; not evidence of an upstream low-value "
+"classification."
+msgstr ""
+"คงความหมายของทรัพย์สินอายุศูนย์ปีจากก่อนย้ายระบบ "
+"ไม่ถือเป็นหลักฐานว่าระบบต้นทางจัดเป็นทรัพย์สินมูลค่าต่ำ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__product_id
+msgid "Product"
+msgstr "สินค้า"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__profile_id
+msgid "Profile"
+msgstr "รูปแบบ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Profile lock version is internal."
+msgstr "รุ่นการล็อกรูปแบบเป็นข้อมูลภายในระบบ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__purchase_line_id
+msgid "Purchase Order Line"
+msgstr "รายการใบสั่งซื้อ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__purchase_value
+msgid "Purchase Value"
+msgstr "มูลค่าการจัดซื้อ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__quantity
+msgid "Quantity"
+msgstr "จำนวน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__refund_line_id
+msgid "Refund Line"
+msgstr "รายการคืนเงิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Removal cannot precede acquisition."
+msgstr "วันที่นำออกต้องไม่ก่อนวันที่ได้มาซึ่งทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Removal requires an active asset of the wizard company."
+msgstr "การนำออกต้องใช้ทรัพย์สินที่ใช้งานอยู่ในบริษัทของตัวช่วย"
+
+#. module: erp_asset
+#: model_terms:ir.ui.view,arch_db:erp_asset.low_value_remove_form
+msgid "Remove"
+msgstr "นำออก"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_remove
+msgid "Remove Asset"
+msgstr "นำทรัพย์สินออก"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+#: model:ir.actions.server,name:erp_asset.batch_remove_assets
+msgid "Remove Assets"
+msgstr "นำทรัพย์สินออก"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset__remove_reason
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_remove__remove_reason
+msgid "Remove Reason"
+msgstr "เหตุผลการนำออก"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "Remove assets of one company and one low-value category at a time."
+msgstr "นำทรัพย์สินออกได้ครั้งละหนึ่งบริษัทและหนึ่งประเภทมูลค่าต่ำ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid ""
+"Remove the automatic OCA profile from this bill; link the acquisition to a depreciation profile "
+"instead."
+msgstr ""
+"ให้นำรูปแบบ OCA อัตโนมัติออกจากใบเรียกเก็บเงินนี้ แล้วเชื่อมรายการได้มากับรูปแบบค่าเสื่อมราคาแทน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__removed
+msgid "Removed"
+msgstr "นำออกแล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Reset or credit requires draft assets without posted depreciation or disposal."
+msgstr ""
+"การคืนสถานะหรือให้เครดิตต้องใช้ทรัพย์สินสถานะร่างที่ไม่มีค่าเสื่อมหรือการจำหน่ายที่ลงบัญชีแล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Reset the asset credit notes before resetting the acquisition bill."
+msgstr "ต้องคืนสถานะใบลดหนี้ทรัพย์สินก่อนคืนสถานะใบเรียกเก็บเงินการได้มา"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Reset the credit before changing its asset source."
+msgstr "ต้องคืนสถานะเครดิตก่อนเปลี่ยนทรัพย์สินต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Reset the expense before changing its asset scope."
+msgstr "ต้องคืนสถานะค่าใช้จ่ายก่อนเปลี่ยนขอบเขตทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_valuation__reversal_of_id
+msgid "Reversal Of"
+msgstr "กลับรายการของ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Select source assets."
+msgstr "เลือกทรัพย์สินต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Select the original asset bill line for this credit."
+msgstr "เลือกรายการใบเรียกเก็บเงินทรัพย์สินต้นฉบับสำหรับเครดิตนี้"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_account_asset_sub_state__sequence
+msgid "Sequence"
+msgstr "ลำดับ"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__source_ids
+msgid "Source"
+msgstr "ต้นทาง"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__source_line_id
+msgid "Source Line"
+msgstr "รายการต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Source and destination values must match at company currency precision."
+msgstr "มูลค่าต้นทางและปลายทางต้องตรงกันตามความละเอียดของสกุลเงินบริษัท"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__state
+msgid "State"
+msgstr "สถานะ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "The account and company of a used asset profile cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนบัญชีและบริษัทของรูปแบบทรัพย์สินที่ใช้แล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "The asset account must belong to the profile company."
+msgstr "บัญชีทรัพย์สินต้องอยู่ในบริษัทของรูปแบบ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "The asset credit source must belong to the original bill and match this line."
+msgstr "ต้นทางเครดิตทรัพย์สินต้องอยู่ในใบเรียกเก็บเงินต้นฉบับและตรงกับรายการนี้"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "The asset manager must be assigned to the source organization."
+msgstr "ผู้จัดการทรัพย์สินต้องได้รับมอบหมายในหน่วยงานต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/thai_asset.py:0
+msgid "The asset substatus must match its company and lifecycle state."
+msgstr "สถานะย่อยทรัพย์สินต้องตรงกับบริษัทและสถานะวงจรชีวิต"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "The depreciation profile must use the same company and asset account."
+msgstr "รูปแบบค่าเสื่อมราคาต้องใช้บริษัทและบัญชีทรัพย์สินเดียวกัน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "The depreciation profile of linked assets cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนรูปแบบค่าเสื่อมราคาของทรัพย์สินที่เชื่อมโยง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "The expense asset profile must match its company and account."
+msgstr "รูปแบบทรัพย์สินของค่าใช้จ่ายต้องตรงกับบริษัทและบัญชี"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "The transfer did not create valid scoped destination assets."
+msgstr "การโอนไม่ได้สร้างทรัพย์สินปลายทางที่มีขอบเขตถูกต้อง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "The user must be assigned to the asset organization."
+msgstr "ผู้ใช้ต้องได้รับมอบหมายในหน่วยงานของทรัพย์สิน"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_account_asset_erp_acquisition_unique
+msgid "This acquisition already has a depreciation asset."
+msgstr "รายการได้มานี้มีทรัพย์สินสำหรับคิดค่าเสื่อมแล้ว"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "This acquisition is already linked to a depreciation asset."
+msgstr "รายการได้มานี้เชื่อมกับทรัพย์สินสำหรับคิดค่าเสื่อมแล้ว"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_asset_source_unique
+msgid "This bill line item already has an acquisition in this generation."
+msgstr "รายการสินค้าในใบเรียกเก็บเงินนี้มีรายการได้มาในรุ่นนี้แล้ว"
+
+#. module: erp_asset
+#: model:ir.model.constraint,message:erp_asset.constraint_erp_asset_transfer_history_move_unique
+msgid "This transfer entry already has a history record."
+msgstr "รายการโอนนี้มีประวัติอยู่แล้ว"
+
+#. module: erp_asset
+#: model:ir.model,name:erp_asset.model_account_asset_transfer
+msgid "Transfer Asset"
+msgstr "โอนทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Transfer date cannot precede a source acquisition or accounting entry."
+msgstr "วันที่โอนต้องไม่ก่อนวันที่ได้มาหรือรายการบัญชีต้นทาง"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/expense_asset.py:0
+msgid "Transfer fund provenance requires the transfer workflow."
+msgstr "ที่มาของแหล่งเงินโอนต้องมาจากขั้นตอนการโอน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Transfer history cannot be deleted."
+msgstr "ไม่สามารถลบประวัติการโอน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Transfer history is created only by the transfer action."
+msgstr "ประวัติการโอนสร้างได้จากคำสั่งโอนเท่านั้น"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Transfer history is immutable."
+msgstr "ไม่สามารถแก้ไขประวัติการโอน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Transfer scope is internal."
+msgstr "ขอบเขตการโอนเป็นข้อมูลภายในระบบ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/transfer.py:0
+msgid "Transfer sources must belong to one company and one organization."
+msgstr "ต้นทางการโอนต้องอยู่ในบริษัทเดียวและหน่วยงานเดียว"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__uom_id
+msgid "Uom"
+msgstr "หน่วยนับ"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Use accounting post, reset or cancel to reconcile asset valuations."
+msgstr "ให้ใช้การลงบัญชี คืนสถานะ หรือยกเลิกเพื่อกระทบยอดมูลค่าทรัพย์สิน"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset.py:0
+msgid "Use the acquisition action to create a depreciation asset."
+msgstr "ให้ใช้คำสั่งรายการได้มาเพื่อสร้างทรัพย์สินสำหรับคิดค่าเสื่อมราคา"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__user_id
+msgid "User"
+msgstr "ผู้ใช้"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_asset__valuation_ids
+msgid "Valuation"
+msgstr "การประเมินมูลค่า"
+
+#. module: erp_asset
+#. odoo-python
+#: code:addons/erp_asset/models/asset_reversal.py:0
+msgid "Valuation history is created by accounting transitions."
+msgstr "ประวัติการประเมินมูลค่าสร้างจากการเปลี่ยนสถานะทางบัญชี"
+
+#. module: erp_asset
+#: model:ir.model.fields,field_description:erp_asset.field_erp_asset_transfer_history__value
+msgid "Value"
+msgstr "มูลค่า"

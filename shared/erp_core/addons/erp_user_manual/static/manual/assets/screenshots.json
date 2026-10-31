@@ -1,0 +1,82 @@
+[
+  {
+    "file": "organization.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.organization.unit",
+    "sha256": "fc9da032b8843e138424650f3e9f1b43bf14651e2cb52cca9e963c76912ad9e7",
+    "width": 1280,
+    "height": 420
+  },
+  {
+    "file": "budget.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.budget.control",
+    "sha256": "cc9dd876a3ce27b8ad8c4e14e4f225a5126cc38da87e911438da310095a1f0da",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "procurement.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.procurement.request",
+    "sha256": "ff028cb2770d154a1b28dce5631008eeed1ccd577c847d3715c5ab5c862c9272",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "purchase.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "purchase.order",
+    "sha256": "2900ae28ab0fb535b33d0aa820ff18d33e2bd69d011e2303220e6f46c11a0088",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "finance.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "account.move",
+    "sha256": "bc8d7fc4f8f740d92d6acabc106ba91b6d972120d1a2d4ce71b7e8fdab33e78c",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "agreements.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.contract.agreement",
+    "sha256": "ead815d101bcd805d47810835c37e3ccbe09ce2fe9ff138a79f08b043eecb54b",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "acceptance.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.inventory.acceptance",
+    "sha256": "31f096ed5f70a380fc045f40a7b466fa17603751da3c4669ef2f61057444c777",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "assets.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.asset.asset",
+    "sha256": "0fd9e10e2d383b5100796393dcdd8c98c6cd9a210c740352c242e94e3e90e054",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "file": "employees.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "hr.employee",
+    "sha256": "b1cbdf54bb5f753a2ccf005ffdff8100ff1d83c2410ce8bb8372f5873128949a",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "stock_requests.png",
+    "source": "isolated synthetic Odoo test database",
+    "model": "erp.inventory.request",
+    "sha256": "9c38211c88a03bee8b15afc8731458369bb2ade199e3e002de3ee590879df6d9",
+    "width": 1280,
+    "height": 812
+  }
+]

@@ -1,0 +1,56 @@
+# Python and Odoo
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+# Browser tests
+playwright-report/
+test-results/
+playwright/.auth/
+# Local runtime and secrets
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.sock
+*.tmp
+*.bak
+*.dump
+*.sql
+*.sql.gz
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secret*
+*token*
+*cookie*
+sessions/
+filestore/
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# All shared and domain addons are included in this publication.
+
+# Readiness browser dependencies
+node_modules/

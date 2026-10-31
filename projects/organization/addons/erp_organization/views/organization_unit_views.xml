@@ -1,0 +1,21 @@
+<odoo>
+    <record id="view_organization_unit_list" model="ir.ui.view">
+        <field name="name">erp.organization.unit.list</field>
+        <field name="model">erp.organization.unit</field>
+        <field name="arch" type="xml">
+            <list><field name="code"/><field name="name"/><field name="parent_id"/><field name="partner_id"/><field name="company_id" groups="base.group_multi_company"/></list>
+        </field>
+    </record>
+    <record id="view_organization_unit_form" model="ir.ui.view">
+        <field name="name">erp.organization.unit.form</field>
+        <field name="model">erp.organization.unit</field>
+        <field name="arch" type="xml">
+            <form><sheet><group><field name="name"/><field name="code"/><field name="company_id" readonly="id" groups="base.group_multi_company"/><field name="parent_id"/><field name="partner_id"/><field name="active"/></group></sheet></form>
+        </field>
+    </record>
+    <record id="action_organization_unit" model="ir.actions.act_window">
+        <field name="name">Organization Units</field><field name="res_model">erp.organization.unit</field><field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_organization_root" name="Organization" sequence="80" groups="base.group_user"/>
+    <menuitem id="menu_organization_unit" name="Organization Units" parent="menu_organization_root" action="action_organization_unit"/>
+</odoo>

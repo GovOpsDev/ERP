@@ -1,0 +1,30 @@
+<odoo>
+    <record id="purchase_order_form_request_budget" model="ir.ui.view">
+        <field name="name">purchase.order.form.request.budget</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="erp_budget_manual_rate" groups="erp_budget.group_budget_manager,account.group_account_manager" readonly="state in ('purchase', 'done', 'cancel')"/>
+                <field name="erp_budget_fx_rate" invisible="not erp_budget_amount_captured"/>
+                <field name="erp_budget_amount_captured" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/list/field[@name='price_unit']" position="after">
+                <field name="erp_request_line_id" optional="hide"/><field name="erp_budget_company_currency_id" column_invisible="True"/><field name="erp_budget_total_company" string="Budget Amount (Company Currency)" optional="hide"/>
+                <field name="erp_budget_period_id" optional="hide"/>
+                <field name="erp_budget_fund_id" optional="hide"/>
+                <field name="erp_budget_analytic_id" optional="hide"/>
+                <field name="erp_budget_activity_id" optional="hide"/><field name="erp_budget_account_id" optional="hide"/>
+                <field name="erp_budget_dimension_ids" widget="many2many_tags" optional="hide"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form//field[@name='product_qty']" position="after">
+                <field name="erp_request_line_id"/>
+                <field name="erp_budget_period_id" invisible="not erp_request_line_id"/>
+                <field name="erp_budget_fund_id" invisible="not erp_request_line_id"/>
+                <field name="erp_budget_analytic_id" invisible="not erp_request_line_id"/>
+                <field name="erp_budget_activity_id" invisible="not erp_request_line_id"/><field name="erp_budget_account_id" invisible="not erp_request_line_id"/>
+                <field name="erp_budget_dimension_ids" widget="many2many_tags" invisible="not erp_request_line_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

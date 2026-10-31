@@ -1,0 +1,223 @@
+# Thai translation of NSTDA eGov, Odoo 20.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Language: th_TH\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: erp_organization
+#: model:ir.module.module,description:base.module_erp_organization
+msgid ""
+"# erp_organization\n"
+"\n"
+"Company-scoped reference units and explicit user assignments with a default per company. Users see only assigned units in active companies; managers manage assignments within active companies. This addon does not restrict other business records. See project docs for source, upgrade implications and limitations.\n"
+msgstr ""
+"# erp_organization\n"
+"\n"
+"หน่วยงานอ้างอิงตามขอบเขตบริษัทและการมอบหมายผู้ใช้อย่างชัดเจน พร้อมหน่วยงานเริ่มต้นต่อบริษัท ผู้ใช้เห็นเฉพาะหน่วยงานที่ได้รับมอบหมายในบริษัทที่ใช้งาน ผู้จัดการจัดการการมอบหมายในบริษัทที่ใช้งาน โมดูลนี้ไม่ได้จำกัดข้อมูลธุรกิจอื่น โปรดดูเอกสารโครงการสำหรับที่มา ผลต่อการอัปเกรด และข้อจำกัด\n"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_unit.py:0
+msgid "A partner used by another company organization cannot be moved to this company."
+msgstr "ไม่สามารถย้ายคู่ค้าที่หน่วยงานของบริษัทอื่นใช้อยู่มายังบริษัทนี้"
+
+#. module: erp_organization
+#: model:ir.model.constraint,message:erp_organization.constraint_erp_organization_assignment_user_unit_unique
+msgid "A user can only be assigned to a unit once."
+msgstr "ผู้ใช้ได้รับมอบหมายในหน่วยงานเดียวกันได้เพียงครั้งเดียว"
+
+#. module: erp_organization
+#: model:ir.model.constraint,message:erp_organization.constraint_erp_organization_assignment_user_company_default_unique
+msgid "A user can only have one default organization per company."
+msgstr "ผู้ใช้มีหน่วยงานเริ่มต้นได้หนึ่งหน่วยต่อบริษัท"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__active
+msgid "Active"
+msgstr "ใช้งาน"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_assignment.py:0
+msgid "An archived organization cannot be assigned or set as a default."
+msgstr "ไม่สามารถมอบหมายหรือตั้งหน่วยงานที่เก็บถาวรแล้วเป็นค่าเริ่มต้น"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_assignment.py:0
+msgid "An archived organization cannot be assigned."
+msgstr "ไม่สามารถมอบหมายหน่วยงานที่เก็บถาวรแล้ว"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_unit.py:0
+msgid "An assigned organization partner cannot be cleared."
+msgstr "ไม่สามารถล้างคู่ค้าที่กำหนดให้หน่วยงานแล้ว"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_unit.py:0
+msgid "An organization unit hierarchy cannot contain a cycle."
+msgstr "ลำดับชั้นหน่วยงานต้องไม่มีการอ้างอิงวนรอบ"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_assignment.py:0
+msgid "Assignment company is derived from the organization."
+msgstr "บริษัทของการมอบหมายอ้างอิงจากหน่วยงาน"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_assignment.py:0
+msgid "Assignments are only available to internal users."
+msgstr "มอบหมายได้เฉพาะผู้ใช้ภายใน"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__child_ids
+msgid "Child"
+msgstr "รายการย่อย"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__code
+msgid "Code"
+msgstr "รหัส"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__company_id
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__company_id
+msgid "Company"
+msgstr "บริษัท"
+
+#. module: erp_organization
+#: model:ir.module.module,summary:base.module_erp_organization
+msgid "Company-scoped organizational units"
+msgstr "หน่วยงานตามขอบเขตบริษัท"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__create_uid
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__create_date
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__create_date
+msgid "Created on"
+msgstr "สร้างเมื่อ"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__is_default
+msgid "Default in Company"
+msgstr "ค่าเริ่มต้นของบริษัท"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__display_name
+#: model:ir.model.fields,field_description:erp_organization.field_res_partner__display_name
+msgid "Display Name"
+msgstr "ชื่อที่แสดง"
+
+#. module: erp_organization
+#: model:ir.module.module,shortdesc:base.module_erp_organization
+msgid "Government ERP Organization Structure"
+msgstr "โครงสร้างหน่วยงานภาครัฐ"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__id
+#: model:ir.model.fields,field_description:erp_organization.field_res_partner__id
+msgid "ID"
+msgstr "รหัส"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__write_uid
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__write_uid
+msgid "Last Updated by"
+msgstr "แก้ไขล่าสุดโดย"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__write_date
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__write_date
+msgid "Last Updated on"
+msgstr "แก้ไขล่าสุดเมื่อ"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__name
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_unit.py:0
+msgid "New organization units require a partner."
+msgstr "หน่วยงานใหม่ต้องระบุคู่ค้า"
+
+#. module: erp_organization
+#: model:ir.ui.menu,name:erp_organization.menu_organization_root
+msgid "Organization"
+msgstr "หน่วยงาน"
+
+#. module: erp_organization
+#: model:ir.actions.act_window,name:erp_organization.action_organization_assignment
+#: model:ir.ui.menu,name:erp_organization.menu_organization_assignment
+msgid "Organization Assignments"
+msgstr "การมอบหมายหน่วยงาน"
+
+#. module: erp_organization
+#: model:res.groups,name:erp_organization.group_organization_manager
+msgid "Organization Structure Manager"
+msgstr "ผู้จัดการโครงสร้างหน่วยงาน"
+
+#. module: erp_organization
+#: model:ir.actions.act_window,name:erp_organization.action_organization_unit
+#: model:ir.ui.menu,name:erp_organization.menu_organization_unit
+msgid "Organization Units"
+msgstr "หน่วยงาน"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__parent_id
+msgid "Parent"
+msgstr "รายการหลัก"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__partner_id
+msgid "Partner"
+msgstr "คู่ค้า"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_unit.py:0
+msgid "The company of an organization unit cannot be changed."
+msgstr "ไม่สามารถเปลี่ยนบริษัทของหน่วยงาน"
+
+#. module: erp_organization
+#: model:ir.model.constraint,message:erp_organization.constraint_erp_organization_unit_code_company_unique
+msgid "The unit code must be unique per company."
+msgstr "รหัสหน่วยงานต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_organization
+#: model:ir.model.constraint,message:erp_organization.constraint_erp_organization_unit_name_company_unique
+msgid "The unit name must be unique per company."
+msgstr "ชื่อหน่วยงานต้องไม่ซ้ำกันภายในบริษัท"
+
+#. module: erp_organization
+#. odoo-python
+#: code:addons/erp_organization/models/organization_assignment.py:0
+msgid "The user must be allowed in the unit's company."
+msgstr "ผู้ใช้ต้องได้รับอนุญาตในบริษัทของหน่วยงาน"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__unit_id
+msgid "Unit"
+msgstr "หน่วย"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_assignment__user_id
+msgid "User"
+msgstr "ผู้ใช้"
+
+#. module: erp_organization
+#: model:ir.model.fields,field_description:erp_organization.field_erp_organization_unit__assignment_ids
+msgid "User Assignments"
+msgstr "การมอบหมายผู้ใช้"

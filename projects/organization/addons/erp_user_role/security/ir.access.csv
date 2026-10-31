@@ -1,0 +1,12 @@
+id,name,model_id,group_id/id,operation,domain
+role_admin,role admin,erp.user.role,base.group_system,crud,
+role_manager_read,role manager read and delegated write,erp.user.role,erp_user_role.group_role_manager,ru,
+role_company,role company,erp.user.role,,crud,"[('company_id', 'in', company_ids)]"
+assignment_admin,role assignment admin,erp.user.role.assignment,base.group_system,crud,
+assignment_manager,role assignment manager,erp.user.role.assignment,erp_user_role.group_role_manager,crud,
+assignment_company,role assignment company,erp.user.role.assignment,,crud,"[('company_id', 'in', company_ids)]"
+delegation_admin,role delegation admin,erp.user.role.delegation,base.group_system,crud,
+delegation_company,role delegation company,erp.user.role.delegation,,crud,"[('company_id', 'in', company_ids)]"
+mapping_delegation_admin,role definition delegation admin,erp.user.role.mapping.delegation,base.group_system,crud,
+mapping_delegation_company,role definition delegation company,erp.user.role.mapping.delegation,,crud,"[('company_id', 'in', company_ids)]"
+state_admin,role state read,erp.user.role.group.state,base.group_system,r,
