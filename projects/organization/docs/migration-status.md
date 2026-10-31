@@ -28,7 +28,7 @@ Runtime evidence: `finance-organization-final-08.log`, isolated Odoo20 Community
 Organization, HR, employee security and roles. Includes new partner/company checks,
 CRUD denial, native `has_access` consistency, role expiry/OU revocation, active
 multi-company grant boundaries, and denial of self/delegated escalation. Evidence
-is in `/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
+is in `/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
 The final workspace clean-install/upgrade cross-domain gates follow closure of all
 remaining domains. No production browser, source conversion or load acceptance is
 claimed by these tests.

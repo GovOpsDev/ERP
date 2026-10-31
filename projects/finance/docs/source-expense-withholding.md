@@ -39,7 +39,7 @@ Target uses native Odoo20 Community `l10n_th` and
   reconciliation cannot be manually detached. Company/OU access applies to payment,
   withholding lines, journal items, partial reconciliation and tax evidence.
 
-Real runtime evidence, `/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`:
+Real runtime evidence, `/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`:
 
 | Gate | Result |
 |---|---|

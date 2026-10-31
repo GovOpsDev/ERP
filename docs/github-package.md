@@ -29,6 +29,11 @@ explain the consolidated repository. Business addon source is copied byte for by
 The original Git histories are not merged: their commit IDs and statuses are
 retained as provenance in this single-repository snapshot.
 
+After the initial snapshot commit, nine Markdown documents were updated at the
+publisher's request to normalize the local home-directory prefix to `/`. These
+are documentation-only publication adjustments; the original checksum record
+continues to describe the initial source contents.
+
 ## Excluded
 
 Nested `.git` directories, installed `node_modules`, Python caches, database dumps,

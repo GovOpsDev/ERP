@@ -11,7 +11,7 @@ conversion of an unavailable legacy production database, deployment to a public
 production host, business-owner signoff, Thai tax/print-form certification or an
 unmeasured workforce SLA. No live production system was accessed.
 
-Evidence root: `/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/production-readiness-20261031/`.
+Evidence root: `/GovOpsDev/th-gov-erp/test-evidence/production-readiness-20261031/`.
 Machine-readable final results: `validation-summary.json`; exact final Git/runtime
 state and artifact checksums: `release-state.json` and `release-evidence-sha256.json`.
 

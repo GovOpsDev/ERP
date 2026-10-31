@@ -1,6 +1,6 @@
 # HR operating-unit access surface audit — PARTIAL
 
-Inspected local Odoo Community 20.0 source `a240a91eb01223f59190f4853f748d675f68eaf2` under `/home/patrixr/GovOpsDev/odoo_build/odoo`, and tested image `odoo:20.0` ID `sha256:61e3c71b0503c5f658e604c3e340bede20b97d05f726179fa006eae50a32fd23` (runtime reported `20.0-20261015`). The local source and image were not proven bit-identical. Audit is scoped to Community HR and selected core surfaces, not every installed addon or all external APIs. Risk reflects residual risk after this change; no claim of complete HR confidentiality.
+Inspected local Odoo Community 20.0 source `a240a91eb01223f59190f4853f748d675f68eaf2` under `/GovOpsDev/odoo_build/odoo`, and tested image `odoo:20.0` ID `sha256:61e3c71b0503c5f658e604c3e340bede20b97d05f726179fa006eae50a32fd23` (runtime reported `20.0-20261015`). The local source and image were not proven bit-identical. Audit is scoped to Community HR and selected core surfaces, not every installed addon or all external APIs. Risk reflects residual risk after this change; no claim of complete HR confidentiality.
 
 | Surface | Model/Route | Access path | Uses sudo | Existing protection | OU scoped? | Risk | Action |
 |---|---|---|---|---|---|---|---|

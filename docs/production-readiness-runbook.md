@@ -165,7 +165,7 @@ database UUID and domain counts matched. Final read-only UI/security/file/WebSoc
 smoke is recorded separately from the complete 25-case transaction suite.
 
 A verified recovery copy of the synthetic test credentials is retained separately
-at `/home/patrixr/GovOpsDev/th-gov-erp/.readiness-secrets-20261031` (directory 0700,
+at `/GovOpsDev/th-gov-erp/.readiness-secrets-20261031` (directory 0700,
 files 0400), outside Git and the evidence/backup archives. The live rehearsal used
 `/tmp/erp-readiness-20261031/secrets`; if it is lost, recreate that directory as 0700,
 copy these three files there, and make the individual runtime files 0444 for the

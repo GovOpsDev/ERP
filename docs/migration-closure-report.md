@@ -133,7 +133,7 @@ records. This is selected-history preservation, not whole-database, source-data 
 filestore equivalence. Original source databases were not modified or dropped.
 
 Evidence directory (outside Git):
-`/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
+`/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
 Machine-readable summary: `final-validation-summary.json`; fingerprints:
 `final-history-{columns,before,final}.json`; retained DB inventory:
 `preserved-databases.txt`. The final report and domain tests are committed; logs and

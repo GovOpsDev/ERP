@@ -44,7 +44,7 @@ both have erp_legacy_auc=true and low_value=false. New low-value behavior theref
 does not erase historical target AUC semantics.
 
 Current durable evidence directory:
-`/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
+`/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
 Original databases and volumes are preserved. Browser, filestore, production source
 conversion, deployment and full load remain NOT TESTED readiness items.
 

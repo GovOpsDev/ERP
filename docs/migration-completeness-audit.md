@@ -155,7 +155,7 @@ Seven old-table business projections match; three tables change only write metad
 A separate old AUC transfer copy retains its original values/states. These checks
 are not complete source-data conversion or filestore equivalence.
 
-Evidence: `/home/patrixr/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
+Evidence: `/GovOpsDev/th-gov-erp/test-evidence/closure-20261031/`.
 Procurement, Contract, Finance retention and Inventory were subsequently closed.
 No hard blocker, push or production operation occurred.
 
