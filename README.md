@@ -35,12 +35,6 @@ GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหร�
 
 สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก
 
-### Video Demo
-
-> **Video coming soon** — มีชุดตัดต่อ บทบรรยายไทย คำบรรยาย SRT/VTT และ chapter markers พร้อมแล้ว ยังไม่มี YouTube ID หรือวิดีโอเผยแพร่
-
-หลัง upload ให้แทนบล็อกนี้ด้วย thumbnail-link ของวิดีโอจริงตาม [คู่มือแพ็กเกจวิดีโอ](video/README.md) ไม่ใช้ลิงก์หรือ thumbnail ที่เดา ID ขึ้นมา
-
 ### Live Odoo Demo
 
 Live Odoo Demo เปิดเฉพาะช่วงทดสอบ/สาธิตที่นัดหมายและใช้บัญชีตามสิทธิ์ที่เตรียมไว้ เว็บไซต์ Pages เป็นตัวเล่นภาพหลักฐาน ไม่ใช่ Odoo และไม่สลับ login จริงตาม persona ในภาพ ไม่มี temporary tunnel หรือข้อมูลเข้าสู่ระบบในชุดเผยแพร่
@@ -90,7 +84,7 @@ flowchart TD
     N --> Y[YouTube package: not uploaded]
 ```
 
-`shared/erp_core/` เก็บพื้นฐานร่วม; `projects/` เก็บเจ็ดโดเมน; `ops/readiness/` เก็บเครื่องมือ deployment/backup; `playwright-demo/` เก็บ recorder; `guided-tour/` เก็บตัวเล่นและหลักฐานที่ตรวจแล้ว; `video/` เก็บเอกสารตัดต่อ ดู [สถาปัตยกรรม](docs/odoo20-target-architecture.md)
+`shared/erp_core/` เก็บพื้นฐานร่วม; `projects/` เก็บเจ็ดโดเมน; `ops/readiness/` เก็บเครื่องมือ deployment/backup; `playwright-demo/` เก็บ recorder; `guided-tour/` เก็บตัวเล่นและหลักฐานที่ตรวจแล้ว ดู [สถาปัตยกรรม](docs/odoo20-target-architecture.md)
 
 ## How the demo evidence is generated
 
