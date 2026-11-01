@@ -1,130 +1,136 @@
 # GovOpsDev ERP
 
-GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหรับ ERP ภายในองค์กรภาครัฐ ปรับย้ายจาก [NSTDA ERP-Government](https://github.com/NSTDA/ERP-Government) สู่ Odoo 20 Community พร้อมภาษาไทย คู่มือ HTML และหลักฐานสาธิตจากระบบจริง
+**Baseline ของระบบ ERP ภายในองค์กรภาครัฐ พัฒนาต่อยอดจาก NSTDA eGov เพื่อรองรับ Odoo รุ่นใหม่**
 
-## What this project is
+GovOpsDev ERP เป็นโครงการพัฒนาต่อยอด (fork) จาก [NSTDA eGov / ERP-Government](https://github.com/NSTDA/ERP-Government) ของสำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.) โดยนำกระบวนงานและซอร์สอ้างอิงมาปรับย้ายให้ทำงานบน Odoo รุ่นใหม่ จัดโครงสร้างโมดูลใหม่ และเพิ่มการทดสอบการเชื่อมโยงข้อมูล สิทธิ์ผู้ใช้ และการทำงานหลายบริษัท
 
-ชุดซอร์สรวมโมดูลเจ็ดโดเมนใน repository เดียว ใช้ Project และแอปมาตรฐาน Odoo ร่วมกับส่วนขยายงบประมาณ หน่วยงาน และกระบวนการภาครัฐ ไม่ต้องใช้ Git submodules เริ่มใช้งานจากเมนูแอปปกติ ไม่มีหน้าพิเศษที่ใช้แทน workflow จริง
+โครงการนี้มุ่งเป็นฐานกลางที่หน่วยงานภาครัฐสามารถนำไปศึกษา ติดตั้ง และพัฒนาต่อให้เหมาะกับโครงสร้างองค์กร กระบวนการอนุมัติ และนโยบายภายในของตนเอง
 
-## Migration status
+## เป้าหมาย
 
-| ขอบเขต | สถานะ |
+- เป็นจุดเริ่มต้นร่วมสำหรับ ERP ภายในหน่วยงาน ลดการเริ่มพัฒนากระบวนงานพื้นฐานใหม่ทั้งหมด
+- เชื่อมงานองค์กร งบประมาณ จัดซื้อ การเงิน สัญญา คลัง และทรัพย์สินเข้าด้วยกัน
+- ควบคุมการเข้าถึงตามบทบาท บริษัท และหน่วยงาน พร้อมเก็บประวัติเอกสารและการอนุมัติ
+- รองรับผู้ใช้งานภาษาไทย พร้อมคู่มือ HTML ที่เปิดอ่านจากแต่ละแอปได้
+- พัฒนาตาม Odoo รุ่นหลักล่าสุด โดยตรวจและทดสอบความเข้ากันได้ก่อนประกาศรองรับแต่ละรุ่น
+
+## เวอร์ชันที่รองรับ
+
+Baseline ปัจจุบันพัฒนาและทดสอบบน **Odoo 20 Community** ซึ่งเป็นรุ่นหลักล่าสุด ณ วันที่ **31 ตุลาคม 2026** อ้างอิง [ข้อมูลเวอร์ชันที่รองรับของ Odoo](https://www.odoo.com/documentation/20.0/administration/supported_versions.html)
+
+| องค์ประกอบ | Baseline ที่ทดสอบ |
 |---|---|
-| Source migration ของโมดูลที่เลือก | **COMPLETE** ตาม [รายงานปิด migration](docs/migration-closure-report.md) |
-| Reference / greenfield production-readiness validation | **PASS** ตาม [ขอบเขตการตรวจรับ](docs/production-readiness.md) |
-| Fresh Creation demo และ Guided Tour | **PASS** — [ผลทดสอบ](docs/fresh-creation-validation.md) |
-| Production deployment ของหน่วยงาน | **ไม่รวมใน repository/demo นี้** |
+| Odoo | 20.0 Community — reference build `20.0-20260926` |
+| PostgreSQL | 16.15 |
+| สภาพแวดล้อมอ้างอิง | Docker Compose พร้อม image ที่ตรึงด้วย digest |
+| การแสดงผล | ภาษาไทยและอังกฤษตามภาษาผู้ใช้ |
+| รุ่นอื่น | ต้องตรวจ dependency และทดสอบเพิ่มเติมก่อนประกาศรองรับ |
 
-ผลทดสอบครอบคลุมสภาพแวดล้อมอ้างอิงและข้อมูลสังเคราะห์ ไม่ใช่การรับรอง production ทุกองค์กร ไม่ได้แปลงฐานข้อมูล production เดิมที่ไม่ได้รับมา การนำไปใช้ต้องตั้งค่าข้อมูลจริง นโยบายบัญชี/ภาษี การเชื่อมต่อ ขนาดระบบ และทดสอบรับมอบตามบริบทของหน่วยงาน
+การรองรับ Odoo รุ่นหลักล่าสุดไม่ได้หมายถึงใช้ image `latest` โดยไม่กำหนดเวอร์ชัน สภาพแวดล้อมอ้างอิงตรึงรุ่นไว้เพื่อให้ติดตั้ง ทดสอบ และย้อนกลับได้ตาม [release manifest](docs/release-manifest.md)
 
-## Demonstrations
+## ขอบเขตระบบ
 
-[เปิดตัวเล่น Guided Tour](guided-tour/) · [ความโปร่งใสของหลักฐาน](docs/demo-evidence.md) · [วิธีเตรียม GitHub Pages](docs/github-pages.md)
-
-ลิงก์ด้านบนเป็นเส้นทางใน repository; บน GitHub ให้ใช้ Pages หลังเปิดเผยแพร่ รูปแบบ URL คือ `https://<owner>.github.io/<repo>/guided-tour/` ยังไม่อ้างว่า Pages เปิดใช้งานแล้ว
-
-### Quick Guided Tour
-
-เปิดดูธุรกรรม PROJECT70 ที่บันทึกไว้จริง พร้อมผลสรุปงบ ใช้ภาพและ metadata ชุดเดิม ไม่สร้างรายการใหม่
-
-### Full Creation Tour
-
-27 checkpoints จาก Playwright ที่สร้างโครงการและเอกสารใหม่ผ่าน Odoo UI จริง ผู้ใช้เลือก **Full Creation Tour · สร้างใหม่** ในตัวเล่น
-
-### Dashboard BI Tour
-
-สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก
-
-### Live Odoo Demo
-
-Live Odoo Demo เปิดเฉพาะช่วงทดสอบ/สาธิตที่นัดหมายและใช้บัญชีตามสิทธิ์ที่เตรียมไว้ เว็บไซต์ Pages เป็นตัวเล่นภาพหลักฐาน ไม่ใช่ Odoo และไม่สลับ login จริงตาม persona ในภาพ ไม่มี temporary tunnel หรือข้อมูลเข้าสู่ระบบในชุดเผยแพร่
-
-## Full Creation Scenario
-
-ข้อมูลจำลองของ **สำนักงาน A สูงสุด**:
-
-Project → Budget → Purchase Request → Requisition → Purchase Order → Agreement → Work Acceptance → Stock Receipt → Vendor Bill → Finance Actual → Asset → Final Project/Budget Result
-
-| ผลตรวจ | ค่า |
-|---|---:|
-| วงเงิน | 300,000 THB |
-| ใช้จริงก่อนภาษี | 180,000 THB |
-| คงเหลือ | 120,000 THB |
-| ภาระผูกพันสุดท้าย | 0 THB |
-| สั่งซื้อ / ตรวจรับ / รับเข้า / ตั้งหนี้ | 6 เครื่องเท่ากัน |
-| ครุภัณฑ์ | AST/00303–00308 รวม 180,000 THB |
-
-บิลรวม VAT 192,600 THB; policy งบใช้ยอดก่อนภาษี งานเสร็จและ milestone บรรลุแล้ว โครงการยังเปิดติดตาม ครุภัณฑ์/รายการค่าเสื่อมยังเป็นร่าง ไม่มีการจ่ายเงินหรือลงค่าเสื่อมใน scenario นี้
-
-## Migrated Domains
-
-| Domain | ความสามารถหลัก |
+| กลุ่มงาน | ความสามารถหลัก |
 |---|---|
-| Organization | หน่วยงาน ลำดับชั้น การมอบหมาย บทบาท และ HR |
-| Budget | แผน จัดสรร KPI วงเงิน ผูกพัน ใช้จริง การปรับปรุง และ [Project Budget BI](docs/budget-dashboard.md) |
-| Procurement | PR วิธีจัดซื้อ ลำดับอนุมัติ requisition และ PO |
-| Finance & Accounting | บิล รายจ่าย เงินยืม เงินมัดจำ และยอดใช้จริง |
-| Agreement & Contract | ข้อตกลง กฎหมาย ประวัติฉบับ สัญญา และหลักประกัน |
-| Inventory / Work Acceptance | ตรวจรับ รับเข้า เบิก โอน คืน และยอดคลัง |
-| Asset | การได้มา ค่าเสื่อม ระหว่างก่อสร้าง โอน และจำหน่าย |
+| **โครงสร้างองค์กร** | ลำดับชั้นหน่วยงาน การมอบหมายหน่วยงานให้ผู้ใช้ บทบาทตามช่วงเวลา และการเชื่อมแผนก/พนักงาน |
+| **งบประมาณ** | งวด แหล่งเงิน แผน การจัดสรร วงเงินควบคุม KPI การปรับปรุง โอน และยกยอด พร้อมติดตามผูกพันและใช้จริง |
+| **จัดซื้อจัดจ้าง** | ใบขอซื้อ ข้อมูลวิธี/ประเภทจัดซื้อ ลำดับตรวจอนุมัติ ข้อตกลงจัดซื้อ และใบสั่งซื้อที่เชื่อมงบประมาณ |
+| **การเงินและบัญชี** | ใบเรียกเก็บเงิน ลดหนี้ รายจ่าย เงินยืม/เคลียร์/คืนเงินยืม เงินมัดจำ เงินประกันผลงาน และการเชื่อมยอดใช้จริง |
+| **ข้อตกลงและสัญญา** | เนื้อหาทางกฎหมาย ลงนาม ตรวจทาน ประวัติฉบับ สัญญาผูกพันงบประมาณ งวดเกิดซ้ำ และหลักประกันการจัดซื้อ |
+| **ตรวจรับและคลังสินค้า** | ตรวจรับสินค้า/บริการ คณะกรรมการและผลประเมินผู้ขาย คำขอเบิก การรับ/โอน/คืนสินค้า และบัตร Kanban |
+| **ทรัพย์สิน** | ทะเบียนการได้มาจากต้นทาง รายการค่าเสื่อม ทรัพย์สินระหว่างก่อสร้าง การโอนและจำหน่าย พร้อมประวัติทางบัญชี |
 
-มีคำแปลภาษาไทยและ [คู่มือ HTML ใน 15 แอป](docs/user-manuals.md) บริษัทใหม่ใช้ [THB เป็นค่าเริ่มต้น](docs/thb-defaults.md) โดยไม่เปลี่ยนประวัติ USD เดิม
+ระบบใช้ความสามารถมาตรฐานของ Odoo ร่วมกับส่วนขยายของโครงการและส่วนประกอบ OCA ที่เกี่ยวข้อง กระบวนงานงบประมาณใช้แหล่งข้อมูลกลางร่วมกันเพื่อรักษาความสัมพันธ์กับเอกสารต้นทาง
 
-## Architecture
+## ภาษาไทยและคู่มือการใช้งาน
 
-```mermaid
-flowchart TD
-    O[Odoo 20 Community] --> P[Playwright: UI and read-only assertions]
-    P --> E[Evidence manifest and screenshots]
-    E --> B[Validated builder]
-    B --> S[Shepherd.js Guided Tour]
-    S --> G[GitHub Pages: static files only]
+- เมนู ฟอร์ม ปุ่ม สถานะ และข้อความตรวจสอบของโมดูลที่พัฒนา มีชุดคำแปลภาษาไทย
+- หน้าข้อตกลงรองรับการแสดงวันที่ภาษาไทยแบบ พ.ศ. โดยคงวันที่ต้นทางที่จัดเก็บไว้
+- มีเมนู **คู่มือการใช้งาน** ใน 15 แอปของชุดระบบที่เชื่อมกัน
+- คู่มือเป็น HTML มีภาพประกอบจากข้อมูลจำลอง สารบัญ ค้นหา ลิงก์คู่มือที่เกี่ยวข้อง และพิมพ์ / บันทึก PDF จากเบราว์เซอร์ได้
+
+หลังติดตั้งโมดูล `erp_user_manual` เปิดคู่มือได้จากแต่ละแอป หรือที่ `/erp_user_manual/static/manual/index.html` ดูรายละเอียด [คู่มือ HTML](docs/user-manuals.md) และ [ภาษาไทย](docs/thai-localization.md)
+
+ชม [Guide Tour การใช้งาน GovOpsDev ERP](https://govopsdev.github.io/ERP/guided-tour/) เพื่อสำรวจกระบวนงานโครงการและภาพรวมงบประมาณจากข้อมูลสาธิต
+
+## โครงสร้าง workspace
+
+```text
+org/
+├── README.md
+├── docs/                       เอกสารภาพรวม การย้ายระบบ และการตรวจรับ
+├── ops/readiness/              เครื่องมือทดสอบ สำรอง กู้คืน และสภาพแวดล้อมอ้างอิง
+├── shared/erp_core/            โมดูลพื้นฐานและชุดคู่มือการใช้งาน
+└── projects/
+    ├── organization/          โครงสร้างองค์กรและสิทธิ์
+    ├── budget/                งบประมาณ
+    ├── procurement/           จัดซื้อจัดจ้าง
+    ├── finance/               การเงินและบัญชี
+    ├── contract/              ข้อตกลง สัญญา และหลักประกัน
+    ├── inventory/             ตรวจรับและคลังสินค้า
+    └── asset/                 ทรัพย์สิน
 ```
 
-`shared/erp_core/` เก็บพื้นฐานร่วม; `projects/` เก็บเจ็ดโดเมน; `ops/readiness/` เก็บเครื่องมือ deployment/backup; `guided-tour/` เก็บตัวเล่นและหลักฐานที่ตรวจแล้ว ดู [สถาปัตยกรรม](docs/odoo20-target-architecture.md)
+**ชุดเผยแพร่นี้รวมซอร์สทั้งหมดใน Git repository เดียว** ทั้ง `shared/erp_core` และโครงการทั้งเจ็ด จึง clone ครั้งเดียวแล้วได้โมดูลครบ โดยไม่มี Git submodule หรือ repository ซ้อนอยู่ภายใน ที่มาจาก workspace เดิม 9 repository รวมถึง commit และรายการแก้ไขที่นำมารวม บันทึกไว้ใน [source snapshot](docs/source-snapshot.json) และ [รายละเอียดชุดเผยแพร่](docs/github-package.md)
 
-## How the demo evidence is generated
+## เริ่มต้นใช้งาน
 
-Full Creation run `FRESH70-20261101T105234882Z` ใช้ UI จริงบนฐาน restore แยก พร้อมผู้ตรวจทานงบอีกบัญชี การอ่าน RPC ตรวจ FK ยอดและสถานะ; ไม่ใช้ ORM/SQL เขียนธุรกรรมแทนการคลิก Builder ตรวจ hashes, reconciliation และการตรวจข้อมูลก่อนเผยแพร่ แล้วแยกผล Quick/Permission กับ Full Creation คนละ directory
+1. เตรียม Docker พร้อม Compose และดาวน์โหลดหรือ clone repository นี้ให้ครบทั้ง `shared/` และ `projects/`
+2. ตรวจรุ่นและ dependency จาก [release manifest](docs/release-manifest.md) โดย SHA ของ repository เดิมเป็นข้อมูลอ้างอิงตาม [source snapshot](docs/source-snapshot.json)
+3. สำหรับสภาพแวดล้อมทดสอบใหม่ ให้ติดตั้งชุดโมดูลและเริ่มบริการตามตัวอย่างด้านล่าง
+4. โหลดภาษาไทยและกำหนดบริษัท หน่วยงาน ผู้ใช้ บทบาท ข้อมูลบัญชี และข้อมูลหลักของแต่ละงานก่อนเริ่มทดลอง
+5. อ่าน [runbook](docs/production-readiness-runbook.md) สำหรับการตั้งค่า การสำรอง กู้คืน และตรวจระบบ
 
-ภาพไม่ถูกวาดเลียนแบบ Odoo Raw video, trace, DB และ secrets ไม่อยู่ใน Git/Pages ดู [evidence pipeline](docs/demo-evidence.md) และ [public-safety audit](docs/public-release-audit.md)
-
-## Run locally
-
-ใช้ Docker/Compose ตาม [runbook](docs/production-readiness-runbook.md) และ image ที่ตรึงใน [release manifest](docs/release-manifest.md) ไม่ใช้ `latest` โดยอัตโนมัติ เตรียม secrets ภายนอก repository และใช้ secrets เดิมหากมี volume อยู่แล้ว
+ตัวอย่างสำหรับสภาพแวดล้อมอ้างอิงใหม่ ให้เปลี่ยนตำแหน่งเก็บ secrets เป็น directory ภายนอก repository ที่จัดเตรียมไว้:
 
 ```bash
 export ERP_DATABASE=erp_readiness
 export ERP_SECRETS_DIR=/absolute/path/outside/repository/secrets
+
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d db
+
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- \
-  run --rm -T app -d "$ERP_DATABASE" -i erp_user_manual,erp_dashboard_th,project \
+  run --rm -T app -d "$ERP_DATABASE" -i erp_user_manual,erp_dashboard_th \
   --stop-after-init --workers=0 --no-http
+
 python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app proxy
 ```
 
-ติดตั้ง `project` ชัดเจนเพื่อให้ได้แอป Project แม้ใช้ baseline คู่มือรุ่นเดิม กำหนดบริษัท บัญชีวิเคราะห์ หน่วยงาน ผู้ใช้และ tiers ผ่านเมนูปกติก่อนสร้างเอกสาร คำสั่งนี้ไม่สร้างบัญชีสาธิตหรือข้อมูลธุรกิจของ Full Creation ให้เอง
+โมดูล `erp_user_manual` เป็นชุดเอกสารสำหรับระบบที่เชื่อมกัน และประกาศ dependency ไปยังโมดูลธุรกิจที่คู่มืออ้างถึง สภาพแวดล้อมอ้างอิงเปิดผ่าน พอร์ต `18069` บนเครื่องที่ติดตั้ง ค่าเริ่มต้นของตัวเริ่มระบบปิด cron ระหว่างทดสอบ ให้กำหนดงานตามกำหนดเวลาตาม runbook เมื่อต้องใช้งานจริง
 
-สำหรับ static demo เท่านั้น:
+เก็บรหัสผ่าน การตั้งค่าลับ ฐานข้อมูล และ filestore แยกจาก Git หากมี volume เดิมอยู่แล้วต้องใช้ secrets เดิมของสภาพแวดล้อมนั้น
 
-```bash
-python3 scripts/check-public-release.py
-python3 scripts/build-pages.py
-python3 -m http.server 8080 --bind 127.0.0.1 --directory _site
-```
+## สถานะและขอบเขตการทดสอบ
 
-เปิดพอร์ต 8080 บนเครื่องทดสอบแล้วเลือก Guided Tour ไม่ต้องมี Odoo สำหรับการเล่นภาพ ดู [Pages validation](docs/github-pages.md) สำหรับการตรวจใต้ nested path
+การย้ายซอร์สในขอบเขตโมดูลที่เลือกมีรายงานปิดงานแล้ว และชุดอ้างอิงผ่านการตรวจ clean installation, upgrade ด้วยข้อมูลจำลอง, การเชื่อมกระบวนงาน, สิทธิ์และหลายบริษัท, การใช้งานผ่านเบราว์เซอร์ รวมถึงสำรอง กู้คืน และ rollback ตามรายงานที่เก็บไว้
 
-## Source / provenance
+**Baseline นี้เป็นฐานสำหรับนำไปปรับใช้ในแต่ละองค์กร** ผลตรวจสภาพแวดล้อมอ้างอิงไม่ได้แทนการรับรองระบบ production ของหน่วยงาน ต้องกำหนดข้อมูลตั้งต้น นโยบายบัญชี/ภาษี แบบพิมพ์ การเชื่อมระบบ ขนาดการใช้งาน และทดสอบรับมอบตามบริบทของหน่วยงานก่อนเปิดใช้จริง โครงการเริ่มจากซอร์สโค้ด จึงไม่ได้อ้างว่าแปลงฐานข้อมูล production เดิมที่ไม่ได้รับมา
 
-ต้นทาง [NSTDA ERP-Government](https://github.com/NSTDA/ERP-Government) commit `5a1722c4c6f6cfdf3ed59362a56e85777c58a383` เป็นฐาน Odoo 15 ก่อน migration สู่ Odoo 20 ขอบคุณ NSTDA, Odoo, OCA, Ecosoft และผู้พัฒนาที่ระบุในแต่ละส่วนประกอบ ดู [provenance](docs/provenance.md), [source snapshot](docs/source-snapshot.json), [mapping](docs/source-mapping.md) และ [NOTICE](NOTICE.md)
+เอกสารหลัก:
 
-## License
+- [ขอบเขตและรายงานปิดการย้ายระบบ](docs/migration-closure-report.md)
+- [ผลตรวจความครบถ้วนของการย้ายระบบ](docs/migration-completeness-audit.md)
+- [ผลตรวจความพร้อมของสภาพแวดล้อมอ้างอิง](docs/production-readiness.md)
+- [การทดสอบผ่านเบราว์เซอร์และตามบทบาท](docs/production-readiness-uat.md)
+- [รุ่นและส่วนประกอบที่ใช้ร่วมกัน](docs/release-manifest.md)
+- [คู่มือปฏิบัติการ สำรอง และกู้คืน](docs/production-readiness-runbook.md)
 
-โครงการและโมดูล ERP ใช้ [AGPL-3.0](LICENSE) ส่วนประกอบภายนอกคง license/credit ของตนเอง Odoo Community เป็น LGPL-3.0; Shepherd.js 15.2.3 มี [license ต้นฉบับที่แนบไว้](guided-tour/assets/vendor/SHEPHERD-LICENSE.md) ดู [inventory](docs/provenance.md) ก่อนนำส่วนประกอบไปใช้ในบริบทอื่น
+## ที่มาและเครดิต
 
-## Disclaimer
+ขอขอบคุณ **สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.) / NSTDA** ผู้ริเริ่ม [ERP-Government (eGov)](https://github.com/NSTDA/ERP-Government) ซึ่งเป็นต้นทางสำหรับการพัฒนาต่อยอดโครงการนี้
 
-This repository is an independent Odoo 20 Community migration and demonstration based on the open-source NSTDA ERP-Government project. It is not an official NSTDA release.
+ซอร์สอ้างอิงที่ใช้ตรวจการย้ายระบบมาจาก branch `main` ที่ commit `5a1722c4c6f6cfdf3ed59362a56e85777c58a383` และเป็นฐาน Odoo 15.0 ก่อนนำกระบวนงานมาปรับสำหรับ Odoo 20 รายละเอียดการอ้างอิงและการปรับใช้แยกตามโดเมนอยู่ใน [upstream baseline](docs/upstream-baseline.md) และ [source mapping](docs/source-mapping.md)
 
-การสาธิตใช้ข้อมูลจำลอง ไม่มีการรับรองหรือสนับสนุนอย่างเป็นทางการจาก NSTDA และไม่ใช่ระบบ production ของหน่วยงาน ตัวชุด showcase นี้เตรียมเป็น `demo-v1.0.0-rc1`; ดู [release notes](docs/release-notes-rc1.md)
+ขอขอบคุณ [Odoo](https://github.com/odoo/odoo), [Odoo Community Association (OCA)](https://github.com/OCA), Ecosoft และผู้พัฒนาส่วนประกอบต้นทางที่โครงการนำมาใช้หรืออ้างอิง GovOpsDev ERP ดูแลการปรับย้ายและการพัฒนาต่อยอดในขอบเขตของโครงการนี้
+
+## สัญญาอนุญาต
+
+ต้นทาง NSTDA ERP-Government เผยแพร่ภายใต้ [AGPL-3.0](LICENSE) ส่วนขยายที่พัฒนาในชุด ERP นี้ระบุ `AGPL-3` ใน manifest ของแต่ละโมดูล ส่วนประกอบภายนอกให้ยึดสัญญาอนุญาตและประกาศลิขสิทธิ์ของต้นทางแต่ละรายการ และคงเครดิตดังกล่าวเมื่อนำไปใช้หรือเผยแพร่ต่อ ดูรายการตรวจใน [license review](docs/license-review.md)
+
+ชุดเผยแพร่นี้เก็บข้อความสัญญาอนุญาตต้นทางไว้ใน [LICENSE](LICENSE) และรวมเครดิตใน [NOTICE.md](NOTICE.md) โดยคงประกาศลิขสิทธิ์ของส่วนประกอบแต่ละรายการไว้ตามเดิม
+
+## สกุลเงินเริ่มต้น
+
+บริษัทใหม่ใช้ THB เป็นค่าเริ่มต้น และการติดตั้งครั้งแรกตั้งบริษัท placeholder
+ที่ยังไม่มีข้อมูลเป็นประเทศไทยและ THB บริษัท/เอกสาร USD เดิมคงสกุลเงินเดิม ดู
+[ขอบเขตค่าเริ่มต้นเงินบาท](docs/thb-defaults.md)

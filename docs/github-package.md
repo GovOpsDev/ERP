@@ -57,7 +57,7 @@ byte-for-byte. Existing licenses in addon manifests and file headers are preserv
 `erp_dashboard_th` was added after the initial source snapshot, together with its
 read-only acceptance script and documentation. It localizes the standard warehouse
 dashboard response for Thai users and preserves the stored workbook and access
-controls. See [dashboard-th.md](dashboard-th.md) for scoped runtime evidence.
+controls. The dashboard was checked in the reference runtime.
 The initial source checksums remain a historical provenance record.
 
 ## THB defaults follow-up
@@ -73,7 +73,7 @@ the original snapshot, before these documented follow-up source changes.
 
 ERP Budget `20.0.2.27.2` consolidates its two duplicate Settings tabs into one,
 retaining both setting blocks and all company values. See
-[budget-settings.md](budget-settings.md) for scoped upgrade acceptance.
+the budget settings upgrade in the reference environment.
 
 ## Currency FAQ follow-up
 
