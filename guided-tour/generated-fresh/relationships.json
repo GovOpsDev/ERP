@@ -1,0 +1,156 @@
+[
+  {
+    "id": "REL-1",
+    "from": "project.project:4",
+    "to": "erp.budget.control:767",
+    "type": "shared_analytic",
+    "evidence": "project.account_id = control.analytic_id"
+  },
+  {
+    "id": "REL-2",
+    "from": "project.project:4",
+    "to": "project.task:33",
+    "type": "task",
+    "evidence": "task.project_id"
+  },
+  {
+    "id": "REL-3",
+    "from": "erp.budget.control:767",
+    "to": "erp.procurement.request:1301",
+    "type": "shared_analytic",
+    "evidence": "request.line.analytic_id"
+  },
+  {
+    "id": "REL-4",
+    "from": "erp.procurement.request:1301",
+    "to": "purchase.requisition:121",
+    "type": "request_line",
+    "evidence": "requisition.line.erp_request_line_id"
+  },
+  {
+    "id": "REL-5",
+    "from": "purchase.requisition:121",
+    "to": "purchase.order:945",
+    "type": "source",
+    "evidence": "order.requisition_id"
+  },
+  {
+    "id": "REL-6",
+    "from": "project.project:4",
+    "to": "purchase.order:945",
+    "type": "project",
+    "evidence": "order.project_id"
+  },
+  {
+    "id": "REL-7",
+    "from": "purchase.order:945",
+    "to": "erp.contract.agreement:136",
+    "type": "agreement",
+    "evidence": "agreement.purchase_order_id"
+  },
+  {
+    "id": "REL-8",
+    "from": "purchase.order:945",
+    "to": "erp.inventory.acceptance:366",
+    "type": "acceptance",
+    "evidence": "acceptance.purchase_order_id"
+  },
+  {
+    "id": "REL-9",
+    "from": "erp.inventory.acceptance:366",
+    "to": "stock.picking:189",
+    "type": "receipt",
+    "evidence": "picking.erp_acceptance_id"
+  },
+  {
+    "id": "REL-10",
+    "from": "erp.inventory.acceptance:366",
+    "to": "account.move:1067",
+    "type": "bill",
+    "evidence": "bill.erp_acceptance_id"
+  },
+  {
+    "id": "REL-11",
+    "from": "erp.asset.asset:303",
+    "to": "account.asset:159",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-12",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:303",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-13",
+    "from": "erp.asset.asset:304",
+    "to": "account.asset:160",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-14",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:304",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-15",
+    "from": "erp.asset.asset:305",
+    "to": "account.asset:161",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-16",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:305",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-17",
+    "from": "erp.asset.asset:306",
+    "to": "account.asset:162",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-18",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:306",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-19",
+    "from": "erp.asset.asset:307",
+    "to": "account.asset:163",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-20",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:307",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-21",
+    "from": "erp.asset.asset:308",
+    "to": "account.asset:164",
+    "type": "depreciation",
+    "evidence": "engine.erp_acquisition_id"
+  },
+  {
+    "id": "REL-22",
+    "from": "account.move:1067",
+    "to": "erp.asset.asset:308",
+    "type": "acquisition",
+    "evidence": "asset.bill_id"
+  }
+]

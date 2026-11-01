@@ -1,0 +1,1027 @@
+[
+  {
+    "id": "PROJECT",
+    "order": 1,
+    "mode": "main",
+    "title": "สร้างโครงการใหม่",
+    "description": "สร้างโครงการในแอป Project พร้อมบัญชีวิเคราะห์ใหม่สำหรับเชื่อมงบและเอกสาร",
+    "tooltip": "สร้างโครงการในแอป Project พร้อมบัญชีวิเคราะห์ใหม่สำหรับเชื่อมงบและเอกสาร",
+    "narration": "สร้างโครงการในแอป Project พร้อมบัญชีวิเคราะห์ใหม่สำหรับเชื่อมงบและเอกสาร",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "project.project:4",
+    "screen": "project.project",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "to_define",
+    "source_path": "/odoo/project.project/4",
+    "screenshot": "screenshots/01-project.png",
+    "screenshot_sha256": "a7a0e324bdce7e61bf01a038cc58e8f8285f162764907e4703ee918c1d741e5d",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:52:45.357Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 6.135
+    },
+    "target": {
+      "x": 0.0296875,
+      "y": 0.12685185185185185,
+      "width": 0.46197916666666666,
+      "height": 0.06851851851851852
+    },
+    "relationships": [
+      "erp.budget.control:767",
+      "project.task:33",
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "TASK",
+    "order": 2,
+    "mode": "main",
+    "title": "กำหนดงานและ Milestone",
+    "description": "สร้างงานติดตามการจัดซื้อและเป้าหมายส่งมอบ สถานะงานไม่แทนการอนุมัติทางการเงิน",
+    "tooltip": "สร้างงานติดตามการจัดซื้อและเป้าหมายส่งมอบ สถานะงานไม่แทนการอนุมัติทางการเงิน",
+    "narration": "สร้างงานติดตามการจัดซื้อและเป้าหมายส่งมอบ สถานะงานไม่แทนการอนุมัติทางการเงิน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "project.task:33",
+    "screen": "project.task",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "01_in_progress",
+    "source_path": "/odoo/project.task/33",
+    "screenshot": "screenshots/02-task.png",
+    "screenshot_sha256": "ebf1606385008f74ae1a7f93346df8e032073e0c1d62b4d4e798bfe3a1fb2e63",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:52:48.762Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 9.54
+    },
+    "target": {
+      "x": 0.0765625,
+      "y": 0.26990740740740743,
+      "width": 0.24444173177083334,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "project.project:4"
+    ]
+  },
+  {
+    "id": "BUDGET-ALLOCATION",
+    "order": 3,
+    "mode": "main",
+    "title": "เพิ่มมิติจัดสรรสำหรับโครงการใหม่",
+    "description": "เพิ่มวงเงินโครงการใหม่ 300000 บาทผ่านฉบับปรับปรุง โดยคงวงเงินเดิมและอนุมัติแผนที่เกี่ยวข้องตามขั้นตอน",
+    "tooltip": "เพิ่มวงเงินโครงการใหม่ 300000 บาทผ่านฉบับปรับปรุง โดยคงวงเงินเดิมและอนุมัติแผนที่เกี่ยวข้องตามขั้นตอน",
+    "narration": "เพิ่มวงเงินโครงการใหม่ 300000 บาทผ่านฉบับปรับปรุง โดยคงวงเงินเดิมและอนุมัติแผนที่เกี่ยวข้องตามขั้นตอน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.budget.allocation.revision:45",
+    "screen": "erp.budget.allocation.revision",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "effective",
+    "source_path": "/odoo/erp.budget.allocation.revision/45",
+    "screenshot": "screenshots/03-budget-allocation.png",
+    "screenshot_sha256": "c8a4a72d568619891dfc6c2e7a12f6f315ba8529c00cbff653e1c8078047ffa7",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:13.069Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 33.847
+    },
+    "target": {
+      "x": 0.08489583333333334,
+      "y": 0.3148148148148148,
+      "width": 0.6229166666666667,
+      "height": 0.019444444444444445
+    },
+    "relationships": []
+  },
+  {
+    "id": "BUDGET-REVIEW",
+    "order": 4,
+    "mode": "main",
+    "title": "เปลี่ยนเป็นผู้ตรวจทานงบ",
+    "description": "เข้าสู่ระบบด้วยผู้ตรวจทานอีกบัญชีตามลำดับอนุมัติ โดยไม่เปลี่ยนสิทธิ์ผู้สร้าง",
+    "tooltip": "เข้าสู่ระบบด้วยผู้ตรวจทานอีกบัญชีตามลำดับอนุมัติ โดยไม่เปลี่ยนสิทธิ์ผู้สร้าง",
+    "narration": "เข้าสู่ระบบด้วยผู้ตรวจทานอีกบัญชีตามลำดับอนุมัติ โดยไม่เปลี่ยนสิทธิ์ผู้สร้าง",
+    "duration_hint": 8,
+    "persona": "interactive-demo-reviewer",
+    "document_ref": "erp.budget.kpi.release:122",
+    "screen": "erp.budget.kpi.release",
+    "operation": "persona_review",
+    "state_before": "submit",
+    "state_after": "submit",
+    "source_path": "/odoo/erp.budget.kpi.release/122",
+    "screenshot": "screenshots/04-budget-review.png",
+    "screenshot_sha256": "d9835d0415f62a8bd563ea75b73abc287ffc57b883eeb3afd9a9d7798b667826",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:22.271Z",
+    "video": {
+      "file": "video/02-session.webm",
+      "elapsed_seconds": 24.485
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.6527777777777778,
+      "width": 0.6864583333333333,
+      "height": 0.19907407407407407
+    },
+    "relationships": []
+  },
+  {
+    "id": "BUDGET-RELEASE",
+    "order": 5,
+    "mode": "main",
+    "title": "อนุมัติแผนและปล่อยงบ",
+    "description": "ผู้ตรวจทานอนุมัติแผน KPI และเปิดวงเงิน 300000 บาทให้โครงการใหม่",
+    "tooltip": "ผู้ตรวจทานอนุมัติแผน KPI และเปิดวงเงิน 300000 บาทให้โครงการใหม่",
+    "narration": "ผู้ตรวจทานอนุมัติแผน KPI และเปิดวงเงิน 300000 บาทให้โครงการใหม่",
+    "duration_hint": 8,
+    "persona": "interactive-demo-reviewer",
+    "document_ref": "erp.budget.kpi.release:122",
+    "screen": "erp.budget.kpi.release",
+    "operation": "create_or_process_via_ui",
+    "state_before": "submit",
+    "state_after": "done",
+    "source_path": "/odoo/erp.budget.kpi.release/122",
+    "screenshot": "screenshots/05-budget-release.png",
+    "screenshot_sha256": "1081f87eacdba1ae56031b74afe220f81d1e40a1160e4e897cf255971fbfc7fe",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:23.641Z",
+    "video": {
+      "file": "video/02-session.webm",
+      "elapsed_seconds": 25.855
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.8009259259259259,
+      "width": 0.6864583333333333,
+      "height": 0.19907407407407407
+    },
+    "relationships": []
+  },
+  {
+    "id": "BUDGET-BEFORE",
+    "order": 6,
+    "mode": "main",
+    "title": "วงเงินก่อนจัดซื้อ",
+    "description": "วงเงินเริ่มต้น 300000 บาท ยังไม่มีภาระผูกพันและค่าใช้จ่ายจริง",
+    "tooltip": "วงเงินเริ่มต้น 300000 บาท ยังไม่มีภาระผูกพันและค่าใช้จ่ายจริง",
+    "narration": "วงเงินเริ่มต้น 300000 บาท ยังไม่มีภาระผูกพันและค่าใช้จ่ายจริง",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.budget.control:767",
+    "screen": "erp.budget.control",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "open",
+    "source_path": "/odoo/erp.budget.control/767",
+    "screenshot": "screenshots/06-budget-before.png",
+    "screenshot_sha256": "42ddbc7a004251a573c86056b4ecf527be27fa48466410ba0cf953387929bcb5",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:25.756Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 46.534
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4046296296296296,
+      "width": 0.6,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "project.project:4",
+      "erp.procurement.request:1301"
+    ]
+  },
+  {
+    "id": "PR-DRAFT",
+    "order": 7,
+    "mode": "main",
+    "title": "สร้างใบขอซื้อ",
+    "description": "ขอซื้อคอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 180000 บาท เชื่อมบัญชีวิเคราะห์และแหล่งเงินของโครงการใหม่",
+    "tooltip": "ขอซื้อคอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 180000 บาท เชื่อมบัญชีวิเคราะห์และแหล่งเงินของโครงการใหม่",
+    "narration": "ขอซื้อคอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 180000 บาท เชื่อมบัญชีวิเคราะห์และแหล่งเงินของโครงการใหม่",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.procurement.request:1301",
+    "screen": "erp.procurement.request",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.procurement.request/1301",
+    "screenshot": "screenshots/07-pr-draft.png",
+    "screenshot_sha256": "8b087f91e72bb2bab13a208a858306119fd9179a4fe1b7407e1c2b8ddb137ed1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:31.865Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 52.643
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.18958333333333333,
+      "width": 0.6864583333333333,
+      "height": 0.20347222222222222
+    },
+    "relationships": [
+      "erp.budget.control:767",
+      "purchase.requisition:121"
+    ]
+  },
+  {
+    "id": "PR-SUBMIT",
+    "order": 8,
+    "mode": "main",
+    "title": "ส่งตรวจงบและอนุมัติ",
+    "description": "ส่งใบขอซื้อ ระบบตรวจความเพียงพอของงบก่อนเข้าสู่ลำดับอนุมัติ",
+    "tooltip": "ส่งใบขอซื้อ ระบบตรวจความเพียงพอของงบก่อนเข้าสู่ลำดับอนุมัติ",
+    "narration": "ส่งใบขอซื้อ ระบบตรวจความเพียงพอของงบก่อนเข้าสู่ลำดับอนุมัติ",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.procurement.request:1301",
+    "screen": "erp.procurement.request",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "to_approve",
+    "source_path": "/odoo/erp.procurement.request/1301",
+    "screenshot": "screenshots/08-pr-submit.png",
+    "screenshot_sha256": "3937cf87d1b00d8c84d5fefb16ff7a1b3394d12142e6885bad08fc44a02387c9",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:33.289Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 54.067
+    },
+    "target": {
+      "x": 0.5220052083333333,
+      "y": 0.0962962962962963,
+      "width": 0.198828125,
+      "height": 0.030555555555555555
+    },
+    "relationships": [
+      "erp.budget.control:767",
+      "purchase.requisition:121"
+    ]
+  },
+  {
+    "id": "PR-APPROVED",
+    "order": 9,
+    "mode": "main",
+    "title": "อนุมัติใบขอซื้อและผูกพันงบ",
+    "description": "ผู้อนุมัติตาม tier ที่กำหนดอนุมัติใบขอซื้อ ระบบบันทึกภาระผูกพันงบ 180000 บาท",
+    "tooltip": "ผู้อนุมัติตาม tier ที่กำหนดอนุมัติใบขอซื้อ ระบบบันทึกภาระผูกพันงบ 180000 บาท",
+    "narration": "ผู้อนุมัติตาม tier ที่กำหนดอนุมัติใบขอซื้อ ระบบบันทึกภาระผูกพันงบ 180000 บาท",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.procurement.request:1301",
+    "screen": "erp.procurement.request",
+    "operation": "create_or_process_via_ui",
+    "state_before": "to_approve",
+    "state_after": "approved",
+    "source_path": "/odoo/erp.procurement.request/1301",
+    "screenshot": "screenshots/09-pr-approved.png",
+    "screenshot_sha256": "fb75f53d924a4f7d7fe8ad7b1af80855cf97985d313254d6c5e6ec41c8590a08",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:35.108Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 55.886
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.4888888888888889,
+      "width": 0.6864583333333333,
+      "height": 0.20162037037037037
+    },
+    "relationships": [
+      "erp.budget.control:767",
+      "purchase.requisition:121"
+    ]
+  },
+  {
+    "id": "REQ-DRAFT",
+    "order": 10,
+    "mode": "main",
+    "title": "สร้างข้อตกลงจัดซื้อจาก PR",
+    "description": "สร้างเอกสารจัดซื้อจากใบขอซื้อเดิม รายการอ้างอิงและมิติงบถูกส่งต่อ",
+    "tooltip": "สร้างเอกสารจัดซื้อจากใบขอซื้อเดิม รายการอ้างอิงและมิติงบถูกส่งต่อ",
+    "narration": "สร้างเอกสารจัดซื้อจากใบขอซื้อเดิม รายการอ้างอิงและมิติงบถูกส่งต่อ",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.requisition:121",
+    "screen": "purchase.requisition",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.procurement.request/1301/purchase.requisition/121",
+    "screenshot": "screenshots/10-req-draft.png",
+    "screenshot_sha256": "89f6151373d1dc9a64f1cd0c4b2d22424156d3e61429a01529f03ead7158d033",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:37.325Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 58.103
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5554108796296297,
+      "width": 0.6159749348958333,
+      "height": 0.19105902777777778
+    },
+    "relationships": [
+      "erp.procurement.request:1301",
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "REQ-CONFIRM",
+    "order": 11,
+    "mode": "main",
+    "title": "ยืนยันข้อตกลงจัดซื้อ",
+    "description": "ยืนยันเอกสารจัดซื้อก่อนสร้างใบสั่งซื้อมาตรฐานของ Odoo",
+    "tooltip": "ยืนยันเอกสารจัดซื้อก่อนสร้างใบสั่งซื้อมาตรฐานของ Odoo",
+    "narration": "ยืนยันเอกสารจัดซื้อก่อนสร้างใบสั่งซื้อมาตรฐานของ Odoo",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.requisition:121",
+    "screen": "purchase.requisition",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "confirmed",
+    "source_path": "/odoo/erp.procurement.request/1301/purchase.requisition/121",
+    "screenshot": "screenshots/11-req-confirm.png",
+    "screenshot_sha256": "2fe809229e761bfdc92aacd0bb118b54131cc70084fe8cf448864e1266fd7542",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:38.735Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 59.513
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5415219907407407,
+      "width": 0.6159749348958333,
+      "height": 0.19105902777777778
+    },
+    "relationships": [
+      "erp.procurement.request:1301",
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "PO-DRAFT",
+    "order": 12,
+    "mode": "main",
+    "title": "ใบสั่งซื้อมาตรฐาน Odoo",
+    "description": "ระบุโครงการใหม่และราคาเครื่องละ 30000 บาท จำนวน 6 เครื่อง",
+    "tooltip": "ระบุโครงการใหม่และราคาเครื่องละ 30000 บาท จำนวน 6 เครื่อง",
+    "narration": "ระบุโครงการใหม่และราคาเครื่องละ 30000 บาท จำนวน 6 เครื่อง",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.order:945",
+    "screen": "purchase.order",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.procurement.request/1301/purchase.requisition/121/purchase.order/945",
+    "screenshot": "screenshots/12-po-draft.png",
+    "screenshot_sha256": "7753388028a7b5d7299c3f697b745cf6083a0de94f200b861e47232e0924972e",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:43.227Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 64.005
+    },
+    "target": {
+      "x": 0.07060546875,
+      "y": 0.8880642361111111,
+      "width": 0.25039876302083336,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "purchase.requisition:121",
+      "project.project:4",
+      "erp.contract.agreement:136",
+      "erp.inventory.acceptance:366"
+    ]
+  },
+  {
+    "id": "AGREEMENT-DRAFT",
+    "order": 13,
+    "mode": "main",
+    "title": "สร้างข้อตกลงเชื่อม PO",
+    "description": "ใช้ Agreement ที่ผูกกับ PO โดยไม่สร้างสัญญาผูกพันงบซ้ำสำหรับค่าใช้จ่ายเดียวกัน",
+    "tooltip": "ใช้ Agreement ที่ผูกกับ PO โดยไม่สร้างสัญญาผูกพันงบซ้ำสำหรับค่าใช้จ่ายเดียวกัน",
+    "narration": "ใช้ Agreement ที่ผูกกับ PO โดยไม่สร้างสัญญาผูกพันงบซ้ำสำหรับค่าใช้จ่ายเดียวกัน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.contract.agreement:136",
+    "screen": "erp.contract.agreement",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.contract.agreement/136",
+    "screenshot": "screenshots/13-agreement-draft.png",
+    "screenshot_sha256": "20e6a6ad67b2c2fbc75fe4a8f872de964fbb83e7bb8a3e7bc9539f6ee67fa4fa",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:47.179Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 67.957
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4513888888888889,
+      "width": 0.5295166015625,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "AGREEMENT-ACTIVE",
+    "order": 14,
+    "mode": "main",
+    "title": "ตรวจทานและเปิดใช้ข้อตกลง",
+    "description": "บันทึกการตรวจทาน การอนุมัติทางกฎหมาย และวันลงนามก่อนเปิดใช้ข้อตกลง",
+    "tooltip": "บันทึกการตรวจทาน การอนุมัติทางกฎหมาย และวันลงนามก่อนเปิดใช้ข้อตกลง",
+    "narration": "บันทึกการตรวจทาน การอนุมัติทางกฎหมาย และวันลงนามก่อนเปิดใช้ข้อตกลง",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.contract.agreement:136",
+    "screen": "erp.contract.agreement",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "active",
+    "source_path": "/odoo/erp.contract.agreement/136",
+    "screenshot": "screenshots/14-agreement-active.png",
+    "screenshot_sha256": "6af81936afb869d733351dd5c33ede0af92f3ac88785e04cac783d96482b5f96",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:48.865Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 69.643
+    },
+    "target": {
+      "x": 0.5472249348958333,
+      "y": 0.0962962962962963,
+      "width": 0.103125,
+      "height": 0.030555555555555555
+    },
+    "relationships": [
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "PO-CONFIRMED",
+    "order": 15,
+    "mode": "main",
+    "title": "อนุมัติและยืนยัน PO",
+    "description": "ผู้อนุมัติตาม tier ยืนยันใบสั่งซื้อ ระบบปรับภาระผูกพันจาก PR ไปยัง PO โดยไม่คิดยอดซ้ำ",
+    "tooltip": "ผู้อนุมัติตาม tier ยืนยันใบสั่งซื้อ ระบบปรับภาระผูกพันจาก PR ไปยัง PO โดยไม่คิดยอดซ้ำ",
+    "narration": "ผู้อนุมัติตาม tier ยืนยันใบสั่งซื้อ ระบบปรับภาระผูกพันจาก PR ไปยัง PO โดยไม่คิดยอดซ้ำ",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.order:945",
+    "screen": "purchase.order",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "purchase",
+    "source_path": "/odoo/purchase.order/945",
+    "screenshot": "screenshots/15-po-confirmed.png",
+    "screenshot_sha256": "6401d8e4c25e526c57ab1a54747ccdc36c17af0e88d15a76e7093b1c984ae5a7",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:52.875Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 73.653
+    },
+    "target": {
+      "x": 0.5445556640625,
+      "y": 0.0962962962962963,
+      "width": 0.10579427083333333,
+      "height": 0.030555555555555555
+    },
+    "relationships": [
+      "purchase.requisition:121",
+      "project.project:4",
+      "erp.contract.agreement:136",
+      "erp.inventory.acceptance:366"
+    ]
+  },
+  {
+    "id": "WA-DRAFT",
+    "order": 16,
+    "mode": "main",
+    "title": "สร้างใบตรวจรับ",
+    "description": "ตรวจรับคอมพิวเตอร์ 6 เครื่องตามรายการใน PO และหน่วยงานเดียวกัน",
+    "tooltip": "ตรวจรับคอมพิวเตอร์ 6 เครื่องตามรายการใน PO และหน่วยงานเดียวกัน",
+    "narration": "ตรวจรับคอมพิวเตอร์ 6 เครื่องตามรายการใน PO และหน่วยงานเดียวกัน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.inventory.acceptance:366",
+    "screen": "erp.inventory.acceptance",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.inventory.acceptance/366",
+    "screenshot": "screenshots/16-wa-draft.png",
+    "screenshot_sha256": "a35488feebe3a726ad04bae2958f984b5d64601cede65ec0f2efe6e075d215d3",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:56.782Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 77.56
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.35555555555555557,
+      "width": 0.6864583333333333,
+      "height": 0.20092592592592592
+    },
+    "relationships": [
+      "purchase.order:945",
+      "stock.picking:189",
+      "account.move:1067"
+    ]
+  },
+  {
+    "id": "WA-ACCEPTED",
+    "order": 17,
+    "mode": "main",
+    "title": "อนุมัติผลตรวจรับ",
+    "description": "ยืนยันผลตรวจรับก่อนบันทึกรับสินค้าและตั้งหนี้ตามเงื่อนไขของระบบ",
+    "tooltip": "ยืนยันผลตรวจรับก่อนบันทึกรับสินค้าและตั้งหนี้ตามเงื่อนไขของระบบ",
+    "narration": "ยืนยันผลตรวจรับก่อนบันทึกรับสินค้าและตั้งหนี้ตามเงื่อนไขของระบบ",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.inventory.acceptance:366",
+    "screen": "erp.inventory.acceptance",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "accept",
+    "source_path": "/odoo/erp.inventory.acceptance/366",
+    "screenshot": "screenshots/17-wa-accepted.png",
+    "screenshot_sha256": "d35e5ec3ec56885d76a91f68d5357a4814a88ac86fa2f01982333ba422244649",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:53:58.171Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 78.949
+    },
+    "target": {
+      "x": 0.5921875,
+      "y": 0.0962962962962963,
+      "width": 0.12864583333333332,
+      "height": 0.030555555555555555
+    },
+    "relationships": [
+      "purchase.order:945",
+      "stock.picking:189",
+      "account.move:1067"
+    ]
+  },
+  {
+    "id": "RECEIPT",
+    "order": 18,
+    "mode": "main",
+    "title": "รับสินค้าตามใบตรวจรับ",
+    "description": "เชื่อมใบตรวจรับกับใบรับสินค้าที่เกิดจาก PO จำนวน 6 เครื่อง",
+    "tooltip": "เชื่อมใบตรวจรับกับใบรับสินค้าที่เกิดจาก PO จำนวน 6 เครื่อง",
+    "narration": "เชื่อมใบตรวจรับกับใบรับสินค้าที่เกิดจาก PO จำนวน 6 เครื่อง",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "stock.picking:189",
+    "screen": "stock.picking",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "assigned",
+    "source_path": "/odoo/stock.picking/189",
+    "screenshot": "screenshots/18-receipt.png",
+    "screenshot_sha256": "affa0e85dc17143362b1936a552bfab7ad37b7f81f885e0345610f774f5745ea",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:01.150Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 81.928
+    },
+    "target": {
+      "x": 0.10208333333333333,
+      "y": 0.2394386574074074,
+      "width": 0.2189208984375,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "erp.inventory.acceptance:366"
+    ]
+  },
+  {
+    "id": "STOCK-DONE",
+    "order": 19,
+    "mode": "main",
+    "title": "รับสินค้าเข้าคลังสำเร็จ",
+    "description": "ยืนยันการรับสินค้าจริง 6 เครื่อง สต็อกเพิ่มตาม stock move ของการรับครั้งนี้",
+    "tooltip": "ยืนยันการรับสินค้าจริง 6 เครื่อง สต็อกเพิ่มตาม stock move ของการรับครั้งนี้",
+    "narration": "ยืนยันการรับสินค้าจริง 6 เครื่อง สต็อกเพิ่มตาม stock move ของการรับครั้งนี้",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "stock.picking:189",
+    "screen": "stock.picking",
+    "operation": "create_or_process_via_ui",
+    "state_before": "assigned",
+    "state_after": "done",
+    "source_path": "/odoo/stock.picking/189",
+    "screenshot": "screenshots/19-stock-done.png",
+    "screenshot_sha256": "b5bc361750f8d1443e32197f73685444216888f32f4ca767a7626c6d334da956",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:02.824Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 83.602
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.369994212962963,
+      "width": 0.6159749348958333,
+      "height": 0.18920717592592592
+    },
+    "relationships": [
+      "erp.inventory.acceptance:366"
+    ]
+  },
+  {
+    "id": "BILL-DRAFT",
+    "order": 20,
+    "mode": "main",
+    "title": "สร้างบิลจาก PO",
+    "description": "ดึงรายการจากใบสั่งซื้อและเชื่อมใบตรวจรับ ยอดก่อนภาษี 180000 บาท ภาษี 12600 บาท รวมเจ้าหนี้ 192600 บาท",
+    "tooltip": "ดึงรายการจากใบสั่งซื้อและเชื่อมใบตรวจรับ ยอดก่อนภาษี 180000 บาท ภาษี 12600 บาท รวมเจ้าหนี้ 192600 บาท",
+    "narration": "ดึงรายการจากใบสั่งซื้อและเชื่อมใบตรวจรับ ยอดก่อนภาษี 180000 บาท ภาษี 12600 บาท รวมเจ้าหนี้ 192600 บาท",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "account.move:1067",
+    "screen": "account.move",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/vendor-bills/1067",
+    "screenshot": "screenshots/20-bill-draft.png",
+    "screenshot_sha256": "3cf4f90ec203d12e849e0c07ac42760cb8c729d9d2df9a21a04ce24fc23b702b",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:09.262Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 90.04
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5878182870370371,
+      "width": 0.6159749348958333,
+      "height": 0.20810185185185184
+    },
+    "relationships": [
+      "erp.inventory.acceptance:366",
+      "erp.asset.asset:303",
+      "erp.asset.asset:304",
+      "erp.asset.asset:305",
+      "erp.asset.asset:306",
+      "erp.asset.asset:307",
+      "erp.asset.asset:308"
+    ]
+  },
+  {
+    "id": "BILL-POSTED",
+    "order": 21,
+    "mode": "main",
+    "title": "ลงบัญชีและบันทึกใช้จริง",
+    "description": "ลงบัญชีบิล ระบบเปลี่ยนภาระผูกพัน PO เป็นใช้จริงตามนโยบายงบก่อนภาษี และสร้างรายการได้มาซึ่งครุภัณฑ์",
+    "tooltip": "ลงบัญชีบิล ระบบเปลี่ยนภาระผูกพัน PO เป็นใช้จริงตามนโยบายงบก่อนภาษี และสร้างรายการได้มาซึ่งครุภัณฑ์",
+    "narration": "ลงบัญชีบิล ระบบเปลี่ยนภาระผูกพัน PO เป็นใช้จริงตามนโยบายงบก่อนภาษี และสร้างรายการได้มาซึ่งครุภัณฑ์",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "account.move:1067",
+    "screen": "account.move",
+    "operation": "create_or_process_via_ui",
+    "state_before": "draft",
+    "state_after": "posted",
+    "source_path": "/odoo/vendor-bills/1067",
+    "screenshot": "screenshots/21-bill-posted.png",
+    "screenshot_sha256": "679c41b912e26374e0f4b11e4c278f4c73068afad1a558e340cb5558e13d0195",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:12.153Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 92.931
+    },
+    "target": {
+      "x": 0.5747639973958333,
+      "y": 0.1011574074074074,
+      "width": 0.0755859375,
+      "height": 0.030555555555555555
+    },
+    "relationships": [
+      "erp.inventory.acceptance:366",
+      "erp.asset.asset:303",
+      "erp.asset.asset:304",
+      "erp.asset.asset:305",
+      "erp.asset.asset:306",
+      "erp.asset.asset:307",
+      "erp.asset.asset:308"
+    ]
+  },
+  {
+    "id": "ASSET",
+    "order": 22,
+    "mode": "main",
+    "title": "ครุภัณฑ์รายเครื่องและที่มา",
+    "description": "สร้างครุภัณฑ์ 6 รายการ มูลค่ารายการละ 30000 บาท อ้างกลับไปถึงบิล ใบตรวจรับ และ PO ได้",
+    "tooltip": "สร้างครุภัณฑ์ 6 รายการ มูลค่ารายการละ 30000 บาท อ้างกลับไปถึงบิล ใบตรวจรับ และ PO ได้",
+    "narration": "สร้างครุภัณฑ์ 6 รายการ มูลค่ารายการละ 30000 บาท อ้างกลับไปถึงบิล ใบตรวจรับ และ PO ได้",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.asset.asset:303",
+    "screen": "erp.asset.asset",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.asset.asset/303",
+    "screenshot": "screenshots/22-asset.png",
+    "screenshot_sha256": "d1f8be860f8767cb61cc1eea1d7e366ae86860fc13213d93f318fab9cdceb428",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:20.629Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 101.407
+    },
+    "target": {
+      "x": 0.09479166666666666,
+      "y": 0.31574074074074077,
+      "width": 0.6130208333333333,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "account.asset:159",
+      "account.move:1067"
+    ]
+  },
+  {
+    "id": "DEPRECIATION",
+    "order": 23,
+    "mode": "main",
+    "title": "ตรวจการตั้งค่าค่าเสื่อม",
+    "description": "สร้างรายการค่าเสื่อมตาม profile เดิมและคงสถานะร่าง ยังไม่ลงค่าเสื่อมหรือทำรายการจ่ายเงิน",
+    "tooltip": "สร้างรายการค่าเสื่อมตาม profile เดิมและคงสถานะร่าง ยังไม่ลงค่าเสื่อมหรือทำรายการจ่ายเงิน",
+    "narration": "สร้างรายการค่าเสื่อมตาม profile เดิมและคงสถานะร่าง ยังไม่ลงค่าเสื่อมหรือทำรายการจ่ายเงิน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "account.asset:159",
+    "screen": "account.asset",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "draft",
+    "source_path": "/odoo/account.asset/159",
+    "screenshot": "screenshots/23-depreciation.png",
+    "screenshot_sha256": "27500ec8aaad8716fee8b575f2951364dd85fc5702d6ad04f139ea31c0942d89",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:22.807Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 103.585
+    },
+    "target": {
+      "x": 0.08333333333333333,
+      "y": 0.5241608796296297,
+      "width": 0.2376708984375,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "erp.asset.asset:303"
+    ]
+  },
+  {
+    "id": "MILESTONE",
+    "order": 24,
+    "mode": "main",
+    "title": "บรรลุเป้าหมายส่งมอบ",
+    "description": "ทำเครื่องหมาย Milestone หลังตรวจเอกสารจัดซื้อ ตรวจรับ และบัญชีครบแล้ว",
+    "tooltip": "ทำเครื่องหมาย Milestone หลังตรวจเอกสารจัดซื้อ ตรวจรับ และบัญชีครบแล้ว",
+    "narration": "ทำเครื่องหมาย Milestone หลังตรวจเอกสารจัดซื้อ ตรวจรับ และบัญชีครบแล้ว",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "project.milestone:5",
+    "screen": "project.milestone",
+    "operation": "create_or_process_via_ui",
+    "state_before": "not_created",
+    "state_after": "reached",
+    "source_path": "/odoo/project.milestone/5",
+    "screenshot": "screenshots/24-milestone.png",
+    "screenshot_sha256": "163d43f3731366375ab16b8f51a779cfa549e873f44daddbc77eeef746c936fe",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:26.296Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 107.074
+    },
+    "target": {
+      "x": 0.07708333333333334,
+      "y": 0.19166666666666668,
+      "width": 0.0109375,
+      "height": 0.021296296296296296
+    },
+    "relationships": []
+  },
+  {
+    "id": "TASK-RESULT",
+    "order": 25,
+    "mode": "main",
+    "title": "ติดตามงานหลังดำเนินการ",
+    "description": "งานและ Milestone เชื่อมโครงการใหม่ ผู้รับผิดชอบปิดงานจัดหาและบรรลุ Milestone หลังตรวจเอกสาร ส่วนโครงการยังเปิดเพื่อติดตามการใช้งาน",
+    "tooltip": "งานและ Milestone เชื่อมโครงการใหม่ ผู้รับผิดชอบปิดงานจัดหาและบรรลุ Milestone หลังตรวจเอกสาร ส่วนโครงการยังเปิดเพื่อติดตามการใช้งาน",
+    "narration": "งานและ Milestone เชื่อมโครงการใหม่ ผู้รับผิดชอบปิดงานจัดหาและบรรลุ Milestone หลังตรวจเอกสาร ส่วนโครงการยังเปิดเพื่อติดตามการใช้งาน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "project.task:33",
+    "screen": "project.task",
+    "operation": "inspect_fresh_result",
+    "state_before": "1_done",
+    "state_after": "1_done",
+    "source_path": "/odoo/project.task/33",
+    "screenshot": "screenshots/25-task-result.png",
+    "screenshot_sha256": "9b1b6223463014a51d1dc1acacaa77cb0b9f91c70555fee87dee1933bf6f6c43",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:28.535Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 109.313
+    },
+    "target": {
+      "x": 0.0765625,
+      "y": 0.26990740740740743,
+      "width": 0.24444173177083334,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "project.project:4"
+    ]
+  },
+  {
+    "id": "PROJECT-RESULT",
+    "order": 26,
+    "mode": "main",
+    "title": "ผลโครงการใหม่",
+    "description": "โครงการใหม่มีงานและ Milestone พร้อมเอกสารจัดซื้อที่เชื่อมบัญชีวิเคราะห์เดียวกัน",
+    "tooltip": "โครงการใหม่มีงานและ Milestone พร้อมเอกสารจัดซื้อที่เชื่อมบัญชีวิเคราะห์เดียวกัน",
+    "narration": "โครงการใหม่มีงานและ Milestone พร้อมเอกสารจัดซื้อที่เชื่อมบัญชีวิเคราะห์เดียวกัน",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "project.project:4",
+    "screen": "project.project",
+    "operation": "inspect_fresh_result",
+    "state_before": "to_define",
+    "state_after": "to_define",
+    "source_path": "/odoo/project.project/4",
+    "screenshot": "screenshots/26-project-result.png",
+    "screenshot_sha256": "5bc1c994e634b385e85cfdc002f58d7c05d210c9ea04e6c5469116620b79e17d",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:30.781Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 111.559
+    },
+    "target": {
+      "x": 0.0296875,
+      "y": 0.12685185185185185,
+      "width": 0.46197916666666666,
+      "height": 0.06851851851851852
+    },
+    "relationships": [
+      "erp.budget.control:767",
+      "project.task:33",
+      "purchase.order:945"
+    ]
+  },
+  {
+    "id": "FINAL",
+    "order": 27,
+    "mode": "main",
+    "title": "สรุปงบหลังตั้งหนี้",
+    "description": "งบ 300000 บาท เท่ากับใช้จริง 180000 บาทและคงเหลือ 120000 บาท ภาระผูกพันที่เหลือเป็นศูนย์",
+    "tooltip": "งบ 300000 บาท เท่ากับใช้จริง 180000 บาทและคงเหลือ 120000 บาท ภาระผูกพันที่เหลือเป็นศูนย์",
+    "narration": "งบ 300000 บาท เท่ากับใช้จริง 180000 บาทและคงเหลือ 120000 บาท ภาระผูกพันที่เหลือเป็นศูนย์",
+    "duration_hint": 8,
+    "persona": "interactive-demo",
+    "document_ref": "erp.budget.control:767",
+    "screen": "final-result",
+    "operation": "inspect_fresh_result",
+    "state_before": "open",
+    "state_after": "open",
+    "source_path": "/odoo/erp.budget.control/767",
+    "screenshot": "screenshots/27-final.png",
+    "screenshot_sha256": "614c07e4bf1ab43f375962f20d1d43976f3c7f81fc4197d1b259a0fdbeddc854",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:54:32.848Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 113.626
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4046296296296296,
+      "width": 0.6,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "project.project:4",
+      "erp.procurement.request:1301"
+    ]
+  }
+]

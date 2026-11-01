@@ -1,6 +1,6 @@
 {
     'name': 'Government ERP Budget Foundation',
-    'version': '20.0.2.27.2',
+    'version': '20.0.2.27.3',
     'summary': 'Company-scoped budget periods and funds',
     'license': 'AGPL-3',
     'depends': ['erp_organization', 'account'],

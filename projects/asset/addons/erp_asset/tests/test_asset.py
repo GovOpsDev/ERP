@@ -40,6 +40,22 @@ class TestAssetAcquisition(InventoryFixture):
         with self.assertRaises(AccessError), self.cr.savepoint():
             acceptance.with_user(accountant).write({'notes': 'Unauthorized change'})
 
+    def test_native_bill_without_description_has_named_acquisition(self):
+        request, po = self.scenario()
+        acceptance = self.acceptance(po, 1)
+        bill = self.make_bill(po, 1, 10)
+        bill.erp_acceptance_id = acceptance
+        line = bill.invoice_line_ids.filtered('purchase_line_id')
+        line.name = ''
+        bill.action_post()
+        asset = self.test_env['erp.asset.asset'].search([('bill_id', '=', bill.id)])
+        self.assertEqual(len(asset), 1)
+        self.assertEqual(asset.name, line.product_id.display_name)
+        self.assertTrue(asset.name)
+        self.make_oca_profile()
+        asset.action_create_depreciation_asset()
+        self.assertEqual(asset.engine_asset_id.sudo().name, asset.name)
+
     def test_partial_bills_create_separate_assets_once(self):
         request, po = self.scenario()
         a = self.acceptance(po, 4)

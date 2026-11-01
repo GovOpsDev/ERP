@@ -1,4 +1,4 @@
-# Recorded Guided Tour
+# Guided Tours from real Odoo
 
 ตัวเล่นภาพหลักฐานจาก Playwright ที่เปิด Odoo จริง ใช้ Shepherd.js **15.2.3** แบบ vendored พร้อม [license ต้นฉบับ](assets/vendor/SHEPHERD-LICENSE.md) ไม่มี backend หรือ Node build สำหรับตัวเล่น ไม่ใช้ Swiper และไม่ต่อ Odoo จาก GitHub Pages
 
@@ -8,7 +8,7 @@
 
 เมื่อเปิด GitHub Pages จาก root repository จะใช้เส้นทาง `https://<username>.github.io/<repository>/guided-tour/` ได้ ไฟล์ใช้ relative URLs ทั้งหมดและไม่ต้องล็อกอิน Odoo
 
-ทัวร์หลักเล่นภาพ PROJECT70 ตามลำดับที่ Playwright เปิดจริง จบที่หน้าผลวงเงินใน Odoo ส่วนทัวร์สิทธิ์เล่นผลปฏิเสธการอ่านจริงจากบัญชี UAT ที่แยกจากข้อมูล PROJECT70 ป้าย persona หมายถึงบัญชีที่ใช้บันทึกภาพ **ไม่ใช่การสลับล็อกอินในเว็บ static**
+**Quick Tour** เล่นภาพ PROJECT70 ตามลำดับที่ Playwright เปิดจริง จบที่หน้าผลวงเงินใน Odoo ส่วนทัวร์สิทธิ์เล่นผลปฏิเสธการอ่านจริงจากบัญชี UAT ที่แยกจากข้อมูล PROJECT70 ป้าย persona หมายถึงบัญชีที่ใช้บันทึกภาพ **ไม่ใช่การสลับล็อกอินในเว็บ static**
 
 ปุ่มเริ่มทัวร์ ย้อนกลับ ถัดไป ออก เริ่มใหม่ และความสัมพันธ์เอกสารใช้งานได้ทั้งเมาส์และคีย์บอร์ด ภาพและ hotspot ใช้สัดส่วนเดียวกันบนมือถือ มีลิงก์เปิดภาพเต็มเพื่ออ่านข้อความขนาดเล็ก พร้อมคำอธิบายและบทบรรยายเป็นข้อความ HTML
 
@@ -19,6 +19,6 @@
 - [Storyboard ที่สร้างจาก metadata](generated/video-storyboard.md)
 - [ข้อมูลเตรียมคำบรรยาย](generated/subtitle-hints.json)
 
-ภาพปัจจุบันเป็น walkthrough ของเอกสารที่มีอยู่แล้ว ไม่ใช่หลักฐานการสร้างธุรกรรมทั้งหมดจากศูนย์ ดูขอบเขตและขั้นตอนกู้คืน snapshot ในคู่มือบันทึก ไม่มีการแก้ไขธุรกรรมจากหน้านี้
+**Full Creation Tour** เพิ่มอีกชุดใน `generated-fresh/` เป็นภาพของการสร้างเอกสารใหม่ผ่าน Playwright จริงตั้งแต่ Project จนถึงครุภัณฑ์ เลือกจาก dropdown หน้าเดียวกัน ดู [คู่มือ Fresh Creation](../docs/fresh-creation-demo.md) และ [storyboard แยก](generated-fresh/video-storyboard.md) Builder เลือกปลายทางจาก tour_type จึงไม่ทับ Quick/Permission ไม่มีการแก้ไขธุรกรรมจากหน้า static นี้
 
 โครงการนี้เป็นการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิงซอร์สโอเพนซอร์ส NSTDA ERP-Government และ **ไม่ใช่รุ่นเผยแพร่อย่างเป็นทางการของ NSTDA** ใช้ AGPL-3.0 ตาม repository; Shepherd.js ต้นฉบับจาก npm `shepherd.js@15.2.3` แจกจ่ายแบบ dual license ตามไฟล์แนบ

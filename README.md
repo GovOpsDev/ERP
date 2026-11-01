@@ -135,12 +135,28 @@ python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app pro
 
 ## Interactive Guided Tour
 
-[เปิด Interactive Guided Tour](./guided-tour/) เพื่อสำรวจภาพการทำงานจาก Odoo จริง พร้อมขั้นตอนแนะนำและผลทดสอบสิทธิ์ ดู [คู่มือตัวเล่น](guided-tour/README.md) และ [วิธีบันทึกและสร้างทัวร์](playwright-demo/README.md)
+[เปิด Interactive Guided Tour](./guided-tour/) แล้วเลือกทัวร์จากภาพ Odoo จริง ตัวเล่นใช้ Shepherd.js และใช้บน GitHub Pages ได้โดยไม่ต้องเชื่อม Odoo ดู [คู่มือตัวเล่น](guided-tour/README.md)
 
-- **Real Demo:** Playwright เปิด Odoo ด้วยบัญชีทดลอง ตรวจเอกสาร PROJECT70 และผลสิทธิ์จริง แล้วบันทึกภาพ วิดีโอ และ metadata
-- **Interactive Demo:** Python builder สร้าง Shepherd.js tour จากหลักฐานชุดนั้น ใช้บน GitHub Pages ได้โดยไม่ต้องเชื่อม Odoo
-- **Video:** วิดีโอ Playwright และ metadata บทบรรยายเป็นต้นทางสำหรับการตัดต่อ ใส่เสียงและคำบรรยายภายหลัง
+### Quick Interactive Tour
 
-Live Odoo demo ต้องมี Odoo พร้อมข้อมูลสาธิตและสิทธิ์ผู้ใช้แยกต่างหาก ทัวร์ปัจจุบันบันทึกการเปิดดูธุรกรรมที่มีอยู่แล้ว ไม่ได้สร้างหรืออนุมัติรายการเหล่านั้นใหม่ผ่านเว็บ static
+เปิดดูธุรกรรม PROJECT70 ที่บันทึกไว้แล้ว พร้อมผลตรวจงบและเอกสารเดิม ไม่สร้างข้อมูลใหม่ หลักฐานอยู่ใน `guided-tour/generated/`
 
-GitHub Pages หลังเปิดใช้งานใช้รูปแบบ `https://<username>.github.io/<repository>/guided-tour/` ส่วน [วิดีโอ YouTube ยังไม่เผยแพร่](#interactive-guided-tour) ดู [storyboard ที่สร้างจากขั้นตอนเดียวกัน](guided-tour/generated/video-storyboard.md) เพื่อเตรียมวิดีโอ
+### Full Creation Tour
+
+Playwright สร้าง Project และธุรกรรมใหม่ผ่าน UI จริง ตั้งแต่วงเงิน PR, requisition, PO, Agreement, ตรวจรับ, รับสินค้า, บิลที่ลงบัญชี และครุภัณฑ์ จบที่ผล Project และงบ ตัวเล่น replay ภาพของ run นั้นจาก `guided-tour/generated-fresh/` ดู [สถานการณ์ ขั้นตอนรัน และขอบเขต](docs/fresh-creation-demo.md)
+
+### Permission Tour
+
+แสดงการปฏิเสธสิทธิ์อ่านจริง 3 กรณีจาก fixture UAT แยกต่างหาก คงหลักฐานเดิมไว้ ไม่จำลองหน้าปฏิเสธด้วย JavaScript
+
+### Video Demo
+
+มีวิดีโอ Playwright ส่วนตัว พร้อม [storyboard ของ Full Creation](guided-tour/generated-fresh/video-storyboard.md) และ narration/subtitle hints จาก steps ชุดเดียวกัน สำหรับตัดต่อและใส่เสียงภายหลัง ยังไม่เผยแพร่วิดีโอหรือสร้างเสียงบรรยาย
+
+### Live Odoo Demo
+
+ใช้ได้เมื่อเปิดเซิร์ฟเวอร์ demo หรือ tunnel จริงพร้อมสิทธิ์ที่เตรียมไว้ เว็บ static ไม่ใช่ระบบบันทึกธุรกรรม และไม่สลับ login จริงเมื่อเปลี่ยน persona ในภาพ Full Creation ต้องรันกับฐานทดสอบแยกเท่านั้น
+
+[วิธีบันทึกและ build](playwright-demo/README.md) · [หลักฐาน Quick Tour](docs/recorded-guided-tour.md)
+
+GitHub Pages หลังเปิดใช้งานใช้รูปแบบ `https://<username>.github.io/<repository>/guided-tour/` การเตรียมไฟล์ใน repository ไม่ได้เปิด Pages หรือ push โดยอัตโนมัติ

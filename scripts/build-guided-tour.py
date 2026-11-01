@@ -54,7 +54,12 @@ def validate(run, require_review=True):
     require(len(persona_ids) == len(personas), 'Duplicate persona IDs')
     require(len({s['id'] for s in steps}) == len(steps), 'Duplicate step IDs')
     require([s['order'] for s in steps] == list(range(1, len(steps)+1)), 'Invalid step order')
-    require(any(s['mode'] == 'permissions' for s in steps), 'Permission evidence missing')
+    fresh = manifest.get('tour_type') == 'fresh-creation'
+    if not fresh:
+        require(any(s['mode'] == 'permissions' for s in steps), 'Permission evidence missing')
+    else:
+        require(data['assertions.json'].get('ui_creation') is True, 'Fresh UI creation evidence missing')
+        require(all(s['mode'] == 'main' for s in steps), 'Fresh workflow must not mix denial evidence')
     main = [s for s in steps if s['mode'] == 'main']
     require(main and main[-1]['screen'] == 'final-result', 'Final real result screenshot missing')
     require(all(s['mode'] in ('main', 'permissions') for s in steps), 'Invalid tour mode')
@@ -94,6 +99,13 @@ def validate(run, require_review=True):
     require(budget['allocated'] == budget['committed'] + budget['actual'] + budget['remaining'], 'Budget does not reconcile')
     require(final['inventory']['total'] == sum(q['quantity'] for q in final['inventory']['locations']), 'Inventory does not reconcile')
     require(final['assets']['count'] > 0 and final['acceptance']['quantity'] >= final['assets']['count'], 'Asset quantities invalid')
+    if fresh:
+        required_steps = {'PROJECT', 'TASK', 'BUDGET-BEFORE', 'PR-DRAFT', 'PR-APPROVED', 'REQ-CONFIRM', 'PO-CONFIRMED', 'AGREEMENT-ACTIVE', 'WA-ACCEPTED', 'STOCK-DONE', 'BILL-POSTED', 'ASSET', 'PROJECT-RESULT', 'FINAL'}
+        require(required_steps.issubset({s['id'] for s in steps}), 'Fresh lifecycle evidence incomplete')
+        quantity = final['procurement']['ordered_quantity']
+        require(quantity == final['acceptance']['quantity'] == final['inventory']['received_qty'] == final['inventory']['run_delta'] == final['bill']['billed_quantity'] == final['assets']['count'], 'Fresh quantities do not reconcile')
+        require(final['assets']['value'] == final['bill']['amount'] == budget['actual'], 'Fresh asset and financial values diverge')
+        require(final['inventory']['total'] - final['inventory']['before_total'] == quantity, 'Fresh stock delta invalid')
     require(data['assertions.json']['result'] == 'PASS' and not data['assertions.json']['browser_errors'], 'Assertions failed')
     if require_review:
         review = read(run / 'publish-review.json')
@@ -105,7 +117,7 @@ def validate(run, require_review=True):
 def build(run):
     manifest, data = validate(run)
     # Validate everything before changing the last known publishable replay.
-    destination = ROOT / 'guided-tour/generated'
+    destination = ROOT / ('guided-tour/generated-fresh' if manifest.get('tour_type') == 'fresh-creation' else 'guided-tour/generated')
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=destination.parent, prefix='.build-') as temp:
         target = Path(temp); (target/'screenshots').mkdir()
@@ -114,9 +126,10 @@ def build(run):
         for name, value in data.items():
             (target/name).write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n')
         public_manifest = {k:manifest[k] for k in ('schema_version','run_id','scenario','status','source','created_at','viewport')}
-        public_manifest.update({'raw_manifest_sha256':sha(run/'manifest.json'),'privacy_review':'synthetic screenshots and metadata reviewed; raw video is excluded'})
+        public_manifest.update({'tour_type':manifest.get('tour_type','recorded-evidence'),'raw_manifest_sha256':sha(run/'manifest.json'),'privacy_review':'synthetic screenshots and metadata reviewed; raw video is excluded'})
+        if 'duration_seconds' in manifest: public_manifest['duration_seconds']=manifest['duration_seconds']
         (target/'manifest.json').write_text(json.dumps(public_manifest, ensure_ascii=False, indent=2)+'\n')
-        lines = ['# Generated video storyboard', '', f'Run: `{manifest["run_id"]}`. Generated from steps.json; do not edit manually.', '', '| Step ID | Screenshot | Action | Narration | Duration |', '| --- | --- | --- | --- | ---: |']
+        lines = ['# Fresh Creation Tour — Generated video storyboard' if manifest.get('tour_type') == 'fresh-creation' else '# Generated video storyboard', '', f'Run: `{manifest["run_id"]}`. Generated from steps.json; do not edit manually.', '', '| Step ID | Screenshot | Action | Narration | Duration |', '| --- | --- | --- | --- | ---: |']
         elapsed=0; subtitles=[]
         for s in data['steps.json']:
             escape=lambda text:str(text).replace('|','\\|').replace('\n',' ')
@@ -125,7 +138,7 @@ def build(run):
         (target/'video-storyboard.md').write_text('\n'.join(lines)+'\n')
         (target/'subtitle-hints.json').write_text(json.dumps(subtitles,ensure_ascii=False,indent=2)+'\n')
         # Only this generator-owned subtree is replaced; source and vendor stay intact.
-        backup=destination.with_name('.generated-previous')
+        backup=destination.with_name('.'+destination.name+'-previous')
         require(not backup.exists(), 'Previous interrupted build needs review')
         if destination.exists(): destination.rename(backup)
         try: Path(temp).rename(destination)

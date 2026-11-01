@@ -1,0 +1,939 @@
+[
+  {
+    "key": "project.project:4",
+    "model": "project.project",
+    "id": 4,
+    "ref": "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)",
+    "name": "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "to_define",
+    "values": {
+      "id": 4,
+      "name": "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "account_id": [
+        303,
+        "FRESH70-20261101T105234882Z"
+      ],
+      "task_ids": [
+        33
+      ],
+      "milestone_ids": [
+        5
+      ],
+      "last_update_status": "to_define"
+    }
+  },
+  {
+    "key": "project.task:33",
+    "model": "project.task",
+    "id": 33,
+    "ref": "FRESH70-20261101T105234882Z จัดหาและตรวจรับคอมพิวเตอร์",
+    "name": "FRESH70-20261101T105234882Z จัดหาและตรวจรับคอมพิวเตอร์",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "1_done",
+    "values": {
+      "id": 33,
+      "name": "FRESH70-20261101T105234882Z จัดหาและตรวจรับคอมพิวเตอร์",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "project_id": [
+        4,
+        "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)"
+      ],
+      "milestone_id": [
+        5,
+        "FRESH70-20261101T105234882Z ส่งมอบครบ"
+      ],
+      "state": "1_done"
+    }
+  },
+  {
+    "key": "erp.budget.allocation.revision:45",
+    "model": "erp.budget.allocation.revision",
+    "id": 45,
+    "ref": 2,
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "effective",
+    "values": {
+      "id": 45,
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "effective",
+      "allocation_id": [
+        50,
+        "จัดสรรงบโครงการภาครัฐ ปี 2570 (สาธิต)"
+      ],
+      "reason": "FRESH70-20261101T105234882Z เพิ่มมิติโครงการใหม่ วงเงิน 300000 บาทบนฐานทดสอบแยก",
+      "number": 2,
+      "line_ids": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    }
+  },
+  {
+    "key": "erp.budget.kpi.release:122",
+    "model": "erp.budget.kpi.release",
+    "id": 122,
+    "ref": "FRESH70-20261101T105234882Z อนุมัติแผน",
+    "name": "FRESH70-20261101T105234882Z อนุมัติแผน",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "done",
+    "values": {
+      "id": 122,
+      "name": "FRESH70-20261101T105234882Z อนุมัติแผน",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "plan_line_id": [
+        119,
+        "erp.budget.plan.line,119"
+      ],
+      "state": "done",
+      "released_amount": 300000,
+      "line_ids": [
+        143
+      ],
+      "submitted_by_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "released_by_id": [
+        704,
+        "ผู้ทบทวนงบประมาณ (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.budget.control:767",
+    "model": "erp.budget.control",
+    "id": 767,
+    "ref": "FRESH70-20261101T105234882Z วงเงินโครงการ",
+    "name": "FRESH70-20261101T105234882Z วงเงินโครงการ",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "open",
+    "values": {
+      "id": 767,
+      "name": "FRESH70-20261101T105234882Z วงเงินโครงการ",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "analytic_id": [
+        303,
+        "FRESH70-20261101T105234882Z"
+      ],
+      "state": "open",
+      "amount": 300000,
+      "available_amount": 120000,
+      "move_ids": [
+        15747,
+        15749,
+        15751,
+        15753,
+        15755
+      ]
+    }
+  },
+  {
+    "key": "erp.procurement.request:1301",
+    "model": "erp.procurement.request",
+    "id": 1301,
+    "ref": "PR/01269",
+    "name": "PR/01269",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "approved",
+    "values": {
+      "id": 1301,
+      "name": "PR/01269",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "approved",
+      "line_ids": [
+        1329
+      ],
+      "expense_reason": "FRESH70-20261101T105234882Z จัดซื้อคอมพิวเตอร์ 6 เครื่อง",
+      "total_company_currency": 180000,
+      "approved_by_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ]
+    }
+  },
+  {
+    "key": "purchase.requisition:121",
+    "model": "purchase.requisition",
+    "id": 121,
+    "ref": "PT00121",
+    "name": "PT00121",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "confirmed",
+    "values": {
+      "id": 121,
+      "name": "PT00121",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "confirmed",
+      "line_ids": [
+        121
+      ]
+    }
+  },
+  {
+    "key": "purchase.order:945",
+    "model": "purchase.order",
+    "id": 945,
+    "ref": "P00945",
+    "name": "P00945",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "purchase",
+    "values": {
+      "id": 945,
+      "name": "P00945",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_request_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "purchase",
+      "project_id": [
+        4,
+        "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)"
+      ],
+      "requisition_id": [
+        121,
+        "PT00121"
+      ],
+      "order_line": [
+        944
+      ],
+      "amount_untaxed": 180000,
+      "amount_total": 192600,
+      "picking_ids": [
+        189
+      ]
+    }
+  },
+  {
+    "key": "erp.contract.agreement:136",
+    "model": "erp.contract.agreement",
+    "id": 136,
+    "ref": "AG/00136",
+    "name": "FRESH70-20261101T105234882Z สัญญาซื้อคอมพิวเตอร์ 6 เครื่อง",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "active",
+    "values": {
+      "id": 136,
+      "name": "FRESH70-20261101T105234882Z สัญญาซื้อคอมพิวเตอร์ 6 เครื่อง",
+      "code": "AG/00136",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "active",
+      "purchase_order_id": [
+        945,
+        "P00945 (FRESH70-20261101T105234882Z)"
+      ],
+      "amount_untaxed": 180000
+    }
+  },
+  {
+    "key": "erp.inventory.acceptance:366",
+    "model": "erp.inventory.acceptance",
+    "id": 366,
+    "ref": "WA/00366",
+    "name": "WA/00366",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "accept",
+    "values": {
+      "id": 366,
+      "name": "WA/00366",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "accept",
+      "purchase_order_id": [
+        945,
+        "P00945 (FRESH70-20261101T105234882Z)"
+      ],
+      "line_ids": [
+        361
+      ]
+    }
+  },
+  {
+    "key": "stock.picking:189",
+    "model": "stock.picking",
+    "id": 189,
+    "ref": "DMOA/IN/00007",
+    "name": "DMOA/IN/00007",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "done",
+    "values": {
+      "id": 189,
+      "name": "DMOA/IN/00007",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "done",
+      "purchase_id": [
+        945,
+        "P00945 (FRESH70-20261101T105234882Z)"
+      ],
+      "erp_acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "move_ids": [
+        190
+      ],
+      "location_dest_id": [
+        3070,
+        "DMOA/สต็อก"
+      ]
+    }
+  },
+  {
+    "key": "account.move:1067",
+    "model": "account.move",
+    "id": 1067,
+    "ref": "BILL/2026/11/0005",
+    "name": "BILL/2026/11/0005",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "posted",
+    "values": {
+      "id": 1067,
+      "name": "BILL/2026/11/0005",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "posted",
+      "erp_acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "ref": "FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน",
+      "invoice_line_ids": [
+        2234
+      ],
+      "amount_untaxed": 180000,
+      "amount_total": 192600
+    }
+  },
+  {
+    "key": "erp.asset.asset:303",
+    "model": "erp.asset.asset",
+    "id": 303,
+    "ref": "AST/00303",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 303,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00303",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        159,
+        "AST/00303 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:159",
+    "model": "account.asset",
+    "id": 159,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 159,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        303,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  },
+  {
+    "key": "project.milestone:5",
+    "model": "project.milestone",
+    "id": 5,
+    "ref": "FRESH70-20261101T105234882Z ส่งมอบครบ",
+    "name": "FRESH70-20261101T105234882Z ส่งมอบครบ",
+    "company": 431,
+    "organization": null,
+    "state": "reached",
+    "values": {
+      "id": 5,
+      "name": "FRESH70-20261101T105234882Z ส่งมอบครบ",
+      "project_id": [
+        4,
+        "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)"
+      ],
+      "is_reached": true,
+      "deadline": false
+    }
+  },
+  {
+    "key": "erp.asset.asset:304",
+    "model": "erp.asset.asset",
+    "id": 304,
+    "ref": "AST/00304",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 304,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00304",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        160,
+        "AST/00304 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:160",
+    "model": "account.asset",
+    "id": 160,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 160,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        304,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  },
+  {
+    "key": "erp.asset.asset:305",
+    "model": "erp.asset.asset",
+    "id": 305,
+    "ref": "AST/00305",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 305,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00305",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        161,
+        "AST/00305 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:161",
+    "model": "account.asset",
+    "id": 161,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 161,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        305,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  },
+  {
+    "key": "erp.asset.asset:306",
+    "model": "erp.asset.asset",
+    "id": 306,
+    "ref": "AST/00306",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 306,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00306",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        162,
+        "AST/00306 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:162",
+    "model": "account.asset",
+    "id": 162,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 162,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        306,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  },
+  {
+    "key": "erp.asset.asset:307",
+    "model": "erp.asset.asset",
+    "id": 307,
+    "ref": "AST/00307",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 307,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00307",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        163,
+        "AST/00307 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:163",
+    "model": "account.asset",
+    "id": 163,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 163,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        307,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  },
+  {
+    "key": "erp.asset.asset:308",
+    "model": "erp.asset.asset",
+    "id": 308,
+    "ref": "AST/00308",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 308,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00308",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "state": "draft",
+      "bill_id": [
+        1067,
+        "BILL/2026/11/0005 (FRESH70-20261101T105234882Z ใบเรียกเก็บเงิน)"
+      ],
+      "acceptance_id": [
+        366,
+        "WA/00366"
+      ],
+      "purchase_line_id": [
+        944,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 30000,
+      "engine_asset_id": [
+        164,
+        "AST/00308 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "account.asset:164",
+    "model": "account.asset",
+    "id": 164,
+    "ref": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "draft",
+    "values": {
+      "id": 164,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "state": "draft",
+      "profile_id": [
+        67,
+        "ค่าเสื่อมคอมพิวเตอร์ 3 ปี (สาธิต)"
+      ],
+      "erp_acquisition_id": [
+        308,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "purchase_value": 30000,
+      "date_start": "2026-11-01"
+    }
+  }
+]

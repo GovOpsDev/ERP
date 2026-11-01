@@ -1,0 +1,14 @@
+[
+  {
+    "id": "interactive-demo",
+    "label": "ผู้ทดลองระบบ · บทบาทธุรกิจตามกลุ่มเดิม",
+    "dataset": "FRESH70-20261101T105234882Z",
+    "authentication": "real Odoo login"
+  },
+  {
+    "id": "interactive-demo-reviewer",
+    "label": "ผู้ตรวจทานงบประมาณ",
+    "dataset": "FRESH70-20261101T105234882Z",
+    "authentication": "real Odoo login"
+  }
+]

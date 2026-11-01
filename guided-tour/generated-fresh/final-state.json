@@ -1,0 +1,102 @@
+{
+  "run_id": "FRESH70-20261101T105234882Z",
+  "scenario": "fresh-creation",
+  "currency": "THB",
+  "project": {
+    "id": 4,
+    "name": "FRESH70-20261101T105234882Z โครงการจัดหาอุปกรณ์คอมพิวเตอร์เพื่อสนับสนุนบริการดิจิทัล (สาธิต)",
+    "company_id": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "account_id": [
+      303,
+      "FRESH70-20261101T105234882Z"
+    ],
+    "task_ids": [
+      33
+    ],
+    "milestone_ids": [
+      5
+    ],
+    "last_update_status": "to_define",
+    "task_state": "1_done",
+    "milestone_reached": true
+  },
+  "budget": {
+    "history": {
+      "after_pr": {
+        "allocated": 300000,
+        "committed": 180000,
+        "actual": 0,
+        "remaining": 120000
+      },
+      "after_po": {
+        "allocated": 300000,
+        "committed": 180000,
+        "actual": 0,
+        "remaining": 120000
+      },
+      "after_bill": {
+        "allocated": 300000,
+        "committed": 0,
+        "actual": 180000,
+        "remaining": 120000
+      }
+    },
+    "before": {
+      "allocated": 300000,
+      "committed": 0,
+      "actual": 0,
+      "remaining": 300000
+    },
+    "allocated": 300000,
+    "committed": 0,
+    "actual": 180000,
+    "remaining": 120000
+  },
+  "procurement": {
+    "request": "PR/01269",
+    "request_state": "approved",
+    "requisition": "PT00121",
+    "requisition_state": "confirmed",
+    "order": "P00945",
+    "order_state": "purchase",
+    "ordered_quantity": 6
+  },
+  "acceptance": {
+    "ref": "WA/00366",
+    "state": "accept",
+    "quantity": 6
+  },
+  "bill": {
+    "ref": "BILL/2026/11/0005",
+    "state": "posted",
+    "amount": 180000,
+    "total": 192600,
+    "billed_quantity": 6
+  },
+  "assets": {
+    "count": 6,
+    "value": 180000,
+    "erp_states": [
+      "draft"
+    ],
+    "depreciation_states": [
+      "draft"
+    ]
+  },
+  "inventory": {
+    "received_qty": 6,
+    "before_total": 6,
+    "total": 12,
+    "locations": [
+      {
+        "name": "DMOA/สต็อก",
+        "quantity": 12
+      }
+    ],
+    "run_delta": 6
+  },
+  "scope": "Fresh UI creation on isolated restored test DB; stock balance is shared master stock, delta belongs to this run; no payment or depreciation posting"
+}

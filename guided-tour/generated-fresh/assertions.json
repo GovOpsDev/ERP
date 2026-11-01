@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "ui_creation": true,
+  "financial_reconciliation": true,
+  "quantity_reconciliation": true,
+  "project70_budget_unchanged": true,
+  "browser_errors": [],
+  "agreement_path": "PO agreement only; no duplicate recurring-contract obligation",
+  "role_mapping": {
+    "main": "interactive-demo",
+    "budget": "interactive-demo",
+    "reviewer": "interactive-demo-reviewer",
+    "procurement": "interactive-demo",
+    "contract": "interactive-demo",
+    "inventory": "interactive-demo",
+    "finance": "interactive-demo",
+    "asset": "interactive-demo",
+    "manager": "interactive-demo"
+  }
+}

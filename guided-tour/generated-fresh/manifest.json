@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "FRESH70-20261101T105234882Z",
+  "scenario": "fresh-project-to-assets",
+  "status": "PASS",
+  "source": "Playwright against real Odoo",
+  "created_at": "2026-11-01T10:54:52.071Z",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "tour_type": "fresh-creation",
+  "raw_manifest_sha256": "074d3fa45827c816984989c04e63860b0d49e657e52b28eba7acf64d27c89ee7",
+  "privacy_review": "synthetic screenshots and metadata reviewed; raw video is excluded",
+  "duration_seconds": 135.738
+}

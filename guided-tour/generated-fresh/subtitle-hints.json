@@ -1,0 +1,164 @@
+[
+  {
+    "id": "PROJECT",
+    "start_hint_seconds": 0,
+    "end_hint_seconds": 8,
+    "text": "สร้างโครงการในแอป Project พร้อมบัญชีวิเคราะห์ใหม่สำหรับเชื่อมงบและเอกสาร"
+  },
+  {
+    "id": "TASK",
+    "start_hint_seconds": 8,
+    "end_hint_seconds": 16,
+    "text": "สร้างงานติดตามการจัดซื้อและเป้าหมายส่งมอบ สถานะงานไม่แทนการอนุมัติทางการเงิน"
+  },
+  {
+    "id": "BUDGET-ALLOCATION",
+    "start_hint_seconds": 16,
+    "end_hint_seconds": 24,
+    "text": "เพิ่มวงเงินโครงการใหม่ 300000 บาทผ่านฉบับปรับปรุง โดยคงวงเงินเดิมและอนุมัติแผนที่เกี่ยวข้องตามขั้นตอน"
+  },
+  {
+    "id": "BUDGET-REVIEW",
+    "start_hint_seconds": 24,
+    "end_hint_seconds": 32,
+    "text": "เข้าสู่ระบบด้วยผู้ตรวจทานอีกบัญชีตามลำดับอนุมัติ โดยไม่เปลี่ยนสิทธิ์ผู้สร้าง"
+  },
+  {
+    "id": "BUDGET-RELEASE",
+    "start_hint_seconds": 32,
+    "end_hint_seconds": 40,
+    "text": "ผู้ตรวจทานอนุมัติแผน KPI และเปิดวงเงิน 300000 บาทให้โครงการใหม่"
+  },
+  {
+    "id": "BUDGET-BEFORE",
+    "start_hint_seconds": 40,
+    "end_hint_seconds": 48,
+    "text": "วงเงินเริ่มต้น 300000 บาท ยังไม่มีภาระผูกพันและค่าใช้จ่ายจริง"
+  },
+  {
+    "id": "PR-DRAFT",
+    "start_hint_seconds": 48,
+    "end_hint_seconds": 56,
+    "text": "ขอซื้อคอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 180000 บาท เชื่อมบัญชีวิเคราะห์และแหล่งเงินของโครงการใหม่"
+  },
+  {
+    "id": "PR-SUBMIT",
+    "start_hint_seconds": 56,
+    "end_hint_seconds": 64,
+    "text": "ส่งใบขอซื้อ ระบบตรวจความเพียงพอของงบก่อนเข้าสู่ลำดับอนุมัติ"
+  },
+  {
+    "id": "PR-APPROVED",
+    "start_hint_seconds": 64,
+    "end_hint_seconds": 72,
+    "text": "ผู้อนุมัติตาม tier ที่กำหนดอนุมัติใบขอซื้อ ระบบบันทึกภาระผูกพันงบ 180000 บาท"
+  },
+  {
+    "id": "REQ-DRAFT",
+    "start_hint_seconds": 72,
+    "end_hint_seconds": 80,
+    "text": "สร้างเอกสารจัดซื้อจากใบขอซื้อเดิม รายการอ้างอิงและมิติงบถูกส่งต่อ"
+  },
+  {
+    "id": "REQ-CONFIRM",
+    "start_hint_seconds": 80,
+    "end_hint_seconds": 88,
+    "text": "ยืนยันเอกสารจัดซื้อก่อนสร้างใบสั่งซื้อมาตรฐานของ Odoo"
+  },
+  {
+    "id": "PO-DRAFT",
+    "start_hint_seconds": 88,
+    "end_hint_seconds": 96,
+    "text": "ระบุโครงการใหม่และราคาเครื่องละ 30000 บาท จำนวน 6 เครื่อง"
+  },
+  {
+    "id": "AGREEMENT-DRAFT",
+    "start_hint_seconds": 96,
+    "end_hint_seconds": 104,
+    "text": "ใช้ Agreement ที่ผูกกับ PO โดยไม่สร้างสัญญาผูกพันงบซ้ำสำหรับค่าใช้จ่ายเดียวกัน"
+  },
+  {
+    "id": "AGREEMENT-ACTIVE",
+    "start_hint_seconds": 104,
+    "end_hint_seconds": 112,
+    "text": "บันทึกการตรวจทาน การอนุมัติทางกฎหมาย และวันลงนามก่อนเปิดใช้ข้อตกลง"
+  },
+  {
+    "id": "PO-CONFIRMED",
+    "start_hint_seconds": 112,
+    "end_hint_seconds": 120,
+    "text": "ผู้อนุมัติตาม tier ยืนยันใบสั่งซื้อ ระบบปรับภาระผูกพันจาก PR ไปยัง PO โดยไม่คิดยอดซ้ำ"
+  },
+  {
+    "id": "WA-DRAFT",
+    "start_hint_seconds": 120,
+    "end_hint_seconds": 128,
+    "text": "ตรวจรับคอมพิวเตอร์ 6 เครื่องตามรายการใน PO และหน่วยงานเดียวกัน"
+  },
+  {
+    "id": "WA-ACCEPTED",
+    "start_hint_seconds": 128,
+    "end_hint_seconds": 136,
+    "text": "ยืนยันผลตรวจรับก่อนบันทึกรับสินค้าและตั้งหนี้ตามเงื่อนไขของระบบ"
+  },
+  {
+    "id": "RECEIPT",
+    "start_hint_seconds": 136,
+    "end_hint_seconds": 144,
+    "text": "เชื่อมใบตรวจรับกับใบรับสินค้าที่เกิดจาก PO จำนวน 6 เครื่อง"
+  },
+  {
+    "id": "STOCK-DONE",
+    "start_hint_seconds": 144,
+    "end_hint_seconds": 152,
+    "text": "ยืนยันการรับสินค้าจริง 6 เครื่อง สต็อกเพิ่มตาม stock move ของการรับครั้งนี้"
+  },
+  {
+    "id": "BILL-DRAFT",
+    "start_hint_seconds": 152,
+    "end_hint_seconds": 160,
+    "text": "ดึงรายการจากใบสั่งซื้อและเชื่อมใบตรวจรับ ยอดก่อนภาษี 180000 บาท ภาษี 12600 บาท รวมเจ้าหนี้ 192600 บาท"
+  },
+  {
+    "id": "BILL-POSTED",
+    "start_hint_seconds": 160,
+    "end_hint_seconds": 168,
+    "text": "ลงบัญชีบิล ระบบเปลี่ยนภาระผูกพัน PO เป็นใช้จริงตามนโยบายงบก่อนภาษี และสร้างรายการได้มาซึ่งครุภัณฑ์"
+  },
+  {
+    "id": "ASSET",
+    "start_hint_seconds": 168,
+    "end_hint_seconds": 176,
+    "text": "สร้างครุภัณฑ์ 6 รายการ มูลค่ารายการละ 30000 บาท อ้างกลับไปถึงบิล ใบตรวจรับ และ PO ได้"
+  },
+  {
+    "id": "DEPRECIATION",
+    "start_hint_seconds": 176,
+    "end_hint_seconds": 184,
+    "text": "สร้างรายการค่าเสื่อมตาม profile เดิมและคงสถานะร่าง ยังไม่ลงค่าเสื่อมหรือทำรายการจ่ายเงิน"
+  },
+  {
+    "id": "MILESTONE",
+    "start_hint_seconds": 184,
+    "end_hint_seconds": 192,
+    "text": "ทำเครื่องหมาย Milestone หลังตรวจเอกสารจัดซื้อ ตรวจรับ และบัญชีครบแล้ว"
+  },
+  {
+    "id": "TASK-RESULT",
+    "start_hint_seconds": 192,
+    "end_hint_seconds": 200,
+    "text": "งานและ Milestone เชื่อมโครงการใหม่ ผู้รับผิดชอบปิดงานจัดหาและบรรลุ Milestone หลังตรวจเอกสาร ส่วนโครงการยังเปิดเพื่อติดตามการใช้งาน"
+  },
+  {
+    "id": "PROJECT-RESULT",
+    "start_hint_seconds": 200,
+    "end_hint_seconds": 208,
+    "text": "โครงการใหม่มีงานและ Milestone พร้อมเอกสารจัดซื้อที่เชื่อมบัญชีวิเคราะห์เดียวกัน"
+  },
+  {
+    "id": "FINAL",
+    "start_hint_seconds": 208,
+    "end_hint_seconds": 216,
+    "text": "งบ 300000 บาท เท่ากับใช้จริง 180000 บาทและคงเหลือ 120000 บาท ภาระผูกพันที่เหลือเป็นศูนย์"
+  }
+]

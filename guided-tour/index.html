@@ -13,7 +13,7 @@
 <div class="layout">
   <aside class="sidebar" aria-label="ขั้นตอนการสาธิต"><p class="eyebrow">EXPLORE THE WORKFLOW</p><h2>จากโครงการสู่ผลลัพธ์</h2><nav id="steps-nav" aria-label="รายการขั้นตอน"></nav><p class="sidebar-note">ภาพและข้อมูลมาจากการรัน Playwright ชุดเดียวกัน เปิดดูได้โดยไม่เชื่อมต่อ Odoo</p><a href="README.md">วิธีสร้างและตรวจหลักฐาน ↗</a></aside>
   <main id="main">
-    <section class="hero"><p class="eyebrow">PROJECT70 · REAL ODOO REPLAY</p><h1>ติดตามงานจริง<br><span>เข้าใจทั้งกระบวนการ</span></h1><p>สำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ ผ่านภาพการใช้งานและผลตรวจจากระบบสาธิต</p><div class="controls"><button id="start-tour" class="primary" disabled>เริ่มทัวร์หลัก ↗</button><button id="permission-tour" disabled>ทัวร์สิทธิ์ผู้ใช้</button><button id="restart" disabled>เริ่มใหม่</button><button id="relationships-toggle" aria-expanded="false" disabled>ความสัมพันธ์เอกสาร</button></div></section>
+    <section class="hero"><p class="eyebrow" id="tour-kind">PROJECT70 · REAL ODOO REPLAY</p><h1>ติดตามงานจริง<br><span>เข้าใจทั้งกระบวนการ</span></h1><p>สำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ ผ่านภาพการใช้งานและผลตรวจจากระบบสาธิต</p><div class="controls"><label for="tour-selector">เลือกทัวร์</label><select id="tour-selector"><option value="quick">Quick Tour · PROJECT70</option><option value="fresh">Full Creation Tour · สร้างใหม่</option><option value="permissions">Permission Tour · สิทธิ์</option></select><button id="start-tour" class="primary" disabled>เริ่มทัวร์ ↗</button><button id="permission-tour" disabled>ทัวร์สิทธิ์ผู้ใช้</button><button id="restart" disabled>เริ่มใหม่</button><button id="relationships-toggle" aria-expanded="false" disabled>ความสัมพันธ์เอกสาร</button></div></section>
     <p id="announcement" role="status" aria-live="polite">กำลังโหลดหลักฐาน…</p>
     <section class="viewer" aria-label="ภาพบันทึกและคำอธิบาย">
       <div class="viewer-heading"><div><p class="eyebrow" id="step-screen"></p><h2 id="step-title" tabindex="-1"></h2></div><span id="progress" class="pill"></span></div>
@@ -26,7 +26,7 @@
     <section id="final-result" class="panel" hidden><h2>ผลตรวจจากการรันนี้</h2><div id="result-grid"></div><p>ตัวเลขประกอบอ่านจากข้อมูลที่บันทึกจริงใน Odoo ภาพด้านบนเป็นหน้าผลวงเงินจริง</p></section>
     <section id="relationships-panel" class="panel" hidden><h2>ความสัมพันธ์เอกสารที่ตรวจพบ</h2><p>ลิงก์ที่มีภาพบันทึกจะพาไปยังขั้นตอนนั้น รายการอื่นแสดงเฉพาะข้อมูลที่อ่านจาก Odoo</p><div id="relationship-list"></div><div id="document-detail" role="status"></div></section>
     <section class="panel"><h2>เอกสารที่เกี่ยวข้อง</h2><div id="related-documents" class="related"></div><details><summary>บทบรรยายของขั้นตอนนี้</summary><p id="narration"></p></details></section>
-    <footer><p id="provenance"></p><p>โครงการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิง NSTDA ERP-Government แบบโอเพนซอร์ส ไม่ใช่รุ่นเผยแพร่ทางการของ NSTDA</p><a href="generated/video-storyboard.md">Storyboard สำหรับวิดีโอ</a></footer>
+    <footer><p id="provenance"></p><p>โครงการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิง NSTDA ERP-Government แบบโอเพนซอร์ส ไม่ใช่รุ่นเผยแพร่ทางการของ NSTDA</p><a id="storyboard" href="generated/video-storyboard.md">Storyboard สำหรับวิดีโอ</a></footer>
   </main>
 </div>
 </body>
