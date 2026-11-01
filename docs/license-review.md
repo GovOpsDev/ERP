@@ -1,4 +1,6 @@
-# License review (engineering inventory, not legal advice)
+# Historical license discovery (engineering inventory)
+
+This document records the initial source-discovery stage. Its statements about scaffold contents and unverified dependencies are historical, not the current consolidated release inventory. See [current provenance and component licenses](provenance.md).
 
 The NSTDA root `LICENSE` is AGPL-3.0; README credits NSTDA. Fourteen private addon manifests declare AGPL-3, while `om_credit_limit` declares LGPL-3; inspect file-level headers and bundled third-party material separately before copying. AGPL obligations and notices apply to covered derivative/network deployments; identify the exact combined/distributed work and obtain legal review when needed. This repository has not copied implementation or upstream data. The new scaffold declares AGPL-3 as its intended addon license, but no independent upstream copyright is claimed.
 

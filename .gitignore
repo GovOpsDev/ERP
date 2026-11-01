@@ -58,3 +58,13 @@ node_modules/
 # Real Odoo demo: private raw recordings, sessions and local evidence
 playwright-demo/output/
 playwright-demo/.auth/
+
+# Local-only publication/video builds
+_site/
+.pages-test/
+video/output/
+*.webm
+*.mp4
+*.mkv
+*.mov
+*.zip

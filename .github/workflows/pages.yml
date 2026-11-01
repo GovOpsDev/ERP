@@ -1,0 +1,41 @@
+name: Public demo Pages
+# Manual only: pushing source does not silently publish the demo.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Public safety check
+        run: python3 scripts/check-public-release.py
+      - name: Validate both evidence sets
+        run: |
+          python3 guided-tour/scripts/validate-data.py
+          python3 guided-tour/scripts/validate-data.py generated-fresh
+      - name: Build allowlisted static artifact
+        run: python3 scripts/build-pages.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

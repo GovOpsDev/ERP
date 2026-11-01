@@ -1,0 +1,291 @@
+{
+  "review_date": "2026-11-01",
+  "basis": "Visual contact-sheet review, canonical demo metadata and existing screenshot review; raw video sampled separately. No screenshot redaction or content editing. Names and document numbers correspond to synthetic PROJECT70/FRESH70/Readiness UAT fixtures. Four OCA icons are third-party attribution assets.",
+  "files": [
+    {
+      "file": "guided-tour/generated-fresh/screenshots/01-project.png",
+      "sha256": "a7a0e324bdce7e61bf01a038cc58e8f8285f162764907e4703ee918c1d741e5d",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/02-task.png",
+      "sha256": "ebf1606385008f74ae1a7f93346df8e032073e0c1d62b4d4e798bfe3a1fb2e63",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/03-budget-allocation.png",
+      "sha256": "c8a4a72d568619891dfc6c2e7a12f6f315ba8529c00cbff653e1c8078047ffa7",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/04-budget-review.png",
+      "sha256": "d9835d0415f62a8bd563ea75b73abc287ffc57b883eeb3afd9a9d7798b667826",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/05-budget-release.png",
+      "sha256": "1081f87eacdba1ae56031b74afe220f81d1e40a1160e4e897cf255971fbfc7fe",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/06-budget-before.png",
+      "sha256": "42ddbc7a004251a573c86056b4ecf527be27fa48466410ba0cf953387929bcb5",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/07-pr-draft.png",
+      "sha256": "8b087f91e72bb2bab13a208a858306119fd9179a4fe1b7407e1c2b8ddb137ed1",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/08-pr-submit.png",
+      "sha256": "3937cf87d1b00d8c84d5fefb16ff7a1b3394d12142e6885bad08fc44a02387c9",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/09-pr-approved.png",
+      "sha256": "fb75f53d924a4f7d7fe8ad7b1af80855cf97985d313254d6c5e6ec41c8590a08",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/10-req-draft.png",
+      "sha256": "89f6151373d1dc9a64f1cd0c4b2d22424156d3e61429a01529f03ead7158d033",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/11-req-confirm.png",
+      "sha256": "2fe809229e761bfdc92aacd0bb118b54131cc70084fe8cf448864e1266fd7542",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/12-po-draft.png",
+      "sha256": "7753388028a7b5d7299c3f697b745cf6083a0de94f200b861e47232e0924972e",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/13-agreement-draft.png",
+      "sha256": "20e6a6ad67b2c2fbc75fe4a8f872de964fbb83e7bb8a3e7bc9539f6ee67fa4fa",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/14-agreement-active.png",
+      "sha256": "6af81936afb869d733351dd5c33ede0af92f3ac88785e04cac783d96482b5f96",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/15-po-confirmed.png",
+      "sha256": "6401d8e4c25e526c57ab1a54747ccdc36c17af0e88d15a76e7093b1c984ae5a7",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/16-wa-draft.png",
+      "sha256": "a35488feebe3a726ad04bae2958f984b5d64601cede65ec0f2efe6e075d215d3",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/17-wa-accepted.png",
+      "sha256": "d35e5ec3ec56885d76a91f68d5357a4814a88ac86fa2f01982333ba422244649",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/18-receipt.png",
+      "sha256": "affa0e85dc17143362b1936a552bfab7ad37b7f81f885e0345610f774f5745ea",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/19-stock-done.png",
+      "sha256": "b5bc361750f8d1443e32197f73685444216888f32f4ca767a7626c6d334da956",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/20-bill-draft.png",
+      "sha256": "3cf4f90ec203d12e849e0c07ac42760cb8c729d9d2df9a21a04ce24fc23b702b",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/21-bill-posted.png",
+      "sha256": "679c41b912e26374e0f4b11e4c278f4c73068afad1a558e340cb5558e13d0195",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/22-asset.png",
+      "sha256": "d1f8be860f8767cb61cc1eea1d7e366ae86860fc13213d93f318fab9cdceb428",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/23-depreciation.png",
+      "sha256": "27500ec8aaad8716fee8b575f2951364dd85fc5702d6ad04f139ea31c0942d89",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/24-milestone.png",
+      "sha256": "163d43f3731366375ab16b8f51a779cfa549e873f44daddbc77eeef746c936fe",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/25-task-result.png",
+      "sha256": "9b1b6223463014a51d1dc1acacaa77cb0b9f91c70555fee87dee1933bf6f6c43",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/26-project-result.png",
+      "sha256": "5bc1c994e634b385e85cfdc002f58d7c05d210c9ea04e6c5469116620b79e17d",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated-fresh/screenshots/27-final.png",
+      "sha256": "614c07e4bf1ab43f375962f20d1d43976f3c7f81fc4197d1b259a0fdbeddc854",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/01-prj-01.png",
+      "sha256": "d5329539f5d4833cd938b17beb2f5f01e3d0902fc32a8d51d5568acf8fbab386",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/02-bud-01.png",
+      "sha256": "0b84dfa3d95cd0027be5406dfaad57226dc2919763d0808674d8ec21ba3bf3ea",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/03-pr-01.png",
+      "sha256": "b9d1223620b8a5071ce9a41e672f846755a1bc4281fe68d2e9ff00cd115ade63",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/04-req-01.png",
+      "sha256": "aff18958dffb058b14533a0504f3e3c8d76659a595db97b543c7d0a9b4b8a455",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/05-po-01.png",
+      "sha256": "c6c254502903ec9714d19cb56f0f6820233b0f4bdae46d482e5a4b62162cb2c6",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/06-agr-01.png",
+      "sha256": "d926bfc214d934ea0004b9f1563a528bff9a985a28f34ca0bd1da73846038cf9",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/07-con-01.png",
+      "sha256": "d52e0b05a9373f917e124f9bbadcd16d2d232a240f4b5bf7c42437d953546d3a",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/08-wa-01.png",
+      "sha256": "a8b7a13df90f8ef3ac26cce873677de40949913728f962372d0ca16b0ad28c0b",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/09-inv-01.png",
+      "sha256": "200c5582f0a74d3ca1f631afeae740b74b09a1636d7c3a96e1aae43b04dbe876",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/10-inv-02.png",
+      "sha256": "94b021049b18d3906f63b5c0387d3c5e8ce24a11c07e75572b38742919d09aa1",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/11-bill-01.png",
+      "sha256": "058dc8c3dcbd57f356781d79e9429b30bca91eedf7d1976a0fff18abcb001892",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/12-ast-01.png",
+      "sha256": "87c9b549ed889d53f3c9d656e60e5b684240a94b95df054ca91715257cc52d47",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/13-result-01.png",
+      "sha256": "0b84dfa3d95cd0027be5406dfaad57226dc2919763d0808674d8ec21ba3bf3ea",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/14-perm-ou.png",
+      "sha256": "852ec1d2b17bc35081fb50cb02442a908900b476c04b44d18996b92b89c32979",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/15-perm-company.png",
+      "sha256": "a5d08ab7b0b9e09c582aa46f605a8d43f6d45cb0cd5fb9c7e3e142d202d519f0",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/generated/screenshots/16-perm-role.png",
+      "sha256": "fe89f22793e2f054428c7d8dee99331cf590d1fb9139f2f2b4092f35ece25eef",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "projects/asset/addons/account_asset_management/static/description/icon.png",
+      "sha256": "eb104f25ab9a14e1742831df1e0428a52736f242afc4c69ea10150599b5f643a",
+      "category": "upstream OCA attribution icon"
+    },
+    {
+      "file": "projects/asset/addons/account_asset_transfer/static/description/icon.png",
+      "sha256": "eb104f25ab9a14e1742831df1e0428a52736f242afc4c69ea10150599b5f643a",
+      "category": "upstream OCA attribution icon"
+    },
+    {
+      "file": "projects/asset/addons/report_xlsx/static/description/icon.png",
+      "sha256": "eb104f25ab9a14e1742831df1e0428a52736f242afc4c69ea10150599b5f643a",
+      "category": "upstream OCA attribution icon"
+    },
+    {
+      "file": "projects/asset/addons/report_xlsx_helper/static/description/icon.png",
+      "sha256": "eb104f25ab9a14e1742831df1e0428a52736f242afc4c69ea10150599b5f643a",
+      "category": "upstream OCA attribution icon"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/acceptance.png",
+      "sha256": "31f096ed5f70a380fc045f40a7b466fa17603751da3c4669ef2f61057444c777",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/agreements.png",
+      "sha256": "ead815d101bcd805d47810835c37e3ccbe09ce2fe9ff138a79f08b043eecb54b",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/assets.png",
+      "sha256": "0fd9e10e2d383b5100796393dcdd8c98c6cd9a210c740352c242e94e3e90e054",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/budget.png",
+      "sha256": "cc9dd876a3ce27b8ad8c4e14e4f225a5126cc38da87e911438da310095a1f0da",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/employees.png",
+      "sha256": "b1cbdf54bb5f753a2ccf005ffdff8100ff1d83c2410ce8bb8372f5873128949a",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/finance.png",
+      "sha256": "bc8d7fc4f8f740d92d6acabc106ba91b6d972120d1a2d4ce71b7e8fdab33e78c",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/organization.png",
+      "sha256": "fc9da032b8843e138424650f3e9f1b43bf14651e2cb52cca9e963c76912ad9e7",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/procurement.png",
+      "sha256": "ff028cb2770d154a1b28dce5631008eeed1ccd577c847d3715c5ab5c862c9272",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/purchase.png",
+      "sha256": "2900ae28ab0fb535b33d0aa820ff18d33e2bd69d011e2303220e6f46c11a0088",
+      "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/stock_requests.png",
+      "sha256": "9c38211c88a03bee8b15afc8731458369bb2ade199e3e002de3ee590879df6d9",
+      "category": "synthetic Odoo demo screenshot"
+    }
+  ]
+}
