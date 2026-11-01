@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <menuitem id="menu_budget_bi" name="วิเคราะห์งบประมาณ" parent="spreadsheet_dashboard.spreadsheet_dashboard_menu_root" groups="erp_budget.group_budget_user" sequence="20" />
+    <record id="view_summary_list" model="ir.ui.view">
+        <field name="name">erp.budget.report.list</field>
+        <field name="model">erp.budget.report</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="control_id" />
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <field name="currency_id" column_invisible="True" />
+                <field name="allocated_amount" sum="รวม" />
+                <field name="committed_amount" sum="รวม" />
+                <field name="actual_amount" sum="รวม" />
+                <field name="other_amount" sum="รวม" />
+                <field name="available_amount" sum="รวม" />
+            </list>
+        </field>
+    </record>
+    <record id="view_summary_pivot" model="ir.ui.view">
+        <field name="name">erp.budget.report.pivot</field>
+        <field name="model">erp.budget.report</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="analytic_id" type="row" />
+                <field name="allocated_amount" type="measure" />
+                <field name="committed_amount" type="measure" />
+                <field name="actual_amount" type="measure" />
+                <field name="other_amount" type="measure" />
+                <field name="available_amount" type="measure" />
+            </pivot>
+        </field>
+    </record>
+    <record id="view_summary_graph" model="ir.ui.view">
+        <field name="name">erp.budget.report.graph</field>
+        <field name="model">erp.budget.report</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="analytic_id" />
+                <field name="allocated_amount" type="measure" />
+            </graph>
+        </field>
+    </record>
+    <record id="view_summary_search" model="ir.ui.view">
+        <field name="name">erp.budget.report.search</field>
+        <field name="model">erp.budget.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <filter name="by_analytic_id" string="โครงการ / บัญชีวิเคราะห์" context="{'group_by': 'analytic_id'}" />
+                <filter name="by_period_id" string="ปี / รอบงบประมาณ" context="{'group_by': 'period_id'}" />
+                <filter name="by_organization_id" string="หน่วยงาน" context="{'group_by': 'organization_id'}" />
+                <filter name="by_kpi_id" string="KPI" context="{'group_by': 'kpi_id'}" />
+            </search>
+        </field>
+    </record>
+    <record id="view_summary_form" model="ir.ui.view">
+        <field name="name">erp.budget.report.form</field>
+        <field name="model">erp.budget.report</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <div class="alert alert-info" role="status">เฉพาะวงเงินที่เปิดใช้งานในบริษัทปัจจุบัน ยอดสุทธิรวมรายการกลับรายการแล้ว โครงการที่ใช้บัญชีวิเคราะห์ร่วมกันจะแสดงเป็นยอดเดียว</div>
+                    <group>
+                        <field name="company_id" />
+                        <field name="currency_id" />
+                        <field name="control_id" />
+                        <field name="analytic_id" />
+                        <field name="period_id" />
+                        <field name="organization_id" />
+                        <field name="kpi_id" />
+                        <field name="allocated_amount" />
+                        <field name="committed_amount" />
+                        <field name="actual_amount" />
+                        <field name="other_amount" />
+                        <field name="available_amount" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_summary" model="ir.actions.act_window">
+        <field name="name">งบประมาณโครงการ · บริษัทปัจจุบัน</field>
+        <field name="res_model">erp.budget.report</field>
+        <field name="view_mode">pivot,graph,list,form</field>
+        <field name="search_view_id" ref="view_summary_search" />
+        <field name="help" type="html">
+            <p>วงเงินที่เปิดใช้งานในบริษัทปัจจุบัน เลือกมาตรวัดและจัดกลุ่มเพื่อวิเคราะห์ หรือคลิกยอดในตาราง Pivot เพื่อดูรายการต้นทาง</p>
+        </field>
+    </record>
+    <menuitem id="menu_summary" name="งบประมาณโครงการ" parent="menu_budget_bi" action="action_summary" sequence="10" />
+    <record id="view_fund_list" model="ir.ui.view">
+        <field name="name">erp.budget.fund.report.list</field>
+        <field name="model">erp.budget.fund.report</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="control_id" />
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <field name="fund_id" />
+                <field name="currency_id" column_invisible="True" />
+                <field name="allocated_amount" sum="รวม" />
+                <field name="committed_amount" sum="รวม" />
+                <field name="actual_amount" sum="รวม" />
+                <field name="other_amount" sum="รวม" />
+                <field name="available_amount" sum="รวม" />
+            </list>
+        </field>
+    </record>
+    <record id="view_fund_pivot" model="ir.ui.view">
+        <field name="name">erp.budget.fund.report.pivot</field>
+        <field name="model">erp.budget.fund.report</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="fund_id" type="row" />
+                <field name="allocated_amount" type="measure" />
+                <field name="committed_amount" type="measure" />
+                <field name="actual_amount" type="measure" />
+                <field name="other_amount" type="measure" />
+                <field name="available_amount" type="measure" />
+            </pivot>
+        </field>
+    </record>
+    <record id="view_fund_graph" model="ir.ui.view">
+        <field name="name">erp.budget.fund.report.graph</field>
+        <field name="model">erp.budget.fund.report</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="fund_id" />
+                <field name="allocated_amount" type="measure" />
+            </graph>
+        </field>
+    </record>
+    <record id="view_fund_search" model="ir.ui.view">
+        <field name="name">erp.budget.fund.report.search</field>
+        <field name="model">erp.budget.fund.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <field name="fund_id" />
+                <filter name="by_analytic_id" string="โครงการ / บัญชีวิเคราะห์" context="{'group_by': 'analytic_id'}" />
+                <filter name="by_period_id" string="ปี / รอบงบประมาณ" context="{'group_by': 'period_id'}" />
+                <filter name="by_organization_id" string="หน่วยงาน" context="{'group_by': 'organization_id'}" />
+                <filter name="by_kpi_id" string="KPI" context="{'group_by': 'kpi_id'}" />
+                <filter name="by_fund_id" string="กองทุน" context="{'group_by': 'fund_id'}" />
+            </search>
+        </field>
+    </record>
+    <record id="view_fund_form" model="ir.ui.view">
+        <field name="name">erp.budget.fund.report.form</field>
+        <field name="model">erp.budget.fund.report</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <div class="alert alert-info" role="status">เฉพาะวงเงินที่เปิดใช้งานในบริษัทปัจจุบัน ยอดสุทธิรวมรายการกลับรายการแล้ว โครงการที่ใช้บัญชีวิเคราะห์ร่วมกันจะแสดงเป็นยอดเดียว</div>
+                    <group>
+                        <field name="company_id" />
+                        <field name="currency_id" />
+                        <field name="control_id" />
+                        <field name="analytic_id" />
+                        <field name="period_id" />
+                        <field name="organization_id" />
+                        <field name="kpi_id" />
+                        <field name="fund_id" />
+                        <field name="allocated_amount" />
+                        <field name="committed_amount" />
+                        <field name="actual_amount" />
+                        <field name="other_amount" />
+                        <field name="available_amount" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_fund" model="ir.actions.act_window">
+        <field name="name">งบประมาณแยกกองทุน · บริษัทปัจจุบัน</field>
+        <field name="res_model">erp.budget.fund.report</field>
+        <field name="view_mode">pivot,graph,list,form</field>
+        <field name="search_view_id" ref="view_fund_search" />
+        <field name="help" type="html">
+            <p>วงเงินที่เปิดใช้งานในบริษัทปัจจุบัน เลือกมาตรวัดและจัดกลุ่มเพื่อวิเคราะห์ หรือคลิกยอดในตาราง Pivot เพื่อดูรายการต้นทาง</p>
+        </field>
+    </record>
+    <menuitem id="menu_fund" name="งบประมาณแยกกองทุน" parent="menu_budget_bi" action="action_fund" sequence="20" />
+    <record id="view_ledger_list" model="ir.ui.view">
+        <field name="name">erp.budget.ledger.report.list</field>
+        <field name="model">erp.budget.ledger.report</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="recorded_at" />
+                <field name="document_key" />
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <field name="category" />
+                <field name="currency_id" column_invisible="True" />
+                <field name="amount" sum="รวม" />
+            </list>
+        </field>
+    </record>
+    <record id="view_ledger_pivot" model="ir.ui.view">
+        <field name="name">erp.budget.ledger.report.pivot</field>
+        <field name="model">erp.budget.ledger.report</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="category" type="row" />
+                <field name="amount" type="measure" />
+            </pivot>
+        </field>
+    </record>
+    <record id="view_ledger_graph" model="ir.ui.view">
+        <field name="name">erp.budget.ledger.report.graph</field>
+        <field name="model">erp.budget.ledger.report</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="category" />
+                <field name="amount" type="measure" />
+            </graph>
+        </field>
+    </record>
+    <record id="view_ledger_search" model="ir.ui.view">
+        <field name="name">erp.budget.ledger.report.search</field>
+        <field name="model">erp.budget.ledger.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="analytic_id" />
+                <field name="period_id" />
+                <field name="organization_id" />
+                <field name="kpi_id" />
+                <field name="category" />
+                <filter name="by_analytic_id" string="โครงการ / บัญชีวิเคราะห์" context="{'group_by': 'analytic_id'}" />
+                <filter name="by_period_id" string="ปี / รอบงบประมาณ" context="{'group_by': 'period_id'}" />
+                <filter name="by_organization_id" string="หน่วยงาน" context="{'group_by': 'organization_id'}" />
+                <filter name="by_kpi_id" string="KPI" context="{'group_by': 'kpi_id'}" />
+                <filter name="by_category" string="ประเภท" context="{'group_by': 'category'}" />
+            </search>
+        </field>
+    </record>
+    <record id="view_ledger_form" model="ir.ui.view">
+        <field name="name">erp.budget.ledger.report.form</field>
+        <field name="model">erp.budget.ledger.report</field>
+        <field name="arch" type="xml">
+            <form create="0" edit="0" delete="0">
+                <sheet>
+                    <div class="alert alert-info" role="status">เฉพาะวงเงินที่เปิดใช้งานในบริษัทปัจจุบัน ยอดสุทธิรวมรายการกลับรายการแล้ว โครงการที่ใช้บัญชีวิเคราะห์ร่วมกันจะแสดงเป็นยอดเดียว</div>
+                    <group>
+                        <field name="company_id" />
+                        <field name="currency_id" />
+                        <field name="control_id" />
+                        <field name="analytic_id" />
+                        <field name="period_id" />
+                        <field name="organization_id" />
+                        <field name="kpi_id" />
+                        <field name="category" />
+                        <field name="move_id" />
+                        <field name="recorded_at" />
+                        <field name="document_key" />
+                        <field name="origin_key" />
+                        <field name="is_reversal" />
+                        <field name="amount" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_ledger" model="ir.actions.act_window">
+        <field name="name">รายการงบประมาณแยกประเภท · บริษัทปัจจุบัน</field>
+        <field name="res_model">erp.budget.ledger.report</field>
+        <field name="view_mode">pivot,graph,list,form</field>
+        <field name="search_view_id" ref="view_ledger_search" />
+        <field name="help" type="html">
+            <p>วงเงินที่เปิดใช้งานในบริษัทปัจจุบัน เลือกมาตรวัดและจัดกลุ่มเพื่อวิเคราะห์ หรือคลิกยอดในตาราง Pivot เพื่อดูรายการต้นทาง</p>
+        </field>
+    </record>
+    <menuitem id="menu_ledger" name="รายการงบประมาณแยกประเภท" parent="menu_budget_bi" action="action_ledger" sequence="30" />
+</odoo>

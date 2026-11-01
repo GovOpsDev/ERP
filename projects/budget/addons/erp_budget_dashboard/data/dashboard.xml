@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="dashboard_group_budget" model="spreadsheet.dashboard.group">
+        <field name="name">งบประมาณ</field>
+        <field name="sequence">15</field>
+    </record>
+    <record id="dashboard_project_budget" model="spreadsheet.dashboard">
+        <field name="name">งบประมาณโครงการ · บริษัทปัจจุบัน</field>
+        <field name="spreadsheet_binary_data" type="bytes" file="erp_budget_dashboard/data/project_budget_dashboard.json" />
+        <field name="dashboard_group_id" ref="dashboard_group_budget" />
+        <field name="group_ids" eval="[Command.set([ref('erp_budget.group_budget_user')])]" />
+        <field name="main_data_model_ids" eval="[Command.set([ref('model_erp_budget_report')])]" />
+        <field name="sequence">10</field>
+        <field name="is_published">True</field>
+    </record>
+</odoo>

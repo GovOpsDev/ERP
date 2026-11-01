@@ -1,0 +1,10 @@
+id,name,model_id,group_id/id,operation,domain
+summary_reader,Budget BI reader,erp.budget.report,erp_budget.group_budget_user,r,
+summary_company,Budget BI current company,erp.budget.report,,crud,"[('company_id', '=', company_id)]"
+summary_ou,Budget BI organization,erp.budget.report,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+fund_reader,Budget BI reader,erp.budget.fund.report,erp_budget.group_budget_user,r,
+fund_company,Budget BI current company,erp.budget.fund.report,,crud,"[('company_id', '=', company_id)]"
+fund_ou,Budget BI organization,erp.budget.fund.report,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"
+ledger_reader,Budget BI reader,erp.budget.ledger.report,erp_budget.group_budget_user,r,
+ledger_company,Budget BI current company,erp.budget.ledger.report,,crud,"[('company_id', '=', company_id)]"
+ledger_ou,Budget BI organization,erp.budget.ledger.report,,crud,"[('organization_id.active', '=', True)] if user.has_group('erp_budget.group_budget_all_ou') else [('organization_id.active', '=', True), ('organization_id.assignment_ids.user_id', '=', user.id)]"

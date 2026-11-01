@@ -1,0 +1,977 @@
+{
+  "version": "19.3.10",
+  "sheets": [
+    {
+      "id": "budget-overview",
+      "name": "งบประมาณโครงการ",
+      "colNumber": 26,
+      "rowNumber": 100,
+      "rows": {},
+      "cols": {},
+      "merges": [],
+      "cells": {},
+      "styles": {},
+      "formats": {},
+      "borders": {},
+      "conditionalFormats": [],
+      "dataValidationRules": [],
+      "figures": [
+        {
+          "id": "budget-allocated_amount",
+          "width": 330,
+          "height": 120,
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "tag": "chart",
+          "data": {
+            "type": "scorecard",
+            "title": {
+              "text": "วงเงินจัดสรร",
+              "bold": true,
+              "color": "#01666B"
+            },
+            "keyValue": "Data!A1",
+            "humanize": false,
+            "baselineMode": "text",
+            "chartId": "budget-allocated_amount"
+          }
+        },
+        {
+          "id": "budget-committed_amount",
+          "width": 330,
+          "height": 120,
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 342,
+            "y": 0
+          },
+          "tag": "chart",
+          "data": {
+            "type": "scorecard",
+            "title": {
+              "text": "ผูกพันสุทธิ",
+              "bold": true,
+              "color": "#01666B"
+            },
+            "keyValue": "Data!A2",
+            "humanize": false,
+            "baselineMode": "text",
+            "chartId": "budget-committed_amount"
+          }
+        },
+        {
+          "id": "budget-actual_amount",
+          "width": 330,
+          "height": 120,
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 684,
+            "y": 0
+          },
+          "tag": "chart",
+          "data": {
+            "type": "scorecard",
+            "title": {
+              "text": "ใช้จริงสุทธิ",
+              "bold": true,
+              "color": "#01666B"
+            },
+            "keyValue": "Data!A3",
+            "humanize": false,
+            "baselineMode": "text",
+            "chartId": "budget-actual_amount"
+          }
+        },
+        {
+          "id": "budget-other_amount",
+          "width": 502,
+          "height": 120,
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 0,
+            "y": 132
+          },
+          "tag": "chart",
+          "data": {
+            "type": "scorecard",
+            "title": {
+              "text": "รายการไม่ระบุประเภท",
+              "bold": true,
+              "color": "#01666B"
+            },
+            "keyValue": "Data!A4",
+            "humanize": false,
+            "baselineMode": "text",
+            "chartId": "budget-other_amount"
+          }
+        },
+        {
+          "id": "budget-available_amount",
+          "width": 502,
+          "height": 120,
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 514,
+            "y": 132
+          },
+          "tag": "chart",
+          "data": {
+            "type": "scorecard",
+            "title": {
+              "text": "คงเหลือ",
+              "bold": true,
+              "color": "#01666B"
+            },
+            "keyValue": "Data!A5",
+            "humanize": false,
+            "baselineMode": "text",
+            "chartId": "budget-available_amount"
+          }
+        },
+        {
+          "id": "budget-section-0",
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 0,
+            "y": 274
+          },
+          "width": 1015,
+          "height": 370,
+          "tag": "carousel",
+          "data": {
+            "chartDefinitions": {
+              "budget-chart-0-0": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "measure": "allocated_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-0-1": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "measure": "committed_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-0-2": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "measure": "actual_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-0-3": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "measure": "other_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-0-4": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "measure": "available_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "analytic_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              }
+            },
+            "title": {
+              "text": "งบประมาณรายโครงการ / บัญชีวิเคราะห์",
+              "bold": true,
+              "fontSize": 20,
+              "color": "#01666B"
+            },
+            "items": [
+              {
+                "type": "chart",
+                "chartId": "budget-chart-0-0",
+                "title": "วงเงินจัดสรร"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-0-1",
+                "title": "ผูกพันสุทธิ"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-0-2",
+                "title": "ใช้จริงสุทธิ"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-0-3",
+                "title": "รายการไม่ระบุประเภท"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-0-4",
+                "title": "คงเหลือ"
+              }
+            ],
+            "fieldMatching": {
+              "budget-chart-0-0": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-0-1": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-0-2": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-0-3": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-0-4": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "budget-section-1",
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 0,
+            "y": 664
+          },
+          "width": 1015,
+          "height": 370,
+          "tag": "carousel",
+          "data": {
+            "chartDefinitions": {
+              "budget-chart-1-0": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "measure": "allocated_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-1-1": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "measure": "committed_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-1-2": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "measure": "actual_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-1-3": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "measure": "other_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              },
+              "budget-chart-1-4": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "measure": "available_amount",
+                    "order": null,
+                    "resModel": "erp.budget.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "organization_id"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              }
+            },
+            "title": {
+              "text": "งบประมาณรายหน่วยงาน",
+              "bold": true,
+              "fontSize": 20,
+              "color": "#01666B"
+            },
+            "items": [
+              {
+                "type": "chart",
+                "chartId": "budget-chart-1-0",
+                "title": "วงเงินจัดสรร"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-1-1",
+                "title": "ผูกพันสุทธิ"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-1-2",
+                "title": "ใช้จริงสุทธิ"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-1-3",
+                "title": "รายการไม่ระบุประเภท"
+              },
+              {
+                "type": "chart",
+                "chartId": "budget-chart-1-4",
+                "title": "คงเหลือ"
+              }
+            ],
+            "fieldMatching": {
+              "budget-chart-1-0": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-1-1": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-1-2": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-1-3": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              },
+              "budget-chart-1-4": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "budget-section-2",
+          "col": 0,
+          "row": 0,
+          "offset": {
+            "x": 0,
+            "y": 1054
+          },
+          "width": 1015,
+          "height": 370,
+          "tag": "carousel",
+          "data": {
+            "chartDefinitions": {
+              "budget-chart-2-0": {
+                "type": "bar",
+                "title": {},
+                "legendPosition": "none",
+                "stacked": false,
+                "humanize": false,
+                "dataSetStyles": {},
+                "dataSource": {
+                  "type": "odoo",
+                  "metaData": {
+                    "groupBy": [
+                      "category"
+                    ],
+                    "measure": "amount",
+                    "order": null,
+                    "resModel": "erp.budget.ledger.report",
+                    "mode": "bar"
+                  },
+                  "searchParams": {
+                    "comparison": null,
+                    "context": {
+                      "erp_budget_integer_display": true
+                    },
+                    "domain": [],
+                    "groupBy": [
+                      "category"
+                    ],
+                    "orderBy": []
+                  }
+                }
+              }
+            },
+            "title": {
+              "text": "รายการสุทธิแยกประเภท (รวมกลับรายการ)",
+              "bold": true,
+              "fontSize": 20,
+              "color": "#01666B"
+            },
+            "items": [
+              {
+                "type": "chart",
+                "chartId": "budget-chart-2-0",
+                "title": "จำนวนเงินสุทธิ"
+              }
+            ],
+            "fieldMatching": {
+              "budget-chart-2-0": {
+                "period_id": {
+                  "chain": "period_id",
+                  "type": "many2one"
+                },
+                "analytic_id": {
+                  "chain": "analytic_id",
+                  "type": "many2one"
+                },
+                "organization_id": {
+                  "chain": "organization_id",
+                  "type": "many2one"
+                },
+                "kpi_id": {
+                  "chain": "kpi_id",
+                  "type": "many2one"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "tables": [],
+      "areGridLinesVisible": true,
+      "isVisible": true,
+      "backgroundColor": "#F9FAFB",
+      "headerGroups": {
+        "ROW": [],
+        "COL": []
+      },
+      "comments": {}
+    },
+    {
+      "id": "budget-data",
+      "name": "Data",
+      "colNumber": 26,
+      "rowNumber": 100,
+      "rows": {},
+      "cols": {},
+      "merges": [],
+      "cells": {
+        "A1": "=TRUNC(PIVOT.VALUE(1,\"allocated_amount\"),0)",
+        "A2": "=TRUNC(PIVOT.VALUE(1,\"committed_amount\"),0)",
+        "A3": "=TRUNC(PIVOT.VALUE(1,\"actual_amount\"),0)",
+        "A4": "=TRUNC(PIVOT.VALUE(1,\"other_amount\"),0)",
+        "A5": "=TRUNC(PIVOT.VALUE(1,\"available_amount\"),0)"
+      },
+      "styles": {},
+      "formats": {
+        "A1": 1,
+        "A2": 1,
+        "A3": 1,
+        "A4": 1,
+        "A5": 1
+      },
+      "borders": {},
+      "conditionalFormats": [],
+      "dataValidationRules": [],
+      "figures": [],
+      "tables": [],
+      "areGridLinesVisible": true,
+      "isVisible": false,
+      "backgroundColor": "#F9FAFB",
+      "headerGroups": {
+        "ROW": [],
+        "COL": []
+      },
+      "comments": {}
+    }
+  ],
+  "styles": {},
+  "formats": {
+    "1": "#,##0"
+  },
+  "borders": {},
+  "revisionId": "START_REVISION",
+  "uniqueFigureIds": true,
+  "settings": {
+    "locale": {
+      "name": "English (US)",
+      "code": "en_US",
+      "thousandsSeparator": ",",
+      "decimalSeparator": ".",
+      "dateFormat": "mm/dd/yyyy",
+      "timeFormat": "hh:mm:ss",
+      "formulaArgSeparator": ",",
+      "weekStart": 7
+    }
+  },
+  "pivots": {
+    "budget-summary": {
+      "type": "ODOO",
+      "model": "erp.budget.report",
+      "domain": [],
+      "context": {},
+      "rows": [
+        {
+          "fieldName": "analytic_id"
+        }
+      ],
+      "columns": [],
+      "measures": [
+        {
+          "id": "allocated_amount",
+          "fieldName": "allocated_amount",
+          "aggregator": "sum"
+        },
+        {
+          "id": "committed_amount",
+          "fieldName": "committed_amount",
+          "aggregator": "sum"
+        },
+        {
+          "id": "actual_amount",
+          "fieldName": "actual_amount",
+          "aggregator": "sum"
+        },
+        {
+          "id": "other_amount",
+          "fieldName": "other_amount",
+          "aggregator": "sum"
+        },
+        {
+          "id": "available_amount",
+          "fieldName": "available_amount",
+          "aggregator": "sum"
+        }
+      ],
+      "formulaId": "1",
+      "name": "งบประมาณโครงการ",
+      "actionXmlId": "erp_budget_dashboard.action_summary",
+      "fieldMatching": {
+        "period_id": {
+          "chain": "period_id",
+          "type": "many2one"
+        },
+        "analytic_id": {
+          "chain": "analytic_id",
+          "type": "many2one"
+        },
+        "organization_id": {
+          "chain": "organization_id",
+          "type": "many2one"
+        },
+        "kpi_id": {
+          "chain": "kpi_id",
+          "type": "many2one"
+        }
+      }
+    }
+  },
+  "pivotNextId": 3,
+  "customTableStyles": {},
+  "namedRanges": {},
+  "globalFilters": [
+    {
+      "id": "period_id",
+      "type": "relation",
+      "label": "ปี / รอบงบประมาณ",
+      "modelName": "erp.budget.period",
+      "defaultValueDisplayNames": []
+    },
+    {
+      "id": "analytic_id",
+      "type": "relation",
+      "label": "โครงการ / บัญชีวิเคราะห์",
+      "modelName": "account.analytic.account",
+      "defaultValueDisplayNames": []
+    },
+    {
+      "id": "organization_id",
+      "type": "relation",
+      "label": "หน่วยงาน",
+      "modelName": "erp.organization.unit",
+      "defaultValueDisplayNames": []
+    },
+    {
+      "id": "kpi_id",
+      "type": "relation",
+      "label": "KPI",
+      "modelName": "erp.budget.kpi",
+      "defaultValueDisplayNames": []
+    }
+  ],
+  "lists": {},
+  "listNextId": 1,
+  "odooLinkReferences": {}
+}
