@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "dashboard_id": 3,
+  "company": [
+    431,
+    "สำนักงาน A สูงสุด"
+  ],
+  "currency": [
+    134,
+    "THB"
+  ],
+  "projects": [
+    {
+      "id": 764,
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000,
+      "analytic_id": [
+        299,
+        "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)"
+      ]
+    },
+    {
+      "id": 765,
+      "allocated_amount": 800000,
+      "committed_amount": 400000,
+      "actual_amount": 0,
+      "other_amount": 0,
+      "available_amount": 400000,
+      "analytic_id": [
+        302,
+        "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ]
+    }
+  ],
+  "totals": {
+    "allocated_amount": 1800000,
+    "committed_amount": 460000,
+    "actual_amount": 222000,
+    "other_amount": 0,
+    "available_amount": 1118000
+  },
+  "company_guard": 403,
+  "captured_at": "2026-11-01T12:30:17.285Z",
+  "source": "Real Odoo dashboard on local port 18069; read-only interactive-demo session",
+  "screenshots": {
+    "project-budget-pivot.png": "5a468d80894dff1b88d473ec5d396676277cabeed6f09e645343a9162a470654",
+    "project-budget-categories.png": "94b9ba6906da880b6cee430437d91f67b14d20e744d2306932d9d3f6f1ddd857",
+    "project-budget-dashboard.png": "20bd1434ffa16c6bf50dd2d56c48da86cef2d2ddeaa7334592562a4a1c04b601"
+  }
+}

@@ -2,18 +2,18 @@
 <html lang="th">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ภาพบันทึกการใช้งาน GovOpsDev ERP จาก Odoo จริง พร้อม Guided Tour และผลทดสอบสิทธิ์">
+  <meta name="description" content="ภาพบันทึกการใช้งาน GovOpsDev ERP จาก Odoo จริง พร้อม Guided Tour">
   <title>GovOpsDev ERP · Recorded Guided Tour</title>
   <link rel="stylesheet" href="assets/vendor/shepherd.css"><link rel="stylesheet" href="css/app.css">
   <script type="module" src="js/app.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">ข้ามไปเนื้อหา</a>
-<header class="topbar"><a class="brand" href="./"><span class="logo">G</span><span>Gov<span class="teal">Ops</span>Dev<small>ERP · RECORDED GUIDED TOUR</small></span></a><span class="source-badge">ภาพจาก Odoo จริง · ข้อมูลสาธิต</span></header>
+<header class="topbar"><a class="brand" href="./"><span class="logo"><img src="assets/brand/govopsdev-logo.png" alt="" aria-hidden="true"></span><span>Gov<span class="teal">Ops</span>Dev<small>ERP · RECORDED GUIDED TOUR</small></span></a><span class="source-badge">ภาพจาก Odoo จริง · ข้อมูลสาธิต</span></header>
 <div class="layout">
-  <aside class="sidebar" aria-label="ขั้นตอนการสาธิต"><p class="eyebrow">EXPLORE THE WORKFLOW</p><h2>จากโครงการสู่ผลลัพธ์</h2><nav id="steps-nav" aria-label="รายการขั้นตอน"></nav><p class="sidebar-note">ภาพและข้อมูลมาจากการรัน Playwright ชุดเดียวกัน เปิดดูได้โดยไม่เชื่อมต่อ Odoo</p><a href="README.md">วิธีสร้างและตรวจหลักฐาน ↗</a></aside>
+  <aside class="sidebar" aria-label="ขั้นตอนการสาธิต"><p class="eyebrow">EXPLORE THE WORKFLOW</p><h2>จากโครงการสู่ผลลัพธ์</h2><nav id="steps-nav" aria-label="รายการขั้นตอน"></nav></aside>
   <main id="main">
-    <section class="hero"><p class="eyebrow" id="tour-kind">PROJECT70 · REAL ODOO REPLAY</p><h1>ติดตามงานจริง<br><span>เข้าใจทั้งกระบวนการ</span></h1><p>สำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ ผ่านภาพการใช้งานและผลตรวจจากระบบสาธิต</p><div class="controls"><label for="tour-selector">เลือกทัวร์</label><select id="tour-selector"><option value="quick">Quick Tour · PROJECT70</option><option value="fresh">Full Creation Tour · สร้างใหม่</option><option value="permissions">Permission Tour · สิทธิ์</option></select><button id="start-tour" class="primary" disabled>เริ่มทัวร์ ↗</button><button id="permission-tour" disabled>ทัวร์สิทธิ์ผู้ใช้</button><button id="restart" disabled>เริ่มใหม่</button><button id="relationships-toggle" aria-expanded="false" disabled>ความสัมพันธ์เอกสาร</button></div></section>
+    <section class="hero"><p class="eyebrow" id="tour-kind">PROJECT70 · REAL ODOO REPLAY</p><h1>ติดตามงานจริง<br><span>เข้าใจทั้งกระบวนการ</span></h1><p>สำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ ผ่านภาพการใช้งานและผลตรวจจากระบบสาธิต</p><div class="controls"><label for="tour-selector">เลือกทัวร์</label><select id="tour-selector"><option value="quick">Quick Tour · PROJECT70</option><option value="fresh">Full Creation Tour · สร้างใหม่</option><option value="bi">Dashboard BI Tour · งบประมาณ</option><option value="permissions">Permission Tour · สิทธิ์</option></select><button id="start-tour" class="primary" disabled>เริ่มทัวร์ ↗</button><button id="restart" disabled>เริ่มใหม่</button><button id="relationships-toggle" aria-expanded="false" disabled>ความสัมพันธ์เอกสาร</button></div></section>
     <p id="announcement" role="status" aria-live="polite">กำลังโหลดหลักฐาน…</p>
     <section class="viewer" aria-label="ภาพบันทึกและคำอธิบาย">
       <div class="viewer-heading"><div><p class="eyebrow" id="step-screen"></p><h2 id="step-title" tabindex="-1"></h2></div><span id="progress" class="pill"></span></div>
@@ -23,10 +23,18 @@
       <div class="caption"><p id="step-description"></p><a id="full-image" target="_blank" rel="noopener">เปิดภาพขนาดเต็ม ↗</a></div>
       <div class="step-controls"><button id="previous" disabled>← ก่อนหน้า</button><span id="step-code"></span><button id="next" disabled>ถัดไป →</button></div>
     </section>
+    <section id="bi-state" class="panel" hidden><h2>ข้อมูลตามตัวกรอง</h2><p id="bi-filters"></p><div id="bi-kpis" class="related"></div><p>ภาพบันทึกจากระบบสาธิต ไม่ได้เชื่อมต่อ Odoo ในหน้านี้</p></section>
     <section id="final-result" class="panel" hidden><h2>ผลตรวจจากการรันนี้</h2><div id="result-grid"></div><p>ตัวเลขประกอบอ่านจากข้อมูลที่บันทึกจริงใน Odoo ภาพด้านบนเป็นหน้าผลวงเงินจริง</p></section>
+    <section id="budget-dashboard-evidence" class="panel" hidden>
+      <h2>ภาพรวมงบประมาณใน Dashboard ของ Odoo</h2>
+      <p>เปิดแอปแดชบอร์ด → งบประมาณ → งบประมาณโครงการ แล้วกรอง PROJECT70-001 และ PROJECT70-002 ของสำนักงาน A สูงสุด ภาพนี้แสดงยอดรวมและกราฟจากข้อมูลสาธิตจริงใน Odoo</p>
+      <a href="assets/budget/project-budget-dashboard.png" target="_blank" rel="noopener"><img class="budget-evidence-image" src="assets/budget/project-budget-dashboard.png" alt="Dashboard ของ Odoo กรองสองโครงการ: จัดสรร 1,800,000 บาท ผูกพัน 460,000 บาท ใช้จริง 222,000 บาท คงเหลือ 1,118,000 บาท" loading="lazy"></a>
+      <details><summary>ดูกราฟแยกประเภทรายการ</summary><p>รายการกลับรายการถูกรวมสุทธิในประเภทเดิม ใบสั่งซื้อที่เปลี่ยนเป็นใช้จริงแล้วจึงไม่ถูกนับผูกพันซ้ำ</p><a href="assets/budget/project-budget-categories.png" target="_blank" rel="noopener"><img class="budget-evidence-image" src="assets/budget/project-budget-categories.png" alt="กราฟงบประมาณใน Odoo แยกใบขอซื้อ ใบสั่งซื้อ สัญญา และใช้จริง" loading="lazy"></a></details>
+      <details><summary>ดู Pivot และวิธีเจาะรายละเอียด</summary><p>เมนูวิเคราะห์งบประมาณ → งบประมาณโครงการ เปิด Pivot ของทุกโครงการที่มีสิทธิ์ เลือกมาตรวัดและจัดกลุ่มเพิ่มเติมได้ คลิกตัวเลขเพื่อเปิดรายการวงเงินต้นทาง ส่วนเมนูรายการงบประมาณแยกประเภทใช้ดูรายการผูกพันและใช้จริงแต่ละรายการ</p><a href="assets/budget/project-budget-pivot.png" target="_blank" rel="noopener"><img class="budget-evidence-image" src="assets/budget/project-budget-pivot.png" alt="Pivot งบประมาณ Odoo แสดงโครงการและยอดรวมของบริษัท" loading="lazy"></a></details>
+    </section>
     <section id="relationships-panel" class="panel" hidden><h2>ความสัมพันธ์เอกสารที่ตรวจพบ</h2><p>ลิงก์ที่มีภาพบันทึกจะพาไปยังขั้นตอนนั้น รายการอื่นแสดงเฉพาะข้อมูลที่อ่านจาก Odoo</p><div id="relationship-list"></div><div id="document-detail" role="status"></div></section>
     <section class="panel"><h2>เอกสารที่เกี่ยวข้อง</h2><div id="related-documents" class="related"></div><details><summary>บทบรรยายของขั้นตอนนี้</summary><p id="narration"></p></details></section>
-    <footer><p><a href="https://github.com/GovOpsDev/ERP">Source / AGPL-3.0</a> · <a href="assets/vendor/SHEPHERD-LICENSE.md">Shepherd.js license</a></p><p id="provenance"></p><p>โครงการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิง NSTDA ERP-Government แบบโอเพนซอร์ส ไม่ใช่รุ่นเผยแพร่ทางการของ NSTDA</p><a id="storyboard" href="generated/video-storyboard.md">Storyboard สำหรับวิดีโอ</a></footer>
+    <footer><p><a href="https://github.com/GovOpsDev/ERP">Source / AGPL-3.0</a> · <a href="assets/vendor/SHEPHERD-LICENSE.md">Shepherd.js license</a></p><p>โครงการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิง NSTDA ERP-Government แบบโอเพนซอร์ส ไม่ใช่รุ่นเผยแพร่ทางการของ NSTDA</p></footer>
   </main>
 </div>
 </body>

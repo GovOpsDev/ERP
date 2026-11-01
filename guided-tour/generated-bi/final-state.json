@@ -1,0 +1,136 @@
+{
+  "scenario": "dashboard-bi",
+  "currency": "THB",
+  "budget": {
+    "allocated": 6000000,
+    "committed": 1080000,
+    "actual": 596000,
+    "other": 0,
+    "remaining": 4324000
+  },
+  "baseline_rows": [
+    {
+      "id": 764,
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000,
+      "analytic_id": [
+        299,
+        "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)"
+      ],
+      "period_id": [
+        269,
+        "ปีงบประมาณ 2570 (สาธิต)"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "kpi_id": false,
+      "control_id": [
+        764,
+        "PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ]
+    },
+    {
+      "id": 765,
+      "allocated_amount": 800000,
+      "committed_amount": 400000,
+      "actual_amount": 0,
+      "other_amount": 0,
+      "available_amount": 400000,
+      "analytic_id": [
+        302,
+        "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "period_id": [
+        269,
+        "ปีงบประมาณ 2570 (สาธิต)"
+      ],
+      "organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ],
+      "kpi_id": false,
+      "control_id": [
+        765,
+        "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ]
+    },
+    {
+      "id": 757,
+      "allocated_amount": 1200000,
+      "committed_amount": 500000,
+      "actual_amount": 0,
+      "other_amount": 0,
+      "available_amount": 700000,
+      "analytic_id": [
+        298,
+        "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "period_id": [
+        269,
+        "ปีงบประมาณ 2570 (สาธิต)"
+      ],
+      "organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ],
+      "kpi_id": false,
+      "control_id": [
+        757,
+        "โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ]
+    },
+    {
+      "id": 756,
+      "allocated_amount": 3000000,
+      "committed_amount": 120000,
+      "actual_amount": 374000,
+      "other_amount": 0,
+      "available_amount": 2506000,
+      "analytic_id": [
+        297,
+        "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)"
+      ],
+      "period_id": [
+        269,
+        "ปีงบประมาณ 2570 (สาธิต)"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "kpi_id": false,
+      "control_id": [
+        756,
+        "โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ]
+    }
+  ],
+  "reset": {
+    "allocated_amount": 6000000,
+    "committed_amount": 1080000,
+    "actual_amount": 596000,
+    "other_amount": 0,
+    "available_amount": 4324000
+  }
+}

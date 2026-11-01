@@ -1,0 +1,711 @@
+[
+  {
+    "id": "DASH-01",
+    "order": 1,
+    "mode": "main",
+    "title": "ภาพรวมงบประมาณ",
+    "description": "ภาพรวมนี้รวมทุกโครงการที่บัญชีเข้าถึงได้ในบริษัทปัจจุบัน",
+    "tooltip": "ภาพรวมนี้รวมทุกโครงการที่บัญชีเข้าถึงได้ในบริษัทปัจจุบัน",
+    "narration": "ภาพรวมนี้รวมทุกโครงการที่บัญชีเข้าถึงได้ในบริษัทปัจจุบัน",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/01-dash-01.png",
+    "screenshot_sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:43.444Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {},
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "image_sha256": "b1e8fca26c774e1bd0d3bd3f1090de718a03e97ad814a465ee15118d42546664",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        },
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        },
+        {
+          "name": "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 1200000
+        },
+        {
+          "name": "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 3000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "ภาพรวมนี้รวมทุกโครงการที่บัญชีเข้าถึงได้ในบริษัทปัจจุบัน"
+  },
+  {
+    "id": "DASH-02",
+    "order": 2,
+    "mode": "main",
+    "title": "วงเงินจัดสรร",
+    "description": "วงเงินรวมมาจากวงเงินโครงการที่เปิดใช้งาน",
+    "tooltip": "วงเงินรวมมาจากวงเงินโครงการที่เปิดใช้งาน",
+    "narration": "วงเงินรวมมาจากวงเงินโครงการที่เปิดใช้งาน",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/02-dash-02.png",
+    "screenshot_sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:44.198Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {},
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "image_sha256": "b1e8fca26c774e1bd0d3bd3f1090de718a03e97ad814a465ee15118d42546664",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        },
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        },
+        {
+          "name": "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 1200000
+        },
+        {
+          "name": "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 3000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "วงเงินรวมมาจากวงเงินโครงการที่เปิดใช้งาน"
+  },
+  {
+    "id": "DASH-03",
+    "order": 3,
+    "mode": "main",
+    "title": "ผูกพันและใช้จริง",
+    "description": "ยอดผูกพันและใช้จริงแสดงสุทธิจากรายการงบประมาณ",
+    "tooltip": "ยอดผูกพันและใช้จริงแสดงสุทธิจากรายการงบประมาณ",
+    "narration": "ยอดผูกพันและใช้จริงแสดงสุทธิจากรายการงบประมาณ",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/03-dash-03.png",
+    "screenshot_sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:44.985Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {},
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "image_sha256": "b1e8fca26c774e1bd0d3bd3f1090de718a03e97ad814a465ee15118d42546664",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        },
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        },
+        {
+          "name": "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 1200000
+        },
+        {
+          "name": "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 3000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "ยอดผูกพันและใช้จริงแสดงสุทธิจากรายการงบประมาณ"
+  },
+  {
+    "id": "DASH-04",
+    "order": 4,
+    "mode": "main",
+    "title": "เลือกโครงการดิจิทัล",
+    "description": "เมื่อเลือกโครงการแรก การ์ดและกราฟแสดงเฉพาะวงเงินของโครงการนี้",
+    "tooltip": "เมื่อเลือกโครงการแรก การ์ดและกราฟแสดงเฉพาะวงเงินของโครงการนี้",
+    "narration": "เมื่อเลือกโครงการแรก การ์ดและกราฟแสดงเฉพาะวงเงินของโครงการนี้",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/04-dash-04.png",
+    "screenshot_sha256": "b5458b1801600275691a78901e652b68eeb0dc75ee11bd6a20d947458ad1dc7c",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:47.717Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-001"
+    },
+    "kpis": {
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000
+    },
+    "chart_state": {
+      "image_sha256": "3659de15c80bcb8d9a2bbb66443aa8e4324183d2051cff8529ab63223b3172ba",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "เมื่อเลือกโครงการแรก การ์ดและกราฟแสดงเฉพาะวงเงินของโครงการนี้"
+  },
+  {
+    "id": "DASH-05",
+    "order": 5,
+    "mode": "main",
+    "title": "กราฟใช้จริง",
+    "description": "เลือกกราฟใช้จริงเพื่อดูค่าใช้จ่ายของโครงการที่เลือก",
+    "tooltip": "เลือกกราฟใช้จริงเพื่อดูค่าใช้จ่ายของโครงการที่เลือก",
+    "narration": "เลือกกราฟใช้จริงเพื่อดูค่าใช้จ่ายของโครงการที่เลือก",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/05-dash-05.png",
+    "screenshot_sha256": "ba79a48d5bf5d093e36f18f7e15379000b4efa28c53067876c26fb06d733a03e",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:49.335Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-001",
+      "chart": "ใช้จริง"
+    },
+    "kpis": {
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000
+    },
+    "chart_state": {
+      "image_sha256": "6bacedb40223d1210cbfb04a2956ad742714cc4a09cfb77bc9dc3c4e6cfca144",
+      "source": "erp.budget.report",
+      "measure": "actual_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 222000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "เลือกกราฟใช้จริงเพื่อดูค่าใช้จ่ายของโครงการที่เลือก"
+  },
+  {
+    "id": "DASH-06",
+    "order": 6,
+    "mode": "main",
+    "title": "เปลี่ยนโครงการ",
+    "description": "เลือกโครงการที่สองเพื่อเปรียบเทียบวงเงินและการใช้จ่าย",
+    "tooltip": "เลือกโครงการที่สองเพื่อเปรียบเทียบวงเงินและการใช้จ่าย",
+    "narration": "เลือกโครงการที่สองเพื่อเปรียบเทียบวงเงินและการใช้จ่าย",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/06-dash-06.png",
+    "screenshot_sha256": "f5c9c460bd4765353d719cbca5bdeadb591455107859571d2f71ce4c8128049d",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:52.341Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-002"
+    },
+    "kpis": {
+      "allocated_amount": 800000,
+      "committed_amount": 400000,
+      "actual_amount": 0,
+      "other_amount": 0,
+      "available_amount": 400000
+    },
+    "chart_state": {
+      "image_sha256": "f670bc22663986a312d8e217aca516ecc947a9eac30f0620b4365cefb2816f75",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "เลือกโครงการที่สองเพื่อเปรียบเทียบวงเงินและการใช้จ่าย"
+  },
+  {
+    "id": "DASH-07",
+    "order": 7,
+    "mode": "main",
+    "title": "เปรียบเทียบการผูกพัน",
+    "description": "ยอดผูกพันของโครงการที่เลือกสะท้อนเอกสารในขอบเขตเดียวกัน",
+    "tooltip": "ยอดผูกพันของโครงการที่เลือกสะท้อนเอกสารในขอบเขตเดียวกัน",
+    "narration": "ยอดผูกพันของโครงการที่เลือกสะท้อนเอกสารในขอบเขตเดียวกัน",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/07-dash-07.png",
+    "screenshot_sha256": "f5c9c460bd4765353d719cbca5bdeadb591455107859571d2f71ce4c8128049d",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:53.070Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-002"
+    },
+    "kpis": {
+      "allocated_amount": 800000,
+      "committed_amount": 400000,
+      "actual_amount": 0,
+      "other_amount": 0,
+      "available_amount": 400000
+    },
+    "chart_state": {
+      "image_sha256": "f670bc22663986a312d8e217aca516ecc947a9eac30f0620b4365cefb2816f75",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "ยอดผูกพันของโครงการที่เลือกสะท้อนเอกสารในขอบเขตเดียวกัน"
+  },
+  {
+    "id": "DASH-08",
+    "order": 8,
+    "mode": "main",
+    "title": "โครงการและหน่วยงาน",
+    "description": "เลือกโครงการร่วมกับหน่วยงานเพื่อจำกัดขอบเขตพร้อมกัน",
+    "tooltip": "เลือกโครงการร่วมกับหน่วยงานเพื่อจำกัดขอบเขตพร้อมกัน",
+    "narration": "เลือกโครงการร่วมกับหน่วยงานเพื่อจำกัดขอบเขตพร้อมกัน",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/08-dash-08.png",
+    "screenshot_sha256": "4e3d86f05ca90489e460833a5169660ff0eb1a5ccf7b4194d90fef16e0c14f58",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:56.020Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-001",
+      "organization": "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    },
+    "kpis": {
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000
+    },
+    "chart_state": {
+      "image_sha256": "3659de15c80bcb8d9a2bbb66443aa8e4324183d2051cff8529ab63223b3172ba",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "เลือกโครงการร่วมกับหน่วยงานเพื่อจำกัดขอบเขตพร้อมกัน"
+  },
+  {
+    "id": "DASH-PIVOT",
+    "order": 9,
+    "mode": "main",
+    "title": "วิเคราะห์ด้วย Pivot",
+    "description": "Pivot แสดงทุกโครงการในบริษัท คลิกยอดของโครงการดิจิทัลเพื่อเปิดรายละเอียด",
+    "tooltip": "Pivot แสดงทุกโครงการในบริษัท คลิกยอดของโครงการดิจิทัลเพื่อเปิดรายละเอียด",
+    "narration": "Pivot แสดงทุกโครงการในบริษัท คลิกยอดของโครงการดิจิทัลเพื่อเปิดรายละเอียด",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "drilldown",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/action-663",
+    "screenshot": "screenshots/09-dash-pivot.png",
+    "screenshot_sha256": "ad948dee4f564c033a16afd604cac8fd632ca3ccddb33d8e91b60e928b96c13a",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:56.550Z",
+    "video": null,
+    "target": {
+      "x": 0.008333333333333333,
+      "y": 0.14351851851851852,
+      "width": 0.6320556640625,
+      "height": 0.24722222222222223
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "view": "pivot ทั้งบริษัท"
+    },
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "source": "erp.budget.report",
+      "chart": "Pivot",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)",
+          "amount": 1000000
+        }
+      ]
+    },
+    "expected_change": "Pivot แสดงทุกโครงการในบริษัท คลิกยอดของโครงการดิจิทัลเพื่อเปิดรายละเอียด"
+  },
+  {
+    "id": "DASH-DRILL",
+    "order": 10,
+    "mode": "main",
+    "title": "รายการวงเงินต้นทาง",
+    "description": "รายการนี้เชื่อมกับวงเงินของโครงการที่เลือก",
+    "tooltip": "รายการนี้เชื่อมกับวงเงินของโครงการที่เลือก",
+    "narration": "รายการนี้เชื่อมกับวงเงินของโครงการที่เลือก",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "drilldown",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/action-663/erp.budget.report",
+    "screenshot": "screenshots/10-dash-drill.png",
+    "screenshot_sha256": "64a52cadc810fad0844f2020b515810995ce779242a311581315a16bf7db0988",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:56.806Z",
+    "video": null,
+    "target": {
+      "x": 0,
+      "y": 0.04259259259259259,
+      "width": 1,
+      "height": 0.9574074074074074
+    },
+    "relationships": [],
+    "dashboard_filters": {
+      "project": "PROJECT70-001",
+      "view": "รายการวงเงิน"
+    },
+    "kpis": {
+      "allocated_amount": 1000000,
+      "committed_amount": 60000,
+      "actual_amount": 222000,
+      "other_amount": 0,
+      "available_amount": 718000
+    },
+    "chart_state": {
+      "source": "erp.budget.report",
+      "chart": "Pivot",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)",
+          "amount": 1000000
+        }
+      ]
+    },
+    "expected_change": "รายการนี้เชื่อมกับวงเงินของโครงการที่เลือก"
+  },
+  {
+    "id": "DASH-09",
+    "order": 11,
+    "mode": "main",
+    "title": "ล้างตัวกรอง",
+    "description": "กลับสู่ภาพรวมทุกโครงการที่มีสิทธิ์",
+    "tooltip": "กลับสู่ภาพรวมทุกโครงการที่มีสิทธิ์",
+    "narration": "กลับสู่ภาพรวมทุกโครงการที่มีสิทธิ์",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "dashboard",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/11-dash-09.png",
+    "screenshot_sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:58.636Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {},
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "image_sha256": "b1e8fca26c774e1bd0d3bd3f1090de718a03e97ad814a465ee15118d42546664",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        },
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        },
+        {
+          "name": "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 1200000
+        },
+        {
+          "name": "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 3000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "กลับสู่ภาพรวมทุกโครงการที่มีสิทธิ์"
+  },
+  {
+    "id": "DASH-10",
+    "order": 12,
+    "mode": "main",
+    "title": "สรุปภาพรวม",
+    "description": "ใช้วงเงิน ผูกพัน ใช้จริง และคงเหลือร่วมกันเพื่อติดตามโครงการ",
+    "tooltip": "ใช้วงเงิน ผูกพัน ใช้จริง และคงเหลือร่วมกันเพื่อติดตามโครงการ",
+    "narration": "ใช้วงเงิน ผูกพัน ใช้จริง และคงเหลือร่วมกันเพื่อติดตามโครงการ",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "spreadsheet.dashboard:3",
+    "screen": "final-result",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/dashboards",
+    "screenshot": "screenshots/12-dash-10.png",
+    "screenshot_sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T12:57:59.385Z",
+    "video": null,
+    "target": {
+      "x": 0.10520833333333333,
+      "y": 0.09259259259259259,
+      "width": 0.16979166666666667,
+      "height": 0.10740740740740741
+    },
+    "relationships": [],
+    "dashboard_filters": {},
+    "kpis": {
+      "allocated_amount": 6000000,
+      "committed_amount": 1080000,
+      "actual_amount": 596000,
+      "other_amount": 0,
+      "available_amount": 4324000
+    },
+    "chart_state": {
+      "image_sha256": "b1e8fca26c774e1bd0d3bd3f1090de718a03e97ad814a465ee15118d42546664",
+      "source": "erp.budget.report",
+      "measure": "allocated_amount",
+      "projects": [
+        {
+          "name": "[PROJECT70-001] PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 1000000
+        },
+        {
+          "name": "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 800000
+        },
+        {
+          "name": "[DEMO70-002] โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+          "value": 1200000
+        },
+        {
+          "name": "[DEMO70-001] โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+          "value": 3000000
+        }
+      ],
+      "chart": "งบประมาณรายโครงการ / บัญชีวิเคราะห์"
+    },
+    "expected_change": "ใช้วงเงิน ผูกพัน ใช้จริง และคงเหลือร่วมกันเพื่อติดตามโครงการ"
+  }
+]

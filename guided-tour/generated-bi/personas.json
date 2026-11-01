@@ -1,0 +1,8 @@
+[
+  {
+    "id": "interactive-demo",
+    "label": "ผู้ทดลองระบบ",
+    "dataset": "PROJECT70 และข้อมูลสาธิตในบริษัท",
+    "authentication": "real Odoo login"
+  }
+]

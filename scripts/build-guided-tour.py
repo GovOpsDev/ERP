@@ -35,6 +35,28 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def validate_dashboard_bi(steps, final, assertions):
+    fields = ('allocated_amount', 'committed_amount', 'actual_amount', 'other_amount', 'available_amount')
+    require(len(steps) >= 10, 'Insufficient dashboard steps')
+    for step in steps:
+        require(all(k in step for k in ('dashboard_filters', 'kpis', 'chart_state', 'expected_change')), 'Missing dashboard state')
+        kpis = step['kpis']
+        require(all(isinstance(kpis.get(k), (int, float)) and math.isfinite(kpis[k]) for k in fields), 'Invalid dashboard metric')
+        require(abs(kpis[fields[0]] - sum(kpis[k] for k in fields[1:])) < 0.01, 'Dashboard step does not reconcile')
+        chart = step['chart_state']
+        if chart.get('measure'):
+            measure = chart['measure']
+            require(measure in fields and isinstance(chart.get('projects'), list), 'Invalid chart measure')
+            values = [point.get('value') for point in chart['projects']]
+            require(all(isinstance(v, (int, float)) and math.isfinite(v) for v in values), 'Invalid chart value')
+            require(abs(sum(values) - kpis[measure]) < 0.01, 'Chart and KPI differ')
+    require(steps[0]['kpis'] == final['reset'] == steps[-1]['kpis'], 'Reset differs from baseline')
+    projects = [s for s in steps if s['dashboard_filters'].get('project')]
+    require(len({s['dashboard_filters']['project'] for s in projects}) >= 2, 'Project comparison missing')
+    require(len({s['kpis']['allocated_amount'] for s in projects}) >= 2, 'Filter did not change the totals')
+    require(assertions.get('security_company') == 403 and assertions.get('baseline_unchanged'), 'Security or unchanged baseline failed')
+
+
 def validate(run, require_review=True):
     manifest = read(run / 'manifest.json')
     require(manifest.get('status') == 'PASS' and manifest.get('schema_version') == 1, 'Run did not pass')
@@ -55,9 +77,10 @@ def validate(run, require_review=True):
     require(len({s['id'] for s in steps}) == len(steps), 'Duplicate step IDs')
     require([s['order'] for s in steps] == list(range(1, len(steps)+1)), 'Invalid step order')
     fresh = manifest.get('tour_type') == 'fresh-creation'
-    if not fresh:
+    dashboard_bi = manifest.get('tour_type') == 'dashboard-bi'
+    if not fresh and not dashboard_bi:
         require(any(s['mode'] == 'permissions' for s in steps), 'Permission evidence missing')
-    else:
+    elif fresh:
         require(data['assertions.json'].get('ui_creation') is True, 'Fresh UI creation evidence missing')
         require(all(s['mode'] == 'main' for s in steps), 'Fresh workflow must not mix denial evidence')
     main = [s for s in steps if s['mode'] == 'main']
@@ -96,9 +119,12 @@ def validate(run, require_review=True):
     narration = [{k:s[k] for k in ('id','narration','duration_hint')} for s in steps]
     require(data['narration.json'] == narration, 'Narration diverged from steps')
     final = data['final-state.json']; budget = final['budget']
-    require(budget['allocated'] == budget['committed'] + budget['actual'] + budget['remaining'], 'Budget does not reconcile')
-    require(final['inventory']['total'] == sum(q['quantity'] for q in final['inventory']['locations']), 'Inventory does not reconcile')
-    require(final['assets']['count'] > 0 and final['acceptance']['quantity'] >= final['assets']['count'], 'Asset quantities invalid')
+    require(abs(budget['allocated'] - budget['committed'] - budget['actual'] - budget.get('other', 0) - budget['remaining']) < 0.01, 'Budget does not reconcile')
+    if dashboard_bi:
+        validate_dashboard_bi(steps, final, data['assertions.json'])
+    else:
+        require(final['inventory']['total'] == sum(q['quantity'] for q in final['inventory']['locations']), 'Inventory does not reconcile')
+        require(final['assets']['count'] > 0 and final['acceptance']['quantity'] >= final['assets']['count'], 'Asset quantities invalid')
     if fresh:
         required_steps = {'PROJECT', 'TASK', 'BUDGET-BEFORE', 'PR-DRAFT', 'PR-APPROVED', 'REQ-CONFIRM', 'PO-CONFIRMED', 'AGREEMENT-ACTIVE', 'WA-ACCEPTED', 'STOCK-DONE', 'BILL-POSTED', 'ASSET', 'PROJECT-RESULT', 'FINAL'}
         require(required_steps.issubset({s['id'] for s in steps}), 'Fresh lifecycle evidence incomplete')
@@ -117,7 +143,7 @@ def validate(run, require_review=True):
 def build(run):
     manifest, data = validate(run)
     # Validate everything before changing the last known publishable replay.
-    destination = ROOT / ('guided-tour/generated-fresh' if manifest.get('tour_type') == 'fresh-creation' else 'guided-tour/generated')
+    destination = ROOT / ('guided-tour/generated-bi' if manifest.get('tour_type') == 'dashboard-bi' else 'guided-tour/generated-fresh' if manifest.get('tour_type') == 'fresh-creation' else 'guided-tour/generated')
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(dir=destination.parent, prefix='.build-') as temp:
         target = Path(temp); (target/'screenshots').mkdir()

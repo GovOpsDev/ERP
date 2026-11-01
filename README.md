@@ -1,4 +1,4 @@
-# NSTDA ERP-Government on Odoo 20 Community
+# GovOpsDev ERP
 
 GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหรับ ERP ภายในองค์กรภาครัฐ ปรับย้ายจาก [NSTDA ERP-Government](https://github.com/NSTDA/ERP-Government) สู่ Odoo 20 Community พร้อมภาษาไทย คู่มือ HTML และหลักฐานสาธิตจากระบบจริง
 
@@ -30,6 +30,10 @@ GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหร�
 ### Full Creation Tour
 
 27 checkpoints จาก Playwright ที่สร้างโครงการและเอกสารใหม่ผ่าน Odoo UI จริง ผู้ใช้เลือก **Full Creation Tour · สร้างใหม่** ในตัวเล่น ดู [ขั้นตอนทำซ้ำ](docs/fresh-creation-demo.md)
+
+### Dashboard BI Tour
+
+สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก [รายละเอียด](docs/dashboard-bi-demo.md)
 
 ### Permission Tour
 
@@ -67,7 +71,7 @@ Project → Budget → Purchase Request → Requisition → Purchase Order → A
 | Domain | ความสามารถหลัก |
 |---|---|
 | Organization | หน่วยงาน ลำดับชั้น การมอบหมาย บทบาท และ HR |
-| Budget | แผน จัดสรร KPI วงเงิน ผูกพัน ใช้จริง และการปรับปรุง |
+| Budget | แผน จัดสรร KPI วงเงิน ผูกพัน ใช้จริง การปรับปรุง และ [Project Budget BI](docs/budget-dashboard.md) |
 | Procurement | PR วิธีจัดซื้อ ลำดับอนุมัติ requisition และ PO |
 | Finance & Accounting | บิล รายจ่าย เงินยืม เงินมัดจำ และยอดใช้จริง |
 | Agreement & Contract | ข้อตกลง กฎหมาย ประวัติฉบับ สัญญา และหลักประกัน |

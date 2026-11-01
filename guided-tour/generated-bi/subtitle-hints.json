@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DASH-01",
+    "start_hint_seconds": 0,
+    "end_hint_seconds": 12,
+    "text": "ภาพรวมนี้รวมทุกโครงการที่บัญชีเข้าถึงได้ในบริษัทปัจจุบัน"
+  },
+  {
+    "id": "DASH-02",
+    "start_hint_seconds": 12,
+    "end_hint_seconds": 24,
+    "text": "วงเงินรวมมาจากวงเงินโครงการที่เปิดใช้งาน"
+  },
+  {
+    "id": "DASH-03",
+    "start_hint_seconds": 24,
+    "end_hint_seconds": 36,
+    "text": "ยอดผูกพันและใช้จริงแสดงสุทธิจากรายการงบประมาณ"
+  },
+  {
+    "id": "DASH-04",
+    "start_hint_seconds": 36,
+    "end_hint_seconds": 48,
+    "text": "เมื่อเลือกโครงการแรก การ์ดและกราฟแสดงเฉพาะวงเงินของโครงการนี้"
+  },
+  {
+    "id": "DASH-05",
+    "start_hint_seconds": 48,
+    "end_hint_seconds": 60,
+    "text": "เลือกกราฟใช้จริงเพื่อดูค่าใช้จ่ายของโครงการที่เลือก"
+  },
+  {
+    "id": "DASH-06",
+    "start_hint_seconds": 60,
+    "end_hint_seconds": 72,
+    "text": "เลือกโครงการที่สองเพื่อเปรียบเทียบวงเงินและการใช้จ่าย"
+  },
+  {
+    "id": "DASH-07",
+    "start_hint_seconds": 72,
+    "end_hint_seconds": 84,
+    "text": "ยอดผูกพันของโครงการที่เลือกสะท้อนเอกสารในขอบเขตเดียวกัน"
+  },
+  {
+    "id": "DASH-08",
+    "start_hint_seconds": 84,
+    "end_hint_seconds": 96,
+    "text": "เลือกโครงการร่วมกับหน่วยงานเพื่อจำกัดขอบเขตพร้อมกัน"
+  },
+  {
+    "id": "DASH-PIVOT",
+    "start_hint_seconds": 96,
+    "end_hint_seconds": 108,
+    "text": "Pivot แสดงทุกโครงการในบริษัท คลิกยอดของโครงการดิจิทัลเพื่อเปิดรายละเอียด"
+  },
+  {
+    "id": "DASH-DRILL",
+    "start_hint_seconds": 108,
+    "end_hint_seconds": 120,
+    "text": "รายการนี้เชื่อมกับวงเงินของโครงการที่เลือก"
+  },
+  {
+    "id": "DASH-09",
+    "start_hint_seconds": 120,
+    "end_hint_seconds": 132,
+    "text": "กลับสู่ภาพรวมทุกโครงการที่มีสิทธิ์"
+  },
+  {
+    "id": "DASH-10",
+    "start_hint_seconds": 132,
+    "end_hint_seconds": 144,
+    "text": "ใช้วงเงิน ผูกพัน ใช้จริง และคงเหลือร่วมกันเพื่อติดตามโครงการ"
+  }
+]

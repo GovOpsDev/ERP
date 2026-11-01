@@ -286,6 +286,86 @@
       "file": "shared/erp_core/addons/erp_user_manual/static/manual/assets/stock_requests.png",
       "sha256": "9c38211c88a03bee8b15afc8731458369bb2ade199e3e002de3ee590879df6d9",
       "category": "synthetic Odoo demo screenshot"
+    },
+    {
+      "file": "guided-tour/assets/brand/govopsdev-logo.png",
+      "sha256": "82e0e9aa0339f7f3f4ee26cf3ccbb4ae992efdbefcf347ef69c98c544d54ef56",
+      "category": "GovOpsDev logo supplied by project owner"
+    },
+    {
+      "file": "guided-tour/assets/budget/project-budget-pivot.png",
+      "sha256": "5a468d80894dff1b88d473ec5d396676277cabeed6f09e645343a9162a470654",
+      "category": "synthetic Odoo budget dashboard screenshot; visually inspected; no content editing"
+    },
+    {
+      "file": "guided-tour/assets/budget/project-budget-categories.png",
+      "sha256": "94b9ba6906da880b6cee430437d91f67b14d20e744d2306932d9d3f6f1ddd857",
+      "category": "synthetic Odoo budget dashboard screenshot; visually inspected; no content editing"
+    },
+    {
+      "file": "guided-tour/assets/budget/project-budget-dashboard.png",
+      "sha256": "20bd1434ffa16c6bf50dd2d56c48da86cef2d2ddeaa7334592562a4a1c04b601",
+      "category": "synthetic Odoo budget dashboard screenshot; visually inspected; no content editing"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/01-dash-01.png",
+      "sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/02-dash-02.png",
+      "sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/03-dash-03.png",
+      "sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/04-dash-04.png",
+      "sha256": "b5458b1801600275691a78901e652b68eeb0dc75ee11bd6a20d947458ad1dc7c",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/05-dash-05.png",
+      "sha256": "ba79a48d5bf5d093e36f18f7e15379000b4efa28c53067876c26fb06d733a03e",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/06-dash-06.png",
+      "sha256": "f5c9c460bd4765353d719cbca5bdeadb591455107859571d2f71ce4c8128049d",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/07-dash-07.png",
+      "sha256": "f5c9c460bd4765353d719cbca5bdeadb591455107859571d2f71ce4c8128049d",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/08-dash-08.png",
+      "sha256": "4e3d86f05ca90489e460833a5169660ff0eb1a5ccf7b4194d90fef16e0c14f58",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/09-dash-pivot.png",
+      "sha256": "ad948dee4f564c033a16afd604cac8fd632ca3ccddb33d8e91b60e928b96c13a",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/10-dash-drill.png",
+      "sha256": "64a52cadc810fad0844f2020b515810995ce779242a311581315a16bf7db0988",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/11-dash-09.png",
+      "sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+      "category": "synthetic Odoo demo dashboard screenshot"
+    },
+    {
+      "file": "guided-tour/generated-bi/screenshots/12-dash-10.png",
+      "sha256": "98cbb9208d2da27b6b525fab9bb97724bd0b43a4f6929f864870ff57e803e911",
+      "category": "synthetic Odoo demo dashboard screenshot"
     }
   ]
 }

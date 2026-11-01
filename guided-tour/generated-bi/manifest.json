@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "run_id": "dashboard-bi-20261101-e",
+  "scenario": "PROJECT70 and company baseline",
+  "status": "PASS",
+  "source": "Playwright against real Odoo",
+  "created_at": "2026-11-01T12:57:59.525Z",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "tour_type": "dashboard-bi",
+  "raw_manifest_sha256": "4a9cea5c861447096a05635c62261090fcaaf3cd0bed8acb99ffa5fc54ad70f1",
+  "privacy_review": "synthetic screenshots and metadata reviewed; raw video is excluded"
+}

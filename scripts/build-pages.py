@@ -10,7 +10,7 @@ def build():
     if OUT.exists(): shutil.rmtree(OUT)  # generator-owned ignored output only
     OUT.mkdir()
     allowed={'index.html','README.md'}
-    prefixes=('guided-tour/css/','guided-tour/js/','guided-tour/assets/vendor/','guided-tour/generated/','guided-tour/generated-fresh/')
+    prefixes=('guided-tour/css/','guided-tour/js/','guided-tour/assets/vendor/','guided-tour/assets/brand/','guided-tour/assets/budget/','guided-tour/generated/','guided-tour/generated-fresh/','guided-tour/generated-bi/')
     files=subprocess.check_output(['git','ls-files','-z','--cached','--others','--exclude-standard'],cwd=ROOT).decode().split('\0')
     for rel in sorted(set(files)):
         if not rel or not (rel.startswith(prefixes) or rel in {'guided-tour/'+x for x in allowed}):continue
@@ -19,7 +19,7 @@ def build():
         dest=OUT/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
     # Help remains readable on Pages; links to non-site source docs go to the repository.
     helpfile=OUT/'guided-tour/README.md'
-    text=helpfile.read_text().replace('../playwright-demo/README.md',SOURCE+'playwright-demo/README.md').replace('../docs/fresh-creation-demo.md',SOURCE+'docs/fresh-creation-demo.md')
+    text=helpfile.read_text().replace('../playwright-demo/README.md',SOURCE+'playwright-demo/README.md').replace('../docs/fresh-creation-demo.md',SOURCE+'docs/fresh-creation-demo.md').replace('../docs/dashboard-bi-demo.md',SOURCE+'docs/dashboard-bi-demo.md')
     helpfile.write_text(text)
     shutil.copyfile(ROOT/'site/index.html',OUT/'index.html')
     for name in ['LICENSE','NOTICE.md']: shutil.copyfile(ROOT/name,OUT/name)

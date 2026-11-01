@@ -19,6 +19,8 @@
 - [Storyboard ที่สร้างจาก metadata](generated/video-storyboard.md)
 - [ข้อมูลเตรียมคำบรรยาย](generated/subtitle-hints.json)
 
+**Dashboard BI Tour** ใช้ภาพและสถานะ KPI ที่ Playwright บันทึกจาก Dashboard จริงขณะเปลี่ยนตัวกรองโครงการและหน่วยงาน ทัวร์ static เล่นภาพต่อเนื่อง ไม่เชื่อม Odoo; ดู [รายละเอียด](../docs/dashboard-bi-demo.md)
+
 **Full Creation Tour** เพิ่มอีกชุดใน `generated-fresh/` เป็นภาพของการสร้างเอกสารใหม่ผ่าน Playwright จริงตั้งแต่ Project จนถึงครุภัณฑ์ เลือกจาก dropdown หน้าเดียวกัน ดู [คู่มือ Fresh Creation](../docs/fresh-creation-demo.md) และ [storyboard แยก](generated-fresh/video-storyboard.md) Builder เลือกปลายทางจาก tour_type จึงไม่ทับ Quick/Permission ไม่มีการแก้ไขธุรกรรมจากหน้า static นี้
 
 โครงการนี้เป็นการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิงซอร์สโอเพนซอร์ส NSTDA ERP-Government และ **ไม่ใช่รุ่นเผยแพร่อย่างเป็นทางการของ NSTDA** ใช้ AGPL-3.0 ตาม repository; Shepherd.js ต้นฉบับจาก npm `shepherd.js@15.2.3` แจกจ่ายแบบ dual license ตามไฟล์แนบ
