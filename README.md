@@ -135,8 +135,12 @@ python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app pro
 
 ## Interactive Guided Tour
 
-สำรวจตัวอย่างกระบวนการโครงการภาครัฐตั้งแต่งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุและครุภัณฑ์ รวมถึงการจำลองสิทธิ์ผู้ใช้ได้ที่ [Guided Tour](guided-tour/) โดยไม่ต้องเชื่อมต่อระบบ Odoo ดูวิธีรันและข้อจำกัดใน [คู่มือ Guided Tour](guided-tour/README.md)
+[เปิด Interactive Guided Tour](./guided-tour/) เพื่อสำรวจภาพการทำงานจาก Odoo จริง พร้อมขั้นตอนแนะนำและผลทดสอบสิทธิ์ ดู [คู่มือตัวเล่น](guided-tour/README.md) และ [วิธีบันทึกและสร้างทัวร์](playwright-demo/README.md)
 
-เมื่อเปิด GitHub Pages สำหรับ repository แล้ว URL จะมีรูปแบบ `https://<username>.github.io/<repository>/guided-tour/` ส่วน [วิดีโอสาธิตยังไม่เผยแพร่](#interactive-guided-tour) และมี [storyboard](guided-tour/docs/video-storyboard.md) สำหรับจัดทำวิดีโอ
+- **Real Demo:** Playwright เปิด Odoo ด้วยบัญชีทดลอง ตรวจเอกสาร PROJECT70 และผลสิทธิ์จริง แล้วบันทึกภาพ วิดีโอ และ metadata
+- **Interactive Demo:** Python builder สร้าง Shepherd.js tour จากหลักฐานชุดนั้น ใช้บน GitHub Pages ได้โดยไม่ต้องเชื่อม Odoo
+- **Video:** วิดีโอ Playwright และ metadata บทบรรยายเป็นต้นทางสำหรับการตัดต่อ ใส่เสียงและคำบรรยายภายหลัง
 
-Live Odoo demo เป็นระบบแยกจาก Guided Tour แบบ static และต้องติดตั้ง Odoo พร้อมข้อมูลสาธิตและสิทธิ์ผู้ใช้ก่อนใช้งาน หน้าทัวร์ไม่ได้เชื่อมต่อหรือเปลี่ยนข้อมูลในระบบจริง
+Live Odoo demo ต้องมี Odoo พร้อมข้อมูลสาธิตและสิทธิ์ผู้ใช้แยกต่างหาก ทัวร์ปัจจุบันบันทึกการเปิดดูธุรกรรมที่มีอยู่แล้ว ไม่ได้สร้างหรืออนุมัติรายการเหล่านั้นใหม่ผ่านเว็บ static
+
+GitHub Pages หลังเปิดใช้งานใช้รูปแบบ `https://<username>.github.io/<repository>/guided-tour/` ส่วน [วิดีโอ YouTube ยังไม่เผยแพร่](#interactive-guided-tour) ดู [storyboard ที่สร้างจากขั้นตอนเดียวกัน](guided-tour/generated/video-storyboard.md) เพื่อเตรียมวิดีโอ

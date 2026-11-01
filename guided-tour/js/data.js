@@ -1,2 +1,11 @@
-const names=['projects','budgets','procurement','contracts','work-acceptance','inventory','assets','users','relationships','tour-steps'];
-export async function loadData(){const entries=await Promise.all(names.map(async name=>{const response=await fetch(`data/${name}.json`);if(!response.ok)throw new Error(`โหลดข้อมูล ${name} ไม่สำเร็จ (${response.status})`);return [name,await response.json()]}));const raw=Object.fromEntries(entries);const docs=names.slice(0,7).flatMap(k=>raw[k]);return {...raw,documents:docs,byId:Object.fromEntries(docs.map(d=>[d.id,d]))};}
+export async function loadData() {
+  const names=['manifest','steps','documents','relationships','personas','final-state'];
+  const entries=await Promise.all(names.map(async name=>{
+    const response=await fetch(`generated/${name}.json`);
+    if(!response.ok)throw new Error(`ไม่พบหลักฐาน ${name} (${response.status})`);
+    return [name,await response.json()];
+  }));
+  const data=Object.fromEntries(entries);
+  if(data.manifest.status!=='PASS'||!data.steps.length)throw new Error('หลักฐานยังไม่ผ่านการตรวจ');
+  return data;
+}

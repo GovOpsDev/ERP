@@ -1,7 +1,33 @@
 <!doctype html>
-<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#132646"><meta name="description" content="เดินชมกระบวนงาน ERP ภาครัฐด้วยข้อมูลสาธิต"><title>GovOpsDev ERP · Guided Tour</title><link rel="stylesheet" href="assets/vendor/shepherd.css"><link rel="stylesheet" href="css/app.css"></head>
-<body><a href="#main" class="skip">ข้ามไปเนื้อหา</a>
-<header class="topbar"><a class="brand" href="./" aria-label="GovOpsDev ERP หน้าแรก"><span class="brand-mark">G</span><span>Gov<span>Ops</span>Dev<small>ERP · GUIDED TOUR</small></span></a><div class="topbar-center"><span class="env-dot"></span> พื้นที่สาธิต <span class="sep">/</span> <span id="current-company">สำนักงาน A สูงสุด</span></div><div class="user-tag"><span class="avatar">ผ</span><span><small>บัญชีสาธิต</small><strong>interactive-demo</strong></span></div></header>
-<div class="shell"><aside class="sidebar" aria-label="เมนูแอป"><div class="sidebar-label">WORKSPACE <span>01</span></div><div class="sidebar-title">ภาพรวมการทำงาน</div><nav id="nav" aria-label="เลือกส่วนงาน"></nav><div class="sidebar-note"><span class="note-icon">✳</span><strong>เรียนรู้จากข้อมูลจำลอง</strong><p>สำรวจความสัมพันธ์ตั้งแต่โครงการจนถึงครุภัณฑ์ ในพื้นที่ที่เปลี่ยนได้อย่างอิสระ</p></div><div class="sidebar-foot">NSTDA ERP-Government <span>↗</span><small>Independent community demo</small></div></aside>
-<main id="main" tabindex="-1"><div class="main-inner"><div class="breadcrumbs"><span>GovOpsDev ERP</span><span>/</span><span id="breadcrumb">โครงการ</span><span class="crumb-pill">DEMO</span></div><section class="hero"><div><div class="eyebrow"><span></span> GUIDED WORKFLOW <span class="eyebrow-line"></span> ปีงบประมาณ 2570</div><h1>จากแผนงาน <em>สู่ผลลัพธ์</em></h1><p>ติดตามเส้นทางโครงการภาครัฐ ตั้งแต่งบประมาณและจัดซื้อ ไปจนถึงการตรวจรับ วัสดุ และครุภัณฑ์</p><div class="hero-actions"><button id="start-tour" class="button primary">เริ่ม Guided Tour <span>↗</span></button><button id="explore" class="button light">สำรวจด้วยตนเอง <span>→</span></button><button id="start-permissions" class="button ghost">ทัวร์สิทธิ์ผู้ใช้</button><button id="reset" class="button ghost">รีเซ็ต</button></div></div><div class="hero-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card art-card-back"><span>THB</span><strong>1.8M</strong><small>งบโครงการสาธิต</small></div><div class="art-card art-card-front"><div class="art-icon">⌁</div><span>PROJECT70</span><strong>2 <small>โครงการ</small></strong><div class="art-bars"><i></i><i></i><i></i><i></i><i></i></div></div><span class="art-spark">✳</span></div></section>
-<section class="workspace"><div class="workspace-head"><div><div class="eyebrow soft">INTERACTIVE WORKSPACE <span class="eyebrow-line"></span> ข้อมูลสาธิต</div><h2 id="page-heading" tabindex="-1">โครงการ</h2><p id="page-subtitle">เลือกเอกสารเพื่อสำรวจเส้นทางการทำงาน</p></div><div class="persona"><label for="persona-select">มุมมองผู้ใช้งาน <span>SIMULATION</span></label><select id="persona-select" aria-describedby="simulation-note"></select><small id="simulation-note">จำลองสิทธิ์ในเบราว์เซอร์ ไม่ใช่การล็อกอิน</small></div></div><div id="announcement" class="notice" role="status" aria-live="polite" hidden></div><div id="content" aria-live="polite"></div></section><footer><span>GovOpsDev ERP <strong>·</strong> Guided Tour</span><span>Independent demo · ไม่ใช่ระบบหรือข้อมูลจริง</span></footer></div></main></div><script type="module" src="js/app.js"></script></body></html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ภาพบันทึกการใช้งาน GovOpsDev ERP จาก Odoo จริง พร้อม Guided Tour และผลทดสอบสิทธิ์">
+  <title>GovOpsDev ERP · Recorded Guided Tour</title>
+  <link rel="stylesheet" href="assets/vendor/shepherd.css"><link rel="stylesheet" href="css/app.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">ข้ามไปเนื้อหา</a>
+<header class="topbar"><a class="brand" href="./"><span class="logo">G</span><span>Gov<span class="teal">Ops</span>Dev<small>ERP · RECORDED GUIDED TOUR</small></span></a><span class="source-badge">ภาพจาก Odoo จริง · ข้อมูลสาธิต</span></header>
+<div class="layout">
+  <aside class="sidebar" aria-label="ขั้นตอนการสาธิต"><p class="eyebrow">EXPLORE THE WORKFLOW</p><h2>จากโครงการสู่ผลลัพธ์</h2><nav id="steps-nav" aria-label="รายการขั้นตอน"></nav><p class="sidebar-note">ภาพและข้อมูลมาจากการรัน Playwright ชุดเดียวกัน เปิดดูได้โดยไม่เชื่อมต่อ Odoo</p><a href="README.md">วิธีสร้างและตรวจหลักฐาน ↗</a></aside>
+  <main id="main">
+    <section class="hero"><p class="eyebrow">PROJECT70 · REAL ODOO REPLAY</p><h1>ติดตามงานจริง<br><span>เข้าใจทั้งกระบวนการ</span></h1><p>สำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ ผ่านภาพการใช้งานและผลตรวจจากระบบสาธิต</p><div class="controls"><button id="start-tour" class="primary" disabled>เริ่มทัวร์หลัก ↗</button><button id="permission-tour" disabled>ทัวร์สิทธิ์ผู้ใช้</button><button id="restart" disabled>เริ่มใหม่</button><button id="relationships-toggle" aria-expanded="false" disabled>ความสัมพันธ์เอกสาร</button></div></section>
+    <p id="announcement" role="status" aria-live="polite">กำลังโหลดหลักฐาน…</p>
+    <section class="viewer" aria-label="ภาพบันทึกและคำอธิบาย">
+      <div class="viewer-heading"><div><p class="eyebrow" id="step-screen"></p><h2 id="step-title" tabindex="-1"></h2></div><span id="progress" class="pill"></span></div>
+      <div class="meta"><span id="persona"></span><span id="state"></span><span id="record-kind"></span></div>
+      <p id="security-evidence" hidden>Actual Odoo security result captured by Playwright</p>
+      <div id="screenshot-frame"><img id="evidence-image" alt="" decoding="async"><div id="evidence-hotspot" tabindex="0" role="img" aria-label="จุดที่กำลังอธิบายในภาพ"></div></div>
+      <div class="caption"><p id="step-description"></p><a id="full-image" target="_blank" rel="noopener">เปิดภาพขนาดเต็ม ↗</a></div>
+      <div class="step-controls"><button id="previous" disabled>← ก่อนหน้า</button><span id="step-code"></span><button id="next" disabled>ถัดไป →</button></div>
+    </section>
+    <section id="final-result" class="panel" hidden><h2>ผลตรวจจากการรันนี้</h2><div id="result-grid"></div><p>ตัวเลขประกอบอ่านจากข้อมูลที่บันทึกจริงใน Odoo ภาพด้านบนเป็นหน้าผลวงเงินจริง</p></section>
+    <section id="relationships-panel" class="panel" hidden><h2>ความสัมพันธ์เอกสารที่ตรวจพบ</h2><p>ลิงก์ที่มีภาพบันทึกจะพาไปยังขั้นตอนนั้น รายการอื่นแสดงเฉพาะข้อมูลที่อ่านจาก Odoo</p><div id="relationship-list"></div><div id="document-detail" role="status"></div></section>
+    <section class="panel"><h2>เอกสารที่เกี่ยวข้อง</h2><div id="related-documents" class="related"></div><details><summary>บทบรรยายของขั้นตอนนี้</summary><p id="narration"></p></details></section>
+    <footer><p id="provenance"></p><p>โครงการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิง NSTDA ERP-Government แบบโอเพนซอร์ส ไม่ใช่รุ่นเผยแพร่ทางการของ NSTDA</p><a href="generated/video-storyboard.md">Storyboard สำหรับวิดีโอ</a></footer>
+  </main>
+</div>
+</body>
+</html>

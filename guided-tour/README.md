@@ -1,28 +1,24 @@
-# Guided Tour: โครงการภาครัฐ
+# Recorded Guided Tour
 
-เว็บสาธิตแบบ static สำหรับสำรวจโครงการ งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุ และครุภัณฑ์ พร้อมขั้นตอนแนะนำ 12 ขั้น และการจำลองสิทธิ์ 4 ขั้น ข้อมูลอ้างอิงชุดสาธิต PROJECT70 ของสำนักงาน A สูงสุด ณ 1 พฤศจิกายน 2569 ไม่ใช่ระบบปฏิบัติงานจริง
+ตัวเล่นภาพหลักฐานจาก Playwright ที่เปิด Odoo จริง ใช้ Shepherd.js **15.2.3** แบบ vendored พร้อม [license ต้นฉบับ](assets/vendor/SHEPHERD-LICENSE.md) ไม่มี backend หรือ Node build สำหรับตัวเล่น ไม่ใช้ Swiper และไม่ต่อ Odoo จาก GitHub Pages
 
-## เปิดใช้งาน
+สถาปัตยกรรม: Real Odoo → Playwright → screenshots / steps / relationships / final state → Python builder → static Shepherd replay
 
-จากโฟลเดอร์ repository รัน `python3 -m http.server 8000` แล้วเปิด `http://localhost:8000/guided-tour/` ต้องเปิดผ่านเว็บเซิร์ฟเวอร์เพราะเบราว์เซอร์โหลด JSON ด้วย fetch ไม่ต้องเชื่อมต่อ Odoo หรืออินเทอร์เน็ต
+ดู [วิธีบันทึกและ build](../playwright-demo/README.md) หรือเปิดจาก root ด้วย `python3 -m http.server 8080` แล้วไป `http://localhost:8080/guided-tour/` ต้องเปิดผ่าน HTTP เพื่อโหลด JSON
 
-สามารถเปิด GitHub Pages จาก branch และ root ของ repository แล้วใช้ URL รูปแบบ `https://<username>.github.io/<repository>/guided-tour/` ทั้งนี้ต้องตั้งค่า Pages ก่อน URL จึงจะใช้งานได้
+เมื่อเปิด GitHub Pages จาก root repository จะใช้เส้นทาง `https://<username>.github.io/<repository>/guided-tour/` ได้ ไฟล์ใช้ relative URLs ทั้งหมดและไม่ต้องล็อกอิน Odoo
 
-เลือก **เริ่ม Guided Tour** หรือ **สำรวจด้วยตนเอง**; เลือก persona จากด้านบนและ **ทัวร์สิทธิ์** เพื่อดูตัวอย่างอนุญาตและปฏิเสธ ปุ่มรีเซ็ตคืนค่าการจำลองในหน้านั้น การเปลี่ยนสถานะไม่บันทึกลงฐานข้อมูล
+ทัวร์หลักเล่นภาพ PROJECT70 ตามลำดับที่ Playwright เปิดจริง จบที่หน้าผลวงเงินใน Odoo ส่วนทัวร์สิทธิ์เล่นผลปฏิเสธการอ่านจริงจากบัญชี UAT ที่แยกจากข้อมูล PROJECT70 ป้าย persona หมายถึงบัญชีที่ใช้บันทึกภาพ **ไม่ใช่การสลับล็อกอินในเว็บ static**
 
-## ข้อมูลและข้อจำกัด
+ปุ่มเริ่มทัวร์ ย้อนกลับ ถัดไป ออก เริ่มใหม่ และความสัมพันธ์เอกสารใช้งานได้ทั้งเมาส์และคีย์บอร์ด ภาพและ hotspot ใช้สัดส่วนเดียวกันบนมือถือ มีลิงก์เปิดภาพเต็มเพื่ออ่านข้อความขนาดเล็ก พร้อมคำอธิบายและบทบรรยายเป็นข้อความ HTML
 
-- `data/` เก็บเอกสาร ความสัมพันธ์ persona และขั้นตอน; `python3 guided-tour/scripts/validate-data.py` ตรวจความสัมพันธ์ ตัวเลข และขั้นตอน
-- งบโครงการดิจิทัล 1,000,000 บาท ใช้จริง 222,000 ผูกพัน 60,000 และคงเหลือ 718,000 บาท เป็นยอดก่อนภาษี สัญญาบริการเป็นคนละเอกสารกับ PO คอมพิวเตอร์
-- ทะเบียนครุภัณฑ์ ERP ยังคงสถานะร่าง ส่วนทะเบียนค่าเสื่อมเปิดใช้งานแล้ว ข้อมูลบางรายการย่อเพื่อให้สาธิตได้เข้าใจง่าย
-- Persona และการทดสอบสิทธิ์เป็นแบบจำลองในเบราว์เซอร์ **ไม่ใช่การเข้าสู่ระบบหรือการรักษาความปลอดภัยจริง** และไม่ควรนำไปใช้แทน ACL และ record rules ของ Odoo จริง ขอบเขต Project มาตรฐานและเอกสารแต่ละชนิดต่างกัน รวมถึงข้อยกเว้นผู้จัดการงบและผู้ทบทวนตาม tier
-- ไม่มีการเชื่อมต่อ backend, ไม่มีบัญชีหรือรหัสผ่าน และไม่ควรใส่ข้อมูลจริงที่เป็นความลับใน JSON ข้อมูลที่แสดงทุกส่วนดาวน์โหลดได้จากเว็บไซต์
-- [Storyboard และบทบรรยาย](docs/video-storyboard.md) สร้างจากลำดับขั้นตอนเดียวกับทัวร์ วิดีโอยังไม่เผยแพร่
+`generated/` เป็นผล build ห้ามแก้ข้อมูลหรือภาพเอง ใช้ `scripts/build-guided-tour.py <run-id>` จาก root เพื่อแทนที่ทั้งชุดหลังตรวจหลักฐาน ระบบตรวจ hash และความครบถ้วนก่อนเปลี่ยนไฟล์ Raw video และ trace อยู่ใน `playwright-demo/output/` ที่ไม่รวมใน Git
 
-## ซอฟต์แวร์และ License
+- [แหล่งหลักฐานและ run ID](generated/manifest.json)
+- [ผลสรุปที่อ่านจาก Odoo](generated/final-state.json)
+- [Storyboard ที่สร้างจาก metadata](generated/video-storyboard.md)
+- [ข้อมูลเตรียมคำบรรยาย](generated/subtitle-hints.json)
 
-ส่วนของโครงการนี้ใช้ AGPL-3.0 ตาม repository; Shepherd.js 15.2.3 ใช้ชุดไฟล์จาก [npm package อย่างเป็นทางการ](https://www.npmjs.com/package/shepherd.js/v/15.2.3) และแจกจ่ายภายใต้ AGPL-3.0 หรือ commercial license ดู [license ของ Shepherd](assets/vendor/SHEPHERD-LICENSE.md) ไฟล์ vendor ถูกเก็บใน repository เพื่อให้เปิดแบบ offline ได้
+ภาพปัจจุบันเป็น walkthrough ของเอกสารที่มีอยู่แล้ว ไม่ใช่หลักฐานการสร้างธุรกรรมทั้งหมดจากศูนย์ ดูขอบเขตและขั้นตอนกู้คืน snapshot ในคู่มือบันทึก ไม่มีการแก้ไขธุรกรรมจากหน้านี้
 
-หน้านี้เป็นงานสาธิตของ GovOpsDev ที่ได้รับแรงบันดาลใจจากรูปแบบ ERP ไม่ใช่ผลิตภัณฑ์หรือเว็บไซต์ทางการของ Odoo
-
-โครงการนี้เป็นการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิงซอร์สโอเพนซอร์ส NSTDA ERP-Government และ **ไม่ใช่รุ่นเผยแพร่อย่างเป็นทางการของ NSTDA**
+โครงการนี้เป็นการย้ายและสาธิต Odoo 20 Community โดยชุมชนอย่างอิสระ อ้างอิงซอร์สโอเพนซอร์ส NSTDA ERP-Government และ **ไม่ใช่รุ่นเผยแพร่อย่างเป็นทางการของ NSTDA** ใช้ AGPL-3.0 ตาม repository; Shepherd.js ต้นฉบับจาก npm `shepherd.js@15.2.3` แจกจ่ายแบบ dual license ตามไฟล์แนบ

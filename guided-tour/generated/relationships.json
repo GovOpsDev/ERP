@@ -1,0 +1,198 @@
+[
+  {
+    "id": "REL-1",
+    "from": "project.project:1",
+    "to": "erp.budget.control:764",
+    "type": "shared_analytic",
+    "evidence": "project.account_id = control.analytic_id"
+  },
+  {
+    "id": "REL-2",
+    "from": "project.project:1",
+    "to": "erp.contract.contract:119",
+    "type": "shared_analytic",
+    "evidence": "contract.line.analytic_id"
+  },
+  {
+    "id": "REL-3",
+    "from": "project.project:2",
+    "to": "erp.budget.control:765",
+    "type": "shared_analytic",
+    "evidence": "project.account_id = control.analytic_id"
+  },
+  {
+    "id": "REL-4",
+    "from": "erp.procurement.request:1297",
+    "to": "purchase.requisition:118",
+    "type": "traceable_via_order",
+    "evidence": "order_line.erp_request_line_id + order.requisition_id"
+  },
+  {
+    "id": "REL-5",
+    "from": "erp.procurement.request:1297",
+    "to": "purchase.order:942",
+    "type": "request_line",
+    "evidence": "order_line.erp_request_line_id"
+  },
+  {
+    "id": "REL-6",
+    "from": "purchase.requisition:118",
+    "to": "purchase.order:942",
+    "type": "requisition",
+    "evidence": "order.requisition_id"
+  },
+  {
+    "id": "REL-7",
+    "from": "erp.budget.control:764",
+    "to": "erp.procurement.request:1297",
+    "type": "shared_analytic",
+    "evidence": "request.line.analytic_id"
+  },
+  {
+    "id": "REL-8",
+    "from": "erp.procurement.request:1298",
+    "to": "purchase.requisition:119",
+    "type": "traceable_via_order",
+    "evidence": "order_line.erp_request_line_id + order.requisition_id"
+  },
+  {
+    "id": "REL-9",
+    "from": "erp.procurement.request:1298",
+    "to": "purchase.order:943",
+    "type": "request_line",
+    "evidence": "order_line.erp_request_line_id"
+  },
+  {
+    "id": "REL-10",
+    "from": "purchase.requisition:119",
+    "to": "purchase.order:943",
+    "type": "requisition",
+    "evidence": "order.requisition_id"
+  },
+  {
+    "id": "REL-11",
+    "from": "erp.budget.control:764",
+    "to": "erp.procurement.request:1298",
+    "type": "shared_analytic",
+    "evidence": "request.line.analytic_id"
+  },
+  {
+    "id": "REL-12",
+    "from": "erp.procurement.request:1299",
+    "to": "purchase.requisition:120",
+    "type": "traceable_via_order",
+    "evidence": "order_line.erp_request_line_id + order.requisition_id"
+  },
+  {
+    "id": "REL-13",
+    "from": "erp.procurement.request:1299",
+    "to": "purchase.order:944",
+    "type": "request_line",
+    "evidence": "order_line.erp_request_line_id"
+  },
+  {
+    "id": "REL-14",
+    "from": "purchase.requisition:120",
+    "to": "purchase.order:944",
+    "type": "requisition",
+    "evidence": "order.requisition_id"
+  },
+  {
+    "id": "REL-15",
+    "from": "erp.budget.control:765",
+    "to": "erp.procurement.request:1299",
+    "type": "shared_analytic",
+    "evidence": "request.line.analytic_id"
+  },
+  {
+    "id": "REL-16",
+    "from": "purchase.order:942",
+    "to": "erp.contract.agreement:135",
+    "type": "agreement",
+    "evidence": "agreement.purchase_order_id"
+  },
+  {
+    "id": "REL-17",
+    "from": "purchase.order:942",
+    "to": "erp.inventory.acceptance:364",
+    "type": "acceptance",
+    "evidence": "acceptance.purchase_order_id"
+  },
+  {
+    "id": "REL-18",
+    "from": "purchase.order:943",
+    "to": "erp.inventory.acceptance:365",
+    "type": "acceptance",
+    "evidence": "acceptance.purchase_order_id"
+  },
+  {
+    "id": "REL-19",
+    "from": "erp.inventory.acceptance:364",
+    "to": "account.move:1065",
+    "type": "bill",
+    "evidence": "move.erp_acceptance_id"
+  },
+  {
+    "id": "REL-20",
+    "from": "erp.inventory.acceptance:365",
+    "to": "account.move:1066",
+    "type": "bill",
+    "evidence": "move.erp_acceptance_id"
+  },
+  {
+    "id": "REL-21",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:297",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-22",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:298",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-23",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:299",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-24",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:300",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-25",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:301",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-26",
+    "from": "account.move:1065",
+    "to": "erp.asset.asset:302",
+    "type": "asset",
+    "evidence": "asset.bill_id"
+  },
+  {
+    "id": "REL-27",
+    "from": "erp.budget.control:764",
+    "to": "erp.inventory.request:27",
+    "type": "shared_analytic",
+    "evidence": "inventory.request.line.analytic_id"
+  },
+  {
+    "id": "REL-28",
+    "from": "erp.budget.control:764",
+    "to": "erp.inventory.request:28",
+    "type": "shared_analytic",
+    "evidence": "inventory.request.line.analytic_id"
+  }
+]

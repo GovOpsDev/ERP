@@ -1,0 +1,63 @@
+{
+  "scenario": "PROJECT70",
+  "currency": "THB",
+  "project": {
+    "id": 1,
+    "name": "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+    "analytic": [
+      299,
+      "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)"
+    ]
+  },
+  "projects": 2,
+  "tasks": 15,
+  "milestones": 4,
+  "budget": {
+    "allocated": 1000000,
+    "committed": 60000,
+    "actual": 222000,
+    "remaining": 718000,
+    "total_allocated": 1800000
+  },
+  "procurement": {
+    "request": "PROJECT คอมพิวเตอร์",
+    "request_state": "approved",
+    "order": "P00942",
+    "order_state": "purchase"
+  },
+  "acceptance": {
+    "ref": "WA/00364",
+    "quantity": 6,
+    "state": "accept"
+  },
+  "bill": {
+    "ref": "BILL/2026/11/0003",
+    "state": "posted",
+    "amount": 210000
+  },
+  "assets": {
+    "count": 6,
+    "value": 210000,
+    "erp_states": [
+      "draft"
+    ],
+    "depreciation_states": [
+      "open"
+    ]
+  },
+  "inventory": {
+    "product": "PROJECT-PAPER",
+    "locations": [
+      {
+        "name": "DMOA/สต็อก",
+        "quantity": 80
+      },
+      {
+        "name": "DMOA/จุดบริการประชาชน (สาธิต)",
+        "quantity": 20
+      }
+    ],
+    "total": 100
+  },
+  "scope": "Persisted PROJECT70 walkthrough and live assertions; no baseline transactions recreated"
+}

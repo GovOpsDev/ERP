@@ -54,3 +54,7 @@ compose.override.yaml
 
 # Readiness browser dependencies
 node_modules/
+
+# Real Odoo demo: private raw recordings, sessions and local evidence
+playwright-demo/output/
+playwright-demo/.auth/

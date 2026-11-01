@@ -1,0 +1,1124 @@
+[
+  {
+    "key": "project.project:1",
+    "model": "project.project",
+    "id": 1,
+    "ref": "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+    "name": "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "on_track",
+    "values": {
+      "id": 1,
+      "name": "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+      "account_id": [
+        299,
+        "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "task_ids": [
+        18,
+        21,
+        20,
+        19,
+        23,
+        24,
+        25,
+        22,
+        32
+      ],
+      "milestone_ids": [
+        1,
+        2
+      ],
+      "last_update_status": "on_track"
+    }
+  },
+  {
+    "key": "project.project:2",
+    "model": "project.project",
+    "id": 2,
+    "ref": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+    "name": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "on_track",
+    "values": {
+      "id": 2,
+      "name": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+      "account_id": [
+        302,
+        "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "task_ids": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "milestone_ids": [
+        3,
+        4
+      ],
+      "last_update_status": "on_track"
+    }
+  },
+  {
+    "key": "erp.budget.control:764",
+    "model": "erp.budget.control",
+    "id": 764,
+    "ref": "PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+    "name": "PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "open",
+    "values": {
+      "id": 764,
+      "name": "PROJECT70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "analytic_id": [
+        299,
+        "[PROJECT70-001] PROJECT70-001 ศูนย์บริการประชาชนดิจิทัล (สาธิต)"
+      ],
+      "amount": 1000000,
+      "available_amount": 718000,
+      "state": "open",
+      "move_ids": [
+        15709,
+        15711,
+        15713,
+        15715,
+        15717,
+        15723,
+        15725,
+        15727,
+        15729,
+        15731,
+        15739
+      ]
+    }
+  },
+  {
+    "key": "erp.budget.control:765",
+    "model": "erp.budget.control",
+    "id": 765,
+    "ref": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+    "name": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      653,
+      "กองบริหารและพัสดุ (สาธิต)"
+    ],
+    "state": "open",
+    "values": {
+      "id": 765,
+      "name": "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ],
+      "analytic_id": [
+        302,
+        "[PROJECT70-002] PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "amount": 800000,
+      "available_amount": 400000,
+      "state": "open",
+      "move_ids": [
+        15737
+      ]
+    }
+  },
+  {
+    "key": "erp.procurement.request:1297",
+    "model": "erp.procurement.request",
+    "id": 1297,
+    "ref": "PROJECT คอมพิวเตอร์",
+    "name": "PROJECT คอมพิวเตอร์",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "approved",
+    "values": {
+      "id": 1297,
+      "name": "PROJECT คอมพิวเตอร์",
+      "state": "approved",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "requested_by": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "approved_by_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "total_company_currency": 210000
+    }
+  },
+  {
+    "key": "erp.procurement.request:1298",
+    "model": "erp.procurement.request",
+    "id": 1298,
+    "ref": "PROJECT วัสดุ",
+    "name": "PROJECT วัสดุ",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "approved",
+    "values": {
+      "id": 1298,
+      "name": "PROJECT วัสดุ",
+      "state": "approved",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "requested_by": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "approved_by_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "total_company_currency": 12000
+    }
+  },
+  {
+    "key": "erp.procurement.request:1299",
+    "model": "erp.procurement.request",
+    "id": 1299,
+    "ref": "PROJECT ปรับปรุงพื้นที่",
+    "name": "PROJECT ปรับปรุงพื้นที่",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      653,
+      "กองบริหารและพัสดุ (สาธิต)"
+    ],
+    "state": "approved",
+    "values": {
+      "id": 1299,
+      "name": "PROJECT ปรับปรุงพื้นที่",
+      "state": "approved",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ],
+      "requested_by": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "approved_by_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "total_company_currency": 400000
+    }
+  },
+  {
+    "key": "purchase.requisition:118",
+    "model": "purchase.requisition",
+    "id": 118,
+    "ref": "PT00118",
+    "name": "PT00118",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "confirmed",
+    "values": {
+      "id": 118,
+      "name": "PT00118",
+      "state": "confirmed",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "purchase_ids": [
+        942
+      ]
+    }
+  },
+  {
+    "key": "purchase.requisition:119",
+    "model": "purchase.requisition",
+    "id": 119,
+    "ref": "PT00119",
+    "name": "PT00119",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "confirmed",
+    "values": {
+      "id": 119,
+      "name": "PT00119",
+      "state": "confirmed",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "purchase_ids": [
+        943
+      ]
+    }
+  },
+  {
+    "key": "purchase.requisition:120",
+    "model": "purchase.requisition",
+    "id": 120,
+    "ref": "PT00120",
+    "name": "PT00120",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      653,
+      "กองบริหารและพัสดุ (สาธิต)"
+    ],
+    "state": "confirmed",
+    "values": {
+      "id": 120,
+      "name": "PT00120",
+      "state": "confirmed",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ],
+      "purchase_ids": [
+        944
+      ]
+    }
+  },
+  {
+    "key": "purchase.order:942",
+    "model": "purchase.order",
+    "id": 942,
+    "ref": "P00942",
+    "name": "P00942",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "purchase",
+    "values": {
+      "id": 942,
+      "name": "P00942",
+      "state": "purchase",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "project_id": [
+        1,
+        "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)"
+      ],
+      "requisition_id": [
+        118,
+        "PT00118"
+      ],
+      "order_line": [
+        941
+      ],
+      "amount_untaxed": 210000,
+      "amount_total": 224700,
+      "erp_request_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "purchase.order:943",
+    "model": "purchase.order",
+    "id": 943,
+    "ref": "P00943",
+    "name": "P00943",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "purchase",
+    "values": {
+      "id": 943,
+      "name": "P00943",
+      "state": "purchase",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "project_id": [
+        1,
+        "DEMO70-001 โครงการยกระดับศูนย์บริการประชาชนดิจิทัล ปี 2570 (สาธิต)"
+      ],
+      "requisition_id": [
+        119,
+        "PT00119"
+      ],
+      "order_line": [
+        942
+      ],
+      "amount_untaxed": 12000,
+      "amount_total": 12840,
+      "erp_request_organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "purchase.order:944",
+    "model": "purchase.order",
+    "id": 944,
+    "ref": "P00944",
+    "name": "P00944",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      653,
+      "กองบริหารและพัสดุ (สาธิต)"
+    ],
+    "state": "cancel",
+    "values": {
+      "id": 944,
+      "name": "P00944",
+      "state": "cancel",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "project_id": [
+        2,
+        "PROJECT70-002 โครงการปรับปรุงพื้นที่บริการและสำนักงาน ปี 2570 (สาธิต)"
+      ],
+      "requisition_id": [
+        120,
+        "PT00120"
+      ],
+      "order_line": [
+        943
+      ],
+      "amount_untaxed": 400000,
+      "amount_total": 428000,
+      "erp_request_organization_id": [
+        653,
+        "กองบริหารและพัสดุ (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.contract.agreement:135",
+    "model": "erp.contract.agreement",
+    "id": 135,
+    "ref": "AG/00135",
+    "name": "PROJECT สัญญาจัดซื้อคอมพิวเตอร์ 6 เครื่อง โครงการ PROJECT70-001",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "active",
+    "values": {
+      "id": 135,
+      "name": "PROJECT สัญญาจัดซื้อคอมพิวเตอร์ 6 เครื่อง โครงการ PROJECT70-001",
+      "code": "AG/00135",
+      "state": "active",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "purchase_order_id": [
+        942,
+        "P00942"
+      ],
+      "amount_untaxed": 210000
+    }
+  },
+  {
+    "key": "erp.contract.contract:119",
+    "model": "erp.contract.contract",
+    "id": 119,
+    "ref": "PROJECT สัญญาบำรุงรักษาศูนย์บริการประชาชนดิจิทัล",
+    "name": "PROJECT สัญญาบำรุงรักษาศูนย์บริการประชาชนดิจิทัล",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "commit_budget=true",
+    "values": {
+      "id": 119,
+      "name": "PROJECT สัญญาบำรุงรักษาศูนย์บริการประชาชนดิจิทัล",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "commit_budget": true
+    }
+  },
+  {
+    "key": "erp.inventory.acceptance:364",
+    "model": "erp.inventory.acceptance",
+    "id": 364,
+    "ref": "WA/00364",
+    "name": "WA/00364",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "accept",
+    "values": {
+      "id": 364,
+      "name": "WA/00364",
+      "state": "accept",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "purchase_order_id": [
+        942,
+        "P00942"
+      ],
+      "line_ids": [
+        359
+      ],
+      "responsible_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "acceptance_date": "2026-11-01 08:32:32"
+    }
+  },
+  {
+    "key": "erp.inventory.acceptance:365",
+    "model": "erp.inventory.acceptance",
+    "id": 365,
+    "ref": "WA/00365",
+    "name": "WA/00365",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "accept",
+    "values": {
+      "id": 365,
+      "name": "WA/00365",
+      "state": "accept",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "purchase_order_id": [
+        943,
+        "P00943"
+      ],
+      "line_ids": [
+        360
+      ],
+      "responsible_id": [
+        703,
+        "ผู้ทดลองระบบโครงการภาครัฐ"
+      ],
+      "acceptance_date": "2026-11-01 08:32:33"
+    }
+  },
+  {
+    "key": "account.move:1065",
+    "model": "account.move",
+    "id": 1065,
+    "ref": "BILL/2026/11/0003",
+    "name": "BILL/2026/11/0003",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "posted",
+    "values": {
+      "id": 1065,
+      "name": "BILL/2026/11/0003",
+      "state": "posted",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "amount_untaxed": 210000,
+      "amount_total": 224700,
+      "invoice_line_ids": [
+        2228
+      ]
+    }
+  },
+  {
+    "key": "account.move:1066",
+    "model": "account.move",
+    "id": 1066,
+    "ref": "BILL/2026/11/0004",
+    "name": "BILL/2026/11/0004",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "posted",
+    "values": {
+      "id": 1066,
+      "name": "BILL/2026/11/0004",
+      "state": "posted",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "erp_acceptance_id": [
+        365,
+        "WA/00365"
+      ],
+      "amount_untaxed": 12000,
+      "amount_total": 12840,
+      "invoice_line_ids": [
+        2231
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:297",
+    "model": "erp.asset.asset",
+    "id": 297,
+    "ref": "AST/00297",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 297,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00297",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        158,
+        "AST/00297 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:298",
+    "model": "erp.asset.asset",
+    "id": 298,
+    "ref": "AST/00298",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 298,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00298",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        157,
+        "AST/00298 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:299",
+    "model": "erp.asset.asset",
+    "id": 299,
+    "ref": "AST/00299",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 299,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00299",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        156,
+        "AST/00299 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:300",
+    "model": "erp.asset.asset",
+    "id": 300,
+    "ref": "AST/00300",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 300,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00300",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        155,
+        "AST/00300 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:301",
+    "model": "erp.asset.asset",
+    "id": 301,
+    "ref": "AST/00301",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 301,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00301",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        154,
+        "AST/00301 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.asset.asset:302",
+    "model": "erp.asset.asset",
+    "id": 302,
+    "ref": "AST/00302",
+    "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 302,
+      "name": "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)",
+      "number": "AST/00302",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "bill_id": [
+        1065,
+        "BILL/2026/11/0003 (PROJECT คอมพิวเตอร์)"
+      ],
+      "acceptance_id": [
+        364,
+        "WA/00364"
+      ],
+      "purchase_line_id": [
+        941,
+        "[PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ],
+      "quantity": 1,
+      "purchase_value": 35000,
+      "engine_asset_id": [
+        153,
+        "AST/00302 - [PROJECT-COMPUTER] คอมพิวเตอร์จุดบริการประชาชน (PROJECT สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.inventory.request:27",
+    "model": "erp.inventory.request",
+    "id": 27,
+    "ref": "SR000027",
+    "name": "SR000027",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "done",
+    "values": {
+      "id": 27,
+      "name": "SR000027",
+      "state": "done",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "location_id": [
+        3075,
+        "DMOA/จุดบริการประชาชน (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "erp.inventory.request:28",
+    "model": "erp.inventory.request",
+    "id": 28,
+    "ref": "SR000028",
+    "name": "SR000028",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": [
+      651,
+      "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+    ],
+    "state": "draft",
+    "values": {
+      "id": 28,
+      "name": "SR000028",
+      "state": "draft",
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ],
+      "organization_id": [
+        651,
+        "สำนักเทคโนโลยีสารสนเทศ (สาธิต)"
+      ],
+      "location_id": [
+        3075,
+        "DMOA/จุดบริการประชาชน (สาธิต)"
+      ]
+    }
+  },
+  {
+    "key": "stock.quant:94",
+    "model": "stock.quant",
+    "id": 94,
+    "ref": "[PROJECT-PAPER] กระดาษ A4 สำหรับงานบริการ (PROJECT สาธิต)",
+    "name": "[PROJECT-PAPER] กระดาษ A4 สำหรับงานบริการ (PROJECT สาธิต)",
+    "company": [
+      431,
+      "สำนักงาน A สูงสุด"
+    ],
+    "organization": null,
+    "state": "not_applicable",
+    "values": {
+      "id": 94,
+      "product_id": [
+        199,
+        "[PROJECT-PAPER] กระดาษ A4 สำหรับงานบริการ (PROJECT สาธิต)"
+      ],
+      "location_id": [
+        3070,
+        "DMOA/สต็อก"
+      ],
+      "quantity": 80,
+      "company_id": [
+        431,
+        "สำนักงาน A สูงสุด"
+      ]
+    }
+  },
+  {
+    "key": "erp.procurement.request:905",
+    "model": "erp.procurement.request",
+    "id": 905,
+    "ref": "PR/00905",
+    "name": "PR/00905",
+    "company": [
+      347,
+      "Readiness UAT"
+    ],
+    "organization": [
+      514,
+      "UAT Unit 00"
+    ],
+    "state": "approved",
+    "values": {
+      "id": 905,
+      "name": "PR/00905",
+      "state": "approved",
+      "company_id": [
+        347,
+        "Readiness UAT"
+      ],
+      "organization_id": [
+        514,
+        "UAT Unit 00"
+      ]
+    },
+    "dataset": "UAT security fixture"
+  }
+]

@@ -1,0 +1,608 @@
+[
+  {
+    "id": "PRJ-01",
+    "order": 1,
+    "mode": "main",
+    "title": "โครงการหลักใน Project",
+    "description": "เปิดโครงการที่ผูกกับบัญชีวิเคราะห์ PROJECT70-001",
+    "tooltip": "เปิดโครงการที่ผูกกับบัญชีวิเคราะห์ PROJECT70-001",
+    "narration": "เริ่มจากโครงการมาตรฐานของ Odoo ภาพนี้แสดงข้อมูลที่บันทึกอยู่จริงด้วยบัญชี interactive-demo",
+    "duration_hint": 10,
+    "persona": "interactive-demo",
+    "document_ref": "project.project:1",
+    "screen": "project",
+    "operation": "inspect_persisted_document",
+    "state_before": "on_track",
+    "state_after": "on_track",
+    "source_path": "/odoo/project.project/1",
+    "screenshot": "screenshots/01-prj-01.png",
+    "screenshot_sha256": "d5329539f5d4833cd938b17beb2f5f01e3d0902fc32a8d51d5568acf8fbab386",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:48.637Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 3.042
+    },
+    "target": {
+      "x": 0.008333333333333333,
+      "y": 0.1037037037037037,
+      "width": 0.6420166015625,
+      "height": 0.48258101851851853
+    },
+    "relationships": [
+      "erp.budget.control:764",
+      "erp.contract.contract:119"
+    ]
+  },
+  {
+    "id": "BUD-01",
+    "order": 2,
+    "mode": "main",
+    "title": "วงเงินโครงการ",
+    "description": "ตรวจวงเงินและยอดคงเหลือของโครงการจากบัญชีวิเคราะห์เดียวกัน",
+    "tooltip": "ตรวจวงเงินและยอดคงเหลือของโครงการจากบัญชีวิเคราะห์เดียวกัน",
+    "narration": "วงเงินหนึ่งล้านบาท ใช้จริงสองแสนสองหมื่นสองพันบาท ผูกพันหกหมื่นบาท และคงเหลือเจ็ดแสนหนึ่งหมื่นแปดพันบาท ตัวเลขตรวจเทียบรายการบัญชีงบจริงในการรันนี้",
+    "duration_hint": 14,
+    "persona": "interactive-demo",
+    "document_ref": "erp.budget.control:764",
+    "screen": "budget",
+    "operation": "inspect_persisted_document",
+    "state_before": "open",
+    "state_after": "open",
+    "source_path": "/odoo/erp.budget.control/764",
+    "screenshot": "screenshots/02-bud-01.png",
+    "screenshot_sha256": "0b84dfa3d95cd0027be5406dfaad57226dc2919763d0808674d8ec21ba3bf3ea",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:49.677Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 4.082
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4046296296296296,
+      "width": 0.6,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "project.project:1",
+      "erp.procurement.request:1297",
+      "erp.procurement.request:1298",
+      "erp.inventory.request:27",
+      "erp.inventory.request:28"
+    ]
+  },
+  {
+    "id": "PR-01",
+    "order": 3,
+    "mode": "main",
+    "title": "ใบขอซื้อคอมพิวเตอร์",
+    "description": "อ่านสถานะและผู้ทบทวนที่อนุมัติใบขอซื้อจริง",
+    "tooltip": "อ่านสถานะและผู้ทบทวนที่อนุมัติใบขอซื้อจริง",
+    "narration": "คำขอซื้อคอมพิวเตอร์หกเครื่องได้รับอนุมัติแล้ว การบันทึกครั้งนี้เปิดดูเอกสารที่อนุมัติไว้ ไม่ได้อนุมัติซ้ำ",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "erp.procurement.request:1297",
+    "screen": "purchase-request",
+    "operation": "inspect_persisted_document",
+    "state_before": "approved",
+    "state_after": "approved",
+    "source_path": "/odoo/erp.procurement.request/1297",
+    "screenshot": "screenshots/03-pr-01.png",
+    "screenshot_sha256": "b9d1223620b8a5071ce9a41e672f846755a1bc4281fe68d2e9ff00cd115ade63",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:50.677Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 5.082
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.4888888888888889,
+      "width": 0.6864583333333333,
+      "height": 0.20162037037037037
+    },
+    "relationships": [
+      "purchase.requisition:118",
+      "purchase.order:942",
+      "erp.budget.control:764"
+    ]
+  },
+  {
+    "id": "REQ-01",
+    "order": 4,
+    "mode": "main",
+    "title": "ข้อตกลงจัดซื้อ",
+    "description": "ข้อตกลงจัดซื้อที่อ้างอิงจากใบสั่งซื้อ",
+    "tooltip": "ข้อตกลงจัดซื้อที่อ้างอิงจากใบสั่งซื้อ",
+    "narration": "ความสัมพันธ์นี้อ่านจากรายการคำขอซื้อและช่องข้อตกลงของใบสั่งซื้อ โดยไม่เดาหมายเลขเอกสาร",
+    "duration_hint": 10,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.requisition:118",
+    "screen": "requisition",
+    "operation": "inspect_persisted_document",
+    "state_before": "confirmed",
+    "state_after": "confirmed",
+    "source_path": "/odoo/purchase.requisition/118",
+    "screenshot": "screenshots/04-req-01.png",
+    "screenshot_sha256": "aff18958dffb058b14533a0504f3e3c8d76659a595db97b543c7d0a9b4b8a455",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:51.760Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 6.165
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5366608796296296,
+      "width": 0.6159749348958333,
+      "height": 0.19105902777777778
+    },
+    "relationships": [
+      "erp.procurement.request:1297",
+      "purchase.order:942"
+    ]
+  },
+  {
+    "id": "PO-01",
+    "order": 5,
+    "mode": "main",
+    "title": "ใบสั่งซื้อที่ยืนยันแล้ว",
+    "description": "คอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 210,000 บาท",
+    "tooltip": "คอมพิวเตอร์ 6 เครื่อง รวมก่อนภาษี 210,000 บาท",
+    "narration": "ใบสั่งซื้อเชื่อมกับ Project และข้อตกลงจัดซื้อ ปริมาณสั่งซื้อ ตรวจรับ และตั้งหนี้ต้องสอดคล้องกัน",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "purchase.order:942",
+    "screen": "purchase-order",
+    "operation": "inspect_persisted_document",
+    "state_before": "purchase",
+    "state_after": "purchase",
+    "source_path": "/odoo/purchase.order/942",
+    "screenshot": "screenshots/05-po-01.png",
+    "screenshot_sha256": "c6c254502903ec9714d19cb56f0f6820233b0f4bdae46d482e5a4b62162cb2c6",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:53.110Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 7.515
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.6505497685185185,
+      "width": 0.6159749348958333,
+      "height": 0.20810185185185184
+    },
+    "relationships": [
+      "erp.procurement.request:1297",
+      "purchase.requisition:118",
+      "erp.contract.agreement:135",
+      "erp.inventory.acceptance:364"
+    ]
+  },
+  {
+    "id": "AGR-01",
+    "order": 6,
+    "mode": "main",
+    "title": "ข้อตกลงซื้อคอมพิวเตอร์",
+    "description": "ข้อตกลงทางกฎหมายอ้างใบสั่งซื้อเดียวกัน",
+    "tooltip": "ข้อตกลงทางกฎหมายอ้างใบสั่งซื้อเดียวกัน",
+    "narration": "ภาพและข้อมูลจาก Odoo ยืนยันว่าเอกสารข้อตกลงนี้อ้างอิงใบสั่งซื้อคอมพิวเตอร์",
+    "duration_hint": 10,
+    "persona": "interactive-demo",
+    "document_ref": "erp.contract.agreement:135",
+    "screen": "agreement",
+    "operation": "inspect_persisted_document",
+    "state_before": "active",
+    "state_after": "active",
+    "source_path": "/odoo/erp.contract.agreement/135",
+    "screenshot": "screenshots/06-agr-01.png",
+    "screenshot_sha256": "d926bfc214d934ea0004b9f1563a528bff9a985a28f34ca0bd1da73846038cf9",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:54.282Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 8.687
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4513888888888889,
+      "width": 0.5295166015625,
+      "height": 0.024074074074074074
+    },
+    "relationships": [
+      "purchase.order:942"
+    ]
+  },
+  {
+    "id": "CON-01",
+    "order": 7,
+    "mode": "main",
+    "title": "สัญญาบำรุงรักษา",
+    "description": "สัญญาบริการผูกพันงบ 60,000 บาท ผ่านบัญชีวิเคราะห์โครงการ",
+    "tooltip": "สัญญาบริการผูกพันงบ 60,000 บาท ผ่านบัญชีวิเคราะห์โครงการ",
+    "narration": "สัญญาบำรุงรักษาเป็นอีกแขนงหนึ่งของโครงการ ไม่ได้สร้างความเชื่อมโยงกับใบสั่งซื้อคอมพิวเตอร์ขึ้นเอง",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "erp.contract.contract:119",
+    "screen": "contract",
+    "operation": "inspect_persisted_document",
+    "state_before": "commit_budget=true",
+    "state_after": "commit_budget=true",
+    "source_path": "/odoo/erp.contract.contract/119",
+    "screenshot": "screenshots/07-con-01.png",
+    "screenshot_sha256": "d52e0b05a9373f917e124f9bbadcd16d2d232a240f4b5bf7c42437d953546d3a",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:55.348Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 9.753
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5694444444444444,
+      "width": 0.6864583333333333,
+      "height": 0.20162037037037037
+    },
+    "relationships": [
+      "project.project:1"
+    ]
+  },
+  {
+    "id": "WA-01",
+    "order": 8,
+    "mode": "main",
+    "title": "ตรวจรับคอมพิวเตอร์",
+    "description": "ตรวจจำนวนที่รับเทียบกับรายการใบสั่งซื้อจริง",
+    "tooltip": "ตรวจจำนวนที่รับเทียบกับรายการใบสั่งซื้อจริง",
+    "narration": "เอกสารตรวจรับเสร็จแล้ว จำนวนหกเครื่องถูกตรวจสอบกับใบสั่งซื้อ ใบเรียกเก็บเงิน และครุภัณฑ์",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "erp.inventory.acceptance:364",
+    "screen": "work-acceptance",
+    "operation": "inspect_persisted_document",
+    "state_before": "accept",
+    "state_after": "accept",
+    "source_path": "/odoo/erp.inventory.acceptance/364",
+    "screenshot": "screenshots/08-wa-01.png",
+    "screenshot_sha256": "a8b7a13df90f8ef3ac26cce873677de40949913728f962372d0ca16b0ad28c0b",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:56.396Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 10.801
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.36018518518518516,
+      "width": 0.6864583333333333,
+      "height": 0.19907407407407407
+    },
+    "relationships": [
+      "purchase.order:942",
+      "account.move:1065"
+    ]
+  },
+  {
+    "id": "INV-01",
+    "order": 9,
+    "mode": "main",
+    "title": "เบิกวัสดุไปจุดบริการ",
+    "description": "ใบเบิกกระดาษ 20 หน่วยดำเนินการเสร็จแล้ว",
+    "tooltip": "ใบเบิกกระดาษ 20 หน่วยดำเนินการเสร็จแล้ว",
+    "narration": "กระดาษรับเข้าแล้วหนึ่งร้อยหน่วย ย้ายไปจุดบริการยี่สิบหน่วย การย้ายภายในยังคงจำนวนรวมหนึ่งร้อยหน่วย",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "erp.inventory.request:27",
+    "screen": "inventory",
+    "operation": "inspect_persisted_document",
+    "state_before": "done",
+    "state_after": "done",
+    "source_path": "/odoo/erp.inventory.request/27",
+    "screenshot": "screenshots/09-inv-01.png",
+    "screenshot_sha256": "200c5582f0a74d3ca1f631afeae740b74b09a1636d7c3a96e1aae43b04dbe876",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:57.440Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 11.845
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.49166666666666664,
+      "width": 0.6864583333333333,
+      "height": 0.18425925925925926
+    },
+    "relationships": [
+      "erp.budget.control:764"
+    ]
+  },
+  {
+    "id": "INV-02",
+    "order": 10,
+    "mode": "main",
+    "title": "ยอดคงคลังจริง",
+    "description": "ดูยอดวัสดุที่สถานที่เก็บใน Odoo",
+    "tooltip": "ดูยอดวัสดุที่สถานที่เก็บใน Odoo",
+    "narration": "รายการคงคลังแสดงแปดสิบหน่วยที่คลังหลัก และอีกยี่สิบหน่วยที่จุดบริการ ผลทั้งสองสถานที่เก็บในข้อมูลสรุปของการรัน",
+    "duration_hint": 10,
+    "persona": "interactive-demo",
+    "document_ref": "stock.quant:94",
+    "screen": "inventory-result",
+    "operation": "inspect_persisted_document",
+    "state_before": "not_applicable",
+    "state_after": "not_applicable",
+    "source_path": "/odoo/stock.quant/94",
+    "screenshot": "screenshots/10-inv-02.png",
+    "screenshot_sha256": "94b021049b18d3906f63b5c0387d3c5e8ce24a11c07e75572b38742919d09aa1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:07:58.315Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 12.72
+    },
+    "target": {
+      "x": 0.44820963541666664,
+      "y": 0.11944444444444445,
+      "width": 0.018644205729166665,
+      "height": 0.019444444444444445
+    },
+    "relationships": []
+  },
+  {
+    "id": "BILL-01",
+    "order": 11,
+    "mode": "main",
+    "title": "ใบเรียกเก็บเงินที่ลงบัญชีแล้ว",
+    "description": "ตั้งหนี้จากเอกสารตรวจรับและรายการจัดซื้อ",
+    "tooltip": "ตั้งหนี้จากเอกสารตรวจรับและรายการจัดซื้อ",
+    "narration": "สถานะลงบัญชีและมูลค่าก่อนภาษีอ่านจากรายการบัญชีจริงใน session ของผู้ทดลอง",
+    "duration_hint": 12,
+    "persona": "interactive-demo",
+    "document_ref": "account.move:1065",
+    "screen": "vendor-bill",
+    "operation": "inspect_persisted_document",
+    "state_before": "posted",
+    "state_after": "posted",
+    "source_path": "/odoo/account.move/1065",
+    "screenshot": "screenshots/11-bill-01.png",
+    "screenshot_sha256": "058dc8c3dcbd57f356781d79e9429b30bca91eedf7d1976a0fff18abcb001892",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:00.119Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 14.524
+    },
+    "target": {
+      "x": 0.021354166666666667,
+      "y": 0.5625868055555555,
+      "width": 0.6159749348958333,
+      "height": 0.20625
+    },
+    "relationships": [
+      "erp.inventory.acceptance:364",
+      "erp.asset.asset:297",
+      "erp.asset.asset:298",
+      "erp.asset.asset:299",
+      "erp.asset.asset:300",
+      "erp.asset.asset:301",
+      "erp.asset.asset:302"
+    ]
+  },
+  {
+    "id": "AST-01",
+    "order": 12,
+    "mode": "main",
+    "title": "ทะเบียนครุภัณฑ์",
+    "description": "ตรวจต้นทางใบเรียกเก็บเงินของครุภัณฑ์ 1 ใน 6 เครื่อง",
+    "tooltip": "ตรวจต้นทางใบเรียกเก็บเงินของครุภัณฑ์ 1 ใน 6 เครื่อง",
+    "narration": "ครุภัณฑ์หกเครื่องมีมูลค่ารวมสองแสนหนึ่งหมื่นบาท ทะเบียน ERP อยู่สถานะร่าง ขณะที่ทะเบียนค่าเสื่อมเปิดใช้งานแล้ว ต้องอ่านสถานะสองส่วนแยกกัน",
+    "duration_hint": 14,
+    "persona": "interactive-demo",
+    "document_ref": "erp.asset.asset:297",
+    "screen": "asset",
+    "operation": "inspect_persisted_document",
+    "state_before": "draft",
+    "state_after": "draft",
+    "source_path": "/odoo/erp.asset.asset/297",
+    "screenshot": "screenshots/12-ast-01.png",
+    "screenshot_sha256": "87c9b549ed889d53f3c9d656e60e5b684240a94b95df054ca91715257cc52d47",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:01.039Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 15.444
+    },
+    "target": {
+      "x": 0.09479166666666666,
+      "y": 0.31574074074074077,
+      "width": 0.6130208333333333,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "account.move:1065"
+    ]
+  },
+  {
+    "id": "RESULT-01",
+    "order": 13,
+    "mode": "main",
+    "title": "ผลสรุปงบประมาณจริง",
+    "description": "จบทัวร์ที่หน้าผลวงเงินจริง พร้อมสรุปที่ตรวจจากการรันเดียวกัน",
+    "tooltip": "จบทัวร์ที่หน้าผลวงเงินจริง พร้อมสรุปที่ตรวจจากการรันเดียวกัน",
+    "narration": "หน้าสุดท้ายเป็นฟอร์มวงเงินใน Odoo จริง ไม่ใช่แดชบอร์ดที่สร้างตัวเลขใหม่ ข้อมูลประกอบด้านข้างสรุปโครงการ งบ เอกสาร วัสดุและครุภัณฑ์จากการรันนี้",
+    "duration_hint": 15,
+    "persona": "interactive-demo",
+    "document_ref": "erp.budget.control:764",
+    "screen": "final-result",
+    "operation": "inspect_persisted_document",
+    "state_before": "open",
+    "state_after": "open",
+    "source_path": "/odoo/erp.budget.control/764",
+    "screenshot": "screenshots/13-result-01.png",
+    "screenshot_sha256": "0b84dfa3d95cd0027be5406dfaad57226dc2919763d0808674d8ec21ba3bf3ea",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:02.016Z",
+    "video": {
+      "file": "video/01-session.webm",
+      "elapsed_seconds": 16.421
+    },
+    "target": {
+      "x": 0.1078125,
+      "y": 0.4046296296296296,
+      "width": 0.6,
+      "height": 0.019444444444444445
+    },
+    "relationships": [
+      "project.project:1",
+      "erp.procurement.request:1297",
+      "erp.procurement.request:1298",
+      "erp.inventory.request:27",
+      "erp.inventory.request:28"
+    ]
+  },
+  {
+    "id": "PERM-OU",
+    "order": 14,
+    "mode": "permissions",
+    "title": "ถูกปฏิเสธเพราะต่างหน่วยงาน",
+    "description": "บัญชี UAT ที่อยู่คนละหน่วยงานเปิดคำขอที่ป้องกันไว้ไม่ได้",
+    "tooltip": "บัญชี UAT ที่อยู่คนละหน่วยงานเปิดคำขอที่ป้องกันไว้ไม่ได้",
+    "narration": "ผลนี้เป็นหน้าจอปฏิเสธจริงจาก Odoo ของชุด UAT สำหรับทดสอบสิทธิ์ ซึ่งแยกจากชุด PROJECT70",
+    "duration_hint": 10,
+    "persona": "uat_other_ou",
+    "document_ref": "erp.procurement.request:905",
+    "screen": "permission-denied",
+    "operation": "attempt_read_denied",
+    "state_before": "approved",
+    "state_after": "access_denied",
+    "source_path": "/odoo/erp.procurement.request/905",
+    "screenshot": "screenshots/14-perm-ou.png",
+    "screenshot_sha256": "852ec1d2b17bc35081fb50cb02442a908900b476c04b44d18996b92b89c32979",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:08.105Z",
+    "video": {
+      "file": "video/03-session.webm",
+      "elapsed_seconds": 2.305
+    },
+    "target": {
+      "x": 0.3802083333333333,
+      "y": 0.3341145833333333,
+      "width": 0.23958333333333334,
+      "height": 0.33175636574074074
+    },
+    "relationships": []
+  },
+  {
+    "id": "PERM-COMPANY",
+    "order": 15,
+    "mode": "permissions",
+    "title": "ถูกปฏิเสธเพราะต่างบริษัท",
+    "description": "บัญชี UAT ต่างบริษัทเปิดคำขอที่ป้องกันไว้ไม่ได้",
+    "tooltip": "บัญชี UAT ต่างบริษัทเปิดคำขอที่ป้องกันไว้ไม่ได้",
+    "narration": "ผู้ใช้ไม่มีบริษัทของเอกสารอยู่ในขอบเขตการใช้งาน Odoo จึงปฏิเสธการเข้าถึงจริง",
+    "duration_hint": 10,
+    "persona": "uat_foreign",
+    "document_ref": "erp.procurement.request:905",
+    "screen": "permission-denied",
+    "operation": "attempt_read_denied",
+    "state_before": "approved",
+    "state_after": "access_denied",
+    "source_path": "/odoo/erp.procurement.request/905",
+    "screenshot": "screenshots/15-perm-company.png",
+    "screenshot_sha256": "a5d08ab7b0b9e09c582aa46f605a8d43f6d45cb0cd5fb9c7e3e142d202d519f0",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:11.764Z",
+    "video": {
+      "file": "video/04-session.webm",
+      "elapsed_seconds": 2.329
+    },
+    "target": {
+      "x": 0.3802083333333333,
+      "y": 0.29522569444444446,
+      "width": 0.23958333333333334,
+      "height": 0.4095341435185185
+    },
+    "relationships": []
+  },
+  {
+    "id": "PERM-ROLE",
+    "order": 16,
+    "mode": "permissions",
+    "title": "ถูกปฏิเสธเพราะไม่มีสิทธิ์อ่าน",
+    "description": "บัญชีที่ไม่มีบทบาทของเอกสารถูกปฏิเสธจริง",
+    "tooltip": "บัญชีที่ไม่มีบทบาทของเอกสารถูกปฏิเสธจริง",
+    "narration": "ภาพนี้ยืนยันการจำกัดสิทธิ์อ่าน ไม่ได้กล่าวอ้างว่าเป็นการทดสอบอนุมัติหรือการลงบัญชี",
+    "duration_hint": 10,
+    "persona": "uat_unauthorized",
+    "document_ref": "erp.procurement.request:905",
+    "screen": "permission-denied",
+    "operation": "attempt_read_denied",
+    "state_before": "approved",
+    "state_after": "access_denied",
+    "source_path": "/odoo/erp.procurement.request/905",
+    "screenshot": "screenshots/16-perm-role.png",
+    "screenshot_sha256": "fe89f22793e2f054428c7d8dee99331cf590d1fb9139f2f2b4092f35ece25eef",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "captured_at": "2026-11-01T10:08:15.360Z",
+    "video": {
+      "file": "video/05-session.webm",
+      "elapsed_seconds": 2.271
+    },
+    "target": {
+      "x": 0.3802083333333333,
+      "y": 0.32439236111111114,
+      "width": 0.23958333333333334,
+      "height": 0.3512008101851852
+    },
+    "relationships": []
+  }
+]
