@@ -1,0 +1,39 @@
+[
+  {
+    "id": "STOCK-PAPER",
+    "kind": "inventory",
+    "ref": "PROJECT-PAPER",
+    "name": "กระดาษ A4 สำหรับงานบริการ",
+    "state": "รับเข้าคลังแล้ว",
+    "company": "สำนักงาน A สูงสุด",
+    "ou": "สำนักเทคโนโลยีสารสนเทศ",
+    "project": "PROJECT70-001",
+    "quantity": 100,
+    "issued": 20,
+    "on_hand": 80,
+    "destination": 20,
+    "description": "รับ 100 หน่วย เบิก 20 หน่วย; คลังกลางเหลือ 80 และจุดบริการ 20"
+  },
+  {
+    "id": "ISSUE-PAPER",
+    "kind": "issue",
+    "ref": "SR000027",
+    "name": "ใบเบิกกระดาษไปจุดบริการ",
+    "state": "เสร็จสิ้น",
+    "company": "สำนักงาน A สูงสุด",
+    "ou": "สำนักเทคโนโลยีสารสนเทศ",
+    "project": "PROJECT70-001",
+    "quantity": 20
+  },
+  {
+    "id": "ISSUE-DRAFT",
+    "kind": "issue",
+    "ref": "SR000028",
+    "name": "ใบเบิกวัสดุสำหรับฝึก",
+    "state": "ร่าง",
+    "company": "สำนักงาน A สูงสุด",
+    "ou": "สำนักเทคโนโลยีสารสนเทศ",
+    "project": "PROJECT70-001",
+    "quantity": 10
+  }
+]

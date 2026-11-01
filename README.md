@@ -132,3 +132,11 @@ python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app pro
 บริษัทใหม่ใช้ THB เป็นค่าเริ่มต้น และการติดตั้งครั้งแรกตั้งบริษัท placeholder
 ที่ยังไม่มีข้อมูลเป็นประเทศไทยและ THB บริษัท/เอกสาร USD เดิมคงสกุลเงินเดิม ดู
 [ขอบเขตค่าเริ่มต้นเงินบาท](docs/thb-defaults.md)
+
+## Interactive Guided Tour
+
+สำรวจตัวอย่างกระบวนการโครงการภาครัฐตั้งแต่งบประมาณ จัดซื้อ สัญญา ตรวจรับ วัสดุและครุภัณฑ์ รวมถึงการจำลองสิทธิ์ผู้ใช้ได้ที่ [Guided Tour](guided-tour/) โดยไม่ต้องเชื่อมต่อระบบ Odoo ดูวิธีรันและข้อจำกัดใน [คู่มือ Guided Tour](guided-tour/README.md)
+
+เมื่อเปิด GitHub Pages สำหรับ repository แล้ว URL จะมีรูปแบบ `https://<username>.github.io/<repository>/guided-tour/` ส่วน [วิดีโอสาธิตยังไม่เผยแพร่](#interactive-guided-tour) และมี [storyboard](guided-tour/docs/video-storyboard.md) สำหรับจัดทำวิดีโอ
+
+Live Odoo demo เป็นระบบแยกจาก Guided Tour แบบ static และต้องติดตั้ง Odoo พร้อมข้อมูลสาธิตและสิทธิ์ผู้ใช้ก่อนใช้งาน หน้าทัวร์ไม่ได้เชื่อมต่อหรือเปลี่ยนข้อมูลในระบบจริง
