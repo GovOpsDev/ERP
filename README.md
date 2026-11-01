@@ -29,11 +29,11 @@ GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหร�
 
 ### Full Creation Tour
 
-27 checkpoints จาก Playwright ที่สร้างโครงการและเอกสารใหม่ผ่าน Odoo UI จริง ผู้ใช้เลือก **Full Creation Tour · สร้างใหม่** ในตัวเล่น ดู [ขั้นตอนทำซ้ำ](docs/fresh-creation-demo.md)
+27 checkpoints จาก Playwright ที่สร้างโครงการและเอกสารใหม่ผ่าน Odoo UI จริง ผู้ใช้เลือก **Full Creation Tour · สร้างใหม่** ในตัวเล่น
 
 ### Dashboard BI Tour
 
-สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก [รายละเอียด](docs/dashboard-bi-demo.md)
+สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก
 
 ### Video Demo
 
