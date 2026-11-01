@@ -79,12 +79,9 @@ flowchart TD
     E --> B[Validated builder]
     B --> S[Shepherd.js Guided Tour]
     S --> G[GitHub Pages: static files only]
-    P --> V[Private session videos]
-    V --> N[Edit plan / Thai narration / subtitles]
-    N --> Y[YouTube package: not uploaded]
 ```
 
-`shared/erp_core/` เก็บพื้นฐานร่วม; `projects/` เก็บเจ็ดโดเมน; `ops/readiness/` เก็บเครื่องมือ deployment/backup; `playwright-demo/` เก็บ recorder; `guided-tour/` เก็บตัวเล่นและหลักฐานที่ตรวจแล้ว ดู [สถาปัตยกรรม](docs/odoo20-target-architecture.md)
+`shared/erp_core/` เก็บพื้นฐานร่วม; `projects/` เก็บเจ็ดโดเมน; `ops/readiness/` เก็บเครื่องมือ deployment/backup; `guided-tour/` เก็บตัวเล่นและหลักฐานที่ตรวจแล้ว ดู [สถาปัตยกรรม](docs/odoo20-target-architecture.md)
 
 ## How the demo evidence is generated
 
