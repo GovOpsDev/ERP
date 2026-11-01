@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import sys
 directory=sys.argv[1] if len(sys.argv)>1 else 'generated'
-if directory not in ('generated','generated-fresh'):sys.exit('Invalid generated directory')
+if directory not in ('generated','generated-fresh','generated-bi'):sys.exit('Invalid generated directory')
 root=Path(__file__).resolve().parents[1]/directory
 try:
     steps=json.loads((root/'steps.json').read_text())

@@ -1090,35 +1090,5 @@
         "สำนักงาน A สูงสุด"
       ]
     }
-  },
-  {
-    "key": "erp.procurement.request:905",
-    "model": "erp.procurement.request",
-    "id": 905,
-    "ref": "PR/00905",
-    "name": "PR/00905",
-    "company": [
-      347,
-      "Readiness UAT"
-    ],
-    "organization": [
-      514,
-      "UAT Unit 00"
-    ],
-    "state": "approved",
-    "values": {
-      "id": 905,
-      "name": "PR/00905",
-      "state": "approved",
-      "company_id": [
-        347,
-        "Readiness UAT"
-      ],
-      "organization_id": [
-        514,
-        "UAT Unit 00"
-      ]
-    },
-    "dataset": "UAT security fixture"
   }
 ]

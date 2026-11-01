@@ -17,6 +17,3 @@ Run: `20261101T100742907Z`. Generated from steps.json; do not edit manually.
 | BILL-01 | [Screenshot](screenshots/11-bill-01.png) | inspect_persisted_document | สถานะลงบัญชีและมูลค่าก่อนภาษีอ่านจากรายการบัญชีจริงใน session ของผู้ทดลอง | 12 s |
 | AST-01 | [Screenshot](screenshots/12-ast-01.png) | inspect_persisted_document | ครุภัณฑ์หกเครื่องมีมูลค่ารวมสองแสนหนึ่งหมื่นบาท ทะเบียน ERP อยู่สถานะร่าง ขณะที่ทะเบียนค่าเสื่อมเปิดใช้งานแล้ว ต้องอ่านสถานะสองส่วนแยกกัน | 14 s |
 | RESULT-01 | [Screenshot](screenshots/13-result-01.png) | inspect_persisted_document | หน้าสุดท้ายเป็นฟอร์มวงเงินใน Odoo จริง ไม่ใช่แดชบอร์ดที่สร้างตัวเลขใหม่ ข้อมูลประกอบด้านข้างสรุปโครงการ งบ เอกสาร วัสดุและครุภัณฑ์จากการรันนี้ | 15 s |
-| PERM-OU | [Screenshot](screenshots/14-perm-ou.png) | attempt_read_denied | ผลนี้เป็นหน้าจอปฏิเสธจริงจาก Odoo ของชุด UAT สำหรับทดสอบสิทธิ์ ซึ่งแยกจากชุด PROJECT70 | 10 s |
-| PERM-COMPANY | [Screenshot](screenshots/15-perm-company.png) | attempt_read_denied | ผู้ใช้ไม่มีบริษัทของเอกสารอยู่ในขอบเขตการใช้งาน Odoo จึงปฏิเสธการเข้าถึงจริง | 10 s |
-| PERM-ROLE | [Screenshot](screenshots/16-perm-role.png) | attempt_read_denied | ภาพนี้ยืนยันการจำกัดสิทธิ์อ่าน ไม่ได้กล่าวอ้างว่าเป็นการทดสอบอนุมัติหรือการลงบัญชี | 10 s |

@@ -35,10 +35,6 @@ GovOpsDev ERP เป็น baseline โอเพนซอร์สสำหร�
 
 สำรวจภาพ Dashboard งบประมาณจริงและผลการเปลี่ยนตัวกรองโครงการ/หน่วยงานผ่าน Guided Tour แบบภาพบันทึก [รายละเอียด](docs/dashboard-bi-demo.md)
 
-### Permission Tour
-
-ผลปฏิเสธการอ่านจริงสามกรณี: ต่างหน่วยงาน ต่างบริษัท และไม่มีบทบาท ใช้ fixture UAT แยกจาก Full Creation ไม่ใช่การจำลองหน้าปฏิเสธในเว็บ static
-
 ### Video Demo
 
 > **Video coming soon** — มีชุดตัดต่อ บทบรรยายไทย คำบรรยาย SRT/VTT และ chapter markers พร้อมแล้ว ยังไม่มี YouTube ID หรือวิดีโอเผยแพร่

@@ -9,6 +9,7 @@
     "width": 1920,
     "height": 1080
   },
+  "tour_type": "recorded-evidence",
   "raw_manifest_sha256": "ef9994068d30f7f0f356a7546b81ef58d8444eb319f89bd0b05bbf5e83c6697e",
   "privacy_review": "synthetic screenshots and metadata reviewed; raw video is excluded"
 }

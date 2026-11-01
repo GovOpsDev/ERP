@@ -4,23 +4,5 @@
     "label": "ผู้ทดลองระบบ · สิทธิ์ธุรกิจหลายด้าน",
     "dataset": "PROJECT70",
     "authentication": "real Odoo login"
-  },
-  {
-    "id": "uat_other_ou",
-    "label": "other_ou",
-    "dataset": "UAT security fixture",
-    "authentication": "real Odoo login"
-  },
-  {
-    "id": "uat_foreign",
-    "label": "foreign",
-    "dataset": "UAT security fixture",
-    "authentication": "real Odoo login"
-  },
-  {
-    "id": "uat_unauthorized",
-    "label": "unauthorized",
-    "dataset": "UAT security fixture",
-    "authentication": "real Odoo login"
   }
 ]

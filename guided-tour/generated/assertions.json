@@ -3,10 +3,5 @@
   "browser_errors": [],
   "baseline_unchanged": true,
   "financial_reconciliation": true,
-  "quantity_reconciliation": true,
-  "security_cases": [
-    "PERM-OU",
-    "PERM-COMPANY",
-    "PERM-ROLE"
-  ]
+  "quantity_reconciliation": true
 }

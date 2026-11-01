@@ -15,6 +15,7 @@ def build():
     for rel in sorted(set(files)):
         if not rel or not (rel.startswith(prefixes) or rel in {'guided-tour/'+x for x in allowed}):continue
         p=ROOT/rel
+        if not p.exists() and not p.is_symlink():continue  # tracked files deleted in the working tree
         if p.is_symlink() or p.suffix not in {'.html','.md','.css','.mjs','.js','.json','.png'}: raise ValueError('Disallowed Pages file: '+rel)
         dest=OUT/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
     # Help remains readable on Pages; links to non-site source docs go to the repository.

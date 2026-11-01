@@ -45,7 +45,7 @@ def audit(root=ROOT):
         reviewed=json.loads(review.read_text())['files']
         covered={entry['file'] for entry in reviewed}
         for rel in tracked:
-            if rel.endswith(('.png','.jpg')) and rel not in covered:
+            if (root/rel).is_file() and rel.endswith(('.png','.jpg')) and rel not in covered:
                 results.append({'file':rel,'rule':'visual-review-missing'})
         for entry in reviewed:
             image=root/entry['file']

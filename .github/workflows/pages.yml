@@ -16,10 +16,11 @@ jobs:
           persist-credentials: false
       - name: Public safety check
         run: python3 scripts/check-public-release.py
-      - name: Validate both evidence sets
+      - name: Validate all public evidence sets
         run: |
           python3 guided-tour/scripts/validate-data.py
           python3 guided-tour/scripts/validate-data.py generated-fresh
+          python3 guided-tour/scripts/validate-data.py generated-bi
       - name: Build allowlisted static artifact
         run: python3 scripts/build-pages.py
       - uses: actions/configure-pages@v5

@@ -203,21 +203,6 @@
       "category": "synthetic Odoo demo screenshot"
     },
     {
-      "file": "guided-tour/generated/screenshots/14-perm-ou.png",
-      "sha256": "852ec1d2b17bc35081fb50cb02442a908900b476c04b44d18996b92b89c32979",
-      "category": "synthetic Odoo demo screenshot"
-    },
-    {
-      "file": "guided-tour/generated/screenshots/15-perm-company.png",
-      "sha256": "a5d08ab7b0b9e09c582aa46f605a8d43f6d45cb0cd5fb9c7e3e142d202d519f0",
-      "category": "synthetic Odoo demo screenshot"
-    },
-    {
-      "file": "guided-tour/generated/screenshots/16-perm-role.png",
-      "sha256": "fe89f22793e2f054428c7d8dee99331cf590d1fb9139f2f2b4092f35ece25eef",
-      "category": "synthetic Odoo demo screenshot"
-    },
-    {
       "file": "projects/asset/addons/account_asset_management/static/description/icon.png",
       "sha256": "eb104f25ab9a14e1742831df1e0428a52736f242afc4c69ea10150599b5f643a",
       "category": "upstream OCA attribution icon"

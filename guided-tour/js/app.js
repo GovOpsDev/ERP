@@ -13,11 +13,11 @@ async function render(step=currentSteps()[state.index]){
   const version=++renderVersion;
   state.mode=step.mode;const steps=currentSteps();state.index=steps.findIndex(s=>s.id===step.id);
   $('#steps-nav').innerHTML=steps.map((s,i)=>`<button data-step="${s.id}" ${s.id===step.id?'aria-current="step"':''}>${String(i+1).padStart(2,'0')} · ${esc(s.title)}</button>`).join('');
-  $('#tour-kind').textContent=data.directory==='generated-bi'?'PROJECT BUDGET · DASHBOARD BI':data.directory==='generated-fresh'?'FRESH CREATION · REAL ODOO REPLAY':state.mode==='permissions'?'PERMISSIONS · REAL ODOO REPLAY':'PROJECT70 · REAL ODOO REPLAY';
+  $('#tour-kind').textContent=data.directory==='generated-bi'?'PROJECT BUDGET · DASHBOARD BI':data.directory==='generated-fresh'?'FRESH CREATION · REAL ODOO REPLAY':'PROJECT70 · REAL ODOO REPLAY';
   $('#step-screen').textContent=step.screen;$('#step-title').textContent=step.title;$('#progress').textContent=`${state.index+1} / ${steps.length}`;
   const persona=data.personas.find(p=>p.id===step.persona);$('#persona').textContent=`Persona: ${persona?.label||step.persona} (${step.persona})`;
-  $('#state').textContent=`สถานะ: ${step.state_before} → ${step.state_after}`;$('#record-kind').textContent=['inspect_persisted_document','inspect_fresh_result'].includes(step.operation)?'เปิดดูเอกสารที่บันทึกไว้จริง':step.mode==='permissions'?'ผลปฏิเสธการอ่านจริง':'สร้างและดำเนินการผ่าน Odoo UI จริง';
-  $('#security-evidence').hidden=step.mode!=='permissions';$('#step-description').textContent=step.tooltip;$('#narration').textContent=step.narration;$('#step-code').textContent=step.id;
+  $('#state').textContent=`สถานะ: ${step.state_before} → ${step.state_after}`;$('#record-kind').textContent=['inspect_persisted_document','inspect_fresh_result'].includes(step.operation)?'เปิดดูเอกสารที่บันทึกไว้จริง':'สร้างและดำเนินการผ่าน Odoo UI จริง';
+  $('#step-description').textContent=step.tooltip;$('#narration').textContent=step.narration;$('#step-code').textContent=step.id;
   $('#previous').disabled=state.index===0;$('#next').disabled=state.index===steps.length-1;
   const bi=data.directory==='generated-bi';$('#bi-state').hidden=!bi;
   if(bi){const f=step.dashboard_filters;$('#bi-filters').textContent=Object.keys(f).length?Object.values(f).join(' · '):'ทุกโครงการในบริษัทที่ผู้ใช้มีสิทธิ์';const labels=[['allocated_amount','จัดสรร'],['committed_amount','ผูกพัน'],['actual_amount','ใช้จริง'],['other_amount','รายการอื่น'],['available_amount','คงเหลือ']];$('#bi-kpis').innerHTML=labels.map(([k,v])=>`<span>${esc(v)}: ${esc(money(Math.trunc(step.kpis[k])))}</span>`).join(' · ');}
@@ -40,7 +40,7 @@ async function openDocument(key){
   $('#document-detail').scrollIntoView({block:'nearest'});
 }
 async function selectTour(value){
-  cancelTour();data=await loadData(value==='fresh'?'generated-fresh':value==='bi'?'generated-bi':'generated');state.mode=value==='permissions'?'permissions':'main';state.index=0;
+  cancelTour();data=await loadData(value==='fresh'?'generated-fresh':value==='bi'?'generated-bi':'generated');state.mode='main';state.index=0;
   await render();
 }
 async function main(){

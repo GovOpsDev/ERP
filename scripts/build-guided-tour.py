@@ -78,9 +78,7 @@ def validate(run, require_review=True):
     require([s['order'] for s in steps] == list(range(1, len(steps)+1)), 'Invalid step order')
     fresh = manifest.get('tour_type') == 'fresh-creation'
     dashboard_bi = manifest.get('tour_type') == 'dashboard-bi'
-    if not fresh and not dashboard_bi:
-        require(any(s['mode'] == 'permissions' for s in steps), 'Permission evidence missing')
-    elif fresh:
+    if fresh:
         require(data['assertions.json'].get('ui_creation') is True, 'Fresh UI creation evidence missing')
         require(all(s['mode'] == 'main' for s in steps), 'Fresh workflow must not mix denial evidence')
     main = [s for s in steps if s['mode'] == 'main']
@@ -140,8 +138,25 @@ def validate(run, require_review=True):
     return manifest, data
 
 
+def public_tour_data(data):
+    """Keep security-test evidence in the private run, never in public tours."""
+    result = dict(data)
+    result['steps.json'] = [step for step in data['steps.json'] if step['mode'] == 'main']
+    retained = {step['persona'] for step in result['steps.json']}
+    result['personas.json'] = [p for p in data['personas.json'] if p['id'] in retained]
+    excluded = {s['document_ref'] for s in data['steps.json'] if s['mode'] != 'main'}
+    used = {s['document_ref'] for s in result['steps.json']}
+    used.update(r for s in result['steps.json'] for r in s['relationships'])
+    used.update(r[k] for r in data['relationships.json'] for k in ('from', 'to'))
+    result['documents.json'] = [d for d in data['documents.json'] if d['key'] not in excluded or d['key'] in used]
+    result['narration.json'] = [{k: s[k] for k in ('id', 'narration', 'duration_hint')} for s in result['steps.json']]
+    result['assertions.json'] = {k: v for k, v in data['assertions.json'].items() if k != 'security_cases'}
+    return result
+
+
 def build(run):
-    manifest, data = validate(run)
+    manifest, private_data = validate(run)
+    data = public_tour_data(private_data)
     # Validate everything before changing the last known publishable replay.
     destination = ROOT / ('guided-tour/generated-bi' if manifest.get('tour_type') == 'dashboard-bi' else 'guided-tour/generated-fresh' if manifest.get('tour_type') == 'fresh-creation' else 'guided-tour/generated')
     destination.parent.mkdir(parents=True, exist_ok=True)
