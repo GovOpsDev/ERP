@@ -1,4 +1,4 @@
-# NSTDA eGov user manuals
+# GovOpsDev ERP user manuals
 
 Documentation-only Odoo 20 Community addon. It adds a Thai **คู่มือการใช้งาน**
 menu to each of the 15 applications in the integrated reference stack. Each menu

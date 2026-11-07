@@ -1,4 +1,4 @@
-# ภาษาไทยสำหรับ NSTDA eGov บน Odoo 20
+# ภาษาไทยสำหรับ GovOpsDev ERP บน Odoo 20
 
 คำแปลติดตั้งในฐาน local `erp_restored_final_verified` สำหรับผู้ใช้ที่เลือกภาษา
 Thai / ภาษาไทย (`th_TH`) โดยใช้ไฟล์มาตรฐาน Odoo `i18n/th.po` ของ 11 โมดูล
