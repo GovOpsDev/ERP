@@ -1,9 +1,0 @@
-# Finance dependency discovery — PARTIAL
-
-The first Finance slice is the invoice/PO Budget boundary: native `account.move` and `account.move.line` → Purchase → Procurement document-derived Budget adapter → Budget controls. The Procurement guard remains the fallback when Finance is absent; the Finance adapter validates and reconciles supported controlled bills in the native posting transaction. Unrelated bills remain native.
-
-Inspected OCA/account-budgeting `b447bab1678f8bea86bb0a6fd92eaa23b5f0390c`, modules `budget_control` and `budget_control_purchase` (15.0, AGPL-3). `budget_control` recomputes account budget moves on posted/draft/cancel transitions and checks budget on posting selected move types. Its purchase extension recomputes related purchase budget moves on these transitions; invoice lines reduce PO commitment by invoiced quantity and refunds can restore it. Forward commitments, tax treatment and return-amount behavior add cases beyond a simple amount transfer. This is individual source evidence, not a reconstruction of NSTDA's merged checkout.
-
-Before implementing, establish an Odoo 20 accounting adapter with verified source and user access, company/OU and dimensions, partial and over-invoicing, refunds, reset/cancel, tax/currency and forward-commitment semantics. Reconcile PO commitments and actuals atomically, with immutable auditable reversals and concurrent budget checks. Validate native accounting posting and upgrade behavior on isolated databases. The implemented Finance Budget contract is limited to the subset in `finance-budget-lifecycle-v1.md`. Do not port Odoo 15 APIs directly. Broader Finance scope remains NOT TESTED.
-
-Further source and Odoo 20 hook evidence: `upstream-analysis.md`, `source-mapping.md` and draft `finance-budget-lifecycle-v1.md`. Native `qty_invoiced` includes drafts and must not be treated as posted-only Budget actual.

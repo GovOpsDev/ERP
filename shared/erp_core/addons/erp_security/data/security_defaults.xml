@@ -1,0 +1,8 @@
+<odoo>
+    <!-- Apply once on installation, after auth_signup's B2C defaults. -->
+    <data noupdate="1">
+        <function model="ir.config_parameter" name="set_str" eval="('auth_signup.invitation_scope', 'b2b')"/>
+        <function model="ir.config_parameter" name="set_int" eval="('base.login_cooldown_after', 5)"/>
+        <function model="ir.config_parameter" name="set_int" eval="('base.login_cooldown_duration', 300)"/>
+    </data>
+</odoo>

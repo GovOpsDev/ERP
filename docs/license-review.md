@@ -1,7 +1,0 @@
-# Historical license discovery (engineering inventory)
-
-This document records the initial source-discovery stage. Its statements about scaffold contents and unverified dependencies are historical, not the current consolidated release inventory. See the component licenses and notices included in the repository.
-
-The NSTDA root `LICENSE` is AGPL-3.0; README credits NSTDA. Fourteen private addon manifests declare AGPL-3, while `om_credit_limit` declares LGPL-3; inspect file-level headers and bundled third-party material separately before copying. AGPL obligations and notices apply to covered derivative/network deployments; identify the exact combined/distributed work and obtain legal review when needed. This repository has not copied implementation or upstream data. The new scaffold declares AGPL-3 as its intended addon license, but no independent upstream copyright is claimed.
-
-`repos.yaml` names many independent OCA and other repositories and `odoo/custom/dependencies` lists Python/system dependencies, including OpenUpgrade library, pandas, numpy and openpyxl. Their exact versions, licenses, transitive dependencies and file notices are **not verified**; `openupgradelib@master` is unpinned. The assembled source uses remotes and merge commits rather than being entirely present here. Audit each actual pinned dependency and license compatibility before use or redistribution. No Enterprise dependency is declared in `erp_core`.

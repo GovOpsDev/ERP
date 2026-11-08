@@ -97,7 +97,7 @@ class TestRequestCurrency(TransactionCase):
 
     def test_invalid_rates_budget_failure_and_company_defaults(self):
         currency = self.foreign()
-        request = self.make_request(100)
+        request = self.make_request(100).with_context(lang='en_US')
         request.currency_id = currency
         for invalid in (-1, float('nan'), float('inf')):
             with self.assertRaises(ValidationError), self.cr.savepoint():

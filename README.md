@@ -5,6 +5,9 @@
 GovOpsDev ERP เป็นโครงการพัฒนาต่อยอด (fork) จาก [NSTDA eGov / ERP-Government](https://github.com/NSTDA/ERP-Government) ของสำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.) โดยนำกระบวนงานและซอร์สอ้างอิงมาปรับย้ายให้ทำงานบน Odoo รุ่นใหม่ จัดโครงสร้างโมดูลใหม่ และเพิ่มการทดสอบการเชื่อมโยงข้อมูล สิทธิ์ผู้ใช้ และการทำงานหลายบริษัท
 
 โครงการนี้มุ่งเป็นฐานกลางที่หน่วยงานภาครัฐสามารถนำไปศึกษา ติดตั้ง และพัฒนาต่อให้เหมาะกับโครงสร้างองค์กร กระบวนการอนุมัติ และนโยบายภายในของตนเอง
+- [Guided Tour](https://govopsdev.github.io/ERP/guided-tour/)
+- [Docker Hub: govopsdev/govopsdev-erp](https://hub.docker.com/r/govopsdev/govopsdev-erp)
+- [แจ้งปัญหาผ่าน GitHub Issues](https://github.com/GovOpsDev/ERP/issues)
 
 ## เป้าหมาย
 
@@ -13,20 +16,6 @@ GovOpsDev ERP เป็นโครงการพัฒนาต่อยอด
 - ควบคุมการเข้าถึงตามบทบาท บริษัท และหน่วยงาน พร้อมเก็บประวัติเอกสารและการอนุมัติ
 - รองรับผู้ใช้งานภาษาไทย พร้อมคู่มือ HTML ที่เปิดอ่านจากแต่ละแอปได้
 - พัฒนาตาม Odoo รุ่นหลักล่าสุด โดยตรวจและทดสอบความเข้ากันได้ก่อนประกาศรองรับแต่ละรุ่น
-
-## เวอร์ชันที่รองรับ
-
-Baseline ปัจจุบันพัฒนาและทดสอบบน **Odoo 20 Community** ซึ่งเป็นรุ่นหลักล่าสุด ณ วันที่ **31 ตุลาคม 2026** อ้างอิง [ข้อมูลเวอร์ชันที่รองรับของ Odoo](https://www.odoo.com/documentation/20.0/administration/supported_versions.html)
-
-| องค์ประกอบ | Baseline ที่ทดสอบ |
-|---|---|
-| Odoo | 20.0 Community — reference build `20.0-20260926` |
-| PostgreSQL | 16.15 |
-| สภาพแวดล้อมอ้างอิง | Docker Compose พร้อม image ที่ตรึงด้วย digest |
-| การแสดงผล | ภาษาไทยและอังกฤษตามภาษาผู้ใช้ |
-| รุ่นอื่น | ต้องตรวจ dependency และทดสอบเพิ่มเติมก่อนประกาศรองรับ |
-
-การรองรับ Odoo รุ่นหลักล่าสุดไม่ได้หมายถึงใช้ image `latest` โดยไม่กำหนดเวอร์ชัน สภาพแวดล้อมอ้างอิงตรึงรุ่นไว้เพื่อให้ติดตั้ง ทดสอบ และย้อนกลับได้ตาม [release manifest](docs/release-manifest.md)
 
 ## ขอบเขตระบบ
 
@@ -49,88 +38,47 @@ Baseline ปัจจุบันพัฒนาและทดสอบบน *
 - มีเมนู **คู่มือการใช้งาน** ใน 15 แอปของชุดระบบที่เชื่อมกัน
 - คู่มือเป็น HTML มีภาพประกอบจากข้อมูลจำลอง สารบัญ ค้นหา ลิงก์คู่มือที่เกี่ยวข้อง และพิมพ์ / บันทึก PDF จากเบราว์เซอร์ได้
 
-หลังติดตั้งโมดูล `erp_user_manual` เปิดคู่มือได้จากแต่ละแอป หรือที่ `/erp_user_manual/static/manual/index.html` ดูรายละเอียด [คู่มือ HTML](docs/user-manuals.md) และ [ภาษาไทย](docs/thai-localization.md)
+รองรับหน่วยงาน งบประมาณโครงการ จัดซื้อ สัญญา คลัง วัสดุ ครุภัณฑ์ การเงิน คู่มือภาษาไทย และวันที่ พ.ศ. ส่วนเสริมภายใน image ใช้ AGPL-3.0-or-later; โปรดดู [LICENSE](LICENSE), [NOTICE](NOTICE.md) และ License ของแต่ละโมดูล
 
-ชม [Guide Tour การใช้งาน GovOpsDev ERP](https://govopsdev.github.io/ERP/guided-tour/) เพื่อสำรวจกระบวนงานโครงการและภาพรวมงบประมาณจากข้อมูลสาธิต
+## เวอร์ชันนี้
 
-## โครงสร้าง workspace
+ซอร์ส addons ใน repository ชุดนี้ตรงกับ image `govopsdev/govopsdev-erp:v20.0` ซึ่งทดสอบบน Linux amd64 และมี addons 20 โมดูล สามารถตรวจ SHA-256 รายไฟล์จาก `/usr/share/doc/govopsdev-erp/addons-inventory.json` ภายใน image
 
-```text
-org/
-├── README.md
-├── docs/                       เอกสารภาพรวม การย้ายระบบ และการตรวจรับ
-├── ops/readiness/              เครื่องมือทดสอบ สำรอง กู้คืน และสภาพแวดล้อมอ้างอิง
-├── shared/erp_core/            โมดูลพื้นฐานและชุดคู่มือการใช้งาน
-└── projects/
-    ├── organization/          โครงสร้างองค์กรและสิทธิ์
-    ├── budget/                งบประมาณ
-    ├── procurement/           จัดซื้อจัดจ้าง
-    ├── finance/               การเงินและบัญชี
-    ├── contract/              ข้อตกลง สัญญา และหลักประกัน
-    ├── inventory/             ตรวจรับและคลังสินค้า
-    └── asset/                 ทรัพย์สิน
+Docker image: `sha256:539ca7e80cc6233978e28b04efaa2ee419d6cf59dddea51564c87aed1492fb1d`
+Addon source inventory SHA-256: `c7c649cc462ad774904b47a4a771bbbf11400c586278666612b1b3769d99cada`
+
+## ทดลองติดตั้งบนเครื่อง
+
+ต้องมี Git, Docker Engine และ Docker Compose plugin ตรวจด้วย `docker compose ls -a` ว่าไม่มี project `govopsdev-erp-quick` ที่ใช้งานอยู่ และ port 18071 ว่างก่อนเริ่ม
+
+```sh
+git clone https://github.com/GovOpsDev/ERP.git
+cd ERP
+docker compose up -d --build
 ```
 
-**ชุดเผยแพร่นี้รวมซอร์สทั้งหมดใน Git repository เดียว** ทั้ง `shared/erp_core` และโครงการทั้งเจ็ด จึง clone ครั้งเดียวแล้วได้โมดูลครบ โดยไม่มี Git submodule หรือ repository ซ้อนอยู่ภายใน ที่มาจาก workspace เดิม 9 repository รวมถึง commit และรายการแก้ไขที่นำมารวม บันทึกไว้ใน [source snapshot](docs/source-snapshot.json) และ [รายละเอียดชุดเผยแพร่](docs/github-package.md)
+Compose จะดาวน์โหลด ERP image, build PostgreSQL companion, สร้าง secret ใน Docker volumes และติดตั้ง 20 โมดูลลงฐานใหม่โดยอัตโนมัติ ขั้นตอนแรกอาจใช้เวลาหลายนาที ตรวจสถานะด้วย:
 
-## เริ่มต้นใช้งาน
-
-1. เตรียม Docker พร้อม Compose และดาวน์โหลดหรือ clone repository นี้ให้ครบทั้ง `shared/` และ `projects/`
-2. ตรวจรุ่นและ dependency จาก [release manifest](docs/release-manifest.md) โดย SHA ของ repository เดิมเป็นข้อมูลอ้างอิงตาม [source snapshot](docs/source-snapshot.json)
-3. สำหรับสภาพแวดล้อมทดสอบใหม่ ให้ติดตั้งชุดโมดูลและเริ่มบริการตามตัวอย่างด้านล่าง
-4. โหลดภาษาไทยและกำหนดบริษัท หน่วยงาน ผู้ใช้ บทบาท ข้อมูลบัญชี และข้อมูลหลักของแต่ละงานก่อนเริ่มทดลอง
-5. อ่าน [runbook](docs/production-readiness-runbook.md) สำหรับการตั้งค่า การสำรอง กู้คืน และตรวจระบบ
-
-ตัวอย่างสำหรับสภาพแวดล้อมอ้างอิงใหม่ ให้เปลี่ยนตำแหน่งเก็บ secrets เป็น directory ภายนอก repository ที่จัดเตรียมไว้:
-
-```bash
-export ERP_DATABASE=erp_readiness
-export ERP_SECRETS_DIR=/absolute/path/outside/repository/secrets
-
-python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d db
-
-python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- \
-  run --rm -T app -d "$ERP_DATABASE" -i erp_user_manual,erp_dashboard_th \
-  --stop-after-init --workers=0 --no-http
-
-python3 ops/readiness/stack.py --secrets-dir "$ERP_SECRETS_DIR" -- up -d app proxy
+```sh
+docker compose ps
+docker compose logs --tail=100 initialize
 ```
 
-โมดูล `erp_user_manual` เป็นชุดเอกสารสำหรับระบบที่เชื่อมกัน และประกาศ dependency ไปยังโมดูลธุรกิจที่คู่มืออ้างถึง สภาพแวดล้อมอ้างอิงเปิดผ่าน พอร์ต `18069` บนเครื่องที่ติดตั้ง ค่าเริ่มต้นของตัวเริ่มระบบปิด cron ระหว่างทดสอบ ให้กำหนดงานตามกำหนดเวลาตาม runbook เมื่อต้องใช้งานจริง
+รอจน service `erp` แสดง `healthy` แล้วเปิด `localhost:18071` ด้วย **admin / admin** เลือกภาษาไทยใน Preferences ฐานใหม่เริ่มต้นด้วย THB และไม่มีข้อมูลธุรกิจสาธิต
 
-เก็บรหัสผ่าน การตั้งค่าลับ ฐานข้อมูล และ filestore แยกจาก Git หากมี volume เดิมอยู่แล้วต้องใช้ secrets เดิมของสภาพแวดล้อมนั้น
+```sh
+# หยุดและเปิดอีกครั้ง โดยเก็บฐานข้อมูลและรหัสเดิม
+docker compose stop
+docker compose up -d
+```
 
-## สถานะและขอบเขตการทดสอบ
+Compose จะเก็บ PostgreSQL, filestore และ secret ไว้ใน volumes แยกกัน การเริ่มซ้ำไม่สร้างรหัสใหม่หรือติดตั้งทับฐานที่ใช้งานแล้ว หาก secret ไม่ครบหรือฐานข้อมูลเดิมไม่ตรงกับชุดโมดูล ระบบจะหยุดเพื่อให้ตรวจสอบ สำรอง volumes ของฐานข้อมูล filestore และ secret ร่วมกันก่อนอัปเกรดหรือย้ายเครื่อง คำสั่ง `docker compose down -v` จะลบ volumes เหล่านี้
 
-การย้ายซอร์สในขอบเขตโมดูลที่เลือกมีรายงานปิดงานแล้ว และชุดอ้างอิงผ่านการตรวจ clean installation, upgrade ด้วยข้อมูลจำลอง, การเชื่อมกระบวนงาน, สิทธิ์และหลายบริษัท, การใช้งานผ่านเบราว์เซอร์ รวมถึงสำรอง กู้คืน และ rollback ตามรายงานที่เก็บไว้
+## Build และตรวจซอร์ส
 
-**Baseline นี้เป็นฐานสำหรับนำไปปรับใช้ในแต่ละองค์กร** ผลตรวจสภาพแวดล้อมอ้างอิงไม่ได้แทนการรับรองระบบ production ของหน่วยงาน ต้องกำหนดข้อมูลตั้งต้น นโยบายบัญชี/ภาษี แบบพิมพ์ การเชื่อมระบบ ขนาดการใช้งาน และทดสอบรับมอบตามบริบทของหน่วยงานก่อนเปิดใช้จริง โครงการเริ่มจากซอร์สโค้ด จึงไม่ได้อ้างว่าแปลงฐานข้อมูล production เดิมที่ไม่ได้รับมา
+```sh
+docker build -t govopsdev-erp:local .
+docker run --rm --entrypoint cat govopsdev-erp:local /usr/share/doc/govopsdev-erp/addons-inventory.json
+```
 
-เอกสารหลัก:
-
-- [ขอบเขตและรายงานปิดการย้ายระบบ](docs/migration-closure-report.md)
-- [ผลตรวจความครบถ้วนของการย้ายระบบ](docs/migration-completeness-audit.md)
-- [ผลตรวจความพร้อมของสภาพแวดล้อมอ้างอิง](docs/production-readiness.md)
-- [การทดสอบผ่านเบราว์เซอร์และตามบทบาท](docs/production-readiness-uat.md)
-- [รุ่นและส่วนประกอบที่ใช้ร่วมกัน](docs/release-manifest.md)
-- [คู่มือปฏิบัติการ สำรอง และกู้คืน](docs/production-readiness-runbook.md)
-
-## ที่มาและเครดิต
-
-ขอขอบคุณ **สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.) / NSTDA** ผู้ริเริ่ม [ERP-Government (eGov)](https://github.com/NSTDA/ERP-Government) ซึ่งเป็นต้นทางสำหรับการพัฒนาต่อยอดโครงการนี้
-
-ซอร์สอ้างอิงที่ใช้ตรวจการย้ายระบบมาจาก branch `main` ที่ commit `5a1722c4c6f6cfdf3ed59362a56e85777c58a383` และเป็นฐาน Odoo 15.0 ก่อนนำกระบวนงานมาปรับสำหรับ Odoo 20 รายละเอียดการอ้างอิงและการปรับใช้แยกตามโดเมนอยู่ใน [upstream baseline](docs/upstream-baseline.md) และ [source mapping](docs/source-mapping.md)
-
-ขอขอบคุณ [Odoo](https://github.com/odoo/odoo), [Odoo Community Association (OCA)](https://github.com/OCA), Ecosoft และผู้พัฒนาส่วนประกอบต้นทางที่โครงการนำมาใช้หรืออ้างอิง GovOpsDev ERP ดูแลการปรับย้ายและการพัฒนาต่อยอดในขอบเขตของโครงการนี้
-
-## สัญญาอนุญาต
-
-ต้นทาง NSTDA ERP-Government เผยแพร่ภายใต้ [AGPL-3.0](LICENSE) ส่วนขยายที่พัฒนาในชุด ERP นี้ระบุ `AGPL-3` ใน manifest ของแต่ละโมดูล ส่วนประกอบภายนอกให้ยึดสัญญาอนุญาตและประกาศลิขสิทธิ์ของต้นทางแต่ละรายการ และคงเครดิตดังกล่าวเมื่อนำไปใช้หรือเผยแพร่ต่อ ดูรายการตรวจใน [license review](docs/license-review.md)
-
-ชุดเผยแพร่นี้เก็บข้อความสัญญาอนุญาตต้นทางไว้ใน [LICENSE](LICENSE) และรวมเครดิตใน [NOTICE.md](NOTICE.md) โดยคงประกาศลิขสิทธิ์ของส่วนประกอบแต่ละรายการไว้ตามเดิม
-
-## สกุลเงินเริ่มต้น
-
-บริษัทใหม่ใช้ THB เป็นค่าเริ่มต้น และการติดตั้งครั้งแรกตั้งบริษัท placeholder
-ที่ยังไม่มีข้อมูลเป็นประเทศไทยและ THB บริษัท/เอกสาร USD เดิมคงสกุลเงินเดิม ดู
-[ขอบเขตค่าเริ่มต้นเงินบาท](docs/thb-defaults.md)
+Dockerfile เก็บไฟล์ตั้งค่าและโค้ดที่จำเป็นต่อการ build ไว้ภายใน และล็อก Odoo base image ด้วย digest และอัปเดตแพ็กเกจระบบระหว่าง build ผล build ในอนาคตอาจมี package versions ใหม่กว่า image ที่เผยแพร่ PostgreSQL companion สร้างแยกจาก `docker/Postgres.Dockerfile` และใช้ role ที่ไม่มีสิทธิ์ superuser สำหรับ Odoo

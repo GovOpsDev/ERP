@@ -1,9 +1,0 @@
-# Legal agreement migration
-
-Source: OCA agreement `8e18e0da1e277b793c5dc288d9ebc5fe08783e87`, `agreement_legal/models/agreement.py`, stage/type/subtype, recital/section/clause/appendix models.
-
-MIGRATED: legal stages (including read-only stages), types/subtypes, parties and terms, internal/external contacts, signature dates and signed attachment, assigned owner, review/approval actor and dates, expiry review activities. REDESIGNED: the four content collections share a typed table; clauses retain same-agreement section references. Version snapshots include all legal content and identities plus a separate signed-file attachment; old snapshots are immutable. Existing agreement versions and economic documents remain intact. No owner, signature or historical approval is fabricated on upgrade.
-
-Review scheduling uses native mail activities, checks the reviewer's company and OU access and records the scheduled version/date to prevent duplicate activities, including after completion. Review and approval evidence is recorded by manager actions, not editable RPC values. Active legal terms require a new version before modification; read-only stages require a manager stage transition. Printable styling and production mail delivery are production readiness, not missing lifecycle semantics.
-
-Runtime: `legal-49.log` ran 32 Contract tests: 30 passed, two fixture errors from the new Odoo 20 BinaryValue API. Corrected the fixture to BinaryBytes and verified native attachment copying/reading; `legal-50.log`: 2 targeted tests, 0 failures, 0 errors; no skips reported. Coverage includes immutable signed versions, stage/content guards, cross-reference rejection, review idempotency, forged actor rejection and loss of OU access to legal content and signed file. Full final cross-domain regression follows closure of the remaining source rows.

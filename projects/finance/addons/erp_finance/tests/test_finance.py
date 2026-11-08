@@ -1913,7 +1913,7 @@ class TestFinanceBudget(TransactionCase):
         request.action_submit()
         request.action_approve()
         self.assertEqual(self.active('pr_commitment'), 50)
-        expense = self.make_expense(60)
+        expense = self.make_expense(60).with_context(lang='en_US')
         expense.employee_id.sudo().user_id = self.user
         expense.erp_request_line_id = request.line_ids
         with self.assertRaisesRegex(UserError, 'exceeds the approved request'), self.cr.savepoint():

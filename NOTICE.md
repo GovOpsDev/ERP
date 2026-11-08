@@ -11,16 +11,12 @@ their respective materials.
 
 This publication consolidates the migrated application modules, Thai translations,
 HTML user manuals and related workspace tools under the GovOpsDev ERP name.
-Original source identities and local modifications at the time of copying are
-recorded in [docs/source-snapshot.json](docs/source-snapshot.json).
+The original upstream reference is identified above. The addons in this release
+correspond to the published container image; the image contains an inventory with
+source file hashes at `/usr/share/doc/govopsdev-erp/addons-inventory.json`.
 
 Additional components and references include Odoo, the Odoo Community Association
 (OCA), Ecosoft and the contributors identified in each addon. Existing file headers,
 addon manifests, README files, contributor lists and license declarations are
 preserved. Component-specific notices and licenses continue to identify their
 respective works; the root license file does not replace those declarations.
-
-Review [docs/license-review.md](docs/license-review.md) and the source-mapping and
-provenance documents in each domain for the engineering inventory of reused and
-adapted components. Those documents include historical findings from the source
-migration and should be read with the final migration and release reports.

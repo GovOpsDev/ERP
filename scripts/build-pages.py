@@ -4,7 +4,6 @@ import hashlib,json,shutil,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'_site'
-SOURCE='https://github.com/GovOpsDev/ERP/blob/main/'
 
 def build():
     if OUT.exists(): shutil.rmtree(OUT)  # generator-owned ignored output only
@@ -20,8 +19,6 @@ def build():
         dest=OUT/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
     shutil.copyfile(ROOT/'site/index.html',OUT/'index.html')
     for name in ['LICENSE','NOTICE.md']: shutil.copyfile(ROOT/name,OUT/name)
-    notice=OUT/'NOTICE.md'
-    notice.write_text(notice.read_text().replace('(docs/', '('+SOURCE+'docs/'))
     (OUT/'.nojekyll').touch()
     manifest={p.relative_to(OUT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.rglob('*')) if p.is_file()}
     (OUT/'site-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

@@ -76,3 +76,14 @@ The procedures were checked against the installed native company, accounting,
 purchase and expense sources plus the ERP request, budget, contract, inventory
 and asset currency fields. Menu URLs carry a new content revision to refresh
 previously cached manual pages.
+
+
+## Integrated Project dependency (20.0.1.2.0)
+
+The integrated ERP/manual installation now explicitly depends on the native Odoo
+`project` addon. This keeps the default installation aligned with the normal
+Project workflow documented in `docs/project-demo.md` at the repository root.
+The 15 HTML guides and menu declarations remain unchanged by this dependency
+update. Native Project and auto-installed integration addons come from the pinned
+Odoo image; they are not copied into this repository. The dependency creates no
+demo users, company-specific home action or synthetic business transactions.
